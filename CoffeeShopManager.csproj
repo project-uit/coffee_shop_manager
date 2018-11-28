@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FF35C532-3B16-4E66-98A4-2AA333A73B87}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SOCIAL_APP_BUNIFU_FRAMEWORK_DEMO</RootNamespace>
-    <AssemblyName>SOCIAL_APP_BUNIFU_FRAMEWORK_DEMO</AssemblyName>
+    <RootNamespace>COFFEE_SHOP_MANAGER</RootNamespace>
+    <AssemblyName>COFFEE_SHOP_MANAGER</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -142,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Dashboard\tabDashboard.resx">
       <DependentUpon>tabDashboard.cs</DependentUpon>
