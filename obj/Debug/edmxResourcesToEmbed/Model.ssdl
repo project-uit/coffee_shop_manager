@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlycafeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="nhanvien">
+    <Key>
+      <PropertyRef Name="id_nhanvien" />
+    </Key>
+    <Property Name="id_nhanvien" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hoten" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ngaysinh" Type="date" />
+    <Property Name="cmnd" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="50" />
+    <Property Name="luong" Type="int" Nullable="false" />
+    <Property Name="tentaikhoan" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="matkhau" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="quyen" Type="int" Nullable="false" />
+    <Property Name="delete_ymd" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="quanlycafeModelStoreContainer">
+    <EntitySet Name="nhanvien" EntityType="Self.nhanvien" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
