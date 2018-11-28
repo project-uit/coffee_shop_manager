@@ -39,7 +39,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "tabStaff";
-            this.Size = new System.Drawing.Size(2172, 1012);
+            this.Size = new System.Drawing.Size(1284, 738);
             this.ResumeLayout(false);
 
         }

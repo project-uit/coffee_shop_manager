@@ -10,14 +10,14 @@ namespace COFFEE_SHOP_MANAGER
         {
             Thread thread = new Thread(new ThreadStart(Splash));
             InitializeComponent();
-            thread.Start();
-            this.TopMost = true;
-            string str = string.Empty;
-            for (int i = 0; i < 70000; i++)
-            {
-                str += i.ToString();
-            }
-            thread.Abort();
+            //thread.Start();
+            //this.TopMost = true;
+            //string str = string.Empty;
+            //for (int i = 0; i < 70000; i++)
+            //{
+            //    str += i.ToString();
+            //}
+            //thread.Abort();
         }
 
         bool DrawerOpen = true;
