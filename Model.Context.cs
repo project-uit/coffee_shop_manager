@@ -25,6 +25,16 @@ namespace COFFEE_SHOP_MANAGER
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<chitietcongthuc> chitietcongthucs { get; set; }
+        public virtual DbSet<chitiethoadon> chitiethoadons { get; set; }
+        public virtual DbSet<chitietnguyenlieudadung> chitietnguyenlieudadungs { get; set; }
+        public virtual DbSet<giamgia> giamgias { get; set; }
+        public virtual DbSet<hoadon> hoadons { get; set; }
+        public virtual DbSet<khonguyenlieu> khonguyenlieux { get; set; }
+        public virtual DbSet<nguyenlieudadung> nguyenlieudadungs { get; set; }
         public virtual DbSet<nhanvien> nhanviens { get; set; }
+        public virtual DbSet<nhapkho> nhapkhoes { get; set; }
+        public virtual DbSet<nhomthucuong> nhomthucuongs { get; set; }
+        public virtual DbSet<thucuong> thucuongs { get; set; }
     }
 }

@@ -14,15 +14,24 @@ namespace COFFEE_SHOP_MANAGER
     
     public partial class nhanvien
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public nhanvien()
+        {
+            this.nhapkhoes = new HashSet<nhapkho>();
+        }
+    
         public int id_nhanvien { get; set; }
         public string hoten { get; set; }
         public Nullable<System.DateTime> ngaysinh { get; set; }
         public string cmnd { get; set; }
         public string diachi { get; set; }
-        public int luong { get; set; }
+        public decimal luong { get; set; }
         public string tentaikhoan { get; set; }
         public string matkhau { get; set; }
-        public int quyen { get; set; }
-        public Nullable<System.DateTime> delete_ymd { get; set; }
+        public Nullable<int> quyen { get; set; }
+        public Nullable<bool> xoa_flag { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<nhapkho> nhapkhoes { get; set; }
     }
 }
