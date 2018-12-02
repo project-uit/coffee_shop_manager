@@ -54,7 +54,12 @@ namespace COFFEE_SHOP_MANAGER.DAO
             List<thucuong> list = new List<thucuong>();
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
-                list = db.thucuongs.Where(x => x.xoa_flag == false).Include(x => x.nhomthucuong).ToList();
+                list = db.thucuongs
+                    .Where(x => x.xoa_flag == false)
+                    .Include(x => x.nhomthucuong)
+                    .Include(x => x.chitietcongthucs)
+                    .Include(x => x.chitiethoadons)
+                    .ToList();
             }           
             return list;
         }
