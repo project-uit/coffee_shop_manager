@@ -129,6 +129,7 @@
     <Compile Include="nhomthucuong.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="SwitchTab.cs" />
     <Compile Include="thucuong.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

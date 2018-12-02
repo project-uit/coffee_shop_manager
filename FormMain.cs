@@ -6,6 +6,7 @@ namespace COFFEE_SHOP_MANAGER
 {
     public partial class FormMain : Form
     {
+        private SwitchTab switchTab;
         public FormMain()
         {
             Thread thread = new Thread(new ThreadStart(Splash));
@@ -32,7 +33,6 @@ namespace COFFEE_SHOP_MANAGER
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-           // this.TopMost = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
         }
@@ -78,56 +78,79 @@ namespace COFFEE_SHOP_MANAGER
         private tabDashboard tabDashboard = new tabDashboard();
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            bunifuTransition1.HideSync(panelTab);
-            bunifuTransition1.ShowSync(panelTab);
-            changeTab(tabDashboard);
-            lbTabName.Text = "TỔNG QUAN";
+            if(!(switchTab == SwitchTab.Dashboard))
+            {
+                bunifuTransition1.HideSync(panelTab);
+                bunifuTransition1.ShowSync(panelTab);
+                changeTab(tabDashboard);
+                lbTabName.Text = "TỔNG QUAN";
+                switchTab = SwitchTab.Dashboard;
+            }
         }
         private tabStore tabStore = new tabStore();
         private void btnStore_Click(object sender, EventArgs e)
         {
-            bunifuTransition1.HideSync(panelTab);
-            bunifuTransition1.ShowSync(panelTab);
-            changeTab(tabStore);
-            lbTabName.Text = "BÁN HÀNG";
+            if (!(switchTab == SwitchTab.Store))
+            {
+                bunifuTransition1.HideSync(panelTab);
+                bunifuTransition1.ShowSync(panelTab);
+                changeTab(tabStore);
+                lbTabName.Text = "BÁN HÀNG";
+                switchTab = SwitchTab.Store;
+            }
         }
 
         private tabBeverage tabBeverage = new tabBeverage();
         private void btnBeverage_Click(object sender, EventArgs e)
         {
-            bunifuTransition1.HideSync(panelTab);
-            bunifuTransition1.ShowSync(panelTab);
-            tabBeverage.Dock = DockStyle.Fill;
-            changeTab(tabBeverage);
-            lbTabName.Text = "THỨC UỐNG";
+            if (!(switchTab == SwitchTab.Beverage))
+            {
+                bunifuTransition1.HideSync(panelTab);
+                bunifuTransition1.ShowSync(panelTab);
+                changeTab(tabBeverage);
+                lbTabName.Text = "THỨC UỐNG";
+                switchTab = SwitchTab.Beverage;
+            }
         }
 
         private tabImport tabImport = new tabImport();
         private void btnImport_Click(object sender, EventArgs e)
         {
-            bunifuTransition1.HideSync(panelTab);
-            bunifuTransition1.ShowSync(panelTab);
-            tabBeverage.Dock = DockStyle.Fill;
-            changeTab(tabImport);
-            lbTabName.Text = "NHẬP HÀNG";
+            if (!(switchTab == SwitchTab.Import))
+            {
+                bunifuTransition1.HideSync(panelTab);
+                bunifuTransition1.ShowSync(panelTab);
+                changeTab(tabImport);
+                lbTabName.Text = "NHẬP HÀNG";
+                switchTab = SwitchTab.Import;
+            }
         }
 
         private tabStatistics tabStatistics = new tabStatistics();
         private void btnStatistics_Click(object sender, EventArgs e)
         {
-            bunifuTransition1.HideSync(panelTab);
-            bunifuTransition1.ShowSync(panelTab);
-            changeTab(tabStatistics);
-            lbTabName.Text = "THỐNG KÊ";  
+            if (!(switchTab == SwitchTab.Statistics))
+            {
+                bunifuTransition1.HideSync(panelTab);
+                bunifuTransition1.ShowSync(panelTab);
+                changeTab(tabStatistics);
+                lbTabName.Text = "THỐNG KÊ";
+                switchTab = SwitchTab.Statistics;
+            }
         }
 
         private tabStaff tabStaff = new tabStaff();
         private void btnStaff_Click(object sender, EventArgs e)
         {
-            bunifuTransition1.HideSync(panelTab);
-            bunifuTransition1.ShowSync(panelTab);
-            changeTab(tabStaff);
-            lbTabName.Text = "NHÂN VIÊN";
+            if (!(switchTab == SwitchTab.Staff))
+            {
+                bunifuTransition1.HideSync(panelTab);
+                bunifuTransition1.ShowSync(panelTab);
+                changeTab(tabStaff);
+                lbTabName.Text = "NHÂN VIÊN";
+                switchTab = SwitchTab.Staff;
+            }
+          
         }
     }
 }
