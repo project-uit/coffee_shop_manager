@@ -20,6 +20,7 @@ namespace COFFEE_SHOP_MANAGER
             //}
             //thread.Abort();
             changeTab(tabDashboard);
+            switchTab = SwitchTab.Dashboard;
         }
 
         bool DrawerOpen = true;
@@ -75,6 +76,7 @@ namespace COFFEE_SHOP_MANAGER
             panelTab.Controls.Clear();
             panelTab.Controls.Add(userControl);
         }
+
         private tabDashboard tabDashboard = new tabDashboard();
         private void btnDashboard_Click(object sender, EventArgs e)
         {
@@ -87,6 +89,7 @@ namespace COFFEE_SHOP_MANAGER
                 switchTab = SwitchTab.Dashboard;
             }
         }
+
         private tabStore tabStore = new tabStore();
         private void btnStore_Click(object sender, EventArgs e)
         {
@@ -150,7 +153,6 @@ namespace COFFEE_SHOP_MANAGER
                 lbTabName.Text = "NHÂN VIÊN";
                 switchTab = SwitchTab.Staff;
             }
-          
         }
     }
 }

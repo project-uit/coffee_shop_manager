@@ -15,7 +15,7 @@
         <EntityTypeShape EntityType="quanlycafeModel.nhanvien" Width="1.5" PointX="6" PointY="12.125" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlycafeModel.nhapkho" Width="1.5" PointX="8.25" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlycafeModel.nhomthucuong" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlycafeModel.thucuong" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlycafeModel.thucuong" Width="1.5" PointX="2.75" PointY="1.875" IsExpanded="true" />
         <AssociationConnector Association="quanlycafeModel.FK__chitietco__id_th__32E0915F" ManuallyRouted="false" />
         <AssociationConnector Association="quanlycafeModel.FK__chitietco__idkho__33D4B598" ManuallyRouted="false" />
         <AssociationConnector Association="quanlycafeModel.FK__chitietho__id_ho__403A8C7D" ManuallyRouted="false" />
