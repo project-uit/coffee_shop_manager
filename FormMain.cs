@@ -18,6 +18,7 @@ namespace COFFEE_SHOP_MANAGER
             //    str += i.ToString();
             //}
             //thread.Abort();
+            changeTab(tabDashboard);
         }
 
         bool DrawerOpen = true;
@@ -31,7 +32,9 @@ namespace COFFEE_SHOP_MANAGER
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            this.TopMost = false;
+           // this.TopMost = false;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void btnToggleDrawer_Click(object sender, EventArgs e)
@@ -66,51 +69,64 @@ namespace COFFEE_SHOP_MANAGER
             Application.Exit();
         }
 
+        private void changeTab(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panelTab.Controls.Clear();
+            panelTab.Controls.Add(userControl);
+        }
+        private tabDashboard tabDashboard = new tabDashboard();
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             bunifuTransition1.HideSync(panelTab);
             bunifuTransition1.ShowSync(panelTab);
-            tabDashboard1.BringToFront();
+            changeTab(tabDashboard);
             lbTabName.Text = "TỔNG QUAN";
         }
-
+        private tabStore tabStore = new tabStore();
         private void btnStore_Click(object sender, EventArgs e)
         {
             bunifuTransition1.HideSync(panelTab);
             bunifuTransition1.ShowSync(panelTab);
-            tabStore1.BringToFront();
+            changeTab(tabStore);
             lbTabName.Text = "BÁN HÀNG";
         }
 
+        private tabBeverage tabBeverage = new tabBeverage();
         private void btnBeverage_Click(object sender, EventArgs e)
         {
             bunifuTransition1.HideSync(panelTab);
             bunifuTransition1.ShowSync(panelTab);
-            tabBeverage1.BringToFront();
+            tabBeverage.Dock = DockStyle.Fill;
+            changeTab(tabBeverage);
             lbTabName.Text = "THỨC UỐNG";
         }
 
+        private tabImport tabImport = new tabImport();
         private void btnImport_Click(object sender, EventArgs e)
         {
             bunifuTransition1.HideSync(panelTab);
             bunifuTransition1.ShowSync(panelTab);
-            tabImport1.BringToFront();
+            tabBeverage.Dock = DockStyle.Fill;
+            changeTab(tabImport);
             lbTabName.Text = "NHẬP HÀNG";
         }
 
+        private tabStatistics tabStatistics = new tabStatistics();
         private void btnStatistics_Click(object sender, EventArgs e)
         {
             bunifuTransition1.HideSync(panelTab);
             bunifuTransition1.ShowSync(panelTab);
-            tabStatistics1.BringToFront();
+            changeTab(tabStatistics);
             lbTabName.Text = "THỐNG KÊ";  
         }
 
+        private tabStaff tabStaff = new tabStaff();
         private void btnStaff_Click(object sender, EventArgs e)
         {
             bunifuTransition1.HideSync(panelTab);
             bunifuTransition1.ShowSync(panelTab);
-            tabStaff1.BringToFront();
+            changeTab(tabStaff);
             lbTabName.Text = "NHÂN VIÊN";
         }
     }
