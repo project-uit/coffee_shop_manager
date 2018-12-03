@@ -4,26 +4,28 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b878b642ed804be7a7eb0ec744d001d7" Name="Diagram1">
+      <Diagram DiagramId="9e7714ae74234ea298ea46ac40222b04" Name="Diagram1">
         <EntityTypeShape EntityType="quanlycafeModel.chitietcongthuc" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlycafeModel.chitiethoadon" Width="1.5" PointX="8.25" PointY="3.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlycafeModel.chitietnguyenlieudadung" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlycafeModel.chitietnguyenlieudadung" Width="1.5" PointX="5.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlycafeModel.chitietnhapkho" Width="1.5" PointX="10.25" PointY="8.25" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlycafeModel.giamgia" Width="1.5" PointX="10.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlycafeModel.hoadon" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlycafeModel.khonguyenlieu" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlycafeModel.nguyenlieudadung" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlycafeModel.nhanvien" Width="1.5" PointX="6" PointY="12.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlycafeModel.nhapkho" Width="1.5" PointX="8.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlycafeModel.nguyenlieudadung" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlycafeModel.nhanvien" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlycafeModel.nhapkho" Width="1.5" PointX="8" PointY="8.375" IsExpanded="true" />
         <EntityTypeShape EntityType="quanlycafeModel.nhomthucuong" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="quanlycafeModel.thucuong" Width="1.5" PointX="2.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="quanlycafeModel.thucuong" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
         <AssociationConnector Association="quanlycafeModel.FK__chitietco__id_th__32E0915F" ManuallyRouted="false" />
         <AssociationConnector Association="quanlycafeModel.FK__chitietco__idkho__33D4B598" ManuallyRouted="false" />
-        <AssociationConnector Association="quanlycafeModel.FK__chitietho__id_ho__403A8C7D" ManuallyRouted="false" />
-        <AssociationConnector Association="quanlycafeModel.FK__chitietho__id_th__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlycafeModel.FK__chitietho__id_ho__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlycafeModel.FK__chitietho__id_th__4222D4EF" ManuallyRouted="false" />
         <AssociationConnector Association="quanlycafeModel.FK__chitietng__idkho__2F10007B" ManuallyRouted="false" />
         <AssociationConnector Association="quanlycafeModel.FK__chitietng__idngu__300424B4" ManuallyRouted="false" />
-        <AssociationConnector Association="quanlycafeModel.FK__nhapkho__idkhong__398D8EEE" ManuallyRouted="false" />
-        <AssociationConnector Association="quanlycafeModel.FK__nhapkho__id_nhan__3A81B327" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlycafeModel.FK__chitietnh__idkho__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlycafeModel.FK__chitietnh__idnha__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="quanlycafeModel.FK__nhapkho__id_nhan__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="quanlycafeModel.FK__thucuong__id_nho__267ABA7A" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

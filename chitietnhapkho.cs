@@ -12,14 +12,17 @@ namespace COFFEE_SHOP_MANAGER
     using System;
     using System.Collections.Generic;
     
-    public partial class chitietcongthuc
+    public partial class chitietnhapkho
     {
-        public int id_chitietcongthuc { get; set; }
-        public int id_thucuong { get; set; }
+        public int idchitietnhapkho { get; set; }
+        public string tendonvi_so_luong { get; set; }
+        public int soluong { get; set; }
         public double dinhluong { get; set; }
+        public decimal dongia { get; set; }
+        public int idnhapkho { get; set; }
         public int idkhonguyenlieu { get; set; }
     
-        public virtual thucuong thucuong { get; set; }
         public virtual khonguyenlieu khonguyenlieu { get; set; }
+        public virtual nhapkho nhapkho { get; set; }
     }
 }

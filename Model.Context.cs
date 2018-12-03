@@ -28,6 +28,7 @@ namespace COFFEE_SHOP_MANAGER
         public virtual DbSet<chitietcongthuc> chitietcongthucs { get; set; }
         public virtual DbSet<chitiethoadon> chitiethoadons { get; set; }
         public virtual DbSet<chitietnguyenlieudadung> chitietnguyenlieudadungs { get; set; }
+        public virtual DbSet<chitietnhapkho> chitietnhapkhoes { get; set; }
         public virtual DbSet<giamgia> giamgias { get; set; }
         public virtual DbSet<hoadon> hoadons { get; set; }
         public virtual DbSet<khonguyenlieu> khonguyenlieux { get; set; }

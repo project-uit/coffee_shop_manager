@@ -19,7 +19,7 @@ namespace COFFEE_SHOP_MANAGER
         {
             this.chitietcongthucs = new HashSet<chitietcongthuc>();
             this.chitietnguyenlieudadungs = new HashSet<chitietnguyenlieudadung>();
-            this.nhapkhoes = new HashSet<nhapkho>();
+            this.chitietnhapkhoes = new HashSet<chitietnhapkho>();
         }
     
         public int idkhonguyenlieu { get; set; }
@@ -33,6 +33,6 @@ namespace COFFEE_SHOP_MANAGER
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<chitietnguyenlieudadung> chitietnguyenlieudadungs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<nhapkho> nhapkhoes { get; set; }
+        public virtual ICollection<chitietnhapkho> chitietnhapkhoes { get; set; }
     }
 }

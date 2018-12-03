@@ -89,6 +89,9 @@
     <Compile Include="chitietnguyenlieudadung.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="chitietnhapkho.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="DAO\BeverageDAO.cs" />
     <Compile Include="DAO\ImportDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
