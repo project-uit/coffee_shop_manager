@@ -9,7 +9,7 @@ namespace COFFEE_SHOP_MANAGER
         private SwitchTab switchTab;
         public FormMain()
         {
-            Thread thread = new Thread(new ThreadStart(Splash));
+            //Thread thread = new Thread(new ThreadStart(Splash));
             InitializeComponent();
             //thread.Start();
             //this.TopMost = true;
@@ -19,8 +19,6 @@ namespace COFFEE_SHOP_MANAGER
             //    str += i.ToString();
             //}
             //thread.Abort();
-            changeTab(tabDashboard);
-            switchTab = SwitchTab.Dashboard;
         }
 
         bool DrawerOpen = true;
@@ -36,6 +34,9 @@ namespace COFFEE_SHOP_MANAGER
         {
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
+
+            changeTab(tabDashboard);
+            switchTab = SwitchTab.Dashboard;
         }
 
         private void btnToggleDrawer_Click(object sender, EventArgs e)

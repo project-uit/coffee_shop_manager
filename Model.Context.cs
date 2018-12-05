@@ -37,5 +37,6 @@ namespace COFFEE_SHOP_MANAGER
         public virtual DbSet<nhapkho> nhapkhoes { get; set; }
         public virtual DbSet<nhomthucuong> nhomthucuongs { get; set; }
         public virtual DbSet<thucuong> thucuongs { get; set; }
+        public virtual DbSet<thamso> thamsoes { get; set; }
     }
 }

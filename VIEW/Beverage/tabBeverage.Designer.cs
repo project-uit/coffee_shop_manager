@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.grdCtrlThucUong = new DevExpress.XtraGrid.GridControl();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.btnThemThucUong = new MaterialSkin.Controls.MaterialRaisedButton();
             this.colid_thucuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltenthucuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colgiaban = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colnhomthucuong = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.grdCtrlThucUong = new DevExpress.XtraGrid.GridControl();
+            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.btnThemThucUong = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnNhomThucUong = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrlThucUong)).BeginInit();
             this.SuspendLayout();
@@ -49,6 +50,35 @@
             this.colnhomthucuong});
             this.gridView2.GridControl = this.grdCtrlThucUong;
             this.gridView2.Name = "gridView2";
+            // 
+            // colid_thucuong
+            // 
+            this.colid_thucuong.FieldName = "id_thucuong";
+            this.colid_thucuong.Name = "colid_thucuong";
+            // 
+            // coltenthucuong
+            // 
+            this.coltenthucuong.Caption = "Tên thức uống";
+            this.coltenthucuong.FieldName = "tenthucuong";
+            this.coltenthucuong.Name = "coltenthucuong";
+            this.coltenthucuong.Visible = true;
+            this.coltenthucuong.VisibleIndex = 0;
+            // 
+            // colgiaban
+            // 
+            this.colgiaban.Caption = "Giá bán";
+            this.colgiaban.FieldName = "giaban";
+            this.colgiaban.Name = "colgiaban";
+            this.colgiaban.Visible = true;
+            this.colgiaban.VisibleIndex = 1;
+            // 
+            // colnhomthucuong
+            // 
+            this.colnhomthucuong.Caption = "Nhóm thức uống";
+            this.colnhomthucuong.FieldName = "nhomthucuong.tennhomthucuong";
+            this.colnhomthucuong.Name = "colnhomthucuong";
+            this.colnhomthucuong.Visible = true;
+            this.colnhomthucuong.VisibleIndex = 2;
             // 
             // grdCtrlThucUong
             // 
@@ -98,40 +128,29 @@
             this.btnThemThucUong.UseVisualStyleBackColor = true;
             this.btnThemThucUong.Click += new System.EventHandler(this.btnThemThucUong_Click);
             // 
-            // colid_thucuong
+            // btnNhomThucUong
             // 
-            this.colid_thucuong.FieldName = "id_thucuong";
-            this.colid_thucuong.Name = "colid_thucuong";
-            // 
-            // coltenthucuong
-            // 
-            this.coltenthucuong.Caption = "Tên thức uống";
-            this.coltenthucuong.FieldName = "tenthucuong";
-            this.coltenthucuong.Name = "coltenthucuong";
-            this.coltenthucuong.Visible = true;
-            this.coltenthucuong.VisibleIndex = 0;
-            // 
-            // colgiaban
-            // 
-            this.colgiaban.Caption = "Giá bán";
-            this.colgiaban.FieldName = "giaban";
-            this.colgiaban.Name = "colgiaban";
-            this.colgiaban.Visible = true;
-            this.colgiaban.VisibleIndex = 1;
-            // 
-            // colnhomthucuong
-            // 
-            this.colnhomthucuong.Caption = "Nhóm thức uống";
-            this.colnhomthucuong.FieldName = "nhomthucuong.tennhomthucuong";
-            this.colnhomthucuong.Name = "colnhomthucuong";
-            this.colnhomthucuong.Visible = true;
-            this.colnhomthucuong.VisibleIndex = 2;
+            this.btnNhomThucUong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNhomThucUong.AutoSize = true;
+            this.btnNhomThucUong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNhomThucUong.Depth = 0;
+            this.btnNhomThucUong.Icon = null;
+            this.btnNhomThucUong.Location = new System.Drawing.Point(667, 20);
+            this.btnNhomThucUong.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNhomThucUong.Name = "btnNhomThucUong";
+            this.btnNhomThucUong.Primary = true;
+            this.btnNhomThucUong.Size = new System.Drawing.Size(143, 36);
+            this.btnNhomThucUong.TabIndex = 6;
+            this.btnNhomThucUong.Text = "Nhóm thức uống";
+            this.btnNhomThucUong.UseVisualStyleBackColor = true;
+            this.btnNhomThucUong.Click += new System.EventHandler(this.btnNhomThucUong_Click);
             // 
             // tabBeverage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnNhomThucUong);
             this.Controls.Add(this.btnThemThucUong);
             this.Controls.Add(this.materialSingleLineTextField1);
             this.Controls.Add(this.grdCtrlThucUong);
@@ -154,5 +173,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn coltenthucuong;
         private DevExpress.XtraGrid.Columns.GridColumn colgiaban;
         private DevExpress.XtraGrid.Columns.GridColumn colnhomthucuong;
+        private MaterialSkin.Controls.MaterialRaisedButton btnNhomThucUong;
     }
 }

@@ -45,6 +45,7 @@
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -55,8 +56,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="MaterialSkin">
-      <HintPath>C:\Users\quochung\Desktop\DXApplication1\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" />
     <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -93,6 +94,7 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\BeverageDAO.cs" />
+    <Compile Include="DAO\GroupBeverageDAO.cs" />
     <Compile Include="DAO\ImportDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="DAO\StoreDAO.cs" />
@@ -136,6 +138,9 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="SwitchTab.cs" />
+    <Compile Include="thamso.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="thucuong.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -144,6 +149,12 @@
     </Compile>
     <Compile Include="VIEW\Beverage\BeverageFrm.Designer.cs">
       <DependentUpon>BeverageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Beverage\GroupBeverage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Beverage\GroupBeverage.Designer.cs">
+      <DependentUpon>GroupBeverage.cs</DependentUpon>
     </Compile>
     <Compile Include="VIEW\Login\FormLogin.cs">
       <SubType>Form</SubType>
@@ -171,6 +182,19 @@
     <Compile Include="VIEW\Import\tabImport.Designer.cs">
       <DependentUpon>tabImport.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIEW\MessageBox\MessageBoxFormOK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\MessageBox\MessageBoxFormOK.Designer.cs">
+      <DependentUpon>MessageBoxFormOK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\MessageBox\MessageBoxFormYN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\MessageBox\MessageBoxFormYN.Designer.cs">
+      <DependentUpon>MessageBoxFormYN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\MessageBox\MessageBoxMaterial.cs" />
     <Compile Include="VIEW\Statistics\tabStatistics.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +222,9 @@
     <EmbeddedResource Include="VIEW\Beverage\BeverageFrm.resx">
       <DependentUpon>BeverageFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Beverage\GroupBeverage.resx">
+      <DependentUpon>GroupBeverage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Import\tabImport.resx">
       <DependentUpon>tabImport.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +247,12 @@
     </Compile>
     <EmbeddedResource Include="VIEW\Dashboard\tabDashboard.resx">
       <DependentUpon>tabDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\MessageBox\MessageBoxFormOK.resx">
+      <DependentUpon>MessageBoxFormOK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\MessageBox\MessageBoxFormYN.resx">
+      <DependentUpon>MessageBoxFormYN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Statistics\tabStatistics.resx">
       <DependentUpon>tabStatistics.cs</DependentUpon>
@@ -268,6 +301,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <None Include="VIEW\MessageBox\question.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -32,5 +32,11 @@ namespace COFFEE_SHOP_MANAGER
             form.ShowDialog();
             
         }
+
+        private void btnNhomThucUong_Click(object sender, EventArgs e)
+        {
+            GroupBeverage frm = new GroupBeverage();
+            frm.ShowDialog();
+        }
     }
 }
