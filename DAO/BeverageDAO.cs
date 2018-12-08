@@ -9,17 +9,26 @@ namespace COFFEE_SHOP_MANAGER.DAO
 {
     class BeverageDAO
     {
-        public static void insert(thucuong thucuong)
+        public static bool insert(thucuong thucuong)
         {
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
-                thucuong.xoa_flag = false;
-                db.thucuongs.Add(thucuong);
-                db.SaveChanges();
+                try
+                {
+                    thucuong.xoa_flag = false;
+                    db.thucuongs.Add(thucuong);
+                    db.SaveChanges();
+                    return true;
+                }
+                catch(Exception ex)
+                {
+                    return false;
+                }   
             }
+            
         }
 
-        public static void delete(thucuong thucuong)
+        public static bool delete(thucuong thucuong)
         {
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
@@ -28,23 +37,33 @@ namespace COFFEE_SHOP_MANAGER.DAO
                 {
                     delete.xoa_flag = true;
                     db.SaveChanges();
+                    return true;
                 }
             }
+            return false;
         }
 
-        public static void update(thucuong thucuong)
+        public static bool update(thucuong thucuong)
         {
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
                 var update = db.thucuongs.Where(x => x.id_thucuong == thucuong.id_thucuong).SingleOrDefault();
                 if (update != null)
                 {
-                    update.tenthucuong = thucuong.tenthucuong;
-                    update.giaban = thucuong.giaban;
-                    update.id_nhomthucuong = thucuong.id_nhomthucuong;
-                    db.SaveChanges();
+                    try
+                    {
+                        update.tenthucuong = thucuong.tenthucuong;
+                        update.giaban = thucuong.giaban;
+                        update.id_nhomthucuong = thucuong.id_nhomthucuong;
+                        db.SaveChanges();
+                        return true;
+                    } catch(Exception ex)
+                    {
+                        return false;
+                    }
                 }
             }
+            return false;
         }
         /*
         *lấy danh sách thức uống chưa bị xóa
@@ -64,4 +83,9 @@ namespace COFFEE_SHOP_MANAGER.DAO
             return list;
         }
     }
+
+    //public static bool isExist()
+    //{
+
+    //}
 }

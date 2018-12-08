@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin;
+using System;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -37,6 +38,7 @@ namespace COFFEE_SHOP_MANAGER
 
             changeTab(tabDashboard);
             switchTab = SwitchTab.Dashboard;
+           
         }
 
         private void btnToggleDrawer_Click(object sender, EventArgs e)

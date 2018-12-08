@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,6 +16,17 @@ namespace COFFEE_SHOP_MANAGER
         [STAThread]
         static void Main()
         {
+            //Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vi");
+            //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi");
+            CultureInfo culture = CultureInfo.CreateSpecificCulture("vi");
+
+            // The following line provides localization for the application's user interface.  
+            Thread.CurrentThread.CurrentUICulture = culture;
+
+            // The following line provides localization for data formats.  
+            Thread.CurrentThread.CurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentUICulture = culture;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormLogin());

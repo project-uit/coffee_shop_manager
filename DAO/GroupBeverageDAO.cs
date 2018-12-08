@@ -9,17 +9,19 @@ namespace COFFEE_SHOP_MANAGER.DAO
 {
     class GroupBeverageDAO
     {
-        public static void insert(nhomthucuong nhomthucuong)
+        public static bool insert(nhomthucuong nhomthucuong)
         {
             using(quanlycafeEntities db = new quanlycafeEntities())
             {
                 nhomthucuong.xoa_flag = false;
                 db.nhomthucuongs.Add(nhomthucuong);
                 db.SaveChanges();
+                return true;
             }
+            return false;
         }
 
-        public static void update(nhomthucuong nhomthucuong)
+        public static bool update(nhomthucuong nhomthucuong)
         {
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
@@ -28,10 +30,12 @@ namespace COFFEE_SHOP_MANAGER.DAO
                 {
                     update.tennhomthucuong = nhomthucuong.tennhomthucuong;
                     db.SaveChanges();
+                    return true;
                 }
             }
+            return false;
         }
-        public static void delete(nhomthucuong nhomthucuong)
+        public static bool delete(nhomthucuong nhomthucuong)
         {
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
@@ -40,8 +44,10 @@ namespace COFFEE_SHOP_MANAGER.DAO
                 {
                     delete.xoa_flag = true;
                     db.SaveChanges();
+                    return true;
                 }
             }
+            return false;
         }
 
         public static List<nhomthucuong> getList()
@@ -55,6 +61,17 @@ namespace COFFEE_SHOP_MANAGER.DAO
                     .ToList();
             }
             return list;
+        }
+
+        public static IList<nhomthucuong> getIList()
+        {
+           
+            using (quanlycafeEntities db = new quanlycafeEntities())
+            {
+                return db.nhomthucuongs
+                    .Where(x => x.xoa_flag == false)                  
+                    .ToList();
+            }
         }
     }
 }

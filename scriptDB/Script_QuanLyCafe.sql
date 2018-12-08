@@ -105,7 +105,7 @@ create table chitiethoadon(
 	FOREIGN KEY (id_hoadon)
     REFERENCES hoadon(id_hoadon),
 )
-drop table thamso;
+
 create table thamso(
 id int primary key,
 dinhluongtoida float,
