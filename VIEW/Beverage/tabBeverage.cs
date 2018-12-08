@@ -13,12 +13,18 @@ using System.Data.Entity;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraEditors;
 using COFFEE_SHOP_MANAGER.VIEW.Discount;
+using System.IO;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using System.Windows.Forms.DataVisualization.Charting;
+using Image = iTextSharp.text.Image;
 
 namespace COFFEE_SHOP_MANAGER
 {
     public partial class tabBeverage : UserControl
     {
         private thucuong thucuong;
+        private List<thucuong> list = new List<thucuong>();
         public tabBeverage()
         {
             if (Program.IsInDesignMode())
@@ -28,6 +34,7 @@ namespace COFFEE_SHOP_MANAGER
 
             InitializeComponent();
             loadtable();
+            createChart();
         }
 
         private void btnThemThucUong_Click(object sender, EventArgs e)
@@ -43,7 +50,8 @@ namespace COFFEE_SHOP_MANAGER
         }
         private void loadtable()
         {
-            grdCtrlThucUong.DataSource = BeverageDAO.getList();
+            list = BeverageDAO.getList();
+            grdCtrlThucUong.DataSource = list;
         }
 
         private void btnNhomThucUong_Click(object sender, EventArgs e)
@@ -90,6 +98,88 @@ namespace COFFEE_SHOP_MANAGER
         {
             DiscountFrm x = new DiscountFrm();
             x.ShowDialog();
+        }
+
+        private void txtTenThucUong_TextChanged(object sender, EventArgs e)
+        {
+            filter();
+        }
+
+        private void filter()
+        {         
+            grdCtrlThucUong.DataSource = list.FindAll(i => i.tenthucuong.ToLower().StartsWith(txtTenThucUong.Text.ToLower())
+               || i.nhomthucuong.tennhomthucuong.ToLower().StartsWith(txtTenThucUong.Text.ToLower()));
+        }
+        // xuat file 
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.FileName = "report";
+            savefile.Filter = "Excel 2003|*.xls|Excel 2007|*.xlsx|PDF|*.pdf";
+            savefile.Title = "Xuất file";
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                var extension = Path.GetExtension(savefile.FileName);
+                string savePath = Path.GetFullPath(savefile.FileName);
+
+                switch (extension.ToLower())
+                {
+                    case ".xls":
+                        grdCtrlThucUong.ExportToXls(savePath);
+                        break;
+                    case ".xlsx":
+                        grdCtrlThucUong.ExportToXlsx(savePath);
+                        break;
+                    case ".pdf":
+                        createReportPDF(savePath, list);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        private void createChart()
+        {
+            chart1.Series.Clear();
+            var series = new Series("Finance");
+            series.Points.DataBindXY(new[] { 2000, 2001, 2002, 2003, 2004 }, new[] { 100, 200, 90, 150, 180 });
+            chart1.Series.Add(series);
+        }
+        private void createReportPDF(string path, List<thucuong> list)
+        {
+            // lay font trong he thong mac dinh la times new roman 
+            var arialFontPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts), "times.ttf");
+            BaseFont header = BaseFont.CreateFont(arialFontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+            iTextSharp.text.Font fontheader = new iTextSharp.text.Font(header, 16, 1); // 16 size, 1 la style border, underline,...
+            // header
+            Paragraph pHeader = new Paragraph(new Chunk("Báo cáo", fontheader));
+           // table
+            PdfPTable table = new PdfPTable(3); // so cot
+            table.AddCell(new PdfPCell(new Phrase(new Chunk("tên thức uống", fontheader))));
+            table.AddCell(new PdfPCell(new Phrase(new Chunk("nhóm thức uống", fontheader))));
+            table.AddCell(new PdfPCell(new Phrase(new Chunk("gia ban", fontheader))));
+            list.ForEach(i =>
+            {
+                table.AddCell(i.tenthucuong);
+                table.AddCell(i.nhomthucuong.tennhomthucuong);
+                table.AddCell(i.giaban+"");
+            });
+            // lay img tu chart
+            MemoryStream ms = new MemoryStream();
+            chart1.SaveImage(ms, ChartImageFormat.Jpeg);
+            Image img = Image.GetInstance(ms.GetBuffer());
+            // tao file pdf
+            Document document = new Document();
+            PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(path, FileMode.OpenOrCreate));
+            document.Open();
+            pHeader.Alignment = Element.ALIGN_CENTER; // canh giua
+            document.Add(pHeader); // add header
+            document.Add(new Paragraph(" ")); // xuong dong
+            document.Add(new Paragraph(" "));
+            document.Add(table); // add table
+            document.Add(new Paragraph(" "));
+            document.Add(img);// add img tu chart
+            document.Close();
         }
     }
 }

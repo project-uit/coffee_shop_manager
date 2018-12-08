@@ -58,6 +58,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.6\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
     </Reference>
@@ -72,6 +75,7 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -153,6 +157,12 @@
     <Compile Include="VIEW\Beverage\BeverageFrm.Designer.cs">
       <DependentUpon>BeverageFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIEW\Beverage\FormulaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Beverage\FormulaFrm.Designer.cs">
+      <DependentUpon>FormulaFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\Beverage\GroupBeverage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +240,9 @@
     </Compile>
     <EmbeddedResource Include="VIEW\Beverage\BeverageFrm.resx">
       <DependentUpon>BeverageFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Beverage\FormulaFrm.resx">
+      <DependentUpon>FormulaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Beverage\GroupBeverage.resx">
       <DependentUpon>GroupBeverage.cs</DependentUpon>
@@ -313,6 +326,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <None Include="resource\image\lookup.png" />
     <None Include="VIEW\MessageBox\question.png" />
   </ItemGroup>
   <ItemGroup />

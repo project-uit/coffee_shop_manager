@@ -13,12 +13,18 @@ namespace COFFEE_SHOP_MANAGER.DAO
         {
             using(quanlycafeEntities db = new quanlycafeEntities())
             {
-                nhomthucuong.xoa_flag = false;
-                db.nhomthucuongs.Add(nhomthucuong);
-                db.SaveChanges();
-                return true;
+                try
+                {
+                    nhomthucuong.xoa_flag = false;
+                    db.nhomthucuongs.Add(nhomthucuong);
+                    db.SaveChanges();
+                    return true;
+                } catch(Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    return false;
+                }
             }
-            return false;
         }
 
         public static bool update(nhomthucuong nhomthucuong)
@@ -28,9 +34,16 @@ namespace COFFEE_SHOP_MANAGER.DAO
                 var update = db.nhomthucuongs.Where(x => x.id_nhomthucuong == nhomthucuong.id_nhomthucuong).SingleOrDefault();
                 if(update != null)
                 {
-                    update.tennhomthucuong = nhomthucuong.tennhomthucuong;
-                    db.SaveChanges();
-                    return true;
+                    try
+                    {
+                        update.tennhomthucuong = nhomthucuong.tennhomthucuong;
+                        db.SaveChanges();
+                        return true;
+                    } catch(Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
+                  
                 }
             }
             return false;

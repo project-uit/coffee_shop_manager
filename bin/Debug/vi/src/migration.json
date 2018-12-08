@@ -1,0 +1,14 @@
+[
+	{
+		"srcPath":"/DevExpress.XtraReports/LocalizationRes.resx",
+		"srcKey":"ReportStringId.ExpressionEditor_Description_Function_NewLine",
+		"destPath":"/DevExpress.DataAccess/ExpressionEditor/LocalizationRes.resx",
+		"destKey":"ExpressionEditorStringId.Function_NewLine"
+	},
+	{
+		"srcPath":"/DevExpress.XtraReports/LocalizationRes.resx",
+		"srcKey":"ReportStringId.ExpressionEditor_Description_Function_FormatString",
+		"destPath":"/DevExpress.DataAccess/ExpressionEditor/LocalizationRes.resx",
+		"destKey":"ExpressionEditorStringId.Function_FormatString"
+	}
+]

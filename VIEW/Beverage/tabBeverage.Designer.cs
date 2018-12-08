@@ -28,22 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabBeverage));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions6 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject21 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject22 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject23 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject24 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.grdViThucUong = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colid_thucuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltenthucuong = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,14 +58,15 @@
             this.btnSua = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.col_btnCongThuc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnCongThuc = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.colid_nhomthucuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grdCtrlThucUong = new DevExpress.XtraGrid.GridControl();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtTenThucUong = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnThemThucUong = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnNhomThucUong = new MaterialSkin.Controls.MaterialRaisedButton();
             this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
             this.lbMessage = new System.Windows.Forms.Label();
             this.btnGiamGia = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnExportExcel = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.grdViThucUong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSua)).BeginInit();
@@ -70,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrlThucUong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
             this.flyoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // grdViThucUong
@@ -81,8 +86,7 @@
             this.colnhomthucuong,
             this.col_btnXoa,
             this.col_btnSua,
-            this.col_btnCongThuc,
-            this.colid_nhomthucuong});
+            this.col_btnCongThuc});
             this.grdViThucUong.DetailHeight = 431;
             this.grdViThucUong.GridControl = this.grdCtrlThucUong;
             this.grdViThucUong.Name = "grdViThucUong";
@@ -118,7 +122,7 @@
             this.colgiaban.MinWidth = 27;
             this.colgiaban.Name = "colgiaban";
             this.colgiaban.Visible = true;
-            this.colgiaban.VisibleIndex = 1;
+            this.colgiaban.VisibleIndex = 2;
             this.colgiaban.Width = 242;
             // 
             // colnhomthucuong
@@ -128,7 +132,7 @@
             this.colnhomthucuong.MinWidth = 27;
             this.colnhomthucuong.Name = "colnhomthucuong";
             this.colnhomthucuong.Visible = true;
-            this.colnhomthucuong.VisibleIndex = 2;
+            this.colnhomthucuong.VisibleIndex = 1;
             this.colnhomthucuong.Width = 647;
             // 
             // col_btnXoa
@@ -143,9 +147,9 @@
             // btnXoa
             // 
             this.btnXoa.AutoHeight = false;
-            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.btnXoa.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "Xóa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Xóa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -162,9 +166,9 @@
             // btnSua
             // 
             this.btnSua.AutoHeight = false;
-            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.btnSua.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnSua.Name = "btnSua";
             this.btnSua.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
@@ -181,19 +185,12 @@
             // btnCongThuc
             // 
             this.btnCongThuc.AutoHeight = false;
-            editorButtonImageOptions6.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions6.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.btnCongThuc.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions6, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject21, serializableAppearanceObject22, serializableAppearanceObject23, serializableAppearanceObject24, "Lập công thức", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "Lập công thức", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnCongThuc.Name = "btnCongThuc";
             this.btnCongThuc.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnCongThuc.Click += new System.EventHandler(this.btnCongThuc_Click);
-            // 
-            // colid_nhomthucuong
-            // 
-            this.colid_nhomthucuong.FieldName = "id_nhomthucuong";
-            this.colid_nhomthucuong.MinWidth = 25;
-            this.colid_nhomthucuong.Name = "colid_nhomthucuong";
-            this.colid_nhomthucuong.Width = 94;
             // 
             // grdCtrlThucUong
             // 
@@ -210,28 +207,29 @@
             this.btnXoa,
             this.btnSua,
             this.btnCongThuc});
-            this.grdCtrlThucUong.Size = new System.Drawing.Size(1292, 484);
+            this.grdCtrlThucUong.Size = new System.Drawing.Size(1559, 484);
             this.grdCtrlThucUong.TabIndex = 2;
             this.grdCtrlThucUong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdViThucUong});
             // 
-            // materialSingleLineTextField1
+            // txtTenThucUong
             // 
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "Tìm kiếm";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(4, 25);
-            this.materialSingleLineTextField1.Margin = new System.Windows.Forms.Padding(4);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(259, 28);
-            this.materialSingleLineTextField1.TabIndex = 3;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
+            this.txtTenThucUong.Depth = 0;
+            this.txtTenThucUong.Hint = "Tìm kiếm tên/nhóm thức uống";
+            this.txtTenThucUong.Location = new System.Drawing.Point(4, 25);
+            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenThucUong.MaxLength = 32767;
+            this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtTenThucUong.Name = "txtTenThucUong";
+            this.txtTenThucUong.PasswordChar = '\0';
+            this.txtTenThucUong.SelectedText = "";
+            this.txtTenThucUong.SelectionLength = 0;
+            this.txtTenThucUong.SelectionStart = 0;
+            this.txtTenThucUong.Size = new System.Drawing.Size(349, 28);
+            this.txtTenThucUong.TabIndex = 3;
+            this.txtTenThucUong.TabStop = false;
+            this.txtTenThucUong.UseSystemPasswordChar = false;
+            this.txtTenThucUong.TextChanged += new System.EventHandler(this.txtTenThucUong_TextChanged);
             // 
             // btnThemThucUong
             // 
@@ -240,7 +238,7 @@
             this.btnThemThucUong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThemThucUong.Depth = 0;
             this.btnThemThucUong.Icon = null;
-            this.btnThemThucUong.Location = new System.Drawing.Point(1151, 25);
+            this.btnThemThucUong.Location = new System.Drawing.Point(1418, 25);
             this.btnThemThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThemThucUong.Name = "btnThemThucUong";
@@ -258,7 +256,7 @@
             this.btnNhomThucUong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnNhomThucUong.Depth = 0;
             this.btnNhomThucUong.Icon = null;
-            this.btnNhomThucUong.Location = new System.Drawing.Point(947, 25);
+            this.btnNhomThucUong.Location = new System.Drawing.Point(1223, 25);
             this.btnNhomThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhomThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnNhomThucUong.Name = "btnNhomThucUong";
@@ -304,7 +302,7 @@
             this.btnGiamGia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnGiamGia.Depth = 0;
             this.btnGiamGia.Icon = null;
-            this.btnGiamGia.Location = new System.Drawing.Point(812, 25);
+            this.btnGiamGia.Location = new System.Drawing.Point(1085, 25);
             this.btnGiamGia.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGiamGia.Name = "btnGiamGia";
             this.btnGiamGia.Primary = true;
@@ -314,21 +312,55 @@
             this.btnGiamGia.UseVisualStyleBackColor = true;
             this.btnGiamGia.Click += new System.EventHandler(this.btnGiamGia_Click);
             // 
+            // btnExportExcel
+            // 
+            this.btnExportExcel.AutoSize = true;
+            this.btnExportExcel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnExportExcel.Depth = 0;
+            this.btnExportExcel.Icon = null;
+            this.btnExportExcel.Location = new System.Drawing.Point(756, 25);
+            this.btnExportExcel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnExportExcel.Name = "btnExportExcel";
+            this.btnExportExcel.Primary = true;
+            this.btnExportExcel.Size = new System.Drawing.Size(124, 36);
+            this.btnExportExcel.TabIndex = 9;
+            this.btnExportExcel.Text = "Export file";
+            this.btnExportExcel.UseVisualStyleBackColor = true;
+            this.btnExportExcel.Click += new System.EventHandler(this.btnExportExcel_Click);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(346, 247);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(613, 300);
+            this.chart1.TabIndex = 10;
+            this.chart1.Text = "chart1";
+            // 
             // tabBeverage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.btnExportExcel);
             this.Controls.Add(this.btnGiamGia);
             this.Controls.Add(this.flyoutPanel1);
             this.Controls.Add(this.btnNhomThucUong);
             this.Controls.Add(this.btnThemThucUong);
-            this.Controls.Add(this.materialSingleLineTextField1);
+            this.Controls.Add(this.txtTenThucUong);
             this.Controls.Add(this.grdCtrlThucUong);
             this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tabBeverage";
-            this.Size = new System.Drawing.Size(1300, 567);
+            this.Size = new System.Drawing.Size(1567, 567);
             ((System.ComponentModel.ISupportInitialize)(this.grdViThucUong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSua)).EndInit();
@@ -336,6 +368,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrlThucUong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();
             this.flyoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,7 +377,7 @@
         #endregion
         private DevExpress.XtraGrid.Views.Grid.GridView grdViThucUong;
         private DevExpress.XtraGrid.GridControl grdCtrlThucUong;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtTenThucUong;
         private MaterialSkin.Controls.MaterialRaisedButton btnThemThucUong;
         private DevExpress.XtraGrid.Columns.GridColumn colid_thucuong;
         private DevExpress.XtraGrid.Columns.GridColumn coltenthucuong;
@@ -359,7 +392,8 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnCongThuc;
         private DevExpress.Utils.FlyoutPanel flyoutPanel1;
         private System.Windows.Forms.Label lbMessage;
-        private DevExpress.XtraGrid.Columns.GridColumn colid_nhomthucuong;
         private MaterialSkin.Controls.MaterialRaisedButton btnGiamGia;
+        private MaterialSkin.Controls.MaterialRaisedButton btnExportExcel;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

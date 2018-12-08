@@ -48,8 +48,8 @@
             this.txtTenThucUong.Depth = 0;
             this.txtTenThucUong.Hint = "";
             this.txtTenThucUong.Location = new System.Drawing.Point(135, 137);
-            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtTenThucUong.MaxLength = 32767;
+            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenThucUong.MaxLength = 50;
             this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenThucUong.Name = "txtTenThucUong";
             this.txtTenThucUong.PasswordChar = '\0';
@@ -89,7 +89,7 @@
             // 
             this.cbbNhomThucUong.FormattingEnabled = true;
             this.cbbNhomThucUong.Location = new System.Drawing.Point(135, 225);
-            this.cbbNhomThucUong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbNhomThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.cbbNhomThucUong.Name = "cbbNhomThucUong";
             this.cbbNhomThucUong.Size = new System.Drawing.Size(213, 24);
             this.cbbNhomThucUong.TabIndex = 3;
@@ -112,8 +112,8 @@
             this.txtGiaBan.Depth = 0;
             this.txtGiaBan.Hint = "";
             this.txtGiaBan.Location = new System.Drawing.Point(135, 306);
-            this.txtGiaBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtGiaBan.MaxLength = 50;
+            this.txtGiaBan.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGiaBan.MaxLength = 15;
             this.txtGiaBan.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.PasswordChar = '\0';
@@ -133,7 +133,7 @@
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Icon = null;
             this.btnLuu.Location = new System.Drawing.Point(156, 367);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Primary = true;
@@ -151,7 +151,7 @@
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHuy.Icon = null;
             this.btnHuy.Location = new System.Drawing.Point(259, 367);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Primary = true;
@@ -185,7 +185,7 @@
             this.lbMessage.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMessage.Location = new System.Drawing.Point(45, 36);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(173, 25);
+            this.lbMessage.Size = new System.Drawing.Size(162, 25);
             this.lbMessage.TabIndex = 0;
             this.lbMessage.Text = "Lưu thành công";
             // 
@@ -203,7 +203,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenThucUong);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "BeverageFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

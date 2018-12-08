@@ -22,6 +22,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
                 }
                 catch(Exception ex)
                 {
+                    Console.WriteLine(ex);
                     return false;
                 }   
             }
@@ -59,11 +60,12 @@ namespace COFFEE_SHOP_MANAGER.DAO
                         return true;
                     } catch(Exception ex)
                     {
-                        return false;
+                        Console.WriteLine(ex);
+                        
                     }
                 }
+                return false;
             }
-            return false;
         }
         /*
         *lấy danh sách thức uống chưa bị xóa
