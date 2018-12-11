@@ -91,7 +91,10 @@ namespace COFFEE_SHOP_MANAGER
 
         private void btnCongThuc_Click(object sender, EventArgs e)
         {
-
+            GridView gridview = grdCtrlThucUong.FocusedView as GridView;
+            thucuong = gridview.GetRow(gridview.FocusedRowHandle) as thucuong;
+            FormulaFrm frm = new FormulaFrm(thucuong.id_thucuong, thucuong.tenthucuong);
+            frm.ShowDialog();
         }
 
         private void btnGiamGia_Click(object sender, EventArgs e)

@@ -117,7 +117,8 @@
             // colgiaban
             // 
             this.colgiaban.Caption = "Giá bán";
-            this.colgiaban.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.colgiaban.DisplayFormat.FormatString = "{0:C}";
+            this.colgiaban.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.colgiaban.FieldName = "giaban";
             this.colgiaban.MinWidth = 27;
             this.colgiaban.Name = "colgiaban";

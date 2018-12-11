@@ -1,4 +1,5 @@
-﻿using MaterialSkin;
+﻿using COFFEE_SHOP_MANAGER.DAO;
+using MaterialSkin;
 using System;
 using System.Threading;
 using System.Windows.Forms;
@@ -37,8 +38,7 @@ namespace COFFEE_SHOP_MANAGER
             this.WindowState = FormWindowState.Maximized;
 
             changeTab(tabDashboard);
-            switchTab = SwitchTab.Dashboard;
-           
+            switchTab = SwitchTab.Dashboard;           
         }
 
         private void btnToggleDrawer_Click(object sender, EventArgs e)

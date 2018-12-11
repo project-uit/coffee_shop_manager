@@ -87,7 +87,7 @@
             // 
             // cbbNhomThucUong
             // 
-            this.cbbNhomThucUong.FormattingEnabled = true;
+            this.cbbNhomThucUong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbNhomThucUong.Location = new System.Drawing.Point(135, 225);
             this.cbbNhomThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.cbbNhomThucUong.Name = "cbbNhomThucUong";

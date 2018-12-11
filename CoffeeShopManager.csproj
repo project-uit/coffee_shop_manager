@@ -101,13 +101,16 @@
     </Compile>
     <Compile Include="DAO\BeverageDAO.cs" />
     <Compile Include="DAO\DiscountDAO.cs" />
+    <Compile Include="DAO\FormulaDAO.cs" />
     <Compile Include="DAO\GroupBeverageDAO.cs" />
     <Compile Include="DAO\ImportDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
+    <Compile Include="DAO\StatisticResourcesDAO.cs" />
     <Compile Include="DAO\StoreDAO.cs" />
     <Compile Include="DAO\StatisticsDAO.cs" />
     <Compile Include="DAO\StaffDAO.cs" />
     <Compile Include="DAO\DashboardDAO.cs" />
+    <Compile Include="DTO\ThongKeNguyenLieu.cs" />
     <Compile Include="giamgia.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -299,6 +302,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\COFFEE_SHOP_MANAGER.DTO.ThongKeNguyenLieu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

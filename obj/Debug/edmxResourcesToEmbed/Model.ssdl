@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="quanlycafeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="chitietcongthuc">
+    <Key>
+      <PropertyRef Name="id_chitietcongthuc" />
+    </Key>
+    <Property Name="id_chitietcongthuc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_thucuong" Type="int" Nullable="false" />
+    <Property Name="dinhluong" Type="float" Nullable="false" />
+    <Property Name="idkhonguyenlieu" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="chitiethoadon">
+    <Key>
+      <PropertyRef Name="id_chitiethoadon" />
+    </Key>
+    <Property Name="id_chitiethoadon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_hoadon" Type="int" />
+    <Property Name="id_thucuong" Type="int" />
+    <Property Name="soluong" Type="int" Nullable="false" />
+    <Property Name="dongia" Type="money" />
+    <Property Name="thanhtien" Type="money" />
+  </EntityType>
+  <EntityType Name="chitietnguyenlieudadung">
+    <Key>
+      <PropertyRef Name="idchitietnguyenlieudadung" />
+    </Key>
+    <Property Name="idchitietnguyenlieudadung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idnguyenlieudadung" Type="int" />
+    <Property Name="idkhonguyenlieu" Type="int" />
+    <Property Name="dinhluong" Type="float" />
+  </EntityType>
+  <EntityType Name="chitietnhapkho">
+    <Key>
+      <PropertyRef Name="idchitietnhapkho" />
+    </Key>
+    <Property Name="idchitietnhapkho" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tendonvi_so_luong" Type="char" MaxLength="8" Nullable="false" />
+    <Property Name="soluong" Type="int" Nullable="false" />
+    <Property Name="dinhluong" Type="float" Nullable="false" />
+    <Property Name="dongia" Type="money" Nullable="false" />
+    <Property Name="idnhapkho" Type="int" Nullable="false" />
+    <Property Name="idkhonguyenlieu" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="giamgia">
+    <Key>
+      <PropertyRef Name="id_giamgia" />
+    </Key>
+    <Property Name="id_giamgia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hesogiamgia" Type="int" />
+    <Property Name="ngaybatdau" Type="date" />
+    <Property Name="ngayketthuc" Type="date" />
+  </EntityType>
+  <EntityType Name="hoadon">
+    <Key>
+      <PropertyRef Name="id_hoadon" />
+    </Key>
+    <Property Name="id_hoadon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tongtien" Type="money" Nullable="false" />
+    <Property Name="ngaylap" Type="datetime" />
+  </EntityType>
+  <EntityType Name="khonguyenlieu">
+    <Key>
+      <PropertyRef Name="idkhonguyenlieu" />
+    </Key>
+    <Property Name="idkhonguyenlieu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tennguyenlieu" Type="nvarchar" MaxLength="50" />
+    <Property Name="tendonvi_dinh_luong" Type="char" MaxLength="8" />
+    <Property Name="dinhluong" Type="float" />
+    <Property Name="xoa_flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="nguyenlieudadung">
+    <Key>
+      <PropertyRef Name="idnguyenlieudadung" />
+    </Key>
+    <Property Name="idnguyenlieudadung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ngaynhap" Type="datetime" />
+  </EntityType>
+  <EntityType Name="nhanvien">
+    <Key>
+      <PropertyRef Name="id_nhanvien" />
+    </Key>
+    <Property Name="id_nhanvien" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hoten" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ngaysinh" Type="date" />
+    <Property Name="cmnd" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="50" />
+    <Property Name="luong" Type="money" Nullable="false" />
+    <Property Name="tentaikhoan" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="matkhau" Type="varchar" MaxLength="24" Nullable="false" />
+    <Property Name="quyen" Type="int" />
+    <Property Name="xoa_flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="nhapkho">
+    <Key>
+      <PropertyRef Name="idnhapkho" />
+    </Key>
+    <Property Name="idnhapkho" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ngaynhap" Type="datetime" Nullable="false" />
+    <Property Name="id_nhanvien" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="nhomthucuong">
+    <Key>
+      <PropertyRef Name="id_nhomthucuong" />
+    </Key>
+    <Property Name="id_nhomthucuong" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tennhomthucuong" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="xoa_flag" Type="bit" />
+  </EntityType>
+  <EntityType Name="thamso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="dinhluongtoida" Type="float" />
+    <Property Name="dinhluongtoithieu" Type="float" />
+  </EntityType>
+  <EntityType Name="thucuong">
+    <Key>
+      <PropertyRef Name="id_thucuong" />
+    </Key>
+    <Property Name="id_thucuong" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenthucuong" Type="nvarchar" MaxLength="50" />
+    <Property Name="giaban" Type="money" />
+    <Property Name="id_nhomthucuong" Type="int" />
+    <Property Name="xoa_flag" Type="bit" />
+  </EntityType>
+  <Association Name="FK__chitietco__id_th__32E0915F">
+    <End Role="thucuong" Type="Self.thucuong" Multiplicity="1" />
+    <End Role="chitietcongthuc" Type="Self.chitietcongthuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="thucuong">
+        <PropertyRef Name="id_thucuong" />
+      </Principal>
+      <Dependent Role="chitietcongthuc">
+        <PropertyRef Name="id_thucuong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__chitietco__idkho__33D4B598">
+    <End Role="khonguyenlieu" Type="Self.khonguyenlieu" Multiplicity="1" />
+    <End Role="chitietcongthuc" Type="Self.chitietcongthuc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khonguyenlieu">
+        <PropertyRef Name="idkhonguyenlieu" />
+      </Principal>
+      <Dependent Role="chitietcongthuc">
+        <PropertyRef Name="idkhonguyenlieu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__chitietho__id_ho__4316F928">
+    <End Role="hoadon" Type="Self.hoadon" Multiplicity="0..1" />
+    <End Role="chitiethoadon" Type="Self.chitiethoadon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="hoadon">
+        <PropertyRef Name="id_hoadon" />
+      </Principal>
+      <Dependent Role="chitiethoadon">
+        <PropertyRef Name="id_hoadon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__chitietho__id_th__4222D4EF">
+    <End Role="thucuong" Type="Self.thucuong" Multiplicity="0..1" />
+    <End Role="chitiethoadon" Type="Self.chitiethoadon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="thucuong">
+        <PropertyRef Name="id_thucuong" />
+      </Principal>
+      <Dependent Role="chitiethoadon">
+        <PropertyRef Name="id_thucuong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__chitietng__idkho__2F10007B">
+    <End Role="khonguyenlieu" Type="Self.khonguyenlieu" Multiplicity="0..1" />
+    <End Role="chitietnguyenlieudadung" Type="Self.chitietnguyenlieudadung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khonguyenlieu">
+        <PropertyRef Name="idkhonguyenlieu" />
+      </Principal>
+      <Dependent Role="chitietnguyenlieudadung">
+        <PropertyRef Name="idkhonguyenlieu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__chitietng__idngu__300424B4">
+    <End Role="nguyenlieudadung" Type="Self.nguyenlieudadung" Multiplicity="0..1" />
+    <End Role="chitietnguyenlieudadung" Type="Self.chitietnguyenlieudadung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nguyenlieudadung">
+        <PropertyRef Name="idnguyenlieudadung" />
+      </Principal>
+      <Dependent Role="chitietnguyenlieudadung">
+        <PropertyRef Name="idnguyenlieudadung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__chitietnh__idkho__3C69FB99">
+    <End Role="khonguyenlieu" Type="Self.khonguyenlieu" Multiplicity="1" />
+    <End Role="chitietnhapkho" Type="Self.chitietnhapkho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="khonguyenlieu">
+        <PropertyRef Name="idkhonguyenlieu" />
+      </Principal>
+      <Dependent Role="chitietnhapkho">
+        <PropertyRef Name="idkhonguyenlieu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__chitietnh__idnha__3D5E1FD2">
+    <End Role="nhapkho" Type="Self.nhapkho" Multiplicity="1" />
+    <End Role="chitietnhapkho" Type="Self.chitietnhapkho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nhapkho">
+        <PropertyRef Name="idnhapkho" />
+      </Principal>
+      <Dependent Role="chitietnhapkho">
+        <PropertyRef Name="idnhapkho" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__nhapkho__id_nhan__398D8EEE">
+    <End Role="nhanvien" Type="Self.nhanvien" Multiplicity="1" />
+    <End Role="nhapkho" Type="Self.nhapkho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nhanvien">
+        <PropertyRef Name="id_nhanvien" />
+      </Principal>
+      <Dependent Role="nhapkho">
+        <PropertyRef Name="id_nhanvien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__thucuong__id_nho__267ABA7A">
+    <End Role="nhomthucuong" Type="Self.nhomthucuong" Multiplicity="0..1" />
+    <End Role="thucuong" Type="Self.thucuong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="nhomthucuong">
+        <PropertyRef Name="id_nhomthucuong" />
+      </Principal>
+      <Dependent Role="thucuong">
+        <PropertyRef Name="id_nhomthucuong" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="quanlycafeModelStoreContainer">
+    <EntitySet Name="chitietcongthuc" EntityType="Self.chitietcongthuc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="chitiethoadon" EntityType="Self.chitiethoadon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="chitietnguyenlieudadung" EntityType="Self.chitietnguyenlieudadung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="chitietnhapkho" EntityType="Self.chitietnhapkho" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="giamgia" EntityType="Self.giamgia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hoadon" EntityType="Self.hoadon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="khonguyenlieu" EntityType="Self.khonguyenlieu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nguyenlieudadung" EntityType="Self.nguyenlieudadung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhanvien" EntityType="Self.nhanvien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhapkho" EntityType="Self.nhapkho" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="nhomthucuong" EntityType="Self.nhomthucuong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="thamso" EntityType="Self.thamso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="thucuong" EntityType="Self.thucuong" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__chitietco__id_th__32E0915F" Association="Self.FK__chitietco__id_th__32E0915F">
+      <End Role="thucuong" EntitySet="thucuong" />
+      <End Role="chitietcongthuc" EntitySet="chitietcongthuc" />
+    </AssociationSet>
+    <AssociationSet Name="FK__chitietco__idkho__33D4B598" Association="Self.FK__chitietco__idkho__33D4B598">
+      <End Role="khonguyenlieu" EntitySet="khonguyenlieu" />
+      <End Role="chitietcongthuc" EntitySet="chitietcongthuc" />
+    </AssociationSet>
+    <AssociationSet Name="FK__chitietho__id_ho__4316F928" Association="Self.FK__chitietho__id_ho__4316F928">
+      <End Role="hoadon" EntitySet="hoadon" />
+      <End Role="chitiethoadon" EntitySet="chitiethoadon" />
+    </AssociationSet>
+    <AssociationSet Name="FK__chitietho__id_th__4222D4EF" Association="Self.FK__chitietho__id_th__4222D4EF">
+      <End Role="thucuong" EntitySet="thucuong" />
+      <End Role="chitiethoadon" EntitySet="chitiethoadon" />
+    </AssociationSet>
+    <AssociationSet Name="FK__chitietng__idkho__2F10007B" Association="Self.FK__chitietng__idkho__2F10007B">
+      <End Role="khonguyenlieu" EntitySet="khonguyenlieu" />
+      <End Role="chitietnguyenlieudadung" EntitySet="chitietnguyenlieudadung" />
+    </AssociationSet>
+    <AssociationSet Name="FK__chitietng__idngu__300424B4" Association="Self.FK__chitietng__idngu__300424B4">
+      <End Role="nguyenlieudadung" EntitySet="nguyenlieudadung" />
+      <End Role="chitietnguyenlieudadung" EntitySet="chitietnguyenlieudadung" />
+    </AssociationSet>
+    <AssociationSet Name="FK__chitietnh__idkho__3C69FB99" Association="Self.FK__chitietnh__idkho__3C69FB99">
+      <End Role="khonguyenlieu" EntitySet="khonguyenlieu" />
+      <End Role="chitietnhapkho" EntitySet="chitietnhapkho" />
+    </AssociationSet>
+    <AssociationSet Name="FK__chitietnh__idnha__3D5E1FD2" Association="Self.FK__chitietnh__idnha__3D5E1FD2">
+      <End Role="nhapkho" EntitySet="nhapkho" />
+      <End Role="chitietnhapkho" EntitySet="chitietnhapkho" />
+    </AssociationSet>
+    <AssociationSet Name="FK__nhapkho__id_nhan__398D8EEE" Association="Self.FK__nhapkho__id_nhan__398D8EEE">
+      <End Role="nhanvien" EntitySet="nhanvien" />
+      <End Role="nhapkho" EntitySet="nhapkho" />
+    </AssociationSet>
+    <AssociationSet Name="FK__thucuong__id_nho__267ABA7A" Association="Self.FK__thucuong__id_nho__267ABA7A">
+      <End Role="nhomthucuong" EntitySet="nhomthucuong" />
+      <End Role="thucuong" EntitySet="thucuong" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
