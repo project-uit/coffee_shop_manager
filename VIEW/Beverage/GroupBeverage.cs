@@ -38,7 +38,8 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
             
             if (string.IsNullOrEmpty(txtTenThucUong.Text))
             {
-                XtraMessageBox.Show(this, "Tên thức uống không được trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                lbErrorTenNhomThucUong.Text = "*Tên thức uống không được trống";
+                lbErrorTenNhomThucUong.Visible = true;
                 return;
             }
             if (flag_sua)
@@ -77,6 +78,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            lbErrorTenNhomThucUong.Visible = false;
             DialogResult dialog = XtraMessageBox.Show(this, "Bạn có chắc muốn xóa không? ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(dialog == DialogResult.Yes)
             {
@@ -98,6 +100,12 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
             nhomthucuong = gridview.GetRow(gridview.FocusedRowHandle) as nhomthucuong;
             flag_sua = !flag_sua;
             txtTenThucUong.Text = nhomthucuong.tennhomthucuong;
+            lbErrorTenNhomThucUong.Visible = false;
+        }
+
+        private void txtTenThucUong_Click(object sender, EventArgs e)
+        {
+            lbErrorTenNhomThucUong.Visible = false;
         }
     }
 }

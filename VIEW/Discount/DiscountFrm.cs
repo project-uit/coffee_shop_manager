@@ -31,32 +31,68 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
         {
             grdCtrGiamGia.DataSource = DiscountDAO.getList();
         }
-
-        private void btnLuu_Click(object sender, EventArgs e)
+        private bool isValid()
         {
-            int hesogiamgia;
-            if (int.TryParse(txtGiamGia.Text, out hesogiamgia))
+            bool isValid = true;
+            float hesogiamgia;
+            if (float.TryParse(txtGiamGia.Text, out hesogiamgia))
             {
-                if(!(hesogiamgia <= 100 && hesogiamgia >= 0))
+                if (!(hesogiamgia <= 100 && hesogiamgia >= 0))
                 {
-                    XtraMessageBox.Show(this, "Phần trăm giảm giá phải từ 0 -> 100!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    lbErrorGiamGia.Text = "*Phần trăm giảm giá số thực thuộc [0,100]";
+                    isValid = false;
+                    lbErrorGiamGia.Visible = true;
                 }
+            } else
+            {
+                lbErrorGiamGia.Text = "*Phần trăm giảm giá không được trống";
+                isValid = false;
+                lbErrorGiamGia.Visible = true;
+            }
+            bool flag = true;
+            if(dateNgayBatDau.EditValue == null)
+            {
+                lbErrorDate.Text = "*Ngày bắt đầu không được trống";
+                flag = false;
+                lbErrorDate.Visible = true;
+            }
+            if (dateNgayKetThuc.EditValue == null)
+            {
+                lbErrorNgayKetThuc.Text = "*Ngày kết thúc không được trống";
+                flag = false;
+                lbErrorNgayKetThuc.Visible = true;
+            }
+            if (flag)
+            {
                 giamgia giamgia = new giamgia();
-                giamgia.hesogiamgia = hesogiamgia;
                 giamgia.ngaybatdau = Convert.ToDateTime(dateNgayBatDau.EditValue);
                 giamgia.ngayketthuc = Convert.ToDateTime(dateNgayKetThuc.EditValue);
                 switch (DiscountDAO.isValid(giamgia))
                 {
                     case 2:
-                        XtraMessageBox.Show(this, "Ngày bắt đầu phải nhỏ hơn ngày kết thúc!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
+                        lbErrorDate.Text = "*Ngày bắt đầu phải nhỏ hơn ngày kết thúc";
+                        isValid = false;
+                        lbErrorDate.Visible = true;
+                        break;
                     case 3:
-                        XtraMessageBox.Show(this, "Ngày bắt đầu phải lớn hơn ngày hiện tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
+                        lbErrorDate.Text = "*Ngày bắt đầu phải lớn hơn ngày hiện tại";
+                        isValid = false;
+                        lbErrorDate.Visible = true;
+                        break;
                     default:
                         break;
                 }
+            }
+            return isValid && flag;
+        }
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (isValid())
+            {              
+                giamgia giamgia = new giamgia();                
+                giamgia.hesogiamgia = Math.Round(float.Parse(txtGiamGia.Text), 2, MidpointRounding.AwayFromZero);
+                giamgia.ngaybatdau = Convert.ToDateTime(dateNgayBatDau.EditValue);
+                giamgia.ngayketthuc = Convert.ToDateTime(dateNgayKetThuc.EditValue);
                 if (DiscountDAO.isAccepted(giamgia))
                 {
                     if (DiscountDAO.insert(giamgia))
@@ -72,10 +108,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
                 {
                     XtraMessageBox.Show(this, "Bạn không thể thêm đợt khuyến mãi có cùng thời gian đợt khuyến mãi hiện tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            } else
-            {
-                XtraMessageBox.Show(this, "Phần trăm giảm giá phải là số nguyên dương!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }     
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -91,6 +124,35 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
                 lbMessage.Text = "Xóa thất bại!";
             }
             flyoutPanel1.ShowBeakForm();
+        }
+
+        private void txtGiamGia_Click(object sender, EventArgs e)
+        {
+            lbErrorGiamGia.Visible = false;
+        }
+
+        private void dateNgayBatDau_EditValueChanged(object sender, EventArgs e)
+        {
+            lbErrorDate.Visible = false;
+        }
+
+        private void dateNgayKetThuc_EditValueChanged(object sender, EventArgs e)
+        {
+            lbErrorNgayKetThuc.Visible = false;
+        }
+
+        private void txtGiamGia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+
+            // If you want, you can allow decimal (float) numbers
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

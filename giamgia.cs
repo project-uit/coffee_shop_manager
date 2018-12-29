@@ -15,7 +15,7 @@ namespace COFFEE_SHOP_MANAGER
     public partial class giamgia
     {
         public int id_giamgia { get; set; }
-        public Nullable<int> hesogiamgia { get; set; }
+        public Nullable<double> hesogiamgia { get; set; }
         public Nullable<System.DateTime> ngaybatdau { get; set; }
         public Nullable<System.DateTime> ngayketthuc { get; set; }
     }

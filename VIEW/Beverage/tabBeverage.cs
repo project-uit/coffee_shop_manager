@@ -143,10 +143,10 @@ namespace COFFEE_SHOP_MANAGER
         }
         private void createChart()
         {
-            chart1.Series.Clear();
-            var series = new Series("Finance");
-            series.Points.DataBindXY(new[] { 2000, 2001, 2002, 2003, 2004 }, new[] { 100, 200, 90, 150, 180 });
-            chart1.Series.Add(series);
+            //chart1.Series.Clear();
+            //var series = new Series("Finance");
+            //series.Points.DataBindXY(new[] { 2000, 2001, 2002, 2003, 2004 }, new[] { 100, 200, 90, 150, 180 });
+            //chart1.Series.Add(series);
         }
         private void createReportPDF(string path, List<thucuong> list)
         {
@@ -169,7 +169,7 @@ namespace COFFEE_SHOP_MANAGER
             });
             // lay img tu chart
             MemoryStream ms = new MemoryStream();
-            chart1.SaveImage(ms, ChartImageFormat.Jpeg);
+            //chart1.SaveImage(ms, ChartImageFormat.Jpeg);
             Image img = Image.GetInstance(ms.GetBuffer());
             // tao file pdf
             Document document = new Document();

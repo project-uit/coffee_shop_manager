@@ -36,6 +36,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dateNgayBatDau = new DevExpress.XtraEditors.DateEdit();
             this.btnExportFile = new MaterialSkin.Controls.MaterialRaisedButton();
             this.grdCtrThongKeNguyenLieu = new DevExpress.XtraGrid.GridControl();
             this.thongKeNguyenLieuBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -50,6 +51,8 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrThongKeNguyenLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thongKeNguyenLieuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViThongKeNguyenLieu)).BeginInit();
@@ -64,9 +67,10 @@
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Location = new System.Drawing.Point(0, 0);
+            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(1371, 34);
+            this.materialTabSelector1.Size = new System.Drawing.Size(1028, 28);
             this.materialTabSelector1.TabIndex = 0;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
@@ -79,20 +83,22 @@
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(3, 40);
+            this.materialTabControl1.Location = new System.Drawing.Point(2, 32);
+            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1368, 523);
+            this.materialTabControl1.Size = new System.Drawing.Size(1026, 425);
             this.materialTabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1360, 494);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(1018, 399);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thống kê doanh thu";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -100,19 +106,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 34);
+            this.label1.Location = new System.Drawing.Point(13, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "doanh thu";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1360, 494);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(1018, 399);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Thống kê nhóm thức uống";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -120,24 +128,47 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(107, 58);
+            this.label2.Location = new System.Drawing.Point(80, 47);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 17);
+            this.label2.Size = new System.Drawing.Size(84, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "nhóm thức uống";
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dateNgayBatDau);
             this.tabPage3.Controls.Add(this.btnExportFile);
             this.tabPage3.Controls.Add(this.grdCtrThongKeNguyenLieu);
             this.tabPage3.Controls.Add(this.dateThongKe);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1360, 494);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Size = new System.Drawing.Size(1018, 399);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Thống kê kho nguyên liệu";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dateNgayBatDau
+            // 
+            this.dateNgayBatDau.EditValue = new System.DateTime(2018, 12, 5, 0, 0, 0, 0);
+            this.dateNgayBatDau.Location = new System.Drawing.Point(150, 5);
+            this.dateNgayBatDau.Margin = new System.Windows.Forms.Padding(2);
+            this.dateNgayBatDau.Name = "dateNgayBatDau";
+            this.dateNgayBatDau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgayBatDau.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgayBatDau.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Fluent;
+            this.dateNgayBatDau.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dateNgayBatDau.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateNgayBatDau.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.dateNgayBatDau.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateNgayBatDau.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
+            this.dateNgayBatDau.Size = new System.Drawing.Size(102, 20);
+            this.dateNgayBatDau.TabIndex = 3;
+            this.dateNgayBatDau.ToolTip = "Ngày bắt đầu";
             // 
             // btnExportFile
             // 
@@ -146,11 +177,12 @@
             this.btnExportFile.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExportFile.Depth = 0;
             this.btnExportFile.Icon = null;
-            this.btnExportFile.Location = new System.Drawing.Point(1251, 6);
+            this.btnExportFile.Location = new System.Drawing.Point(916, 5);
+            this.btnExportFile.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportFile.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnExportFile.Name = "btnExportFile";
             this.btnExportFile.Primary = true;
-            this.btnExportFile.Size = new System.Drawing.Size(103, 36);
+            this.btnExportFile.Size = new System.Drawing.Size(86, 36);
             this.btnExportFile.TabIndex = 2;
             this.btnExportFile.Text = "Xuất file";
             this.btnExportFile.UseVisualStyleBackColor = true;
@@ -162,10 +194,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrThongKeNguyenLieu.DataSource = this.thongKeNguyenLieuBindingSource;
-            this.grdCtrThongKeNguyenLieu.Location = new System.Drawing.Point(0, 76);
+            this.grdCtrThongKeNguyenLieu.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.grdCtrThongKeNguyenLieu.Location = new System.Drawing.Point(0, 62);
             this.grdCtrThongKeNguyenLieu.MainView = this.grdViThongKeNguyenLieu;
+            this.grdCtrThongKeNguyenLieu.Margin = new System.Windows.Forms.Padding(2);
             this.grdCtrThongKeNguyenLieu.Name = "grdCtrThongKeNguyenLieu";
-            this.grdCtrThongKeNguyenLieu.Size = new System.Drawing.Size(1357, 418);
+            this.grdCtrThongKeNguyenLieu.Size = new System.Drawing.Size(1018, 340);
             this.grdCtrThongKeNguyenLieu.TabIndex = 1;
             this.grdCtrThongKeNguyenLieu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdViThongKeNguyenLieu});
@@ -182,6 +216,7 @@
             this.coldinhluongthucte,
             this.coldonvi,
             this.colhaohut});
+            this.grdViThongKeNguyenLieu.DetailHeight = 284;
             this.grdViThongKeNguyenLieu.GridControl = this.grdCtrThongKeNguyenLieu;
             this.grdViThongKeNguyenLieu.Name = "grdViThongKeNguyenLieu";
             this.grdViThongKeNguyenLieu.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.False;
@@ -194,56 +229,57 @@
             // 
             this.coltennguyenlieu.Caption = "Tên nguyên liệu";
             this.coltennguyenlieu.FieldName = "tennguyenlieu";
-            this.coltennguyenlieu.MinWidth = 25;
+            this.coltennguyenlieu.MinWidth = 19;
             this.coltennguyenlieu.Name = "coltennguyenlieu";
             this.coltennguyenlieu.Visible = true;
             this.coltennguyenlieu.VisibleIndex = 0;
-            this.coltennguyenlieu.Width = 94;
+            this.coltennguyenlieu.Width = 70;
             // 
             // coldinhluonglythuyet
             // 
             this.coldinhluonglythuyet.Caption = "Định lượng lý thuyết";
             this.coldinhluonglythuyet.FieldName = "dinhluonglythuyet";
-            this.coldinhluonglythuyet.MinWidth = 25;
+            this.coldinhluonglythuyet.MinWidth = 19;
             this.coldinhluonglythuyet.Name = "coldinhluonglythuyet";
             this.coldinhluonglythuyet.Visible = true;
             this.coldinhluonglythuyet.VisibleIndex = 1;
-            this.coldinhluonglythuyet.Width = 94;
+            this.coldinhluonglythuyet.Width = 70;
             // 
             // coldinhluongthucte
             // 
             this.coldinhluongthucte.Caption = "Định lượng thực tế";
             this.coldinhluongthucte.FieldName = "dinhluongthucte";
-            this.coldinhluongthucte.MinWidth = 25;
+            this.coldinhluongthucte.MinWidth = 19;
             this.coldinhluongthucte.Name = "coldinhluongthucte";
             this.coldinhluongthucte.Visible = true;
             this.coldinhluongthucte.VisibleIndex = 2;
-            this.coldinhluongthucte.Width = 94;
+            this.coldinhluongthucte.Width = 70;
             // 
             // coldonvi
             // 
             this.coldonvi.Caption = "Đơn vị";
             this.coldonvi.FieldName = "donvi";
-            this.coldonvi.MinWidth = 25;
+            this.coldonvi.MinWidth = 19;
             this.coldonvi.Name = "coldonvi";
             this.coldonvi.Visible = true;
             this.coldonvi.VisibleIndex = 3;
-            this.coldonvi.Width = 94;
+            this.coldonvi.Width = 70;
             // 
             // colhaohut
             // 
             this.colhaohut.Caption = "Hao hụt";
             this.colhaohut.FieldName = "haohut";
-            this.colhaohut.MinWidth = 25;
+            this.colhaohut.MinWidth = 19;
             this.colhaohut.Name = "colhaohut";
             this.colhaohut.Visible = true;
             this.colhaohut.VisibleIndex = 4;
-            this.colhaohut.Width = 94;
+            this.colhaohut.Width = 70;
             // 
             // dateThongKe
             // 
-            this.dateThongKe.EditValue = new System.DateTime(2018, 12, 11, 9, 13, 16, 375);
-            this.dateThongKe.Location = new System.Drawing.Point(6, 6);
+            this.dateThongKe.EditValue = new System.DateTime(2018, 12, 5, 0, 0, 0, 0);
+            this.dateThongKe.Location = new System.Drawing.Point(4, 5);
+            this.dateThongKe.Margin = new System.Windows.Forms.Padding(2);
             this.dateThongKe.Name = "dateThongKe";
             this.dateThongKe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -253,20 +289,19 @@
             this.dateThongKe.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dateThongKe.Properties.EditFormat.FormatString = "MM/yyyy";
             this.dateThongKe.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dateThongKe.Size = new System.Drawing.Size(157, 22);
+            this.dateThongKe.Size = new System.Drawing.Size(118, 20);
             this.dateThongKe.TabIndex = 0;
             this.dateThongKe.EditValueChanged += new System.EventHandler(this.dateThongKe_EditValueChanged);
             // 
             // tabStatistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialTabSelector1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tabStatistics";
-            this.Size = new System.Drawing.Size(1371, 566);
+            this.Size = new System.Drawing.Size(1028, 460);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -274,6 +309,8 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrThongKeNguyenLieu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thongKeNguyenLieuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViThongKeNguyenLieu)).EndInit();
@@ -302,5 +339,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn coldinhluongthucte;
         private DevExpress.XtraGrid.Columns.GridColumn coldonvi;
         private DevExpress.XtraGrid.Columns.GridColumn colhaohut;
+        private DevExpress.XtraEditors.DateEdit dateNgayBatDau;
     }
 }

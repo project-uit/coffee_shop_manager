@@ -14,6 +14,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
 {
     public partial class BeverageFrm : MaterialSkin.Controls.MaterialForm
     {
+
         public BeverageFrm()
         {
             InitializeComponent();
@@ -30,42 +31,53 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
         {
             this.Close();
         }
-
-        private void btnLuu_Click(object sender, EventArgs e)
+        private bool isValid()
         {
+            bool isValid = true;
             if (string.IsNullOrEmpty(txtTenThucUong.Text))
             {
-                XtraMessageBox.Show(this, "Tên thức uống không được trống", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                lbErrorTenThucUong.Text = "*Tên thức uống không được trống";
+                isValid = false;
+                lbErrorTenThucUong.Visible = true;
             }
             float temp;
-            
-            if (!float.TryParse(txtGiaBan.Text,out temp))
+            if (float.TryParse(txtGiaBan.Text, out temp))
             {
-                XtraMessageBox.Show(this, "Giá bán phải là số thực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            } else
-            {
-                if(temp <= 0)
+             if(temp <= 0)
                 {
-                    XtraMessageBox.Show(this, "Giá bán phải là số dương", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    lbErrorGiaBan.Text = "*Giá bán phải là số thực lớn hơn  0";
+                    isValid = false;
+                    lbErrorGiaBan.Visible = true;
                 }
-            }
-            if(thucuong != null)
-            {
-                update();
             } else
             {
-                insert();
-            }          
-            flyoutPanel1.ShowBeakForm();
+                lbErrorGiaBan.Text = "*Giá bán phải là số thực lớn hơn 0";
+                isValid = false;
+                lbErrorGiaBan.Visible = true;
+            }
+          
+            return isValid;
+        }
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (isValid())
+            {
+                if (thucuong != null)
+                {
+                    update();
+                }
+                else
+                {
+                    insert();
+                }
+                flyoutPanel1.ShowBeakForm();
+            }
         }
 
         private void update()
         {
             thucuong.tenthucuong = txtTenThucUong.Text;
-            thucuong.giaban = decimal.Parse(txtGiaBan.Text);
+            thucuong.giaban = Math.Round(decimal.Parse(txtGiaBan.Text), 3, MidpointRounding.AwayFromZero);
             thucuong.id_nhomthucuong = Int32.Parse(cbbNhomThucUong.SelectedValue.ToString());
             if (BeverageDAO.update(thucuong))
             {
@@ -82,7 +94,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
         {
             thucuong thucuong = new thucuong();
             thucuong.tenthucuong = txtTenThucUong.Text;
-            thucuong.giaban = decimal.Parse(txtGiaBan.Text);
+            thucuong.giaban =  Math.Round(decimal.Parse(txtGiaBan.Text), 3, MidpointRounding.AwayFromZero);
             thucuong.id_nhomthucuong = Int32.Parse(cbbNhomThucUong.SelectedValue.ToString());
             if (BeverageDAO.insert(thucuong))
             {
@@ -106,6 +118,30 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                 txtTenThucUong.Text = thucuong.tenthucuong;
                 txtGiaBan.Text = thucuong.giaban+"";
                 cbbNhomThucUong.SelectedValue = thucuong.id_nhomthucuong;
+            }
+        }
+
+        private void txtTenThucUong_Click(object sender, EventArgs e)
+        {
+            lbErrorTenThucUong.Visible = false;
+        }
+
+        private void txtGiaBan_Click(object sender, EventArgs e)
+        {
+            lbErrorGiaBan.Visible = false;
+        }
+
+        private void txtGiaBan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+
+            // If you want, you can allow decimal (float) numbers
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
             }
         }
     }

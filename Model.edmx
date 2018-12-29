@@ -51,7 +51,7 @@
             <PropertyRef Name="id_giamgia" />
           </Key>
           <Property Name="id_giamgia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="hesogiamgia" Type="int" />
+          <Property Name="hesogiamgia" Type="float" />
           <Property Name="ngaybatdau" Type="date" />
           <Property Name="ngayketthuc" Type="date" />
         </EntityType>
@@ -362,7 +362,7 @@
             <PropertyRef Name="id_giamgia" />
           </Key>
           <Property Name="id_giamgia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="hesogiamgia" Type="Int32" />
+          <Property Name="hesogiamgia" Type="Double" />
           <Property Name="ngaybatdau" Type="DateTime" Precision="0" />
           <Property Name="ngayketthuc" Type="DateTime" Precision="0" />
         </EntityType>

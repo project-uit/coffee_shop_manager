@@ -42,11 +42,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Download\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -107,14 +105,21 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\BeverageDAO.cs" />
+    <Compile Include="DAO\ChiTietNguyenLieuDaDungDAO.cs" />
+    <Compile Include="DAO\ChiTietNhapKhoDAO.cs" />
     <Compile Include="DAO\DiscountDAO.cs" />
+    <Compile Include="DAO\FormulaDAO.cs" />
     <Compile Include="DAO\GroupBeverageDAO.cs" />
+    <Compile Include="DAO\NguyenLieuDaDungDAO.cs" />
+    <Compile Include="DAO\NhapKhoDAO.cs" />
     <Compile Include="DAO\ThemNguyenLieuDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
+    <Compile Include="DAO\StatisticResourcesDAO.cs" />
     <Compile Include="DAO\StoreDAO.cs" />
     <Compile Include="DAO\StatisticsDAO.cs" />
     <Compile Include="DAO\StaffDAO.cs" />
     <Compile Include="DAO\DashboardDAO.cs" />
+    <Compile Include="DTO\ThongKeNguyenLieu.cs" />
     <Compile Include="giamgia.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -181,6 +186,18 @@
     </Compile>
     <Compile Include="VIEW\Discount\DiscountFrm.Designer.cs">
       <DependentUpon>DiscountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Import\NhapKhoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Import\NhapKhoFrm.Designer.cs">
+      <DependentUpon>NhapKhoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Import\ThemNguyenLieuDaDungFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Import\ThemNguyenLieuDaDungFrm.Designer.cs">
+      <DependentUpon>ThemNguyenLieuDaDungFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="VIEW\Import\ThemNguyenLieuFrm.cs">
       <SubType>Form</SubType>
@@ -263,8 +280,14 @@
     <EmbeddedResource Include="VIEW\Discount\DiscountFrm.resx">
       <DependentUpon>DiscountFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Import\NhapKhoFrm.resx">
+      <DependentUpon>NhapKhoFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Import\tabImport.resx">
       <DependentUpon>tabImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Import\ThemNguyenLieuDaDungFrm.resx">
+      <DependentUpon>ThemNguyenLieuDaDungFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Import\ThemNguyenLieuFrm.resx">
       <DependentUpon>ThemNguyenLieuFrm.cs</DependentUpon>
@@ -315,6 +338,7 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\COFFEE_SHOP_MANAGER.DTO.ThongKeNguyenLieu.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

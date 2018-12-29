@@ -39,39 +39,67 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
         {
             grdCtrCongThuc.DataSource = FormulaDAO.loadFormulaByIdThucUong(id_thucuong);
         }
+
+        private bool isValid()
+        {
+            bool isValid = true;
+            double dinhluong;
+            if (string.IsNullOrEmpty(txtDinhLuong.Text))
+            {
+                lbErrorDinhLuong.Text = "*Định lượng không được trống";
+                isValid = false;
+                lbErrorDinhLuong.Visible = true;
+            }
+            if (double.TryParse(txtDinhLuong.Text, out dinhluong))
+            {
+                if (dinhluong <= 0)
+                {
+                    lbErrorDinhLuong.Text = "*Định lượng phải nhập số thực lớn hơn 0";
+                    isValid = false;
+                    lbErrorDinhLuong.Visible = true;
+                }
+            }
+            else
+            {
+                lbErrorDinhLuong.Text = "*Định lượng phải nhập số thực lớn hơn 0";
+                isValid = false;
+                lbErrorDinhLuong.Visible = true;
+            }
+            return isValid;
+        }
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            chitietcongthuc chitietcongthuc = new chitietcongthuc();
-            chitietcongthuc.idkhonguyenlieu = Int32.Parse(cbbNguyenLieu.SelectedValue.ToString());
-            if (txtDinhLuong.Text.Contains("."))
+            if (isValid())
             {
-                XtraMessageBox.Show(this, "Nhập số thập phân hãy dùng dấu , ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            float dinhluong;
-            if(float.TryParse(txtDinhLuong.Text, out dinhluong))
-            {
-                chitietcongthuc.dinhluong = dinhluong;
+                chitietcongthuc chitietcongthuc = new chitietcongthuc();
+                chitietcongthuc.idkhonguyenlieu = Int32.Parse(cbbNguyenLieu.SelectedValue.ToString());
+                chitietcongthuc.dinhluong = Math.Round(double.Parse(txtDinhLuong.Text), 3, MidpointRounding.AwayFromZero);
                 chitietcongthuc.id_thucuong = this.id_thucuong;
                 if (FormulaDAO.isExist(chitietcongthuc.id_thucuong, chitietcongthuc.idkhonguyenlieu))
                 {
                     XtraMessageBox.Show(this, "Đã tồn tại nguyên liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
-                }                
+                }
+
+
                 if (FormulaDAO.insert(chitietcongthuc))
                 {
                     lbMessage.Text = "Lưu thành công";
                     loadtable();
-                } else
+                }
+                else
                 {
                     lbMessage.Text = "Lưu thất bại";
                 }
+
+
                 flyoutPanel1.ShowBeakForm();
-            } else
-            {
-                XtraMessageBox.Show(this, "Định lượng phải nhập số thực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+            //} else
+            //{
+            //    XtraMessageBox.Show(this, "Định lượng phải nhập số thực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //}
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -79,7 +107,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
             GridView gridview = grdCtrCongThuc.FocusedView as GridView;
             chitietcongthuc chitietcongthuc = gridview.GetRow(gridview.FocusedRowHandle) as chitietcongthuc;
             DialogResult dialog = XtraMessageBox.Show(this, "Bạn có chắc muốn xóa không? ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(dialog == DialogResult.Yes)
+            if (dialog == DialogResult.Yes)
             {
                 if (FormulaDAO.delete(chitietcongthuc))
                 {
@@ -91,6 +119,25 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                     lbMessage.Text = "Xóa thất bại";
                 }
                 flyoutPanel1.ShowBeakForm();
+            }
+        }
+
+        private void txtDinhLuong_Click(object sender, EventArgs e)
+        {
+            lbErrorDinhLuong.Visible = false;
+        }
+
+        private void txtDinhLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+
+            // If you want, you can allow decimal (float) numbers
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
+            {
+                e.Handled = true;
             }
         }
     }
