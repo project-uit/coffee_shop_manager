@@ -10,13 +10,16 @@ namespace COFFEE_SHOP_MANAGER.DAO
 {
     class StatisticResourcesDAO
     {
+        /*
+         * Thống kê nguyên liệu theo tháng
+         */
         public static List<ThongKeNguyenLieu> thongke(DateTime date)
         {
             int year = date.Year, month = date.Month;
             List<ThongKeNguyenLieu> list = new List<ThongKeNguyenLieu>();
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
-                db.khonguyenlieux.SqlQuery("select  knl.tennguyenlieu, sum(ctct.dinhluong) as dinhluong, knl.idkhonguyenlieu,knl.tendonvi_dinh_luong, knl.xoa_flag " +
+                db.khonguyenlieux.SqlQuery("select  knl.tennguyenlieu, sum(ctct.dinhluong*cthd.soluong) as dinhluong, knl.idkhonguyenlieu,knl.tendonvi_dinh_luong, knl.xoa_flag " +
                 "from hoadon hd, chitiethoadon cthd, thucuong th, chitietcongthuc ctct, khonguyenlieu knl " +
                 "where hd.id_hoadon = cthd.id_hoadon " +
                 "and cthd.id_thucuong = th.id_thucuong " +

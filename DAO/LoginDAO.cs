@@ -8,5 +8,6 @@ namespace COFFEE_SHOP_MANAGER.DAO
 {
     class LoginDAO
     {
+
     }
 }

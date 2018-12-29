@@ -112,7 +112,7 @@ dinhluongtoida float,
 dinhluongtoithieu float
 );
 // lay dinh luong ly thuyet
-select  knl.tennguyenlieu, sum(ctct.dinhluong) as dinhluong,   knl.idkhonguyenlieu, knl.tendonvi_dinh_luong, knl.xoa_flag
+select  knl.tennguyenlieu,   knl.idkhonguyenlieu, knl.tendonvi_dinh_luong, knl.xoa_flag, cthd.dongia, cthd.soluong, th.id_thucuong,ctct.dinhluong
 from hoadon hd, chitiethoadon cthd, thucuong th, chitietcongthuc ctct, khonguyenlieu knl
 where hd.id_hoadon = cthd.id_hoadon 
 and cthd.id_thucuong = th.id_thucuong
@@ -120,7 +120,17 @@ and ctct.id_thucuong = th.id_thucuong
 and knl.idkhonguyenlieu = ctct.idkhonguyenlieu
 and MONTH(hd.ngaylap) = 12 and YEAR(hd.ngaylap)= 2018
 and knl.xoa_flag = 0
-group by knl.tennguyenlieu,  knl.idkhonguyenlieu, knl.tendonvi_dinh_luong,knl.xoa_flag
+group by knl.tennguyenlieu,  knl.idkhonguyenlieu, knl.tendonvi_dinh_luong,knl.xoa_flag,cthd.dongia, cthd.soluong
+
+select  knl.tennguyenlieu, sum(ctct.dinhluong*cthd.soluong) as dinhluong, knl.idkhonguyenlieu,knl.tendonvi_dinh_luong, knl.xoa_flag 
+from hoadon hd, chitiethoadon cthd, thucuong th, chitietcongthuc ctct, khonguyenlieu knl 
+where hd.id_hoadon = cthd.id_hoadon 
+and cthd.id_thucuong = th.id_thucuong 
+and ctct.id_thucuong = th.id_thucuong 
+and knl.idkhonguyenlieu = ctct.idkhonguyenlieu 
+and MONTH(hd.ngaylap) = 12 and YEAR(hd.ngaylap) = 2018 
+group by knl.tennguyenlieu, knl.idkhonguyenlieu, knl.xoa_flag, knl.tendonvi_dinh_luong
+
 // lay dinh luong thuc te
 select knl.tennguyenlieu, sum(ctnldd.dinhluong) as dinhluong,   knl.idkhonguyenlieu, knl.tendonvi_dinh_luong, knl.xoa_flag
 from nguyenlieudadung nldd, chitietnguyenlieudadung ctnldd, khonguyenlieu knl
@@ -128,6 +138,3 @@ where nldd.idnguyenlieudadung = ctnldd.idnguyenlieudadung
 and knl.idkhonguyenlieu = ctnldd.idkhonguyenlieu
 and MONTH(nldd.ngaynhap) = 12 and YEAR(nldd.ngaynhap)= 2018
 group by knl.tennguyenlieu,  knl.idkhonguyenlieu, knl.tendonvi_dinh_luong,knl.xoa_flag
-
-insert into nguyenlieudadung(ngaynhap)
-values(CURRENT_TIMESTAMP)
