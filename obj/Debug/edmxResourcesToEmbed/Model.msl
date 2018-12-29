@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="quanlycafeModelStoreContainer" CdmEntityContainer="quanlycafeEntities">
+    <EntitySetMapping Name="chitietcongthucs">
+      <EntityTypeMapping TypeName="quanlycafeModel.chitietcongthuc">
+        <MappingFragment StoreEntitySet="chitietcongthuc">
+          <ScalarProperty Name="id_chitietcongthuc" ColumnName="id_chitietcongthuc" />
+          <ScalarProperty Name="id_thucuong" ColumnName="id_thucuong" />
+          <ScalarProperty Name="dinhluong" ColumnName="dinhluong" />
+          <ScalarProperty Name="idkhonguyenlieu" ColumnName="idkhonguyenlieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitiethoadons">
+      <EntityTypeMapping TypeName="quanlycafeModel.chitiethoadon">
+        <MappingFragment StoreEntitySet="chitiethoadon">
+          <ScalarProperty Name="id_chitiethoadon" ColumnName="id_chitiethoadon" />
+          <ScalarProperty Name="id_hoadon" ColumnName="id_hoadon" />
+          <ScalarProperty Name="id_thucuong" ColumnName="id_thucuong" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="dongia" ColumnName="dongia" />
+          <ScalarProperty Name="thanhtien" ColumnName="thanhtien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitietnguyenlieudadungs">
+      <EntityTypeMapping TypeName="quanlycafeModel.chitietnguyenlieudadung">
+        <MappingFragment StoreEntitySet="chitietnguyenlieudadung">
+          <ScalarProperty Name="idchitietnguyenlieudadung" ColumnName="idchitietnguyenlieudadung" />
+          <ScalarProperty Name="idnguyenlieudadung" ColumnName="idnguyenlieudadung" />
+          <ScalarProperty Name="idkhonguyenlieu" ColumnName="idkhonguyenlieu" />
+          <ScalarProperty Name="dinhluong" ColumnName="dinhluong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="chitietnhapkhoes">
+      <EntityTypeMapping TypeName="quanlycafeModel.chitietnhapkho">
+        <MappingFragment StoreEntitySet="chitietnhapkho">
+          <ScalarProperty Name="idchitietnhapkho" ColumnName="idchitietnhapkho" />
+          <ScalarProperty Name="tendonvi_so_luong" ColumnName="tendonvi_so_luong" />
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="dinhluong" ColumnName="dinhluong" />
+          <ScalarProperty Name="dongia" ColumnName="dongia" />
+          <ScalarProperty Name="idnhapkho" ColumnName="idnhapkho" />
+          <ScalarProperty Name="idkhonguyenlieu" ColumnName="idkhonguyenlieu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="giamgias">
+      <EntityTypeMapping TypeName="quanlycafeModel.giamgia">
+        <MappingFragment StoreEntitySet="giamgia">
+          <ScalarProperty Name="id_giamgia" ColumnName="id_giamgia" />
+          <ScalarProperty Name="hesogiamgia" ColumnName="hesogiamgia" />
+          <ScalarProperty Name="ngaybatdau" ColumnName="ngaybatdau" />
+          <ScalarProperty Name="ngayketthuc" ColumnName="ngayketthuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hoadons">
+      <EntityTypeMapping TypeName="quanlycafeModel.hoadon">
+        <MappingFragment StoreEntitySet="hoadon">
+          <ScalarProperty Name="id_hoadon" ColumnName="id_hoadon" />
+          <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+          <ScalarProperty Name="ngaylap" ColumnName="ngaylap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khonguyenlieux">
+      <EntityTypeMapping TypeName="quanlycafeModel.khonguyenlieu">
+        <MappingFragment StoreEntitySet="khonguyenlieu">
+          <ScalarProperty Name="idkhonguyenlieu" ColumnName="idkhonguyenlieu" />
+          <ScalarProperty Name="tennguyenlieu" ColumnName="tennguyenlieu" />
+          <ScalarProperty Name="tendonvi_dinh_luong" ColumnName="tendonvi_dinh_luong" />
+          <ScalarProperty Name="dinhluong" ColumnName="dinhluong" />
+          <ScalarProperty Name="xoa_flag" ColumnName="xoa_flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nguyenlieudadungs">
+      <EntityTypeMapping TypeName="quanlycafeModel.nguyenlieudadung">
+        <MappingFragment StoreEntitySet="nguyenlieudadung">
+          <ScalarProperty Name="idnguyenlieudadung" ColumnName="idnguyenlieudadung" />
+          <ScalarProperty Name="ngaynhap" ColumnName="ngaynhap" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhanviens">
+      <EntityTypeMapping TypeName="quanlycafeModel.nhanvien">
+        <MappingFragment StoreEntitySet="nhanvien">
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+          <ScalarProperty Name="hoten" ColumnName="hoten" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="luong" ColumnName="luong" />
+          <ScalarProperty Name="tentaikhoan" ColumnName="tentaikhoan" />
+          <ScalarProperty Name="matkhau" ColumnName="matkhau" />
+          <ScalarProperty Name="quyen" ColumnName="quyen" />
+          <ScalarProperty Name="xoa_flag" ColumnName="xoa_flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhapkhoes">
+      <EntityTypeMapping TypeName="quanlycafeModel.nhapkho">
+        <MappingFragment StoreEntitySet="nhapkho">
+          <ScalarProperty Name="idnhapkho" ColumnName="idnhapkho" />
+          <ScalarProperty Name="ngaynhap" ColumnName="ngaynhap" />
+          <ScalarProperty Name="id_nhanvien" ColumnName="id_nhanvien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhomthucuongs">
+      <EntityTypeMapping TypeName="quanlycafeModel.nhomthucuong">
+        <MappingFragment StoreEntitySet="nhomthucuong">
+          <ScalarProperty Name="id_nhomthucuong" ColumnName="id_nhomthucuong" />
+          <ScalarProperty Name="tennhomthucuong" ColumnName="tennhomthucuong" />
+          <ScalarProperty Name="xoa_flag" ColumnName="xoa_flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thucuongs">
+      <EntityTypeMapping TypeName="quanlycafeModel.thucuong">
+        <MappingFragment StoreEntitySet="thucuong">
+          <ScalarProperty Name="id_thucuong" ColumnName="id_thucuong" />
+          <ScalarProperty Name="tenthucuong" ColumnName="tenthucuong" />
+          <ScalarProperty Name="giaban" ColumnName="giaban" />
+          <ScalarProperty Name="id_nhomthucuong" ColumnName="id_nhomthucuong" />
+          <ScalarProperty Name="xoa_flag" ColumnName="xoa_flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thamsoes">
+      <EntityTypeMapping TypeName="quanlycafeModel.thamso">
+        <MappingFragment StoreEntitySet="thamso">
+          <ScalarProperty Name="dinhluongtoithieu" ColumnName="dinhluongtoithieu" />
+          <ScalarProperty Name="dinhluongtoida" ColumnName="dinhluongtoida" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

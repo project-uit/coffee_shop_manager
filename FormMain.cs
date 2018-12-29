@@ -7,6 +7,7 @@ namespace COFFEE_SHOP_MANAGER
 {
     public partial class FormMain : Form
     {
+        public nhanvien loggedStaff = new nhanvien();
         private SwitchTab switchTab;
         public FormMain()
         {
@@ -20,6 +21,7 @@ namespace COFFEE_SHOP_MANAGER
             //    str += i.ToString();
             //}
             //thread.Abort();
+            Console.WriteLine("logged user with id -> " + loggedStaff.id_nhanvien);
         }
 
         bool DrawerOpen = true;
@@ -98,6 +100,7 @@ namespace COFFEE_SHOP_MANAGER
         {
             if (!(switchTab == SwitchTab.Store))
             {
+                tabStore.loggedStaff = loggedStaff;
                 bunifuTransition1.HideSync(panelTab);
                 bunifuTransition1.ShowSync(panelTab);
                 changeTab(tabStore);

@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.lbError = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,12 +57,12 @@
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsername.isPassword = false;
-            this.txtUsername.Location = new System.Drawing.Point(74, 196);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsername.Location = new System.Drawing.Point(148, 377);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(8);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(313, 44);
+            this.txtUsername.Size = new System.Drawing.Size(626, 87);
             this.txtUsername.TabIndex = 2;
-            this.txtUsername.Text = "Nhập tên tài khoản...";
+            this.txtUsername.Text = "dieu556";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtPassword
@@ -74,12 +75,12 @@
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.isPassword = true;
-            this.txtPassword.Location = new System.Drawing.Point(74, 262);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Location = new System.Drawing.Point(148, 504);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(8);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(313, 44);
+            this.txtPassword.Size = new System.Drawing.Size(626, 85);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "Nhập mật khẩu...";
+            this.txtPassword.Text = "tandieu";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuImageButton1
@@ -87,9 +88,10 @@
             this.bunifuImageButton1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(149, 32);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(298, 62);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(6);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(155, 132);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(310, 254);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 4;
             this.bunifuImageButton1.TabStop = false;
@@ -102,7 +104,8 @@
             this.bunifuCheckbox1.Checked = true;
             this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(74, 330);
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(148, 635);
+            this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuCheckbox1.Name = "bunifuCheckbox1";
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
             this.bunifuCheckbox1.TabIndex = 5;
@@ -111,9 +114,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(100, 330);
+            this.label1.Location = new System.Drawing.Point(200, 635);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 20);
+            this.label1.Size = new System.Drawing.Size(211, 37);
             this.label1.TabIndex = 6;
             this.label1.Text = "Lưu tài khoản";
             // 
@@ -138,13 +142,14 @@
             this.btnLogin.IconVisible = true;
             this.btnLogin.IconZoom = 90D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(74, 373);
+            this.btnLogin.Location = new System.Drawing.Point(148, 717);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(12);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.SystemColors.HotTrack;
             this.btnLogin.OnHovercolor = System.Drawing.Color.CornflowerBlue;
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(143, 38);
+            this.btnLogin.Size = new System.Drawing.Size(286, 73);
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,13 +178,14 @@
             this.btnExit.IconVisible = true;
             this.btnExit.IconZoom = 40D;
             this.btnExit.IsTab = false;
-            this.btnExit.Location = new System.Drawing.Point(289, 373);
+            this.btnExit.Location = new System.Drawing.Point(578, 717);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.Crimson;
             this.btnExit.OnHovercolor = System.Drawing.Color.Red;
             this.btnExit.OnHoverTextColor = System.Drawing.Color.White;
             this.btnExit.selected = false;
-            this.btnExit.Size = new System.Drawing.Size(98, 38);
+            this.btnExit.Size = new System.Drawing.Size(196, 73);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Thoát";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,12 +193,26 @@
             this.btnExit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // lbError
+            // 
+            this.lbError.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbError.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.lbError.Appearance.Options.UseFont = true;
+            this.lbError.Appearance.Options.UseForeColor = true;
+            this.lbError.Location = new System.Drawing.Point(128, 848);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(657, 39);
+            this.lbError.TabIndex = 9;
+            this.lbError.Text = "Tên tài khoản hoặc mật khẩu không chính xác";
+            this.lbError.Visible = false;
+            // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(465, 498);
+            this.ClientSize = new System.Drawing.Size(930, 958);
+            this.Controls.Add(this.lbError);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
@@ -201,6 +221,7 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
@@ -220,5 +241,6 @@
         private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
         private Bunifu.Framework.UI.BunifuFlatButton btnExit;
         private Bunifu.Framework.UI.BunifuFlatButton btnLogin;
+        private DevExpress.XtraEditors.LabelControl lbError;
     }
 }

@@ -42,19 +42,24 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Download\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.6\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
@@ -70,6 +75,7 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -94,6 +100,7 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\BeverageDAO.cs" />
+    <Compile Include="DAO\DiscountDAO.cs" />
     <Compile Include="DAO\GroupBeverageDAO.cs" />
     <Compile Include="DAO\ImportDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
@@ -150,11 +157,23 @@
     <Compile Include="VIEW\Beverage\BeverageFrm.Designer.cs">
       <DependentUpon>BeverageFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIEW\Beverage\FormulaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Beverage\FormulaFrm.Designer.cs">
+      <DependentUpon>FormulaFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\Beverage\GroupBeverage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VIEW\Beverage\GroupBeverage.Designer.cs">
       <DependentUpon>GroupBeverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Discount\DiscountFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Discount\DiscountFrm.Designer.cs">
+      <DependentUpon>DiscountFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="VIEW\Login\FormLogin.cs">
       <SubType>Form</SubType>
@@ -222,8 +241,14 @@
     <EmbeddedResource Include="VIEW\Beverage\BeverageFrm.resx">
       <DependentUpon>BeverageFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Beverage\FormulaFrm.resx">
+      <DependentUpon>FormulaFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Beverage\GroupBeverage.resx">
       <DependentUpon>GroupBeverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Discount\DiscountFrm.resx">
+      <DependentUpon>DiscountFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Import\tabImport.resx">
       <DependentUpon>tabImport.cs</DependentUpon>
@@ -301,7 +326,9 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <None Include="resource\image\lookup.png" />
     <None Include="VIEW\MessageBox\question.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
