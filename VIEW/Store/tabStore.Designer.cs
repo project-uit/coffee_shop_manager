@@ -89,6 +89,7 @@
             this.lbSum = new MaterialSkin.Controls.MaterialLabel();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.btnPrint = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.txtSearchInvoice = new System.Windows.Forms.TextBox();
             this.txtDate = new DevExpress.XtraEditors.DateEdit();
@@ -100,7 +101,6 @@
             this.date = new DevExpress.XtraGrid.Columns.GridColumn();
             this.view = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnView = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
-            this.btnPrint = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcInvoice)).BeginInit();
@@ -145,6 +145,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gcInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
+            this.gcInvoice.Enabled = false;
             this.gcInvoice.Location = new System.Drawing.Point(32, 503);
             this.gcInvoice.MainView = this.gridView1;
             this.gcInvoice.Margin = new System.Windows.Forms.Padding(6);
@@ -320,6 +321,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrlThucUong.DataSource = typeof(COFFEE_SHOP_MANAGER.thucuong);
             this.grdCtrlThucUong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
+            this.grdCtrlThucUong.Enabled = false;
             this.grdCtrlThucUong.Location = new System.Drawing.Point(32, 123);
             this.grdCtrlThucUong.MainView = this.grdViThucUong;
             this.grdCtrlThucUong.Margin = new System.Windows.Forms.Padding(6);
@@ -412,6 +414,7 @@
             this.btnSave.AutoSize = true;
             this.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSave.Depth = 0;
+            this.btnSave.Enabled = false;
             this.btnSave.Icon = null;
             this.btnSave.Location = new System.Drawing.Point(1558, 1035);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
@@ -459,6 +462,7 @@
             this.btnCreate.TabIndex = 13;
             this.btnCreate.Text = "Tạo mới";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // materialLabel3
             // 
@@ -571,6 +575,18 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(1978, 1119);
             this.xtraTabPage1.Text = "Lập hóa đơn";
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrint.Enabled = false;
+            this.btnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.ImageOptions.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(1791, 1030);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(150, 46);
+            this.btnPrint.TabIndex = 20;
+            this.btnPrint.Text = "In ";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // xtraTabPage2
             // 
@@ -685,17 +701,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph)});
             this.btnView.Name = "btnView";
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintRevenue.ImageOptions.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(1791, 1030);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(150, 46);
-            this.btnPrint.TabIndex = 20;
-            this.btnPrint.Text = "In ";
-            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // tabStore
             // 

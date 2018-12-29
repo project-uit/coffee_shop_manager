@@ -185,6 +185,9 @@ namespace COFFEE_SHOP_MANAGER
                 XtraMessageBox.Show(this, "Thêm hóa đơn mới thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 listInvoiceDetail = list;
                 resetGridControlInvoices();
+                btnPrint.Enabled = true;
+                grdCtrlThucUong.Enabled = false;
+                gcInvoice.Enabled = false;
             }
             else
             {
@@ -231,6 +234,14 @@ namespace COFFEE_SHOP_MANAGER
             invoicePrintFrm.total = lbTotal.Text;
             invoicePrintFrm.Print();
             invoicePrintFrm.ShowDialog();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            grdCtrlThucUong.Enabled = true;
+            gcInvoice.Enabled = true;
+            gcInvoice.DataSource = null;
+            btnSave.Enabled = true;
         }
     }
 }
