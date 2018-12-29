@@ -28,26 +28,184 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabImport));
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            this.btnThemNguyenLieu = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnNhapKho = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.grdCtrlThemNguyenLieu = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colidkhonguyenlieu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coltennguyenlieu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldinhluong = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coltendonvi_dinh_luong = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.edit = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.btnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
+            this.btnThemNguyenLieuDaDung = new MaterialSkin.Controls.MaterialRaisedButton();
+            ((System.ComponentModel.ISupportInitialize)(this.grdCtrlThemNguyenLieu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // btnThemNguyenLieu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "import";
+            this.btnThemNguyenLieu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemNguyenLieu.AutoSize = true;
+            this.btnThemNguyenLieu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnThemNguyenLieu.Depth = 0;
+            this.btnThemNguyenLieu.Icon = null;
+            this.btnThemNguyenLieu.Location = new System.Drawing.Point(1422, 48);
+            this.btnThemNguyenLieu.Margin = new System.Windows.Forms.Padding(6);
+            this.btnThemNguyenLieu.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnThemNguyenLieu.Name = "btnThemNguyenLieu";
+            this.btnThemNguyenLieu.Primary = true;
+            this.btnThemNguyenLieu.Size = new System.Drawing.Size(246, 36);
+            this.btnThemNguyenLieu.TabIndex = 7;
+            this.btnThemNguyenLieu.Text = "THÊM NGUYÊN LIỆU";
+            this.btnThemNguyenLieu.UseVisualStyleBackColor = true;
+            this.btnThemNguyenLieu.Click += new System.EventHandler(this.btnThemNguyenLieu_Click);
+            // 
+            // btnNhapKho
+            // 
+            this.btnNhapKho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNhapKho.AutoSize = true;
+            this.btnNhapKho.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNhapKho.Depth = 0;
+            this.btnNhapKho.Icon = null;
+            this.btnNhapKho.Location = new System.Drawing.Point(1758, 48);
+            this.btnNhapKho.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNhapKho.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNhapKho.Name = "btnNhapKho";
+            this.btnNhapKho.Primary = true;
+            this.btnNhapKho.Size = new System.Drawing.Size(145, 36);
+            this.btnNhapKho.TabIndex = 8;
+            this.btnNhapKho.Text = "NHẬP KHO";
+            this.btnNhapKho.UseVisualStyleBackColor = true;
+            this.btnNhapKho.Click += new System.EventHandler(this.btnNhapKho_Click);
+            // 
+            // grdCtrlThemNguyenLieu
+            // 
+            this.grdCtrlThemNguyenLieu.DataSource = typeof(COFFEE_SHOP_MANAGER.khonguyenlieu);
+            this.grdCtrlThemNguyenLieu.Location = new System.Drawing.Point(80, 267);
+            this.grdCtrlThemNguyenLieu.LookAndFeel.SkinName = "Office 2016 Dark";
+            this.grdCtrlThemNguyenLieu.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.grdCtrlThemNguyenLieu.MainView = this.gridView1;
+            this.grdCtrlThemNguyenLieu.Name = "grdCtrlThemNguyenLieu";
+            this.grdCtrlThemNguyenLieu.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.btnEdit});
+            this.grdCtrlThemNguyenLieu.Size = new System.Drawing.Size(2104, 578);
+            this.grdCtrlThemNguyenLieu.TabIndex = 9;
+            this.grdCtrlThemNguyenLieu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colidkhonguyenlieu,
+            this.coltennguyenlieu,
+            this.coldinhluong,
+            this.coltendonvi_dinh_luong,
+            this.edit});
+            this.gridView1.GridControl = this.grdCtrlThemNguyenLieu;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
+            this.gridView1.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.MouseDown;
+            this.gridView1.OptionsSelection.MultiSelect = true;
+            this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
+            this.gridView1.OptionsView.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
+            // 
+            // colidkhonguyenlieu
+            // 
+            this.colidkhonguyenlieu.FieldName = "idkhonguyenlieu";
+            this.colidkhonguyenlieu.MinWidth = 35;
+            this.colidkhonguyenlieu.Name = "colidkhonguyenlieu";
+            this.colidkhonguyenlieu.Visible = true;
+            this.colidkhonguyenlieu.VisibleIndex = 1;
+            this.colidkhonguyenlieu.Width = 235;
+            // 
+            // coltennguyenlieu
+            // 
+            this.coltennguyenlieu.FieldName = "tennguyenlieu";
+            this.coltennguyenlieu.MinWidth = 35;
+            this.coltennguyenlieu.Name = "coltennguyenlieu";
+            this.coltennguyenlieu.Visible = true;
+            this.coltennguyenlieu.VisibleIndex = 2;
+            this.coltennguyenlieu.Width = 235;
+            // 
+            // coldinhluong
+            // 
+            this.coldinhluong.FieldName = "dinhluong";
+            this.coldinhluong.MinWidth = 35;
+            this.coldinhluong.Name = "coldinhluong";
+            this.coldinhluong.Visible = true;
+            this.coldinhluong.VisibleIndex = 3;
+            this.coldinhluong.Width = 235;
+            // 
+            // coltendonvi_dinh_luong
+            // 
+            this.coltendonvi_dinh_luong.FieldName = "tendonvi_dinh_luong";
+            this.coltendonvi_dinh_luong.MinWidth = 35;
+            this.coltendonvi_dinh_luong.Name = "coltendonvi_dinh_luong";
+            this.coltendonvi_dinh_luong.Visible = true;
+            this.coltendonvi_dinh_luong.VisibleIndex = 4;
+            this.coltendonvi_dinh_luong.Width = 342;
+            // 
+            // edit
+            // 
+            this.edit.ColumnEdit = this.btnEdit;
+            this.edit.MinWidth = 35;
+            this.edit.Name = "edit";
+            this.edit.Visible = true;
+            this.edit.VisibleIndex = 5;
+            this.edit.Width = 128;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnThemNguyenLieuDaDung
+            // 
+            this.btnThemNguyenLieuDaDung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemNguyenLieuDaDung.AutoSize = true;
+            this.btnThemNguyenLieuDaDung.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnThemNguyenLieuDaDung.Depth = 0;
+            this.btnThemNguyenLieuDaDung.Icon = null;
+            this.btnThemNguyenLieuDaDung.Location = new System.Drawing.Point(989, 48);
+            this.btnThemNguyenLieuDaDung.Margin = new System.Windows.Forms.Padding(6);
+            this.btnThemNguyenLieuDaDung.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnThemNguyenLieuDaDung.Name = "btnThemNguyenLieuDaDung";
+            this.btnThemNguyenLieuDaDung.Primary = true;
+            this.btnThemNguyenLieuDaDung.Size = new System.Drawing.Size(354, 36);
+            this.btnThemNguyenLieuDaDung.TabIndex = 10;
+            this.btnThemNguyenLieuDaDung.Text = "NHẬP NGUYÊN LIỆU ĐÃ DÙNG";
+            this.btnThemNguyenLieuDaDung.UseVisualStyleBackColor = true;
+            this.btnThemNguyenLieuDaDung.Click += new System.EventHandler(this.btnThemNguyenLieuDaDung_Click);
             // 
             // tabImport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnThemNguyenLieuDaDung);
+            this.Controls.Add(this.grdCtrlThemNguyenLieu);
+            this.Controls.Add(this.btnNhapKho);
+            this.Controls.Add(this.btnThemNguyenLieu);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "tabImport";
-            this.Size = new System.Drawing.Size(986, 461);
+            this.Size = new System.Drawing.Size(2209, 879);
+            this.Load += new System.EventHandler(this.tabImport_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grdCtrlThemNguyenLieu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -55,6 +213,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnThemNguyenLieu;
+        private MaterialSkin.Controls.MaterialRaisedButton btnNhapKho;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colidkhonguyenlieu;
+        private DevExpress.XtraGrid.Columns.GridColumn coltennguyenlieu;
+        private DevExpress.XtraGrid.Columns.GridColumn coldinhluong;
+        private DevExpress.XtraGrid.Columns.GridColumn coltendonvi_dinh_luong;
+        public DevExpress.XtraGrid.GridControl grdCtrlThemNguyenLieu;
+        private DevExpress.XtraGrid.Columns.GridColumn edit;
+        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnEdit;
+        private MaterialSkin.Controls.MaterialRaisedButton btnThemNguyenLieuDaDung;
     }
 }
