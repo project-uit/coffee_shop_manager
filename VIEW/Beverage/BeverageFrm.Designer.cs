@@ -47,8 +47,8 @@
             this.txtTenThucUong.BackColor = System.Drawing.Color.White;
             this.txtTenThucUong.Depth = 0;
             this.txtTenThucUong.Hint = "";
-            this.txtTenThucUong.Location = new System.Drawing.Point(135, 137);
-            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenThucUong.Location = new System.Drawing.Point(186, 206);
+            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtTenThucUong.MaxLength = 50;
             this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenThucUong.Name = "txtTenThucUong";
@@ -56,7 +56,7 @@
             this.txtTenThucUong.SelectedText = "";
             this.txtTenThucUong.SelectionLength = 0;
             this.txtTenThucUong.SelectionStart = 0;
-            this.txtTenThucUong.Size = new System.Drawing.Size(215, 28);
+            this.txtTenThucUong.Size = new System.Drawing.Size(296, 36);
             this.txtTenThucUong.TabIndex = 0;
             this.txtTenThucUong.TabStop = false;
             this.txtTenThucUong.UseSystemPasswordChar = false;
@@ -66,10 +66,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(131, 114);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(180, 171);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 18);
+            this.label1.Size = new System.Drawing.Size(163, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tên thức uống";
             // 
@@ -78,10 +78,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(131, 186);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(180, 279);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 18);
+            this.label2.Size = new System.Drawing.Size(183, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nhóm thức uống";
             // 
@@ -91,7 +91,7 @@
             this.cbbNhomThucUong.Location = new System.Drawing.Point(135, 225);
             this.cbbNhomThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.cbbNhomThucUong.Name = "cbbNhomThucUong";
-            this.cbbNhomThucUong.Size = new System.Drawing.Size(213, 24);
+            this.cbbNhomThucUong.Size = new System.Drawing.Size(291, 32);
             this.cbbNhomThucUong.TabIndex = 3;
             // 
             // label3
@@ -99,10 +99,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(131, 273);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(180, 410);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
+            this.label3.Size = new System.Drawing.Size(94, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Giá bán";
             // 
@@ -111,8 +111,8 @@
             this.txtGiaBan.BackColor = System.Drawing.Color.White;
             this.txtGiaBan.Depth = 0;
             this.txtGiaBan.Hint = "";
-            this.txtGiaBan.Location = new System.Drawing.Point(135, 306);
-            this.txtGiaBan.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGiaBan.Location = new System.Drawing.Point(186, 459);
+            this.txtGiaBan.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtGiaBan.MaxLength = 15;
             this.txtGiaBan.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtGiaBan.Name = "txtGiaBan";
@@ -120,7 +120,7 @@
             this.txtGiaBan.SelectedText = "";
             this.txtGiaBan.SelectionLength = 0;
             this.txtGiaBan.SelectionStart = 0;
-            this.txtGiaBan.Size = new System.Drawing.Size(215, 28);
+            this.txtGiaBan.Size = new System.Drawing.Size(296, 36);
             this.txtGiaBan.TabIndex = 5;
             this.txtGiaBan.TabStop = false;
             this.txtGiaBan.UseSystemPasswordChar = false;
@@ -132,12 +132,12 @@
             this.btnLuu.Depth = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Icon = null;
-            this.btnLuu.Location = new System.Drawing.Point(156, 367);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Location = new System.Drawing.Point(214, 550);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Primary = true;
-            this.btnLuu.Size = new System.Drawing.Size(55, 36);
+            this.btnLuu.Size = new System.Drawing.Size(70, 36);
             this.btnLuu.TabIndex = 6;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -150,12 +150,12 @@
             this.btnHuy.Depth = 0;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHuy.Icon = null;
-            this.btnHuy.Location = new System.Drawing.Point(259, 367);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Location = new System.Drawing.Point(356, 550);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnHuy.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Primary = true;
-            this.btnHuy.Size = new System.Drawing.Size(56, 36);
+            this.btnHuy.Size = new System.Drawing.Size(72, 36);
             this.btnHuy.TabIndex = 7;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -170,30 +170,33 @@
             this.flyoutPanel1.Appearance.Options.UseBackColor = true;
             this.flyoutPanel1.Appearance.Options.UseBorderColor = true;
             this.flyoutPanel1.Controls.Add(this.lbMessage);
-            this.flyoutPanel1.Location = new System.Drawing.Point(12, 404);
+            this.flyoutPanel1.Location = new System.Drawing.Point(16, 606);
             this.flyoutPanel1.LookAndFeel.SkinName = "Office 2019 Colorful";
             this.flyoutPanel1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.flyoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flyoutPanel1.Name = "flyoutPanel1";
             this.flyoutPanel1.OptionsBeakPanel.BackColor = System.Drawing.Color.Transparent;
+            this.flyoutPanel1.OptionsButtonPanel.ButtonPanelHeight = 45;
             this.flyoutPanel1.OwnerControl = this;
-            this.flyoutPanel1.Size = new System.Drawing.Size(267, 95);
+            this.flyoutPanel1.Size = new System.Drawing.Size(367, 142);
             this.flyoutPanel1.TabIndex = 8;
             // 
             // lbMessage
             // 
             this.lbMessage.AutoSize = true;
             this.lbMessage.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMessage.Location = new System.Drawing.Point(45, 36);
+            this.lbMessage.Location = new System.Drawing.Point(62, 54);
+            this.lbMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(162, 25);
+            this.lbMessage.Size = new System.Drawing.Size(223, 36);
             this.lbMessage.TabIndex = 0;
             this.lbMessage.Text = "Lưu thành công";
             // 
             // BeverageFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 511);
+            this.ClientSize = new System.Drawing.Size(693, 766);
             this.Controls.Add(this.flyoutPanel1);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);
@@ -203,10 +206,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTenThucUong);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "BeverageFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm thức uống";
             this.Load += new System.EventHandler(this.BeverageFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();

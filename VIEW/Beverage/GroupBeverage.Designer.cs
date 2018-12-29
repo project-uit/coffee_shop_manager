@@ -62,17 +62,17 @@
             // grdCtrNhomThucUong
             // 
             this.grdCtrNhomThucUong.DataSource = typeof(COFFEE_SHOP_MANAGER.nhomthucuong);
-            this.grdCtrNhomThucUong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.grdCtrNhomThucUong.Location = new System.Drawing.Point(3, 142);
+            this.grdCtrNhomThucUong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grdCtrNhomThucUong.Location = new System.Drawing.Point(4, 213);
             this.grdCtrNhomThucUong.LookAndFeel.SkinName = "Office 2016 Black";
             this.grdCtrNhomThucUong.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.grdCtrNhomThucUong.MainView = this.grdViNhomThucUong;
-            this.grdCtrNhomThucUong.Margin = new System.Windows.Forms.Padding(4);
+            this.grdCtrNhomThucUong.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.grdCtrNhomThucUong.Name = "grdCtrNhomThucUong";
             this.grdCtrNhomThucUong.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnXoa,
             this.btnSua});
-            this.grdCtrNhomThucUong.Size = new System.Drawing.Size(643, 330);
+            this.grdCtrNhomThucUong.Size = new System.Drawing.Size(884, 495);
             this.grdCtrNhomThucUong.TabIndex = 0;
             this.grdCtrNhomThucUong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdViNhomThucUong});
@@ -85,7 +85,8 @@
             this.coltennhomthucuong,
             this.col_btnXoa,
             this.col_btnSua});
-            this.grdViNhomThucUong.DetailHeight = 431;
+            this.grdViNhomThucUong.DetailHeight = 646;
+            this.grdViNhomThucUong.FixedLineWidth = 3;
             this.grdViNhomThucUong.GridControl = this.grdCtrNhomThucUong;
             this.grdViNhomThucUong.Name = "grdViNhomThucUong";
             this.grdViNhomThucUong.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
@@ -101,31 +102,31 @@
             // 
             this.colid_nhomthucuong.Caption = "ID";
             this.colid_nhomthucuong.FieldName = "id_nhomthucuong";
-            this.colid_nhomthucuong.MinWidth = 27;
+            this.colid_nhomthucuong.MinWidth = 37;
             this.colid_nhomthucuong.Name = "colid_nhomthucuong";
             this.colid_nhomthucuong.Visible = true;
             this.colid_nhomthucuong.VisibleIndex = 0;
-            this.colid_nhomthucuong.Width = 155;
+            this.colid_nhomthucuong.Width = 213;
             // 
             // coltennhomthucuong
             // 
             this.coltennhomthucuong.Caption = "Tên nhóm thức uống";
             this.coltennhomthucuong.FieldName = "tennhomthucuong";
-            this.coltennhomthucuong.MinWidth = 27;
+            this.coltennhomthucuong.MinWidth = 37;
             this.coltennhomthucuong.Name = "coltennhomthucuong";
             this.coltennhomthucuong.Visible = true;
             this.coltennhomthucuong.VisibleIndex = 1;
-            this.coltennhomthucuong.Width = 383;
+            this.coltennhomthucuong.Width = 527;
             // 
             // col_btnXoa
             // 
             this.col_btnXoa.ColumnEdit = this.btnXoa;
-            this.col_btnXoa.MinWidth = 27;
+            this.col_btnXoa.MinWidth = 37;
             this.col_btnXoa.Name = "col_btnXoa";
             this.col_btnXoa.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
             this.col_btnXoa.Visible = true;
             this.col_btnXoa.VisibleIndex = 2;
-            this.col_btnXoa.Width = 39;
+            this.col_btnXoa.Width = 54;
             // 
             // btnXoa
             // 
@@ -140,12 +141,12 @@
             // col_btnSua
             // 
             this.col_btnSua.ColumnEdit = this.btnSua;
-            this.col_btnSua.MinWidth = 27;
+            this.col_btnSua.MinWidth = 37;
             this.col_btnSua.Name = "col_btnSua";
             this.col_btnSua.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
             this.col_btnSua.Visible = true;
             this.col_btnSua.VisibleIndex = 3;
-            this.col_btnSua.Width = 43;
+            this.col_btnSua.Width = 59;
             // 
             // btnSua
             // 
@@ -164,12 +165,12 @@
             this.btnLuu.Depth = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Icon = null;
-            this.btnLuu.Location = new System.Drawing.Point(568, 86);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.btnLuu.Location = new System.Drawing.Point(781, 129);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Primary = false;
-            this.btnLuu.Size = new System.Drawing.Size(55, 36);
+            this.btnLuu.Size = new System.Drawing.Size(70, 36);
             this.btnLuu.TabIndex = 1;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -179,8 +180,8 @@
             // 
             this.txtTenThucUong.Depth = 0;
             this.txtTenThucUong.Hint = "";
-            this.txtTenThucUong.Location = new System.Drawing.Point(16, 86);
-            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenThucUong.Location = new System.Drawing.Point(22, 129);
+            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtTenThucUong.MaxLength = 50;
             this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenThucUong.Name = "txtTenThucUong";
@@ -188,7 +189,7 @@
             this.txtTenThucUong.SelectedText = "";
             this.txtTenThucUong.SelectionLength = 0;
             this.txtTenThucUong.SelectionStart = 0;
-            this.txtTenThucUong.Size = new System.Drawing.Size(278, 28);
+            this.txtTenThucUong.Size = new System.Drawing.Size(382, 36);
             this.txtTenThucUong.TabIndex = 2;
             this.txtTenThucUong.TabStop = false;
             this.txtTenThucUong.UseSystemPasswordChar = false;
@@ -202,14 +203,16 @@
             this.flyoutPanel1.Appearance.Options.UseBackColor = true;
             this.flyoutPanel1.Appearance.Options.UseBorderColor = true;
             this.flyoutPanel1.Controls.Add(this.lbMessage);
-            this.flyoutPanel1.Location = new System.Drawing.Point(12, 369);
+            this.flyoutPanel1.Location = new System.Drawing.Point(16, 554);
             this.flyoutPanel1.LookAndFeel.SkinName = "Office 2019 Colorful";
             this.flyoutPanel1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
+            this.flyoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flyoutPanel1.Name = "flyoutPanel1";
             this.flyoutPanel1.OptionsBeakPanel.BackColor = System.Drawing.Color.Transparent;
+            this.flyoutPanel1.OptionsButtonPanel.ButtonPanelHeight = 45;
             this.flyoutPanel1.OwnerControl = this.grdCtrNhomThucUong;
             this.flyoutPanel1.ParentForm = this;
-            this.flyoutPanel1.Size = new System.Drawing.Size(267, 95);
+            this.flyoutPanel1.Size = new System.Drawing.Size(367, 142);
             this.flyoutPanel1.TabIndex = 3;
             // 
             // lbMessage
@@ -217,22 +220,23 @@
             this.lbMessage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbMessage.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMessage.Location = new System.Drawing.Point(0, 0);
+            this.lbMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(267, 95);
+            this.lbMessage.Size = new System.Drawing.Size(367, 142);
             this.lbMessage.TabIndex = 0;
             this.lbMessage.Text = "Lưu thành công";
             this.lbMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GroupBeverage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 476);
+            this.ClientSize = new System.Drawing.Size(891, 714);
             this.Controls.Add(this.flyoutPanel1);
             this.Controls.Add(this.txtTenThucUong);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.grdCtrNhomThucUong);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "GroupBeverage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nhóm thức uống";

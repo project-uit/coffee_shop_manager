@@ -42,16 +42,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Download\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -65,6 +66,7 @@
       <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" />
+    <Reference Include="PresentationCore" />
     <Reference Include="SplashScreen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\SplashScreen.Winforms.1.0.0\lib\SplashScreen.dll</HintPath>
     </Reference>
@@ -73,6 +75,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -85,6 +88,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="chitietcongthuc.cs">
@@ -100,10 +105,14 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\BeverageDAO.cs" />
+    <Compile Include="DAO\ChiTietNguyenLieuDaDungDAO.cs" />
+    <Compile Include="DAO\ChiTietNhapKhoDAO.cs" />
     <Compile Include="DAO\DiscountDAO.cs" />
     <Compile Include="DAO\FormulaDAO.cs" />
     <Compile Include="DAO\GroupBeverageDAO.cs" />
-    <Compile Include="DAO\ImportDAO.cs" />
+    <Compile Include="DAO\NguyenLieuDaDungDAO.cs" />
+    <Compile Include="DAO\NhapKhoDAO.cs" />
+    <Compile Include="DAO\ThemNguyenLieuDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="DAO\StatisticResourcesDAO.cs" />
     <Compile Include="DAO\StoreDAO.cs" />
@@ -177,6 +186,24 @@
     </Compile>
     <Compile Include="VIEW\Discount\DiscountFrm.Designer.cs">
       <DependentUpon>DiscountFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Import\NhapKhoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Import\NhapKhoFrm.Designer.cs">
+      <DependentUpon>NhapKhoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Import\ThemNguyenLieuDaDungFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Import\ThemNguyenLieuDaDungFrm.Designer.cs">
+      <DependentUpon>ThemNguyenLieuDaDungFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Import\ThemNguyenLieuFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Import\ThemNguyenLieuFrm.Designer.cs">
+      <DependentUpon>ThemNguyenLieuFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="VIEW\Login\FormLogin.cs">
       <SubType>Form</SubType>
@@ -253,8 +280,17 @@
     <EmbeddedResource Include="VIEW\Discount\DiscountFrm.resx">
       <DependentUpon>DiscountFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Import\NhapKhoFrm.resx">
+      <DependentUpon>NhapKhoFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Import\tabImport.resx">
       <DependentUpon>tabImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Import\ThemNguyenLieuDaDungFrm.resx">
+      <DependentUpon>ThemNguyenLieuDaDungFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Import\ThemNguyenLieuFrm.resx">
+      <DependentUpon>ThemNguyenLieuFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Login\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

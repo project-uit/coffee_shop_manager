@@ -24,12 +24,14 @@ ngaybatdau date,
 ngayketthuc date
 );
 
+///////////////////////////////////////////////////////////////
+
 create table khonguyenlieu(
 	idkhonguyenlieu int IDENTITY(1,1) PRIMARY KEY,
 	tennguyenlieu nvarchar(50),
 	tendonvi_dinh_luong char(8),
 	dinhluong float, 
-    xoa_flag bit
+        xoa_flag bit
 );
 
 create table nguyenlieudadung(
@@ -38,13 +40,36 @@ create table nguyenlieudadung(
 );
 
 create table chitietnguyenlieudadung(
-idchitietnguyenlieudadung int IDENTITY(1,1) PRIMARY KEY,
-idnguyenlieudadung int,
-idkhonguyenlieu int,
-dinhluong float,
-FOREIGN KEY (idkhonguyenlieu) REFERENCES khonguyenlieu(idkhonguyenlieu),
-FOREIGN KEY (idnguyenlieudadung) REFERENCES nguyenlieudadung(idnguyenlieudadung)
+	idchitietnguyenlieudadung int IDENTITY(1,1) PRIMARY KEY,
+	idnguyenlieudadung int,
+	idkhonguyenlieu int,
+	dinhluong float,
+	FOREIGN KEY (idkhonguyenlieu) REFERENCES khonguyenlieu(idkhonguyenlieu),
+	FOREIGN KEY (idnguyenlieudadung) REFERENCES nguyenlieudadung(idnguyenlieudadung)
 );
+
+create table nhapkho(
+	idnhapkho int IDENTITY(1,1) PRIMARY KEY,
+        ngaynhap DateTime not null,
+	id_nhanvien int not null,
+	FOREIGN KEY (id_nhanvien)
+        REFERENCES nhanvien(id_nhanvien),
+)
+create table chitietnhapkho(
+	idchitietnhapkho int IDENTITY(1,1) PRIMARY KEY,
+	tendonvi_so_luong char(8) not null,
+	soluong int not null, 
+	dinhluong float not null,
+	dongia money not null,
+	idnhapkho int not null,
+	idkhonguyenlieu int not null,
+	FOREIGN KEY (idkhonguyenlieu)
+	REFERENCES khonguyenlieu(idkhonguyenlieu),
+	FOREIGN KEY (idnhapkho)
+	REFERENCES nhapkho(idnhapkho)
+);
+
+///////////////////////////////////////////////////////////////
 
 create table chitietcongthuc(
 	id_chitietcongthuc int IDENTITY(1,1) PRIMARY KEY,
@@ -67,26 +92,7 @@ CREATE TABLE nhanvien(
 	quyen int NULL DEFAULT (0),
 	xoa_flag bit,
 );
-create table nhapkho(
-	idnhapkho int IDENTITY(1,1) PRIMARY KEY,
-    ngaynhap DateTime not null,
-	id_nhanvien int not null,
-	FOREIGN KEY (id_nhanvien)
-    REFERENCES nhanvien(id_nhanvien),
-)
-create table chitietnhapkho(
-idchitietnhapkho int IDENTITY(1,1) PRIMARY KEY,
-tendonvi_so_luong char(8) not null,
-soluong int not null, 
-dinhluong float not null,
-dongia money not null,
-idnhapkho int not null,
-idkhonguyenlieu int not null,
-FOREIGN KEY (idkhonguyenlieu)
-REFERENCES khonguyenlieu(idkhonguyenlieu),
-FOREIGN KEY (idnhapkho)
-REFERENCES nhapkho(idnhapkho)
-);
+
 create table hoadon(
 	id_hoadon int IDENTITY(1,1) PRIMARY KEY,
 	tongtien money not null,
