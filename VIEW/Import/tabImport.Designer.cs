@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabImport));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.btnThemNguyenLieu = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnNhapKho = new MaterialSkin.Controls.MaterialRaisedButton();
             this.grdCtrlThemNguyenLieu = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colidkhonguyenlieu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.idkhonguyenlieu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltennguyenlieu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldinhluong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltendonvi_dinh_luong = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -88,15 +88,18 @@
             // 
             // grdCtrlThemNguyenLieu
             // 
+            this.grdCtrlThemNguyenLieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrlThemNguyenLieu.DataSource = typeof(COFFEE_SHOP_MANAGER.khonguyenlieu);
-            this.grdCtrlThemNguyenLieu.Location = new System.Drawing.Point(80, 267);
+            this.grdCtrlThemNguyenLieu.Location = new System.Drawing.Point(3, 267);
             this.grdCtrlThemNguyenLieu.LookAndFeel.SkinName = "Office 2016 Dark";
             this.grdCtrlThemNguyenLieu.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.grdCtrlThemNguyenLieu.MainView = this.gridView1;
             this.grdCtrlThemNguyenLieu.Name = "grdCtrlThemNguyenLieu";
             this.grdCtrlThemNguyenLieu.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnEdit});
-            this.grdCtrlThemNguyenLieu.Size = new System.Drawing.Size(2104, 578);
+            this.grdCtrlThemNguyenLieu.Size = new System.Drawing.Size(2206, 578);
             this.grdCtrlThemNguyenLieu.TabIndex = 9;
             this.grdCtrlThemNguyenLieu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -104,7 +107,7 @@
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colidkhonguyenlieu,
+            this.idkhonguyenlieu,
             this.coltennguyenlieu,
             this.coldinhluong,
             this.coltendonvi_dinh_luong,
@@ -117,57 +120,62 @@
             this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gridView1.OptionsView.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways;
             // 
-            // colidkhonguyenlieu
+            // idkhonguyenlieu
             // 
-            this.colidkhonguyenlieu.FieldName = "idkhonguyenlieu";
-            this.colidkhonguyenlieu.MinWidth = 35;
-            this.colidkhonguyenlieu.Name = "colidkhonguyenlieu";
-            this.colidkhonguyenlieu.Visible = true;
-            this.colidkhonguyenlieu.VisibleIndex = 1;
-            this.colidkhonguyenlieu.Width = 235;
+            this.idkhonguyenlieu.Caption = "ID";
+            this.idkhonguyenlieu.FieldName = "idkhonguyenlieu";
+            this.idkhonguyenlieu.MinWidth = 35;
+            this.idkhonguyenlieu.Name = "idkhonguyenlieu";
+            this.idkhonguyenlieu.Visible = true;
+            this.idkhonguyenlieu.VisibleIndex = 1;
+            this.idkhonguyenlieu.Width = 191;
             // 
             // coltennguyenlieu
             // 
+            this.coltennguyenlieu.Caption = "Tên Nguyên Liệu";
             this.coltennguyenlieu.FieldName = "tennguyenlieu";
             this.coltennguyenlieu.MinWidth = 35;
             this.coltennguyenlieu.Name = "coltennguyenlieu";
             this.coltennguyenlieu.Visible = true;
             this.coltennguyenlieu.VisibleIndex = 2;
-            this.coltennguyenlieu.Width = 235;
+            this.coltennguyenlieu.Width = 785;
             // 
             // coldinhluong
             // 
+            this.coldinhluong.Caption = "Định Lượng";
             this.coldinhluong.FieldName = "dinhluong";
             this.coldinhluong.MinWidth = 35;
             this.coldinhluong.Name = "coldinhluong";
             this.coldinhluong.Visible = true;
             this.coldinhluong.VisibleIndex = 3;
-            this.coldinhluong.Width = 235;
+            this.coldinhluong.Width = 547;
             // 
             // coltendonvi_dinh_luong
             // 
+            this.coltendonvi_dinh_luong.Caption = "Tên đơn vị định lượng";
             this.coltendonvi_dinh_luong.FieldName = "tendonvi_dinh_luong";
             this.coltendonvi_dinh_luong.MinWidth = 35;
             this.coltendonvi_dinh_luong.Name = "coltendonvi_dinh_luong";
             this.coltendonvi_dinh_luong.Visible = true;
             this.coltendonvi_dinh_luong.VisibleIndex = 4;
-            this.coltendonvi_dinh_luong.Width = 342;
+            this.coltendonvi_dinh_luong.Width = 493;
             // 
             // edit
             // 
+            this.edit.Caption = "Sửa";
             this.edit.ColumnEdit = this.btnEdit;
             this.edit.MinWidth = 35;
             this.edit.Name = "edit";
             this.edit.Visible = true;
             this.edit.VisibleIndex = 5;
-            this.edit.Width = 128;
+            this.edit.Width = 77;
             // 
             // btnEdit
             // 
             this.btnEdit.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -216,7 +224,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnThemNguyenLieu;
         private MaterialSkin.Controls.MaterialRaisedButton btnNhapKho;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn colidkhonguyenlieu;
+        private DevExpress.XtraGrid.Columns.GridColumn idkhonguyenlieu;
         private DevExpress.XtraGrid.Columns.GridColumn coltennguyenlieu;
         private DevExpress.XtraGrid.Columns.GridColumn coldinhluong;
         private DevExpress.XtraGrid.Columns.GridColumn coltendonvi_dinh_luong;

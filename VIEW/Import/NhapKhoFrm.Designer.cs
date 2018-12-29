@@ -418,6 +418,7 @@
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialLabel2);
             this.Name = "NhapKhoFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập Kho";
             this.Load += new System.EventHandler(this.NhapKhoFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).EndInit();

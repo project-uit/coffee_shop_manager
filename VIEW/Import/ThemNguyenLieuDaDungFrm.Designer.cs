@@ -203,6 +203,7 @@
             this.Controls.Add(this.dateEdit);
             this.Controls.Add(this.materialLabel2);
             this.Name = "ThemNguyenLieuDaDungFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Nguyên Liệu Đã Dùng";
             this.Load += new System.EventHandler(this.ThemNguyenLieuDaDungFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).EndInit();

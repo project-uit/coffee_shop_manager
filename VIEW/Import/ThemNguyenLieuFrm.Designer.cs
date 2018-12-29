@@ -256,7 +256,7 @@
             this.Controls.Add(this.txtDinhLuong);
             this.Controls.Add(this.txtTenNguyenLieu);
             this.Name = "ThemNguyenLieuFrm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Nguyên Liệu";
             this.ResumeLayout(false);
             this.PerformLayout();
