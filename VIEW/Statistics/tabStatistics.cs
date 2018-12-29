@@ -43,9 +43,9 @@ namespace COFFEE_SHOP_MANAGER
             chartRevenue.Series.Add(series);
             for (int i=0; i< 12; i ++)
             {
-                String _year = (i + 1).ToString();
+                String month = (i + 1).ToString();
                 chartRevenue.Series["Doanh thu"].Points.Add(
-                    new SeriesPoint(_year, getRevenueByMonth(invoices, _year))
+                    new SeriesPoint(month, getRevenueByMonth(invoices, month))
                 );
             }
         }
@@ -121,12 +121,13 @@ namespace COFFEE_SHOP_MANAGER
             List<RevenueReportDTO> revenues = new List<RevenueReportDTO>();
             for (int i = 0; i < 12; i++)
             {
-                int _year = (i + 1);
-                revenues.Add(new RevenueReportDTO(_year, (int)getRevenueByMonth(invoices, _year.ToString())));
+                int month = (i + 1);
+                revenues.Add(new RevenueReportDTO(month, (int)getRevenueByMonth(invoices, month.ToString())));
             }
 
             RevenuePrintFrm revenuePrintFrm = new RevenuePrintFrm();
             revenuePrintFrm.revenues = revenues;
+            revenuePrintFrm.year = year;
             revenuePrintFrm.Print();
             revenuePrintFrm.ShowDialog();
         }
@@ -149,6 +150,8 @@ namespace COFFEE_SHOP_MANAGER
             }
             BeverageRevenuePrintFrm revenuePrintFrm = new BeverageRevenuePrintFrm();
             revenuePrintFrm.revenues = revenues;
+            revenuePrintFrm.month = month;
+            revenuePrintFrm.year = year;
             revenuePrintFrm.Print();
             revenuePrintFrm.ShowDialog();
         }

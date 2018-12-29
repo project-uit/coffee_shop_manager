@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using COFFEE_SHOP_MANAGER.DTO;
+using DevExpress.XtraReports.Parameters;
 
 namespace COFFEE_SHOP_MANAGER.VIEW.Statistics
 {
     public partial class BeverageRevenuePrintFrm : DevExpress.XtraEditors.XtraForm
     {
         public List<BeverageRevenueReportDTO> revenues;
+        public string month, year;
+
         public BeverageRevenuePrintFrm()
         {
             InitializeComponent();
@@ -23,7 +26,9 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Statistics
         public void Print()
         {
             BeverageRevenueReport beverageRevenueReport = new BeverageRevenueReport();
-            beverageRevenueReport.InitData(revenues);
+            beverageRevenueReport.InitData(month, year, revenues);
+            foreach (Parameter p in beverageRevenueReport.Parameters)
+                p.Visible = false;
             documentViewer1.DocumentSource = beverageRevenueReport;
             beverageRevenueReport.CreateDocument();
         }

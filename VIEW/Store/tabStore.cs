@@ -184,11 +184,18 @@ namespace COFFEE_SHOP_MANAGER
             {
                 XtraMessageBox.Show(this, "Thêm hóa đơn mới thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 listInvoiceDetail = list;
+                resetGridControlInvoices();
             }
             else
             {
                 XtraMessageBox.Show(this, "Thêm hóa đơn mới không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void resetGridControlInvoices()
+        {
+            invoices = StoreDAO.getInvoices();
+            gcSearchInvoice.DataSource = invoices;
         }
 
         private void btnView_Click(object sender, EventArgs e)

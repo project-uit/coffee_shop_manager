@@ -16,7 +16,9 @@ namespace COFFEE_SHOP_MANAGER.DAO
             {
                 using (quanlycafeEntities dbContext = new quanlycafeEntities())
                 {
-                    invoices = dbContext.hoadons.ToList();
+                    invoices = dbContext.hoadons
+                        .Include(x => x.chitiethoadons)
+                        .ToList();
                 }
             }
             catch (Exception ex)
@@ -36,6 +38,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
                 {
                     invoiceDetails = dbContext.chitiethoadons
                     .Where(x => x.id_hoadon == invoice.id_hoadon)
+                    .Include(x=> x.hoadon)
                     .Include(x => x.thucuong)
                     .Include(x=> x.thucuong.nhomthucuong)
                     .ToList();

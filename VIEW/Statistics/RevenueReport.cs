@@ -16,19 +16,22 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Statistics
             InitializeComponent();
         }
 
-        public void InitData(List<RevenueReportDTO> revenues)
+        public void InitData(string year, List<RevenueReportDTO> revenues)
         {
             DataSource = revenues;
             Series series = new Series("Doanh thu", ViewType.Bar);
             chartRevenue.Series.Add(series);
-            
+            ChartTitle chartTitle = new ChartTitle();
+            chartTitle.Text = "THỐNG KÊ DOANH THU NĂM " + year;
+            chartRevenue.Titles.Add(chartTitle);
             for (int i = 0; i < 12; i++)
             {
-                int year = (i + 1);
+                int month = (i + 1);
                 chartRevenue.Series["Doanh thu"].Points.Add(
-                    new SeriesPoint(year, revenues[i].revenue)
+                    new SeriesPoint(month, revenues[i].revenue)
                 );
             }
+            this.date.Value = DateTime.Now;
         }
     }
 }

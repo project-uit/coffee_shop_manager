@@ -36,6 +36,7 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
             this.xrTableRow2 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell3 = new DevExpress.XtraReports.UI.XRTableCell();
@@ -43,6 +44,9 @@
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.chartRevenue = new DevExpress.XtraReports.UI.XRChart();
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
+            this.chitietcongthucTableAdapter = new COFFEE_SHOP_MANAGER.quanlycafeDataSetTableAdapters.chitietcongthucTableAdapter();
+            this.date = new DevExpress.XtraReports.Parameters.Parameter();
+            this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
@@ -113,7 +117,7 @@
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 70F;
+            this.TopMargin.HeightF = 45F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.TopMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
@@ -128,10 +132,21 @@
             // ReportHeader
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel2,
+            this.xrLabel3,
             this.xrTable2,
             this.xrLabel1});
-            this.ReportHeader.HeightF = 100F;
+            this.ReportHeader.HeightF = 138.5417F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrLabel3
+            // 
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(450.8333F, 76.44952F);
+            this.xrLabel3.Multiline = true;
+            this.xrLabel3.Name = "xrLabel3";
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(47.91669F, 23F);
+            this.xrLabel3.Text = "Ngày: ";
             // 
             // xrTable2
             // 
@@ -139,7 +154,7 @@
             | DevExpress.XtraPrinting.BorderSide.Right) 
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable2.BorderWidth = 2F;
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(28.8462F, 75.00001F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(28.84612F, 113.5417F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
@@ -219,6 +234,26 @@
             this.ReportFooter.HeightF = 425.7212F;
             this.ReportFooter.Name = "ReportFooter";
             // 
+            // chitietcongthucTableAdapter
+            // 
+            this.chitietcongthucTableAdapter.ClearBeforeFill = true;
+            // 
+            // date
+            // 
+            this.date.Description = "Parameter1";
+            this.date.Name = "date";
+            // 
+            // xrLabel2
+            // 
+            this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Parameters].[date]")});
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(498.75F, 76.44952F);
+            this.xrLabel2.Multiline = true;
+            this.xrLabel2.Name = "xrLabel2";
+            this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(100F, 23F);
+            this.xrLabel2.Text = "xrLabel2";
+            // 
             // RevenueReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -227,10 +262,12 @@
             this.BottomMargin,
             this.ReportHeader,
             this.ReportFooter});
-            this.Margins = new System.Drawing.Printing.Margins(70, 70, 70, 108);
+            this.Margins = new System.Drawing.Printing.Margins(70, 70, 45, 108);
             this.PageHeight = 1169;
             this.PageWidth = 827;
             this.PaperKind = System.Drawing.Printing.PaperKind.A4;
+            this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
+            this.date});
             this.ScriptsSource = "\r\nprivate void chartRevenue_AxisScaleChanged(object sender, DevExpress.XtraCharts" +
     ".AxisScaleChangedEventArgs e) {\r\n\r\n}\r\n";
             this.Version = "18.1";
@@ -258,5 +295,9 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.XRChart chartRevenue;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
+        private quanlycafeDataSetTableAdapters.chitietcongthucTableAdapter chitietcongthucTableAdapter;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.Parameters.Parameter date;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel2;
     }
 }

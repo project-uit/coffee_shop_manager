@@ -16,7 +16,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Statistics
             InitializeComponent();
         }
 
-        public void InitData(List<BeverageRevenueReportDTO> revenues)
+        public void InitData(string month, string year, List<BeverageRevenueReportDTO> revenues)
         {
             DataSource = revenues;
             Series series = new Series("Doanh thu", ViewType.Pie);
@@ -28,12 +28,19 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Statistics
             label.ResolveOverlappingMode = ResolveOverlappingMode.Default;
             chartBeverageRevenue.Series.Add(series);
 
-            foreach(BeverageRevenueReportDTO revenue in revenues)
+            ChartTitle chartTitle = new ChartTitle();
+            chartTitle.Text = "THỐNG KÊ DOANH THU THEO NHÓM THỨC UỐNG THÁNG" + month + "/" + year;
+            chartTitle.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
+            chartBeverageRevenue.Titles.Add(chartTitle);
+
+            foreach (BeverageRevenueReportDTO revenue in revenues)
             {
                 chartBeverageRevenue.Series["Doanh thu"].Points.Add(
                     new SeriesPoint(revenue.groupBeverage, revenue.revenue)
                 );
             }
+
+            this.date.Value = DateTime.Now;
         }
     }
 }
