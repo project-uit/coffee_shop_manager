@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.pnlDrawer = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -49,6 +49,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelTab = new System.Windows.Forms.Panel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlDrawer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleDrawer)).BeginInit();
@@ -60,6 +61,7 @@
             // pnlDrawer
             // 
             this.pnlDrawer.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlDrawer.Controls.Add(this.btnLogout);
             this.pnlDrawer.Controls.Add(this.bunifuImageButton1);
             this.pnlDrawer.Controls.Add(this.btnExit);
             this.pnlDrawer.Controls.Add(this.btnDashboard);
@@ -73,8 +75,9 @@
             this.bunifuTransition1.SetDecoration(this.pnlDrawer, BunifuAnimatorNS.DecorationType.None);
             this.pnlDrawer.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlDrawer.Location = new System.Drawing.Point(0, 0);
+            this.pnlDrawer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pnlDrawer.Name = "pnlDrawer";
-            this.pnlDrawer.Size = new System.Drawing.Size(233, 406);
+            this.pnlDrawer.Size = new System.Drawing.Size(466, 1327);
             this.pnlDrawer.TabIndex = 0;
             this.pnlDrawer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDrawer_Paint);
             // 
@@ -84,9 +87,10 @@
             this.bunifuTransition1.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(62, 36);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(124, 69);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(96, 86);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(192, 165);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 7;
             this.bunifuImageButton1.TabStop = false;
@@ -115,14 +119,14 @@
             this.btnExit.IconVisible = true;
             this.btnExit.IconZoom = 50D;
             this.btnExit.IsTab = true;
-            this.btnExit.Location = new System.Drawing.Point(3, 555);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(6);
+            this.btnExit.Location = new System.Drawing.Point(0, 1210);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
             this.btnExit.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
             this.btnExit.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
             this.btnExit.selected = false;
-            this.btnExit.Size = new System.Drawing.Size(230, 55);
+            this.btnExit.Size = new System.Drawing.Size(460, 106);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Thoát";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,14 +156,14 @@
             this.btnDashboard.IconVisible = true;
             this.btnDashboard.IconZoom = 50D;
             this.btnDashboard.IsTab = true;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 189);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDashboard.Location = new System.Drawing.Point(0, 363);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDashboard.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
             this.btnDashboard.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
             this.btnDashboard.selected = true;
-            this.btnDashboard.Size = new System.Drawing.Size(233, 55);
+            this.btnDashboard.Size = new System.Drawing.Size(466, 106);
             this.btnDashboard.TabIndex = 7;
             this.btnDashboard.Text = "Tổng quan";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -189,14 +193,14 @@
             this.btnImport.IconVisible = true;
             this.btnImport.IconZoom = 50D;
             this.btnImport.IsTab = true;
-            this.btnImport.Location = new System.Drawing.Point(0, 372);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImport.Location = new System.Drawing.Point(0, 715);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnImport.Name = "btnImport";
             this.btnImport.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
             this.btnImport.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
             this.btnImport.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
             this.btnImport.selected = false;
-            this.btnImport.Size = new System.Drawing.Size(233, 55);
+            this.btnImport.Size = new System.Drawing.Size(466, 106);
             this.btnImport.TabIndex = 6;
             this.btnImport.Text = "Nhập hàng";
             this.btnImport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,14 +230,14 @@
             this.btnStore.IconVisible = true;
             this.btnStore.IconZoom = 50D;
             this.btnStore.IsTab = true;
-            this.btnStore.Location = new System.Drawing.Point(0, 250);
-            this.btnStore.Margin = new System.Windows.Forms.Padding(6);
+            this.btnStore.Location = new System.Drawing.Point(0, 481);
+            this.btnStore.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnStore.Name = "btnStore";
             this.btnStore.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
             this.btnStore.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
             this.btnStore.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
             this.btnStore.selected = false;
-            this.btnStore.Size = new System.Drawing.Size(233, 55);
+            this.btnStore.Size = new System.Drawing.Size(466, 106);
             this.btnStore.TabIndex = 5;
             this.btnStore.Text = "Bán hàng";
             this.btnStore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,14 +268,14 @@
             this.btnStatistics.IconVisible = true;
             this.btnStatistics.IconZoom = 50D;
             this.btnStatistics.IsTab = true;
-            this.btnStatistics.Location = new System.Drawing.Point(0, 433);
-            this.btnStatistics.Margin = new System.Windows.Forms.Padding(6);
+            this.btnStatistics.Location = new System.Drawing.Point(0, 833);
+            this.btnStatistics.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
             this.btnStatistics.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
             this.btnStatistics.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
             this.btnStatistics.selected = false;
-            this.btnStatistics.Size = new System.Drawing.Size(233, 55);
+            this.btnStatistics.Size = new System.Drawing.Size(466, 106);
             this.btnStatistics.TabIndex = 4;
             this.btnStatistics.Text = "Thống kê";
             this.btnStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -301,14 +305,14 @@
             this.btnBeverage.IconVisible = true;
             this.btnBeverage.IconZoom = 50D;
             this.btnBeverage.IsTab = true;
-            this.btnBeverage.Location = new System.Drawing.Point(0, 311);
-            this.btnBeverage.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBeverage.Location = new System.Drawing.Point(0, 598);
+            this.btnBeverage.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnBeverage.Name = "btnBeverage";
             this.btnBeverage.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBeverage.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
             this.btnBeverage.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
             this.btnBeverage.selected = false;
-            this.btnBeverage.Size = new System.Drawing.Size(233, 55);
+            this.btnBeverage.Size = new System.Drawing.Size(466, 106);
             this.btnBeverage.TabIndex = 3;
             this.btnBeverage.Text = "Thức uống";
             this.btnBeverage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -323,9 +327,10 @@
             this.bunifuTransition1.SetDecoration(this.btnToggleDrawer, BunifuAnimatorNS.DecorationType.None);
             this.btnToggleDrawer.Image = ((System.Drawing.Image)(resources.GetObject("btnToggleDrawer.Image")));
             this.btnToggleDrawer.ImageActive = null;
-            this.btnToggleDrawer.Location = new System.Drawing.Point(12, 12);
+            this.btnToggleDrawer.Location = new System.Drawing.Point(24, 23);
+            this.btnToggleDrawer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnToggleDrawer.Name = "btnToggleDrawer";
-            this.btnToggleDrawer.Size = new System.Drawing.Size(27, 27);
+            this.btnToggleDrawer.Size = new System.Drawing.Size(54, 52);
             this.btnToggleDrawer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnToggleDrawer.TabIndex = 2;
             this.btnToggleDrawer.TabStop = false;
@@ -355,14 +360,14 @@
             this.btnStaff.IconVisible = true;
             this.btnStaff.IconZoom = 50D;
             this.btnStaff.IsTab = true;
-            this.btnStaff.Location = new System.Drawing.Point(3, 494);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(6);
+            this.btnStaff.Location = new System.Drawing.Point(6, 950);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
             this.btnStaff.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
             this.btnStaff.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
             this.btnStaff.selected = false;
-            this.btnStaff.Size = new System.Drawing.Size(230, 55);
+            this.btnStaff.Size = new System.Drawing.Size(460, 106);
             this.btnStaff.TabIndex = 2;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -376,9 +381,10 @@
             this.bunifuTransition1.SetDecoration(this.lbNameStore, BunifuAnimatorNS.DecorationType.None);
             this.lbNameStore.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbNameStore.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbNameStore.Location = new System.Drawing.Point(68, 139);
+            this.lbNameStore.Location = new System.Drawing.Point(136, 267);
+            this.lbNameStore.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbNameStore.Name = "lbNameStore";
-            this.lbNameStore.Size = new System.Drawing.Size(90, 21);
+            this.lbNameStore.Size = new System.Drawing.Size(180, 45);
             this.lbNameStore.TabIndex = 1;
             this.lbNameStore.Text = "Cafe Brand";
             // 
@@ -386,22 +392,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation2;
             this.bunifuTransition1.MaxAnimationTime = 1000;
             // 
             // pnlHeader
@@ -413,8 +419,9 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(456, 58);
+            this.pnlHeader.Size = new System.Drawing.Size(912, 112);
             this.pnlHeader.TabIndex = 0;
             // 
             // btnClose
@@ -425,9 +432,10 @@
             this.bunifuTransition1.SetDecoration(this.btnClose, BunifuAnimatorNS.DecorationType.None);
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(408, 12);
+            this.btnClose.Location = new System.Drawing.Point(816, 23);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(36, 30);
+            this.btnClose.Size = new System.Drawing.Size(72, 58);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 1;
             this.btnClose.TabStop = false;
@@ -440,9 +448,10 @@
             this.bunifuTransition1.SetDecoration(this.lbTabName, BunifuAnimatorNS.DecorationType.None);
             this.lbTabName.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.lbTabName.ForeColor = System.Drawing.Color.Black;
-            this.lbTabName.Location = new System.Drawing.Point(20, 19);
+            this.lbTabName.Location = new System.Drawing.Point(40, 37);
+            this.lbTabName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbTabName.Name = "lbTabName";
-            this.lbTabName.Size = new System.Drawing.Size(98, 20);
+            this.lbTabName.Size = new System.Drawing.Size(196, 41);
             this.lbTabName.TabIndex = 0;
             this.lbTabName.Text = "TỔNG QUAN";
             // 
@@ -452,9 +461,10 @@
             this.panel2.Controls.Add(this.pnlHeader);
             this.bunifuTransition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(233, 0);
+            this.panel2.Location = new System.Drawing.Point(466, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(456, 406);
+            this.panel2.Size = new System.Drawing.Size(912, 1327);
             this.panel2.TabIndex = 1;
             // 
             // panelTab
@@ -462,9 +472,10 @@
             this.panelTab.BackColor = System.Drawing.Color.White;
             this.bunifuTransition1.SetDecoration(this.panelTab, BunifuAnimatorNS.DecorationType.None);
             this.panelTab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTab.Location = new System.Drawing.Point(0, 58);
+            this.panelTab.Location = new System.Drawing.Point(0, 112);
+            this.panelTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelTab.Name = "panelTab";
-            this.panelTab.Size = new System.Drawing.Size(456, 348);
+            this.panelTab.Size = new System.Drawing.Size(912, 1215);
             this.panelTab.TabIndex = 1;
             // 
             // imageList1
@@ -474,17 +485,56 @@
             this.imageList1.Images.SetKeyName(0, "Menu_50px.png");
             this.imageList1.Images.SetKeyName(1, "Left_48px.png");
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Activecolor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnLogout.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogout.BorderRadius = 0;
+            this.btnLogout.ButtonText = "Đăng xuất";
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnLogout, BunifuAnimatorNS.DecorationType.None);
+            this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
+            this.btnLogout.Iconimage_right = null;
+            this.btnLogout.Iconimage_right_Selected = null;
+            this.btnLogout.Iconimage_Selected = null;
+            this.btnLogout.IconMarginLeft = 0;
+            this.btnLogout.IconMarginRight = 0;
+            this.btnLogout.IconRightVisible = true;
+            this.btnLogout.IconRightZoom = 0D;
+            this.btnLogout.IconVisible = true;
+            this.btnLogout.IconZoom = 50D;
+            this.btnLogout.IsTab = true;
+            this.btnLogout.Location = new System.Drawing.Point(3, 1080);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Normalcolor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnLogout.OnHovercolor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnLogout.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(58)))), ((int)(((byte)(108)))));
+            this.btnLogout.selected = false;
+            this.btnLogout.Size = new System.Drawing.Size(460, 106);
+            this.btnLogout.TabIndex = 9;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogout.Textcolor = System.Drawing.Color.White;
+            this.btnLogout.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(689, 406);
+            this.ClientSize = new System.Drawing.Size(1378, 1327);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlDrawer);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COFFEE SHOP MANAGER";
@@ -521,6 +571,7 @@
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private System.Windows.Forms.Label lbTabName;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        public Bunifu.Framework.UI.BunifuFlatButton btnLogout;
     }
 }
 

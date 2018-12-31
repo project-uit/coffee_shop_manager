@@ -42,17 +42,17 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Download\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.2.Core, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -119,6 +119,10 @@
     <Compile Include="DAO\StatisticsDAO.cs" />
     <Compile Include="DAO\StaffDAO.cs" />
     <Compile Include="DAO\DashboardDAO.cs" />
+    <Compile Include="DTO\LoginDAO.cs" />
+    <Compile Include="DTO\StaffDAO.cs" />
+    <Compile Include="DTO\StatisticsDAO.cs" />
+    <Compile Include="DTO\StoreDAO.cs" />
     <Compile Include="DTO\ThongKeNguyenLieu.cs" />
     <Compile Include="giamgia.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -244,11 +248,59 @@
       <DependentUpon>MessageBoxFormYN.cs</DependentUpon>
     </Compile>
     <Compile Include="VIEW\MessageBox\MessageBoxMaterial.cs" />
+    <Compile Include="VIEW\Staff\AddStaffFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Staff\AddStaffFrm.Designer.cs">
+      <DependentUpon>AddStaffFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Staff\EditStaffFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Staff\EditStaffFrm.Designer.cs">
+      <DependentUpon>EditStaffFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Statistics\BeverageRevenuePrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Statistics\BeverageRevenuePrintFrm.Designer.cs">
+      <DependentUpon>BeverageRevenuePrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Statistics\BeverageRevenueReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VIEW\Statistics\BeverageRevenueReport.Designer.cs">
+      <DependentUpon>BeverageRevenueReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Statistics\RevenuePrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Statistics\RevenuePrintFrm.Designer.cs">
+      <DependentUpon>RevenuePrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Statistics\RevenueReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VIEW\Statistics\RevenueReport.Designer.cs">
+      <DependentUpon>RevenueReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\Statistics\tabStatistics.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="VIEW\Statistics\tabStatistics.Designer.cs">
       <DependentUpon>tabStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Store\InvoicePrintFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Store\InvoicePrintFrm.Designer.cs">
+      <DependentUpon>InvoicePrintFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Store\InvoiceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VIEW\Store\InvoiceReport.Designer.cs">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
     </Compile>
     <Compile Include="VIEW\Store\tabStore.cs">
       <SubType>UserControl</SubType>
@@ -267,6 +319,12 @@
     </Compile>
     <Compile Include="VIEW\Beverage\tabBeverage.Designer.cs">
       <DependentUpon>tabBeverage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VIEW\Store\ViewInvoiceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Store\ViewInvoiceFrm.Designer.cs">
+      <DependentUpon>ViewInvoiceFrm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="VIEW\Beverage\BeverageFrm.resx">
       <DependentUpon>BeverageFrm.cs</DependentUpon>
@@ -318,8 +376,32 @@
     <EmbeddedResource Include="VIEW\MessageBox\MessageBoxFormYN.resx">
       <DependentUpon>MessageBoxFormYN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Staff\AddStaffFrm.resx">
+      <DependentUpon>AddStaffFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Staff\EditStaffFrm.resx">
+      <DependentUpon>EditStaffFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Statistics\BeverageRevenuePrintFrm.resx">
+      <DependentUpon>BeverageRevenuePrintFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Statistics\BeverageRevenueReport.resx">
+      <DependentUpon>BeverageRevenueReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Statistics\RevenuePrintFrm.resx">
+      <DependentUpon>RevenuePrintFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Statistics\RevenueReport.resx">
+      <DependentUpon>RevenueReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Statistics\tabStatistics.resx">
       <DependentUpon>tabStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Store\InvoicePrintFrm.resx">
+      <DependentUpon>InvoicePrintFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Store\InvoiceReport.resx">
+      <DependentUpon>InvoiceReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Store\tabStore.resx">
       <DependentUpon>tabStore.cs</DependentUpon>
@@ -329,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Beverage\tabBeverage.resx">
       <DependentUpon>tabBeverage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Store\ViewInvoiceFrm.resx">
+      <DependentUpon>ViewInvoiceFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
