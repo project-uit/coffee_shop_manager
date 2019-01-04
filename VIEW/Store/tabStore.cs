@@ -143,13 +143,13 @@ namespace COFFEE_SHOP_MANAGER
 
         private void updateTotal()
         {
-            int sum = 0;
+            float sum = 0;
             List<tblInvoiceDTO> list = (gcInvoice.DataSource as IEnumerable<tblInvoiceDTO>).ToList();
             foreach(tblInvoiceDTO item in list)
             {
-                sum += Int32.Parse(item.giaban.Value.ToString("0.##")) * item.soluong;
+                sum += float.Parse(item.giaban.Value.ToString("0,##")) * item.soluong;
             }
-            int discount = Int32.Parse(lbDiscount.Text.Replace("%", ""));
+            float discount = float.Parse(lbDiscount.Text.Replace("%", ""));
             lbSum.Text = sum.ToString();
             lbTotal.Text = (sum * (100 - discount) / 100).ToString();
         }
@@ -165,7 +165,7 @@ namespace COFFEE_SHOP_MANAGER
 
             hoadon invoice = new hoadon
             {
-                tongtien = Int32.Parse(lbTotal.Text),
+                tongtien = decimal.Parse(lbTotal.Text),
                 ngaylap = DateTime.Now
             };
             List<chitiethoadon> invoiceDetails = new List<chitiethoadon>();    

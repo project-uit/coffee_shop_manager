@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabStaff));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit repositoryItemButtonEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
             this.gcUsers = new DevExpress.XtraGrid.GridControl();
             this.gridViewTaiKhoan = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colnhanvien = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -51,14 +53,12 @@
             this.colid_nhanvien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colquyen = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colEdit = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.coleDelete = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnDelete = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.gcUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTaiKhoan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // gcUsers
@@ -66,13 +66,12 @@
             this.gcUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gcUsers.Location = new System.Drawing.Point(38, 151);
+            this.gcUsers.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
+            this.gcUsers.Location = new System.Drawing.Point(2, 97);
             this.gcUsers.MainView = this.gridViewTaiKhoan;
+            this.gcUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gcUsers.Name = "gcUsers";
-            this.gcUsers.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.btnDelete,
-            this.btnEdit});
-            this.gcUsers.Size = new System.Drawing.Size(1852, 695);
+            this.gcUsers.Size = new System.Drawing.Size(1272, 471);
             this.gcUsers.TabIndex = 5;
             this.gcUsers.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewTaiKhoan});
@@ -91,6 +90,8 @@
             this.colquyen,
             this.colEdit,
             this.coleDelete});
+            this.gridViewTaiKhoan.DetailHeight = 224;
+            this.gridViewTaiKhoan.FixedLineWidth = 1;
             this.gridViewTaiKhoan.GridControl = this.gcUsers;
             this.gridViewTaiKhoan.GroupCount = 1;
             this.gridViewTaiKhoan.Name = "gridViewTaiKhoan";
@@ -103,123 +104,115 @@
             // 
             this.colnhanvien.Caption = "Họ tên";
             this.colnhanvien.FieldName = "hoten";
-            this.colnhanvien.MinWidth = 40;
+            this.colnhanvien.MinWidth = 27;
             this.colnhanvien.Name = "colnhanvien";
             this.colnhanvien.Visible = true;
             this.colnhanvien.VisibleIndex = 0;
-            this.colnhanvien.Width = 150;
+            this.colnhanvien.Width = 100;
             // 
             // colnhanvien2
             // 
             this.colnhanvien2.Caption = "Ngày sinh";
             this.colnhanvien2.FieldName = "ngaysinh";
-            this.colnhanvien2.MinWidth = 40;
+            this.colnhanvien2.MinWidth = 27;
             this.colnhanvien2.Name = "colnhanvien2";
             this.colnhanvien2.Visible = true;
             this.colnhanvien2.VisibleIndex = 0;
-            this.colnhanvien2.Width = 265;
+            this.colnhanvien2.Width = 177;
             // 
             // colnhanvien3
             // 
             this.colnhanvien3.Caption = "CMND";
             this.colnhanvien3.FieldName = "cmnd";
-            this.colnhanvien3.MinWidth = 40;
+            this.colnhanvien3.MinWidth = 27;
             this.colnhanvien3.Name = "colnhanvien3";
             this.colnhanvien3.Visible = true;
             this.colnhanvien3.VisibleIndex = 1;
-            this.colnhanvien3.Width = 265;
+            this.colnhanvien3.Width = 177;
             // 
             // colnhanvien4
             // 
             this.colnhanvien4.Caption = "Địa chỉ";
             this.colnhanvien4.FieldName = "diachi";
-            this.colnhanvien4.MinWidth = 40;
+            this.colnhanvien4.MinWidth = 27;
             this.colnhanvien4.Name = "colnhanvien4";
             this.colnhanvien4.Visible = true;
             this.colnhanvien4.VisibleIndex = 2;
-            this.colnhanvien4.Width = 265;
+            this.colnhanvien4.Width = 177;
             // 
             // colnhanvien5
             // 
             this.colnhanvien5.Caption = "Lương";
             this.colnhanvien5.FieldName = "luong";
-            this.colnhanvien5.MinWidth = 40;
+            this.colnhanvien5.MinWidth = 27;
             this.colnhanvien5.Name = "colnhanvien5";
             this.colnhanvien5.Visible = true;
             this.colnhanvien5.VisibleIndex = 3;
-            this.colnhanvien5.Width = 265;
+            this.colnhanvien5.Width = 177;
             // 
             // coltentaikhoan
             // 
             this.coltentaikhoan.Caption = "Tên tài khoản";
             this.coltentaikhoan.FieldName = "tentaikhoan";
-            this.coltentaikhoan.MinWidth = 40;
+            this.coltentaikhoan.MinWidth = 27;
             this.coltentaikhoan.Name = "coltentaikhoan";
             this.coltentaikhoan.Visible = true;
             this.coltentaikhoan.VisibleIndex = 4;
-            this.coltentaikhoan.Width = 355;
+            this.coltentaikhoan.Width = 237;
             // 
             // colid_taikhoan
             // 
             this.colid_taikhoan.FieldName = "id_taikhoan";
-            this.colid_taikhoan.MinWidth = 40;
+            this.colid_taikhoan.MinWidth = 27;
             this.colid_taikhoan.Name = "colid_taikhoan";
-            this.colid_taikhoan.Width = 150;
+            this.colid_taikhoan.Width = 100;
             // 
             // colid_nhanvien
             // 
             this.colid_nhanvien.FieldName = "id_nhanvien";
-            this.colid_nhanvien.MinWidth = 40;
+            this.colid_nhanvien.MinWidth = 27;
             this.colid_nhanvien.Name = "colid_nhanvien";
-            this.colid_nhanvien.Width = 150;
+            this.colid_nhanvien.Width = 100;
             // 
             // colquyen
             // 
             this.colquyen.Caption = "Quyền";
             this.colquyen.FieldName = "quyen";
-            this.colquyen.MinWidth = 40;
+            this.colquyen.MinWidth = 27;
             this.colquyen.Name = "colquyen";
-            this.colquyen.Width = 150;
+            this.colquyen.Width = 100;
             // 
             // colEdit
             // 
-            this.colEdit.ColumnEdit = this.btnEdit;
-            this.colEdit.MinWidth = 40;
+            repositoryItemButtonEdit3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            repositoryItemButtonEdit3.Appearance.Options.UseImage = true;
+            repositoryItemButtonEdit3.AutoHeight = false;
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
+            repositoryItemButtonEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            repositoryItemButtonEdit3.Name = "btnEdit";
+            repositoryItemButtonEdit3.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.colEdit.ColumnEdit = repositoryItemButtonEdit3;
+            this.colEdit.MinWidth = 27;
             this.colEdit.Name = "colEdit";
             this.colEdit.Visible = true;
             this.colEdit.VisibleIndex = 6;
-            this.colEdit.Width = 150;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Appearance.Image")));
-            this.btnEdit.Appearance.Options.UseImage = true;
-            this.btnEdit.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
-            this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.btnEdit.Click += new System.EventHandler(this.btnSua_Click);
+            this.colEdit.Width = 100;
             // 
             // coleDelete
             // 
-            this.coleDelete.ColumnEdit = this.btnDelete;
-            this.coleDelete.MinWidth = 40;
+            repositoryItemButtonEdit1.AutoHeight = false;
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            repositoryItemButtonEdit1.Name = "btnDelete";
+            repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
+            this.coleDelete.ColumnEdit = repositoryItemButtonEdit1;
+            this.coleDelete.MinWidth = 27;
             this.coleDelete.Name = "coleDelete";
             this.coleDelete.Visible = true;
             this.coleDelete.VisibleIndex = 5;
-            this.coleDelete.Width = 179;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.AutoHeight = false;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
-            this.btnDelete.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
-            this.btnDelete.Click += new System.EventHandler(this.btnXoa_Click);
+            this.coleDelete.Width = 119;
             // 
             // btnAdd
             // 
@@ -242,14 +235,14 @@
             this.btnAdd.IconVisible = true;
             this.btnAdd.IconZoom = 90D;
             this.btnAdd.IsTab = false;
-            this.btnAdd.Location = new System.Drawing.Point(38, 39);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(12);
+            this.btnAdd.Location = new System.Drawing.Point(25, 25);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Normalcolor = System.Drawing.SystemColors.HotTrack;
             this.btnAdd.OnHovercolor = System.Drawing.Color.CornflowerBlue;
             this.btnAdd.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAdd.selected = false;
-            this.btnAdd.Size = new System.Drawing.Size(234, 73);
+            this.btnAdd.Size = new System.Drawing.Size(156, 47);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Thêm mới";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,20 +252,20 @@
             // 
             // tabStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.gcUsers);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "tabStaff";
-            this.Size = new System.Drawing.Size(1914, 890);
+            this.Size = new System.Drawing.Size(1276, 570);
             ((System.ComponentModel.ISupportInitialize)(this.gcUsers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTaiKhoan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(repositoryItemButtonEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,8 +285,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colquyen;
         private Bunifu.Framework.UI.BunifuFlatButton btnAdd;
         private DevExpress.XtraGrid.Columns.GridColumn coleDelete;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnDelete;
         private DevExpress.XtraGrid.Columns.GridColumn colEdit;
-        private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnEdit;
     }
 }
