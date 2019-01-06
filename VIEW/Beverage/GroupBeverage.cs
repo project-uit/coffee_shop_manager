@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
-using COFFEE_SHOP_MANAGER.VIEW.MessageBox;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraEditors;
 
@@ -50,12 +49,11 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                 if (GroupBeverageDAO.update(nhomthucuong))
                 {
                     loadTable();
-                    lbMessage.Text = "Lưu thành công!";                   
+                    XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 } else
                 {
-                    lbMessage.Text = "Lưu thất bại!";
+                    XtraMessageBox.Show("Lưu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                flyoutPanel1.ShowBeakForm();
 
             } else
             {
@@ -64,13 +62,12 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                 if (GroupBeverageDAO.insert(nhomthucuong))
                 {
                     loadTable();
-                    lbMessage.Text = "Lưu thành công!";
+                    XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    lbMessage.Text = "Lưu thất bại!";
+                    XtraMessageBox.Show("Lưu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                flyoutPanel1.ShowBeakForm();
             }
             
             
@@ -88,8 +85,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                 {
                     loadTable();
                     nhomthucuong = null;
-                    lbMessage.Text = "Xóa thành công!";
-                    flyoutPanel1.ShowBeakForm();
+                    XtraMessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

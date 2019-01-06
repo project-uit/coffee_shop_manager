@@ -14,10 +14,8 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraEditors;
 using COFFEE_SHOP_MANAGER.VIEW.Discount;
 using System.IO;
-using iTextSharp.text.pdf;
-using iTextSharp.text;
 using System.Windows.Forms.DataVisualization.Charting;
-using Image = iTextSharp.text.Image;
+
 
 namespace COFFEE_SHOP_MANAGER
 {

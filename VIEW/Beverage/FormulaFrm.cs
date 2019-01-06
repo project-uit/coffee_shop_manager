@@ -84,22 +84,14 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
 
                 if (FormulaDAO.insert(chitietcongthuc))
                 {
-                    lbMessage.Text = "Lưu thành công";
+                    XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loadtable();
                 }
                 else
                 {
-                    lbMessage.Text = "Lưu thất bại";
+                    XtraMessageBox.Show("Lưu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-
-                flyoutPanel1.ShowBeakForm();
             }
-            //} else
-            //{
-            //    XtraMessageBox.Show(this, "Định lượng phải nhập số thực", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //}
-
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -111,14 +103,13 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
             {
                 if (FormulaDAO.delete(chitietcongthuc))
                 {
-                    lbMessage.Text = "Xóa thành công";
+                    XtraMessageBox.Show("Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loadtable();
                 }
                 else
                 {
-                    lbMessage.Text = "Xóa thất bại";
+                    XtraMessageBox.Show("Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                flyoutPanel1.ShowBeakForm();
             }
         }
 
