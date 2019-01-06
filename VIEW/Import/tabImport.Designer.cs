@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabImport));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             this.btnThemNguyenLieu = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnNhapKho = new MaterialSkin.Controls.MaterialRaisedButton();
             this.grdCtrlThemNguyenLieu = new DevExpress.XtraGrid.GridControl();
@@ -45,8 +44,8 @@
             this.edit = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnEdit = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.btnThemNguyenLieuDaDung = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.txtTimKiem = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
+            this.txtTimKiem = new MetroFramework.Controls.MetroTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrlThemNguyenLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
@@ -96,7 +95,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrlThemNguyenLieu.DataSource = typeof(COFFEE_SHOP_MANAGER.khonguyenlieu);
             this.grdCtrlThemNguyenLieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grdCtrlThemNguyenLieu.Location = new System.Drawing.Point(3, 116);
+            this.grdCtrlThemNguyenLieu.Location = new System.Drawing.Point(-19, 595);
             this.grdCtrlThemNguyenLieu.LookAndFeel.SkinName = "Office 2016 Dark";
             this.grdCtrlThemNguyenLieu.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
             this.grdCtrlThemNguyenLieu.MainView = this.gridView1;
@@ -185,9 +184,9 @@
             // btnEdit
             // 
             this.btnEdit.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
             this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -212,21 +211,36 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Depth = 0;
-            this.txtTimKiem.Hint = "Tìm kiếm tên nguyên liệu";
-            this.txtTimKiem.Location = new System.Drawing.Point(19, 20);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(6);
+            // 
+            // 
+            // 
+            this.txtTimKiem.CustomButton.Image = null;
+            this.txtTimKiem.CustomButton.Location = new System.Drawing.Point(568, 1);
+            this.txtTimKiem.CustomButton.Name = "";
+            this.txtTimKiem.CustomButton.Size = new System.Drawing.Size(69, 69);
+            this.txtTimKiem.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtTimKiem.CustomButton.TabIndex = 1;
+            this.txtTimKiem.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtTimKiem.CustomButton.UseSelectable = true;
+            this.txtTimKiem.CustomButton.Visible = false;
+            this.txtTimKiem.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.txtTimKiem.Lines = new string[0];
+            this.txtTimKiem.Location = new System.Drawing.Point(15, 14);
             this.txtTimKiem.MaxLength = 32767;
-            this.txtTimKiem.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.PasswordChar = '\0';
+            this.txtTimKiem.PromptText = "Tìm kiếm nguyên liêu";
+            this.txtTimKiem.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtTimKiem.SelectedText = "";
             this.txtTimKiem.SelectionLength = 0;
             this.txtTimKiem.SelectionStart = 0;
-            this.txtTimKiem.Size = new System.Drawing.Size(1244, 41);
-            this.txtTimKiem.TabIndex = 11;
-            this.txtTimKiem.TabStop = false;
-            this.txtTimKiem.UseSystemPasswordChar = false;
+            this.txtTimKiem.ShortcutsEnabled = true;
+            this.txtTimKiem.Size = new System.Drawing.Size(638, 71);
+            this.txtTimKiem.TabIndex = 12;
+            this.txtTimKiem.UseSelectable = true;
+            this.txtTimKiem.WaterMark = "Tìm kiếm nguyên liêu";
+            this.txtTimKiem.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtTimKiem.WaterMarkFont = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // tabImport
@@ -265,7 +279,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn edit;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnEdit;
         private MaterialSkin.Controls.MaterialRaisedButton btnThemNguyenLieuDaDung;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtTimKiem;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private MetroFramework.Controls.MetroTextBox txtTimKiem;
     }
 }

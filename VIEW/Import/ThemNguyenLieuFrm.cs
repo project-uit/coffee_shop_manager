@@ -25,6 +25,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
             labelTenNguyenLieu.Visible = false;
             labelDinhLuong.Visible = false;
             labelTenDonViDinhLuong.Visible = false;
+            txtDinhLuong.Enabled = true;
         }
         // constructor de sua
         public ThemNguyenLieuFrm(khonguyenlieu khonguyenlieu)

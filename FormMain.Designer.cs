@@ -28,40 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             this.pnlDrawer = new System.Windows.Forms.Panel();
-            this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnImport = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnStore = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBeverage = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnToggleDrawer = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnStaff = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lbNameStore = new System.Windows.Forms.Label();
-            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.btnStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnImport = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnStore = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnBeverage = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.lbTabName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelTab = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.bunifuGradientPanel2 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.imageList1 = new System.Windows.Forms.ImageList();
             this.btnMiniMize = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlDrawer.SuspendLayout();
+            this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleDrawer)).BeginInit();
             this.pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMiniMize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlDrawer
@@ -73,62 +72,36 @@
             this.pnlDrawer.Location = new System.Drawing.Point(0, 0);
             this.pnlDrawer.Margin = new System.Windows.Forms.Padding(6);
             this.pnlDrawer.Name = "pnlDrawer";
-            this.pnlDrawer.Size = new System.Drawing.Size(466, 2130);
+            this.pnlDrawer.Size = new System.Drawing.Size(466, 1011);
             this.pnlDrawer.TabIndex = 0;
             this.pnlDrawer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDrawer_Paint);
             // 
-            // btnLogout
+            // bunifuGradientPanel1
             // 
-            this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogout.BorderRadius = 0;
-            this.btnLogout.ButtonText = "Đăng xuất";
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnLogout, BunifuAnimatorNS.DecorationType.None);
-            this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
-            this.btnLogout.Iconimage_right = null;
-            this.btnLogout.Iconimage_right_Selected = null;
-            this.btnLogout.Iconimage_Selected = null;
-            this.btnLogout.IconMarginLeft = 0;
-            this.btnLogout.IconMarginRight = 0;
-            this.btnLogout.IconRightVisible = true;
-            this.btnLogout.IconRightZoom = 0D;
-            this.btnLogout.IconVisible = true;
-            this.btnLogout.IconZoom = 50D;
-            this.btnLogout.IsTab = true;
-            this.btnLogout.Location = new System.Drawing.Point(4, 996);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(12);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnLogout.OnHoverTextColor = System.Drawing.Color.Black;
-            this.btnLogout.selected = false;
-            this.btnLogout.Size = new System.Drawing.Size(466, 106);
-            this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Đăng xuất";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLogout.Textcolor = System.Drawing.Color.White;
-            this.btnLogout.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(130, 89);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(192, 165);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnExit);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.btnLogout);
+            this.bunifuGradientPanel1.Controls.Add(this.btnToggleDrawer);
+            this.bunifuGradientPanel1.Controls.Add(this.btnStaff);
+            this.bunifuGradientPanel1.Controls.Add(this.lbNameStore);
+            this.bunifuGradientPanel1.Controls.Add(this.btnStatistics);
+            this.bunifuGradientPanel1.Controls.Add(this.btnDashboard);
+            this.bunifuGradientPanel1.Controls.Add(this.btnImport);
+            this.bunifuGradientPanel1.Controls.Add(this.btnStore);
+            this.bunifuGradientPanel1.Controls.Add(this.btnBeverage);
+            this.bunifuTransition1.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.CornflowerBlue;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.SkyBlue;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.MediumPurple;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.LightSkyBlue;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(466, 1011);
+            this.bunifuGradientPanel1.TabIndex = 10;
             // 
             // btnExit
             // 
@@ -168,10 +141,170 @@
             this.btnExit.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btnExit.Click += new System.EventHandler(this.exit);
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(130, 89);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(192, 165);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogout.BorderRadius = 0;
+            this.btnLogout.ButtonText = "Đăng xuất";
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnLogout, BunifuAnimatorNS.DecorationType.None);
+            this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
+            this.btnLogout.Iconimage_right = null;
+            this.btnLogout.Iconimage_right_Selected = null;
+            this.btnLogout.Iconimage_Selected = null;
+            this.btnLogout.IconMarginLeft = 0;
+            this.btnLogout.IconMarginRight = 0;
+            this.btnLogout.IconRightVisible = true;
+            this.btnLogout.IconRightZoom = 0D;
+            this.btnLogout.IconVisible = true;
+            this.btnLogout.IconZoom = 50D;
+            this.btnLogout.IsTab = true;
+            this.btnLogout.Location = new System.Drawing.Point(4, 996);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnLogout.OnHoverTextColor = System.Drawing.Color.Black;
+            this.btnLogout.selected = false;
+            this.btnLogout.Size = new System.Drawing.Size(466, 106);
+            this.btnLogout.TabIndex = 9;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogout.Textcolor = System.Drawing.Color.White;
+            this.btnLogout.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnToggleDrawer
+            // 
+            this.btnToggleDrawer.BackColor = System.Drawing.Color.Transparent;
+            this.btnToggleDrawer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnToggleDrawer, BunifuAnimatorNS.DecorationType.None);
+            this.btnToggleDrawer.Image = ((System.Drawing.Image)(resources.GetObject("btnToggleDrawer.Image")));
+            this.btnToggleDrawer.ImageActive = null;
+            this.btnToggleDrawer.Location = new System.Drawing.Point(19, 31);
+            this.btnToggleDrawer.Margin = new System.Windows.Forms.Padding(6);
+            this.btnToggleDrawer.Name = "btnToggleDrawer";
+            this.btnToggleDrawer.Size = new System.Drawing.Size(54, 52);
+            this.btnToggleDrawer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnToggleDrawer.TabIndex = 2;
+            this.btnToggleDrawer.TabStop = false;
+            this.btnToggleDrawer.Zoom = 10;
+            this.btnToggleDrawer.Click += new System.EventHandler(this.btnToggleDrawer_Click);
+            // 
+            // btnStaff
+            // 
+            this.btnStaff.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnStaff.BackColor = System.Drawing.Color.Transparent;
+            this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStaff.BorderRadius = 0;
+            this.btnStaff.ButtonText = "Nhân viên";
+            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnStaff, BunifuAnimatorNS.DecorationType.None);
+            this.btnStaff.DisabledColor = System.Drawing.Color.Gray;
+            this.btnStaff.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnStaff.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnStaff.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnStaff.Iconimage")));
+            this.btnStaff.Iconimage_right = null;
+            this.btnStaff.Iconimage_right_Selected = null;
+            this.btnStaff.Iconimage_Selected = null;
+            this.btnStaff.IconMarginLeft = 0;
+            this.btnStaff.IconMarginRight = 0;
+            this.btnStaff.IconRightVisible = true;
+            this.btnStaff.IconRightZoom = 0D;
+            this.btnStaff.IconVisible = true;
+            this.btnStaff.IconZoom = 50D;
+            this.btnStaff.IsTab = true;
+            this.btnStaff.Location = new System.Drawing.Point(4, 889);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(12);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnStaff.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnStaff.OnHoverTextColor = System.Drawing.Color.Black;
+            this.btnStaff.selected = false;
+            this.btnStaff.Size = new System.Drawing.Size(466, 110);
+            this.btnStaff.TabIndex = 2;
+            this.btnStaff.Text = "Nhân viên";
+            this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnStaff.Textcolor = System.Drawing.Color.White;
+            this.btnStaff.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
+            // 
+            // lbNameStore
+            // 
+            this.lbNameStore.AutoSize = true;
+            this.lbNameStore.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.lbNameStore, BunifuAnimatorNS.DecorationType.None);
+            this.lbNameStore.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lbNameStore.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbNameStore.Location = new System.Drawing.Point(133, 260);
+            this.lbNameStore.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbNameStore.Name = "lbNameStore";
+            this.lbNameStore.Size = new System.Drawing.Size(180, 45);
+            this.lbNameStore.TabIndex = 1;
+            this.lbNameStore.Text = "Cafe Brand";
+            // 
+            // btnStatistics
+            // 
+            this.btnStatistics.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnStatistics.BackColor = System.Drawing.Color.Transparent;
+            this.btnStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStatistics.BorderRadius = 0;
+            this.btnStatistics.ButtonText = "Thống kê";
+            this.btnStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnStatistics, BunifuAnimatorNS.DecorationType.None);
+            this.btnStatistics.DisabledColor = System.Drawing.Color.Gray;
+            this.btnStatistics.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnStatistics.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnStatistics.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnStatistics.Iconimage")));
+            this.btnStatistics.Iconimage_right = null;
+            this.btnStatistics.Iconimage_right_Selected = null;
+            this.btnStatistics.Iconimage_Selected = null;
+            this.btnStatistics.IconMarginLeft = 0;
+            this.btnStatistics.IconMarginRight = 0;
+            this.btnStatistics.IconRightVisible = true;
+            this.btnStatistics.IconRightZoom = 0D;
+            this.btnStatistics.IconVisible = true;
+            this.btnStatistics.IconZoom = 50D;
+            this.btnStatistics.IsTab = true;
+            this.btnStatistics.Location = new System.Drawing.Point(4, 788);
+            this.btnStatistics.Margin = new System.Windows.Forms.Padding(12);
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnStatistics.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnStatistics.OnHoverTextColor = System.Drawing.Color.Black;
+            this.btnStatistics.selected = false;
+            this.btnStatistics.Size = new System.Drawing.Size(466, 106);
+            this.btnStatistics.TabIndex = 4;
+            this.btnStatistics.Text = "Thống kê";
+            this.btnStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnStatistics.Textcolor = System.Drawing.Color.White;
+            this.btnStatistics.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
+            // 
             // btnDashboard
             // 
             this.btnDashboard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDashboard.BackColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDashboard.BorderRadius = 0;
             this.btnDashboard.ButtonText = "Tổng quan";
@@ -279,44 +412,6 @@
             this.btnStore.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
             // 
-            // btnStatistics
-            // 
-            this.btnStatistics.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnStatistics.BackColor = System.Drawing.Color.Transparent;
-            this.btnStatistics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnStatistics.BorderRadius = 0;
-            this.btnStatistics.ButtonText = "Thống kê";
-            this.btnStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnStatistics, BunifuAnimatorNS.DecorationType.None);
-            this.btnStatistics.DisabledColor = System.Drawing.Color.Gray;
-            this.btnStatistics.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnStatistics.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnStatistics.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnStatistics.Iconimage")));
-            this.btnStatistics.Iconimage_right = null;
-            this.btnStatistics.Iconimage_right_Selected = null;
-            this.btnStatistics.Iconimage_Selected = null;
-            this.btnStatistics.IconMarginLeft = 0;
-            this.btnStatistics.IconMarginRight = 0;
-            this.btnStatistics.IconRightVisible = true;
-            this.btnStatistics.IconRightZoom = 0D;
-            this.btnStatistics.IconVisible = true;
-            this.btnStatistics.IconZoom = 50D;
-            this.btnStatistics.IsTab = true;
-            this.btnStatistics.Location = new System.Drawing.Point(4, 788);
-            this.btnStatistics.Margin = new System.Windows.Forms.Padding(12);
-            this.btnStatistics.Name = "btnStatistics";
-            this.btnStatistics.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnStatistics.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnStatistics.OnHoverTextColor = System.Drawing.Color.Black;
-            this.btnStatistics.selected = false;
-            this.btnStatistics.Size = new System.Drawing.Size(466, 106);
-            this.btnStatistics.TabIndex = 4;
-            this.btnStatistics.Text = "Thống kê";
-            this.btnStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnStatistics.Textcolor = System.Drawing.Color.White;
-            this.btnStatistics.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
-            // 
             // btnBeverage
             // 
             this.btnBeverage.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -354,75 +449,6 @@
             this.btnBeverage.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.btnBeverage.Click += new System.EventHandler(this.btnBeverage_Click);
             // 
-            // btnToggleDrawer
-            // 
-            this.btnToggleDrawer.BackColor = System.Drawing.Color.Transparent;
-            this.btnToggleDrawer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnToggleDrawer, BunifuAnimatorNS.DecorationType.None);
-            this.btnToggleDrawer.Image = ((System.Drawing.Image)(resources.GetObject("btnToggleDrawer.Image")));
-            this.btnToggleDrawer.ImageActive = null;
-            this.btnToggleDrawer.Location = new System.Drawing.Point(19, 31);
-            this.btnToggleDrawer.Margin = new System.Windows.Forms.Padding(6);
-            this.btnToggleDrawer.Name = "btnToggleDrawer";
-            this.btnToggleDrawer.Size = new System.Drawing.Size(54, 52);
-            this.btnToggleDrawer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnToggleDrawer.TabIndex = 2;
-            this.btnToggleDrawer.TabStop = false;
-            this.btnToggleDrawer.Zoom = 10;
-            this.btnToggleDrawer.Click += new System.EventHandler(this.btnToggleDrawer_Click);
-            // 
-            // btnStaff
-            // 
-            this.btnStaff.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnStaff.BackColor = System.Drawing.Color.Transparent;
-            this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnStaff.BorderRadius = 0;
-            this.btnStaff.ButtonText = "Nhân viên";
-            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnStaff, BunifuAnimatorNS.DecorationType.None);
-            this.btnStaff.DisabledColor = System.Drawing.Color.Gray;
-            this.btnStaff.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnStaff.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnStaff.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnStaff.Iconimage")));
-            this.btnStaff.Iconimage_right = null;
-            this.btnStaff.Iconimage_right_Selected = null;
-            this.btnStaff.Iconimage_Selected = null;
-            this.btnStaff.IconMarginLeft = 0;
-            this.btnStaff.IconMarginRight = 0;
-            this.btnStaff.IconRightVisible = true;
-            this.btnStaff.IconRightZoom = 0D;
-            this.btnStaff.IconVisible = true;
-            this.btnStaff.IconZoom = 50D;
-            this.btnStaff.IsTab = true;
-            this.btnStaff.Location = new System.Drawing.Point(4, 889);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(12);
-            this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnStaff.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnStaff.OnHoverTextColor = System.Drawing.Color.Black;
-            this.btnStaff.selected = false;
-            this.btnStaff.Size = new System.Drawing.Size(466, 110);
-            this.btnStaff.TabIndex = 2;
-            this.btnStaff.Text = "Nhân viên";
-            this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnStaff.Textcolor = System.Drawing.Color.White;
-            this.btnStaff.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
-            // 
-            // lbNameStore
-            // 
-            this.lbNameStore.AutoSize = true;
-            this.lbNameStore.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.lbNameStore, BunifuAnimatorNS.DecorationType.None);
-            this.lbNameStore.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbNameStore.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbNameStore.Location = new System.Drawing.Point(133, 260);
-            this.lbNameStore.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lbNameStore.Name = "lbNameStore";
-            this.lbNameStore.Size = new System.Drawing.Size(180, 45);
-            this.lbNameStore.TabIndex = 1;
-            this.lbNameStore.Text = "Cafe Brand";
-            // 
             // bunifuTransition1
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
@@ -455,26 +481,27 @@
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Margin = new System.Windows.Forms.Padding(6);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(2924, 112);
+            this.pnlHeader.Size = new System.Drawing.Size(1201, 112);
             this.pnlHeader.TabIndex = 0;
             // 
-            // btnClose
+            // bunifuGradientPanel2
             // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnClose, BunifuAnimatorNS.DecorationType.None);
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(2815, 36);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(6);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(72, 58);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 1;
-            this.btnClose.TabStop = false;
-            this.btnClose.Zoom = 10;
-            this.btnClose.Click += new System.EventHandler(this.exit);
+            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
+            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel2.Controls.Add(this.btnMiniMize);
+            this.bunifuGradientPanel2.Controls.Add(this.btnClose);
+            this.bunifuGradientPanel2.Controls.Add(this.lbTabName);
+            this.bunifuTransition1.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuGradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.CornflowerBlue;
+            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.CornflowerBlue;
+            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.SkyBlue;
+            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.LightSteelBlue;
+            this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
+            this.bunifuGradientPanel2.Quality = 10;
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(1201, 112);
+            this.bunifuGradientPanel2.TabIndex = 2;
             // 
             // lbTabName
             // 
@@ -499,7 +526,7 @@
             this.panel2.Location = new System.Drawing.Point(466, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2924, 2130);
+            this.panel2.Size = new System.Drawing.Size(1201, 1011);
             this.panel2.TabIndex = 1;
             // 
             // panelTab
@@ -510,7 +537,7 @@
             this.panelTab.Location = new System.Drawing.Point(0, 112);
             this.panelTab.Margin = new System.Windows.Forms.Padding(6);
             this.panelTab.Name = "panelTab";
-            this.panelTab.Size = new System.Drawing.Size(2924, 2018);
+            this.panelTab.Size = new System.Drawing.Size(1201, 899);
             this.panelTab.TabIndex = 1;
             // 
             // imageList1
@@ -520,50 +547,6 @@
             this.imageList1.Images.SetKeyName(0, "Menu_50px.png");
             this.imageList1.Images.SetKeyName(1, "Left_48px.png");
             // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.Controls.Add(this.btnExit);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton1);
-            this.bunifuGradientPanel1.Controls.Add(this.btnLogout);
-            this.bunifuGradientPanel1.Controls.Add(this.btnToggleDrawer);
-            this.bunifuGradientPanel1.Controls.Add(this.btnStaff);
-            this.bunifuGradientPanel1.Controls.Add(this.lbNameStore);
-            this.bunifuGradientPanel1.Controls.Add(this.btnStatistics);
-            this.bunifuGradientPanel1.Controls.Add(this.btnDashboard);
-            this.bunifuGradientPanel1.Controls.Add(this.btnImport);
-            this.bunifuGradientPanel1.Controls.Add(this.btnStore);
-            this.bunifuGradientPanel1.Controls.Add(this.btnBeverage);
-            this.bunifuTransition1.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.CornflowerBlue;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.SkyBlue;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.MediumPurple;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.LightSkyBlue;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-4, -8);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(470, 2140);
-            this.bunifuGradientPanel1.TabIndex = 10;
-            // 
-            // bunifuGradientPanel2
-            // 
-            this.bunifuGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel2.BackgroundImage")));
-            this.bunifuGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel2.Controls.Add(this.btnMiniMize);
-            this.bunifuGradientPanel2.Controls.Add(this.btnClose);
-            this.bunifuGradientPanel2.Controls.Add(this.lbTabName);
-            this.bunifuTransition1.SetDecoration(this.bunifuGradientPanel2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuGradientPanel2.GradientBottomLeft = System.Drawing.Color.CornflowerBlue;
-            this.bunifuGradientPanel2.GradientBottomRight = System.Drawing.Color.CornflowerBlue;
-            this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.SkyBlue;
-            this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.LightSteelBlue;
-            this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, -8);
-            this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
-            this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(2925, 120);
-            this.bunifuGradientPanel2.TabIndex = 2;
-            // 
             // btnMiniMize
             // 
             this.btnMiniMize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -572,22 +555,40 @@
             this.bunifuTransition1.SetDecoration(this.btnMiniMize, BunifuAnimatorNS.DecorationType.None);
             this.btnMiniMize.Image = ((System.Drawing.Image)(resources.GetObject("btnMiniMize.Image")));
             this.btnMiniMize.ImageActive = null;
-            this.btnMiniMize.Location = new System.Drawing.Point(2732, 36);
+            this.btnMiniMize.Location = new System.Drawing.Point(1017, 25);
             this.btnMiniMize.Margin = new System.Windows.Forms.Padding(6);
             this.btnMiniMize.Name = "btnMiniMize";
             this.btnMiniMize.Size = new System.Drawing.Size(53, 58);
             this.btnMiniMize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMiniMize.TabIndex = 2;
+            this.btnMiniMize.TabIndex = 4;
             this.btnMiniMize.TabStop = false;
             this.btnMiniMize.Zoom = 10;
             this.btnMiniMize.Click += new System.EventHandler(this.btnMiniMize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnClose, BunifuAnimatorNS.DecorationType.None);
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(1095, 25);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(6);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(72, 58);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 3;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            this.btnClose.Click += new System.EventHandler(this.exit);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(3390, 2130);
+            this.ClientSize = new System.Drawing.Size(1667, 1011);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlDrawer);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -600,16 +601,16 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.pnlDrawer.ResumeLayout(false);
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleDrawer)).EndInit();
             this.pnlHeader.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
             this.bunifuGradientPanel2.ResumeLayout(false);
             this.bunifuGradientPanel2.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMiniMize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -630,13 +631,13 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelTab;
         private System.Windows.Forms.Panel pnlHeader;
-        private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private System.Windows.Forms.Label lbTabName;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         public Bunifu.Framework.UI.BunifuFlatButton btnLogout;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuImageButton btnMiniMize;
+        private Bunifu.Framework.UI.BunifuImageButton btnClose;
     }
 }
 
