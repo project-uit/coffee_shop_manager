@@ -20,9 +20,12 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
         private nhapkho nhapkho;
         private chitietnhapkho chitietnhapkho;
         int flag = 1;
+        public nhanvien loggedstaff = new nhanvien();
+
 
         private List<khonguyenlieu> list = new List<khonguyenlieu>();
         private khonguyenlieu khonguyenlieu;
+        
         public NhapKhoFrm()
         {
             InitializeComponent();
@@ -33,7 +36,9 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
             labelDonGia.Visible = false;
             labelDinhLuong.Visible = false;
             labelDinhLuongDonVi.Visible = false;
+            txtTenNhanVien.Text = FormLogin.nv.hoten;
             
+             
 
         }
 
@@ -58,7 +63,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
             {
                 nhapkho = new nhapkho();
                 nhapkho.ngaynhap = Convert.ToDateTime(dateEdit.EditValue);
-                nhapkho.id_nhanvien = 1;
+                nhapkho.id_nhanvien = FormLogin.nv.id_nhanvien;
                 NhapKhoDAO.insert(nhapkho);
                 flag = 0;
             }
@@ -86,9 +91,9 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
 
                 {
                     if (Double.Parse(txtSoLuong.Text) != 0)
-                        chitietnhapkho.dinhluong = 1000 * (Double.Parse(txtDinhLuong.Text)) * Double.Parse(txtDinhLuongDonVi.Text) * Double.Parse(txtSoLuong.Text);
+                        chitietnhapkho.dinhluong =  (Double.Parse(txtDinhLuong.Text)) * Double.Parse(txtDinhLuongDonVi.Text) * Double.Parse(txtSoLuong.Text);
                     if (Double.Parse(txtSoLuong.Text) == 0)
-                        chitietnhapkho.dinhluong = 1000 * (Double.Parse(txtDinhLuong.Text)) * Double.Parse(txtDinhLuongDonVi.Text);
+                        chitietnhapkho.dinhluong =  (Double.Parse(txtDinhLuong.Text)) * Double.Parse(txtDinhLuongDonVi.Text);
                 }
                 //chitietnhapkho.dinhluong = tabImport.dl[i];
                 chitietnhapkho.dongia = int.Parse(txtDonGia.Text);

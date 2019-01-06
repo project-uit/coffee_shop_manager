@@ -38,7 +38,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
             txtTenNguyenLieu.Text = khonguyenlieu.tennguyenlieu;
             txtDinhLuong.Text = khonguyenlieu.dinhluong+"";
             string tendv = khonguyenlieu.tendonvi_dinh_luong.Trim();
-            
+            txtDinhLuong.Enabled = false;
             switch(tendv)
             {
                 case "gam":
@@ -72,6 +72,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
                     khonguyenlieu.tennguyenlieu = txtTenNguyenLieu.Text;
                     khonguyenlieu.dinhluong = double.Parse(txtDinhLuong.Text);
                     khonguyenlieu.tendonvi_dinh_luong = cbTenDonViDinhLuong.Text;
+                 
                     //sua
                     if (ThemNguyenLieuDAO.update(khonguyenlieu))
                     {

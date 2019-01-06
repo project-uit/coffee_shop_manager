@@ -32,7 +32,8 @@ namespace COFFEE_SHOP_MANAGER
             txtUsername.KeyDown += new KeyEventHandler(tb_KeyDown);
             txtPassword.KeyDown += new KeyEventHandler(tb_KeyDown);
         }
-
+        public static nhanvien nv = new nhanvien();
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
             
@@ -41,6 +42,7 @@ namespace COFFEE_SHOP_MANAGER
                 nhanvien loggedStaff = loginDao.getStaffFromUsername(txtUsername.Text);
                 FormMain formMain = new FormMain();
                 formMain.loggedStaff = loggedStaff;
+                nv = loggedStaff;
                 formMain.Show();
                 this.Hide();
             }

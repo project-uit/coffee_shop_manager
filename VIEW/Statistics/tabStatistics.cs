@@ -63,7 +63,7 @@ namespace COFFEE_SHOP_MANAGER
 
         private void createChartPie()
         {
-            String year = cmbYearTabBeverage.SelectedItem.ToString();
+            String year = cmbYearTabBeverage.SelectedItem != null ? cmbYear.SelectedItem.ToString(): "1";
             String month = "1";
             if (cmbMonthTabBeverage.SelectedItem != null)
             {

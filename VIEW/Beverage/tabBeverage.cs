@@ -184,5 +184,10 @@ namespace COFFEE_SHOP_MANAGER
             document.Add(img);// add img tu chart
             document.Close();
         }
+
+        private void txtTenThucUong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

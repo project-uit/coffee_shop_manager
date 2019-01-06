@@ -30,13 +30,15 @@ namespace COFFEE_SHOP_MANAGER
         private List<khonguyenlieu> list = new List<khonguyenlieu>();
         private khonguyenlieu khonguyenlieu;
         private chitietnhapkho chitietnhapkho;
+        public nhanvien loggedstaff = new nhanvien();
+        
+
 
         public tabImport()
         {
             InitializeComponent();
             loadtable();
-
-            
+      
         }
 
         private void btnThemNguyenLieu_Click(object sender, EventArgs e)
@@ -49,6 +51,7 @@ namespace COFFEE_SHOP_MANAGER
         private void tabImport_Load(object sender, EventArgs e)
         {
             loadtable();
+
         }
 
         private void ThemNguyenLieuFrm_FormClosing(object sender, FormClosingEventArgs e)
@@ -67,19 +70,22 @@ namespace COFFEE_SHOP_MANAGER
         {
             list = ThemNguyenLieuDAO.getList();
             grdCtrlThemNguyenLieu.DataSource = list;
-            
-           // khonguyenlieu.dinhluong += chitietnhapkho.dinhluong;
-           // ThemNguyenLieuDAO.update(khonguyenlieu);
+           
+
+
+            // khonguyenlieu.dinhluong += chitietnhapkho.dinhluong;
+            // ThemNguyenLieuDAO.update(khonguyenlieu);
 
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
           
+            
             GridView gridview = grdCtrlThemNguyenLieu.FocusedView as GridView;
             khonguyenlieu = gridview.GetRow(gridview.FocusedRowHandle) as khonguyenlieu;
             ThemNguyenLieuFrm frm = new ThemNguyenLieuFrm(khonguyenlieu);
-            frm.Text = "Sua nguyen lieu " + khonguyenlieu.tennguyenlieu;
+            frm.Text = "Sửa Nguyên Liệu " + khonguyenlieu.tennguyenlieu;
             frm.FormClosing += ThemNguyenLieuFrm_FormClosing;
             frm.ShowDialog();
 
@@ -105,6 +111,7 @@ namespace COFFEE_SHOP_MANAGER
             if (k != 0)
             {
                 NhapKhoFrm form = new NhapKhoFrm();
+                form.loggedstaff = loggedstaff;
                 form.FormClosing += NhapKhoFrm_FormClosing;
                 form.ShowDialog();
             }
@@ -136,6 +143,26 @@ namespace COFFEE_SHOP_MANAGER
             {
                 XtraMessageBox.Show(this, "Chưa chọn nguyên liệu!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            filter();
+        }
+        private void filter()
+        {
+            grdCtrlThemNguyenLieu.DataSource = list.FindAll(i => i.tennguyenlieu.ToLower().StartsWith(txtTimKiem.Text.ToLower()));
+        }
+
+        private void tabImport_Click(object sender, EventArgs e)
+        {
+            txtTimKiem.Clear();
+            
+      }
+
+        private void grdCtrlThemNguyenLieu_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

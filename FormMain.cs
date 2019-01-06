@@ -12,6 +12,7 @@ namespace COFFEE_SHOP_MANAGER
         private SwitchTab switchTab;
         public FormMain()
         {
+
             //Thread thread = new Thread(new ThreadStart(Splash));
             InitializeComponent();
             //thread.Start();
@@ -23,6 +24,8 @@ namespace COFFEE_SHOP_MANAGER
             //}
             //thread.Abort();
             Console.WriteLine("logged user with id -> " + loggedStaff.id_nhanvien);
+            this.MaximumSize = Screen.PrimaryScreen.WorkingArea.Size;
+
         }
 
         bool DrawerOpen = true;
@@ -129,9 +132,11 @@ namespace COFFEE_SHOP_MANAGER
             {
                 bunifuTransition1.HideSync(panelTab);
                 bunifuTransition1.ShowSync(panelTab);
+                tabImport.loggedstaff = loggedStaff;
                 changeTab(tabImport);
                 lbTabName.Text = "NHẬP HÀNG";
                 switchTab = SwitchTab.Import;
+
             }
         }
 
@@ -167,6 +172,11 @@ namespace COFFEE_SHOP_MANAGER
             loggedStaff = null;
             FormLogin formLogin = new FormLogin();
             formLogin.Show();
+        }
+
+        private void btnMiniMize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
