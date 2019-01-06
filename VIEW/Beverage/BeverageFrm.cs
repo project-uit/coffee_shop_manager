@@ -70,7 +70,6 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                 {
                     insert();
                 }
-                flyoutPanel1.ShowBeakForm();
             }
         }
 
@@ -81,12 +80,11 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
             thucuong.id_nhomthucuong = Int32.Parse(cbbNhomThucUong.SelectedValue.ToString());
             if (BeverageDAO.update(thucuong))
             {
-                lbMessage.Text = "Lưu thành công";
-
+                XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                lbMessage.Text = "Lưu thất bại";
+                XtraMessageBox.Show("Lưu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -98,12 +96,11 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
             thucuong.id_nhomthucuong = Int32.Parse(cbbNhomThucUong.SelectedValue.ToString());
             if (BeverageDAO.insert(thucuong))
             {
-                lbMessage.Text = "Lưu thành công";
-
+                XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                lbMessage.Text = "Lưu thất bại";
+                XtraMessageBox.Show("Lưu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

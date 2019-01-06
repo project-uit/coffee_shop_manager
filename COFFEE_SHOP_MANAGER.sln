@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShopManager", "CoffeeShopManager.csproj", "{FF35C532-3B16-4E66-98A4-2AA333A73B87}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{563D83A0-CA9E-4AC2-AEED-26A25E6D9C7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{FF35C532-3B16-4E66-98A4-2AA333A73B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF35C532-3B16-4E66-98A4-2AA333A73B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF35C532-3B16-4E66-98A4-2AA333A73B87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{563D83A0-CA9E-4AC2-AEED-26A25E6D9C7C}.Debug|Any CPU.ActiveCfg = Debug
+		{563D83A0-CA9E-4AC2-AEED-26A25E6D9C7C}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
