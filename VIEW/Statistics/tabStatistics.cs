@@ -63,7 +63,7 @@ namespace COFFEE_SHOP_MANAGER
 
         private void createChartPie()
         {
-            String year = cmbYearTabBeverage.SelectedItem != null ? cmbYear.SelectedItem.ToString(): "1";
+            String year = cmbYearTabBeverage.SelectedItem.ToString();
             String month = "1";
             if (cmbMonthTabBeverage.SelectedItem != null)
             {
@@ -156,6 +156,7 @@ namespace COFFEE_SHOP_MANAGER
             revenuePrintFrm.Print();
             revenuePrintFrm.ShowDialog();
         }
+
         private void dateThongKe_EditValueChanged(object sender, EventArgs e)
         {
             grdCtrThongKeNguyenLieu.DataSource = StatisticResourcesDAO.thongke(dateThongKe.DateTime);

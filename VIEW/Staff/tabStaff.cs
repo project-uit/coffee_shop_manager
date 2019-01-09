@@ -33,7 +33,7 @@ namespace COFFEE_SHOP_MANAGER
         {
             AddStaffFrm addStaffFrm = new AddStaffFrm();
             addStaffFrm.FormClosing += DoAfterAddOrEditStaff;
-            addStaffFrm.Show();
+            addStaffFrm.ShowDialog();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace COFFEE_SHOP_MANAGER
             EditStaffFrm editStaffFrm = new EditStaffFrm();
             editStaffFrm.editstaff = staff;
             editStaffFrm.FormClosing += DoAfterAddOrEditStaff;
-            editStaffFrm.Show();
+            editStaffFrm.ShowDialog();
         }
 
         private void DoAfterAddOrEditStaff(object sender, FormClosingEventArgs e)

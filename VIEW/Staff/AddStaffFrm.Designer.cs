@@ -28,37 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStaffFrm));
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtMatKhauComfirm = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtMatKhau = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtTenTaiKhoan = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.errorMatKhauComfirm = new DevExpress.XtraEditors.LabelControl();
             this.errorMatKhau = new DevExpress.XtraEditors.LabelControl();
             this.errorTenTaiKhoan = new DevExpress.XtraEditors.LabelControl();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rdbNhanVien = new System.Windows.Forms.RadioButton();
             this.rdbQuanLy = new System.Windows.Forms.RadioButton();
-            this.txtMatKhauComfirm = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtMatKhau = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtTenTaiKhoan = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtHoTen = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtCMND = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtLuong = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.errorNgaySinh = new DevExpress.XtraEditors.LabelControl();
+            this.txtDiaChi = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.errorLuong = new DevExpress.XtraEditors.LabelControl();
             this.errorCMND = new DevExpress.XtraEditors.LabelControl();
             this.errorDiaChi = new DevExpress.XtraEditors.LabelControl();
             this.errorHoTen = new DevExpress.XtraEditors.LabelControl();
             this.txtNgaySinh = new DevExpress.XtraEditors.DateEdit();
-            this.txtLuong = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtDiaChi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtCMND = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtHoTen = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.btnSave = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -66,44 +65,86 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(34, 216);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(56, 17);
-            this.labelControl9.TabIndex = 44;
-            this.labelControl9.Text = "Mật khẩu";
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtMatKhauComfirm);
+            this.groupBox2.Controls.Add(this.txtMatKhau);
+            this.groupBox2.Controls.Add(this.txtTenTaiKhoan);
             this.groupBox2.Controls.Add(this.errorMatKhauComfirm);
             this.groupBox2.Controls.Add(this.errorMatKhau);
             this.groupBox2.Controls.Add(this.errorTenTaiKhoan);
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.txtMatKhauComfirm);
-            this.groupBox2.Controls.Add(this.txtMatKhau);
-            this.groupBox2.Controls.Add(this.txtTenTaiKhoan);
             this.groupBox2.Controls.Add(this.labelControl9);
             this.groupBox2.Controls.Add(this.labelControl6);
             this.groupBox2.Controls.Add(this.labelControl7);
-            this.groupBox2.Location = new System.Drawing.Point(567, 69);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Location = new System.Drawing.Point(851, 145);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(539, 326);
-            this.groupBox2.TabIndex = 39;
+            this.groupBox2.Size = new System.Drawing.Size(808, 509);
+            this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tài khoản";
+            // 
+            // txtMatKhauComfirm
+            // 
+            this.txtMatKhauComfirm.Depth = 0;
+            this.txtMatKhauComfirm.Hint = "";
+            this.txtMatKhauComfirm.Location = new System.Drawing.Point(51, 375);
+            this.txtMatKhauComfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMatKhauComfirm.MaxLength = 32767;
+            this.txtMatKhauComfirm.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtMatKhauComfirm.Name = "txtMatKhauComfirm";
+            this.txtMatKhauComfirm.PasswordChar = '\0';
+            this.txtMatKhauComfirm.SelectedText = "";
+            this.txtMatKhauComfirm.SelectionLength = 0;
+            this.txtMatKhauComfirm.SelectionStart = 0;
+            this.txtMatKhauComfirm.Size = new System.Drawing.Size(332, 41);
+            this.txtMatKhauComfirm.TabIndex = 63;
+            this.txtMatKhauComfirm.TabStop = false;
+            this.txtMatKhauComfirm.UseSystemPasswordChar = false;
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.Depth = 0;
+            this.txtMatKhau.Hint = "";
+            this.txtMatKhau.Location = new System.Drawing.Point(51, 236);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtMatKhau.MaxLength = 32767;
+            this.txtMatKhau.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.PasswordChar = '\0';
+            this.txtMatKhau.SelectedText = "";
+            this.txtMatKhau.SelectionLength = 0;
+            this.txtMatKhau.SelectionStart = 0;
+            this.txtMatKhau.Size = new System.Drawing.Size(332, 41);
+            this.txtMatKhau.TabIndex = 62;
+            this.txtMatKhau.TabStop = false;
+            this.txtMatKhau.UseSystemPasswordChar = false;
+            // 
+            // txtTenTaiKhoan
+            // 
+            this.txtTenTaiKhoan.Depth = 0;
+            this.txtTenTaiKhoan.Hint = "";
+            this.txtTenTaiKhoan.Location = new System.Drawing.Point(51, 100);
+            this.txtTenTaiKhoan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTenTaiKhoan.MaxLength = 32767;
+            this.txtTenTaiKhoan.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
+            this.txtTenTaiKhoan.PasswordChar = '\0';
+            this.txtTenTaiKhoan.SelectedText = "";
+            this.txtTenTaiKhoan.SelectionLength = 0;
+            this.txtTenTaiKhoan.SelectionStart = 0;
+            this.txtTenTaiKhoan.Size = new System.Drawing.Size(332, 41);
+            this.txtTenTaiKhoan.TabIndex = 61;
+            this.txtTenTaiKhoan.TabStop = false;
+            this.txtTenTaiKhoan.UseSystemPasswordChar = false;
             // 
             // errorMatKhauComfirm
             // 
             this.errorMatKhauComfirm.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorMatKhauComfirm.Appearance.Options.UseForeColor = true;
-            this.errorMatKhauComfirm.Location = new System.Drawing.Point(34, 273);
-            this.errorMatKhauComfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorMatKhauComfirm.Location = new System.Drawing.Point(51, 427);
             this.errorMatKhauComfirm.Name = "errorMatKhauComfirm";
-            this.errorMatKhauComfirm.Size = new System.Drawing.Size(82, 16);
+            this.errorMatKhauComfirm.Size = new System.Drawing.Size(133, 25);
             this.errorMatKhauComfirm.TabIndex = 56;
             this.errorMatKhauComfirm.Text = "labelControl15";
             // 
@@ -111,10 +152,9 @@
             // 
             this.errorMatKhau.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorMatKhau.Appearance.Options.UseForeColor = true;
-            this.errorMatKhau.Location = new System.Drawing.Point(34, 184);
-            this.errorMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorMatKhau.Location = new System.Drawing.Point(51, 288);
             this.errorMatKhau.Name = "errorMatKhau";
-            this.errorMatKhau.Size = new System.Drawing.Size(82, 16);
+            this.errorMatKhau.Size = new System.Drawing.Size(133, 25);
             this.errorMatKhau.TabIndex = 55;
             this.errorMatKhau.Text = "labelControl14";
             // 
@@ -122,10 +162,9 @@
             // 
             this.errorTenTaiKhoan.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorTenTaiKhoan.Appearance.Options.UseForeColor = true;
-            this.errorTenTaiKhoan.Location = new System.Drawing.Point(34, 97);
-            this.errorTenTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorTenTaiKhoan.Location = new System.Drawing.Point(51, 152);
             this.errorTenTaiKhoan.Name = "errorTenTaiKhoan";
-            this.errorTenTaiKhoan.Size = new System.Drawing.Size(82, 16);
+            this.errorTenTaiKhoan.Size = new System.Drawing.Size(133, 25);
             this.errorTenTaiKhoan.TabIndex = 54;
             this.errorTenTaiKhoan.Text = "labelControl13";
             // 
@@ -133,11 +172,9 @@
             // 
             this.groupBox3.Controls.Add(this.rdbNhanVien);
             this.groupBox3.Controls.Add(this.rdbQuanLy);
-            this.groupBox3.Location = new System.Drawing.Point(329, 109);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Location = new System.Drawing.Point(494, 170);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox3.Size = new System.Drawing.Size(133, 90);
+            this.groupBox3.Size = new System.Drawing.Size(200, 141);
             this.groupBox3.TabIndex = 53;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Quyền";
@@ -146,10 +183,9 @@
             // 
             this.rdbNhanVien.AutoSize = true;
             this.rdbNhanVien.Checked = true;
-            this.rdbNhanVien.Location = new System.Drawing.Point(15, 26);
-            this.rdbNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbNhanVien.Location = new System.Drawing.Point(22, 41);
             this.rdbNhanVien.Name = "rdbNhanVien";
-            this.rdbNhanVien.Size = new System.Drawing.Size(93, 21);
+            this.rdbNhanVien.Size = new System.Drawing.Size(140, 29);
             this.rdbNhanVien.TabIndex = 50;
             this.rdbNhanVien.TabStop = true;
             this.rdbNhanVien.Text = "Nhân viên";
@@ -158,167 +194,150 @@
             // rdbQuanLy
             // 
             this.rdbQuanLy.AutoSize = true;
-            this.rdbQuanLy.Location = new System.Drawing.Point(15, 59);
-            this.rdbQuanLy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbQuanLy.Location = new System.Drawing.Point(22, 92);
             this.rdbQuanLy.Name = "rdbQuanLy";
-            this.rdbQuanLy.Size = new System.Drawing.Size(78, 21);
+            this.rdbQuanLy.Size = new System.Drawing.Size(117, 29);
             this.rdbQuanLy.TabIndex = 51;
             this.rdbQuanLy.Text = "Quản lý";
             this.rdbQuanLy.UseVisualStyleBackColor = true;
             // 
-            // txtMatKhauComfirm
+            // labelControl9
             // 
-            this.txtMatKhauComfirm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatKhauComfirm.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtMatKhauComfirm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMatKhauComfirm.HintForeColor = System.Drawing.Color.Empty;
-            this.txtMatKhauComfirm.HintText = "";
-            this.txtMatKhauComfirm.isPassword = true;
-            this.txtMatKhauComfirm.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtMatKhauComfirm.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtMatKhauComfirm.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtMatKhauComfirm.LineThickness = 3;
-            this.txtMatKhauComfirm.Location = new System.Drawing.Point(34, 237);
-            this.txtMatKhauComfirm.Name = "txtMatKhauComfirm";
-            this.txtMatKhauComfirm.Size = new System.Drawing.Size(221, 31);
-            this.txtMatKhauComfirm.TabIndex = 49;
-            this.txtMatKhauComfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMatKhau.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtMatKhau.HintForeColor = System.Drawing.Color.Empty;
-            this.txtMatKhau.HintText = "";
-            this.txtMatKhau.isPassword = true;
-            this.txtMatKhau.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtMatKhau.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtMatKhau.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtMatKhau.LineThickness = 3;
-            this.txtMatKhau.Location = new System.Drawing.Point(34, 148);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(221, 31);
-            this.txtMatKhau.TabIndex = 48;
-            this.txtMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtTenTaiKhoan
-            // 
-            this.txtTenTaiKhoan.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenTaiKhoan.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtTenTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTenTaiKhoan.HintForeColor = System.Drawing.Color.Empty;
-            this.txtTenTaiKhoan.HintText = "";
-            this.txtTenTaiKhoan.isPassword = false;
-            this.txtTenTaiKhoan.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtTenTaiKhoan.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtTenTaiKhoan.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtTenTaiKhoan.LineThickness = 3;
-            this.txtTenTaiKhoan.Location = new System.Drawing.Point(34, 61);
-            this.txtTenTaiKhoan.Name = "txtTenTaiKhoan";
-            this.txtTenTaiKhoan.Size = new System.Drawing.Size(221, 31);
-            this.txtTenTaiKhoan.TabIndex = 47;
-            this.txtTenTaiKhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.labelControl9.Location = new System.Drawing.Point(51, 338);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(182, 25);
+            this.labelControl9.TabIndex = 44;
+            this.labelControl9.Text = "Xác nhận mật khẩu";
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(34, 39);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelControl6.Location = new System.Drawing.Point(51, 61);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(83, 17);
+            this.labelControl6.Size = new System.Drawing.Size(128, 25);
             this.labelControl6.TabIndex = 26;
             this.labelControl6.Text = "Tên tài khoản";
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(34, 127);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelControl7.Location = new System.Drawing.Point(51, 198);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(56, 17);
+            this.labelControl7.Size = new System.Drawing.Size(86, 25);
             this.labelControl7.TabIndex = 27;
             this.labelControl7.Text = "Mật khẩu";
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(31, 127);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(40, 17);
-            this.labelControl5.TabIndex = 39;
-            this.labelControl5.Text = "Địa chỉ";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(31, 39);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(60, 17);
-            this.labelControl1.TabIndex = 35;
-            this.labelControl1.Text = "Họ và tên";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(285, 39);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(55, 16);
-            this.labelControl3.TabIndex = 37;
-            this.labelControl3.Text = "Ngày sinh";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(285, 127);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(35, 16);
-            this.labelControl2.TabIndex = 36;
-            this.labelControl2.Text = "Lương";
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtHoTen);
+            this.groupBox1.Controls.Add(this.txtCMND);
+            this.groupBox1.Controls.Add(this.txtLuong);
             this.groupBox1.Controls.Add(this.errorNgaySinh);
+            this.groupBox1.Controls.Add(this.txtDiaChi);
             this.groupBox1.Controls.Add(this.errorLuong);
             this.groupBox1.Controls.Add(this.errorCMND);
             this.groupBox1.Controls.Add(this.errorDiaChi);
             this.groupBox1.Controls.Add(this.errorHoTen);
             this.groupBox1.Controls.Add(this.txtNgaySinh);
-            this.groupBox1.Controls.Add(this.txtLuong);
-            this.groupBox1.Controls.Add(this.txtDiaChi);
-            this.groupBox1.Controls.Add(this.txtCMND);
-            this.groupBox1.Controls.Add(this.txtHoTen);
             this.groupBox1.Controls.Add(this.labelControl5);
             this.groupBox1.Controls.Add(this.labelControl4);
             this.groupBox1.Controls.Add(this.labelControl1);
             this.groupBox1.Controls.Add(this.labelControl3);
             this.groupBox1.Controls.Add(this.labelControl2);
-            this.groupBox1.Location = new System.Drawing.Point(33, 69);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(51, 145);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(510, 326);
-            this.groupBox1.TabIndex = 38;
+            this.groupBox1.Size = new System.Drawing.Size(774, 509);
+            this.groupBox1.TabIndex = 43;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Depth = 0;
+            this.txtHoTen.Hint = "";
+            this.txtHoTen.Location = new System.Drawing.Point(46, 100);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtHoTen.MaxLength = 32767;
+            this.txtHoTen.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.PasswordChar = '\0';
+            this.txtHoTen.SelectedText = "";
+            this.txtHoTen.SelectionLength = 0;
+            this.txtHoTen.SelectionStart = 0;
+            this.txtHoTen.Size = new System.Drawing.Size(332, 41);
+            this.txtHoTen.TabIndex = 60;
+            this.txtHoTen.TabStop = false;
+            this.txtHoTen.UseSystemPasswordChar = false;
+            // 
+            // txtCMND
+            // 
+            this.txtCMND.Depth = 0;
+            this.txtCMND.Hint = "";
+            this.txtCMND.Location = new System.Drawing.Point(46, 370);
+            this.txtCMND.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCMND.MaxLength = 32767;
+            this.txtCMND.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCMND.Name = "txtCMND";
+            this.txtCMND.PasswordChar = '\0';
+            this.txtCMND.SelectedText = "";
+            this.txtCMND.SelectionLength = 0;
+            this.txtCMND.SelectionStart = 0;
+            this.txtCMND.Size = new System.Drawing.Size(332, 41);
+            this.txtCMND.TabIndex = 59;
+            this.txtCMND.TabStop = false;
+            this.txtCMND.UseSystemPasswordChar = false;
+            // 
+            // txtLuong
+            // 
+            this.txtLuong.Depth = 0;
+            this.txtLuong.Hint = "";
+            this.txtLuong.Location = new System.Drawing.Point(426, 236);
+            this.txtLuong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLuong.MaxLength = 32767;
+            this.txtLuong.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtLuong.Name = "txtLuong";
+            this.txtLuong.PasswordChar = '\0';
+            this.txtLuong.SelectedText = "";
+            this.txtLuong.SelectionLength = 0;
+            this.txtLuong.SelectionStart = 0;
+            this.txtLuong.Size = new System.Drawing.Size(332, 41);
+            this.txtLuong.TabIndex = 58;
+            this.txtLuong.TabStop = false;
+            this.txtLuong.UseSystemPasswordChar = false;
             // 
             // errorNgaySinh
             // 
             this.errorNgaySinh.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorNgaySinh.Appearance.Options.UseForeColor = true;
-            this.errorNgaySinh.Location = new System.Drawing.Point(285, 96);
-            this.errorNgaySinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorNgaySinh.Location = new System.Drawing.Point(428, 150);
             this.errorNgaySinh.Name = "errorNgaySinh";
-            this.errorNgaySinh.Size = new System.Drawing.Size(82, 16);
+            this.errorNgaySinh.Size = new System.Drawing.Size(133, 25);
             this.errorNgaySinh.TabIndex = 57;
             this.errorNgaySinh.Text = "labelControl15";
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Depth = 0;
+            this.txtDiaChi.Hint = "";
+            this.txtDiaChi.Location = new System.Drawing.Point(46, 236);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDiaChi.MaxLength = 32767;
+            this.txtDiaChi.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.PasswordChar = '\0';
+            this.txtDiaChi.SelectedText = "";
+            this.txtDiaChi.SelectionLength = 0;
+            this.txtDiaChi.SelectionStart = 0;
+            this.txtDiaChi.Size = new System.Drawing.Size(332, 41);
+            this.txtDiaChi.TabIndex = 43;
+            this.txtDiaChi.TabStop = false;
+            this.txtDiaChi.UseSystemPasswordChar = false;
             // 
             // errorLuong
             // 
             this.errorLuong.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorLuong.Appearance.Options.UseForeColor = true;
-            this.errorLuong.Location = new System.Drawing.Point(285, 184);
-            this.errorLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorLuong.Location = new System.Drawing.Point(428, 288);
             this.errorLuong.Name = "errorLuong";
-            this.errorLuong.Size = new System.Drawing.Size(82, 16);
+            this.errorLuong.Size = new System.Drawing.Size(133, 25);
             this.errorLuong.TabIndex = 51;
             this.errorLuong.Text = "labelControl12";
             // 
@@ -326,10 +345,9 @@
             // 
             this.errorCMND.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorCMND.Appearance.Options.UseForeColor = true;
-            this.errorCMND.Location = new System.Drawing.Point(31, 273);
-            this.errorCMND.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorCMND.Location = new System.Drawing.Point(46, 427);
             this.errorCMND.Name = "errorCMND";
-            this.errorCMND.Size = new System.Drawing.Size(82, 16);
+            this.errorCMND.Size = new System.Drawing.Size(133, 25);
             this.errorCMND.TabIndex = 50;
             this.errorCMND.Text = "labelControl11";
             // 
@@ -337,10 +355,9 @@
             // 
             this.errorDiaChi.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorDiaChi.Appearance.Options.UseForeColor = true;
-            this.errorDiaChi.Location = new System.Drawing.Point(31, 184);
-            this.errorDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorDiaChi.Location = new System.Drawing.Point(46, 288);
             this.errorDiaChi.Name = "errorDiaChi";
-            this.errorDiaChi.Size = new System.Drawing.Size(82, 16);
+            this.errorDiaChi.Size = new System.Drawing.Size(133, 25);
             this.errorDiaChi.TabIndex = 49;
             this.errorDiaChi.Text = "labelControl10";
             // 
@@ -348,18 +365,16 @@
             // 
             this.errorHoTen.Appearance.ForeColor = System.Drawing.Color.Red;
             this.errorHoTen.Appearance.Options.UseForeColor = true;
-            this.errorHoTen.Location = new System.Drawing.Point(31, 97);
-            this.errorHoTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.errorHoTen.Location = new System.Drawing.Point(46, 152);
             this.errorHoTen.Name = "errorHoTen";
-            this.errorHoTen.Size = new System.Drawing.Size(75, 16);
+            this.errorHoTen.Size = new System.Drawing.Size(122, 25);
             this.errorHoTen.TabIndex = 48;
             this.errorHoTen.Text = "labelControl8";
             // 
             // txtNgaySinh
             // 
             this.txtNgaySinh.EditValue = null;
-            this.txtNgaySinh.Location = new System.Drawing.Point(285, 67);
-            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNgaySinh.Location = new System.Drawing.Point(428, 105);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.Properties.Appearance.BackColor = System.Drawing.Color.DarkGray;
             this.txtNgaySinh.Properties.Appearance.Options.UseBackColor = true;
@@ -367,136 +382,73 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtNgaySinh.Size = new System.Drawing.Size(184, 22);
+            this.txtNgaySinh.Size = new System.Drawing.Size(276, 40);
             this.txtNgaySinh.TabIndex = 47;
             // 
-            // txtLuong
+            // labelControl5
             // 
-            this.txtLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLuong.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtLuong.HintForeColor = System.Drawing.Color.Empty;
-            this.txtLuong.HintText = "";
-            this.txtLuong.isPassword = false;
-            this.txtLuong.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtLuong.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtLuong.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtLuong.LineThickness = 3;
-            this.txtLuong.Location = new System.Drawing.Point(285, 148);
-            this.txtLuong.Name = "txtLuong";
-            this.txtLuong.Size = new System.Drawing.Size(184, 31);
-            this.txtLuong.TabIndex = 46;
-            this.txtLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLuong_KeyPress);
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDiaChi.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtDiaChi.HintForeColor = System.Drawing.Color.Empty;
-            this.txtDiaChi.HintText = "";
-            this.txtDiaChi.isPassword = false;
-            this.txtDiaChi.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtDiaChi.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtDiaChi.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtDiaChi.LineThickness = 3;
-            this.txtDiaChi.Location = new System.Drawing.Point(31, 148);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(221, 31);
-            this.txtDiaChi.TabIndex = 45;
-            this.txtDiaChi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtCMND
-            // 
-            this.txtCMND.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCMND.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCMND.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCMND.HintForeColor = System.Drawing.Color.Empty;
-            this.txtCMND.HintText = "";
-            this.txtCMND.isPassword = false;
-            this.txtCMND.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtCMND.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtCMND.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtCMND.LineThickness = 3;
-            this.txtCMND.Location = new System.Drawing.Point(31, 237);
-            this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(221, 31);
-            this.txtCMND.TabIndex = 44;
-            this.txtCMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtHoTen
-            // 
-            this.txtHoTen.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtHoTen.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtHoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtHoTen.HintForeColor = System.Drawing.Color.Empty;
-            this.txtHoTen.HintText = "";
-            this.txtHoTen.isPassword = false;
-            this.txtHoTen.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtHoTen.LineIdleColor = System.Drawing.Color.Gray;
-            this.txtHoTen.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.txtHoTen.LineThickness = 3;
-            this.txtHoTen.Location = new System.Drawing.Point(31, 61);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(221, 31);
-            this.txtHoTen.TabIndex = 43;
-            this.txtHoTen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.labelControl5.Location = new System.Drawing.Point(46, 198);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(65, 25);
+            this.labelControl5.TabIndex = 39;
+            this.labelControl5.Text = "Địa chỉ";
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(31, 216);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelControl4.Location = new System.Drawing.Point(46, 338);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(34, 16);
+            this.labelControl4.Size = new System.Drawing.Size(57, 25);
             this.labelControl4.TabIndex = 38;
             this.labelControl4.Text = "CMND";
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(46, 61);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(90, 25);
+            this.labelControl1.TabIndex = 35;
+            this.labelControl1.Text = "Họ và tên";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(428, 61);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(92, 25);
+            this.labelControl3.TabIndex = 37;
+            this.labelControl3.Text = "Ngày sinh";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(428, 198);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(59, 25);
+            this.labelControl2.TabIndex = 36;
+            this.labelControl2.Text = "Lương";
+            // 
             // btnSave
             // 
-            this.btnSave.Activecolor = System.Drawing.SystemColors.HotTrack;
-            this.btnSave.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSave.BorderRadius = 0;
-            this.btnSave.ButtonText = "Lưu";
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSave.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSave.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSave.Iconimage")));
-            this.btnSave.Iconimage_right = null;
-            this.btnSave.Iconimage_right_Selected = null;
-            this.btnSave.Iconimage_Selected = null;
-            this.btnSave.IconMarginLeft = 0;
-            this.btnSave.IconMarginRight = 0;
-            this.btnSave.IconRightVisible = true;
-            this.btnSave.IconRightZoom = 0D;
-            this.btnSave.IconVisible = true;
-            this.btnSave.IconZoom = 90D;
-            this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(958, 426);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnSave.AutoSize = true;
+            this.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnSave.Depth = 0;
+            this.btnSave.Icon = null;
+            this.btnSave.Location = new System.Drawing.Point(1581, 702);
+            this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
-            this.btnSave.Normalcolor = System.Drawing.SystemColors.HotTrack;
-            this.btnSave.OnHovercolor = System.Drawing.Color.CornflowerBlue;
-            this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSave.selected = false;
-            this.btnSave.Size = new System.Drawing.Size(147, 47);
-            this.btnSave.TabIndex = 37;
+            this.btnSave.Primary = true;
+            this.btnSave.Size = new System.Drawing.Size(78, 36);
+            this.btnSave.TabIndex = 45;
             this.btnSave.Text = "Lưu";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSave.Textcolor = System.Drawing.Color.White;
-            this.btnSave.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // AddStaffFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 511);
+            this.ClientSize = new System.Drawing.Size(1710, 798);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnSave);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddStaffFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddStaffFrm";
@@ -511,39 +463,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.XtraEditors.LabelControl labelControl9;
         private System.Windows.Forms.GroupBox groupBox2;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSave;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtHoTen;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtDiaChi;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtCMND;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtLuong;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton rdbNhanVien;
-        private System.Windows.Forms.RadioButton rdbQuanLy;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtMatKhauComfirm;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtMatKhau;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtTenTaiKhoan;
-        private DevExpress.XtraEditors.DateEdit txtNgaySinh;
-        private DevExpress.XtraEditors.LabelControl errorHoTen;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtMatKhauComfirm;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtMatKhau;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtTenTaiKhoan;
         private DevExpress.XtraEditors.LabelControl errorMatKhauComfirm;
         private DevExpress.XtraEditors.LabelControl errorMatKhau;
         private DevExpress.XtraEditors.LabelControl errorTenTaiKhoan;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton rdbNhanVien;
+        private System.Windows.Forms.RadioButton rdbQuanLy;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtHoTen;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCMND;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtLuong;
+        private DevExpress.XtraEditors.LabelControl errorNgaySinh;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtDiaChi;
         private DevExpress.XtraEditors.LabelControl errorLuong;
         private DevExpress.XtraEditors.LabelControl errorCMND;
         private DevExpress.XtraEditors.LabelControl errorDiaChi;
-        private DevExpress.XtraEditors.LabelControl errorNgaySinh;
+        private DevExpress.XtraEditors.LabelControl errorHoTen;
+        private DevExpress.XtraEditors.DateEdit txtNgaySinh;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private MaterialSkin.Controls.MaterialRaisedButton btnSave;
     }
 }

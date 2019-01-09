@@ -12,15 +12,18 @@ using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraEditors;
 using COFFEE_SHOP_MANAGER.VIEW.Store;
 using COFFEE_SHOP_MANAGER.DTO;
+using System.Globalization;
 
 namespace COFFEE_SHOP_MANAGER
 {
     public partial class tabStore : UserControl
     {
+        private CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
         public nhanvien loggedStaff;
         private List<thucuong> beverages = new List<thucuong>();
         private List<hoadon> invoices = new List<hoadon>();
         private List<tblInvoiceDTO> listInvoiceDetail = new List<tblInvoiceDTO>();
+        private float tongtien = 0;
         public tabStore()
         {
             if (Program.IsInDesignMode())
@@ -150,13 +153,20 @@ namespace COFFEE_SHOP_MANAGER
                 sum += float.Parse(item.giaban.Value.ToString("0,##")) * item.soluong;
             }
             float discount = float.Parse(lbDiscount.Text.Replace("%", ""));
-            lbSum.Text = sum.ToString();
-            lbTotal.Text = (sum * (100 - discount) / 100).ToString();
+            lbSum.Text = double.Parse(sum.ToString()).ToString("#,###", cul.NumberFormat) + "vnđ";
+            lbTotal.Text = double.Parse((sum * (100 - discount) / 100).ToString()).ToString("#,###", cul.NumberFormat) + "vnđ";
+
+            tongtien = sum * (100 - discount) / 100;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            List<tblInvoiceDTO> list = (gcInvoice.DataSource as IEnumerable<tblInvoiceDTO>).ToList();
+            List<tblInvoiceDTO> list = new List<tblInvoiceDTO>();
+            if ((gcInvoice.DataSource as IEnumerable<tblInvoiceDTO>) != null)
+            {
+                list = (gcInvoice.DataSource as IEnumerable<tblInvoiceDTO>).ToList();
+            }
+            
             if (list.Count() == 0)
             {
                 XtraMessageBox.Show(this, "Chưa chọn thức uống !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -165,7 +175,7 @@ namespace COFFEE_SHOP_MANAGER
 
             hoadon invoice = new hoadon
             {
-                tongtien = decimal.Parse(lbTotal.Text),
+                tongtien = (decimal)tongtien,
                 ngaylap = DateTime.Now
             };
             List<chitiethoadon> invoiceDetails = new List<chitiethoadon>();    
@@ -207,7 +217,7 @@ namespace COFFEE_SHOP_MANAGER
             hoadon invoice = gridview.GetRow(gridview.FocusedRowHandle) as hoadon;
             ViewInvoiceFrm viewInvoiceFrm = new ViewInvoiceFrm();
             viewInvoiceFrm.invoice = invoice;
-            viewInvoiceFrm.Show();
+            viewInvoiceFrm.ShowDialog();
         }
 
         private void searchInvoice(object sender, EventArgs e)

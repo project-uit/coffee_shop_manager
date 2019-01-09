@@ -29,7 +29,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Statistics
             chartBeverageRevenue.Series.Add(series);
 
             ChartTitle chartTitle = new ChartTitle();
-            chartTitle.Text = "THỐNG KÊ DOANH THU THEO NHÓM THỨC UỐNG THÁNG" + month + "/" + year;
+            chartTitle.Text = "THỐNG KÊ DOANH THU THEO NHÓM THỨC UỐNG THÁNG " + month + "/" + year;
             chartTitle.Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold);
             chartBeverageRevenue.Titles.Add(chartTitle);
 

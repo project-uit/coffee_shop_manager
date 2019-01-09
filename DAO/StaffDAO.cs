@@ -16,7 +16,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
                 using (quanlycafeEntities dbContext = new quanlycafeEntities())
                 {
                     staffs = dbContext.nhanviens
-                     .Where(x => x.xoa_flag == null)
+                     .Where(x => x.xoa_flag == false)
                      .ToList();
                 }
             }
