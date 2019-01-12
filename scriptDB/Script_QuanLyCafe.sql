@@ -116,5 +116,13 @@ dinhluongtoida float,
 dinhluongtoithieu float
 );
 
+create table cuahang(
+idcuahang int IDENTITY(1,1) PRIMARY KEY,
+ten nvarchar(100),
+diachi nvarchar(300),
+dienthoai varchar(20)
+)
+
+insert into cuahang(ten, diachi, dienthoai) values ('2Land Coffee','123 Nguyễn Huệ, Quận 1, tp HCM','18001090')
 commit;
 
