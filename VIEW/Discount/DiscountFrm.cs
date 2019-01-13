@@ -97,13 +97,12 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
                 {
                     if (DiscountDAO.insert(giamgia))
                     {
-                        lbMessage.Text = "Lưu thành công!";
+                        XtraMessageBox.Show(this, "Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         loadtable();
                     } else
                     {
-                        lbMessage.Text = "Lưu thất bại!";
+                        XtraMessageBox.Show(this, "Lưu thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                    flyoutPanel1.ShowBeakForm();
                 } else
                 {
                     XtraMessageBox.Show(this, "Bạn không thể thêm đợt khuyến mãi có cùng thời gian đợt khuyến mãi hiện tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -117,13 +116,12 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
             giamgia giamgia = gridview.GetRow(gridview.FocusedRowHandle) as giamgia;
             if (DiscountDAO.delete(giamgia))
             {
-                lbMessage.Text = "Xóa thành công!";
+                XtraMessageBox.Show(this, "Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loadtable();
             } else
             {
-                lbMessage.Text = "Xóa thất bại!";
+                XtraMessageBox.Show(this, "Xóa thất bại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            flyoutPanel1.ShowBeakForm();
         }
 
         private void txtGiamGia_Click(object sender, EventArgs e)
