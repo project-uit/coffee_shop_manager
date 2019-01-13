@@ -129,7 +129,7 @@
     <value>9</value>
   </data>
   <data name="btnOk.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
     <value>265, 217</value>

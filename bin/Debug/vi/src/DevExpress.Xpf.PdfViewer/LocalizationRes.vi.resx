@@ -369,4 +369,10 @@
   <data name="PdfViewerStringId.PropertiesLocation" xml:space="preserve">
     <value>Vị trí</value>
   </data>
+  <data name="PdfViewerStringId.CommandSetFitWidthZoomModeCaption" xml:space="preserve">
+    <value>Phù hợp với chiều rộng</value>
+  </data>
+  <data name="PdfViewerStringId.PrintDialogPageRange" xml:space="preserve">
+    <value>Khoảng trang</value>
+  </data>
 </root>

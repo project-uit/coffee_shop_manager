@@ -1785,4 +1785,79 @@
   <data name="DevExpress.XtraCharts.Breadcrumbs.Font" xml:space="preserve">
     <value>Phông</value>
   </data>
+  <data name="DevExpress.XtraCharts.LegendDirection.TopToBottom" xml:space="preserve">
+    <value>Trên xuống dưới</value>
+  </data>
+  <data name="DevExpress.XtraCharts.AxisBase.MinorCount" xml:space="preserve">
+    <value>Số lượng nhỏ</value>
+  </data>
+  <data name="DevExpress.XtraCharts.ErrorBarDirection.Plus" xml:space="preserve">
+    <value>Cộng với</value>
+  </data>
+  <data name="DevExpress.XtraCharts.Diagram3D.RotationAngleX" xml:space="preserve">
+    <value>Xoay góc X</value>
+  </data>
+  <data name="DevExpress.XtraCharts.RectangleGradientMode.LeftToRight" xml:space="preserve">
+    <value>Trái sang phải</value>
+  </data>
+  <data name="DevExpress.XtraCharts.PolygonGradientMode.LeftToRight" xml:space="preserve">
+    <value>Trái sang phải</value>
+  </data>
+  <data name="DevExpress.XtraCharts.SeriesLabelBase.TextPattern" xml:space="preserve">
+    <value>Văn bản mẫu</value>
+  </data>
+  <data name="DevExpress.XtraCharts.CrosshairOptions.LinesMode" xml:space="preserve">
+    <value>Chế độ dòng</value>
+  </data>
+  <data name="DevExpress.XtraCharts.CrosshairOptions.ShowValueLine" xml:space="preserve">
+    <value>Hiển thị giá trị dòng</value>
+  </data>
+  <data name="DevExpress.XtraCharts.CrosshairValueSelectionMode.ValueRange" xml:space="preserve">
+    <value>Phạm vi giá trị</value>
+  </data>
+  <data name="DevExpress.XtraCharts.StackedBarTotalLabel.Indent" xml:space="preserve">
+    <value>Thụt lề</value>
+  </data>
+  <data name="DevExpress.XtraCharts.ScaleType.Numerical" xml:space="preserve">
+    <value>Số</value>
+  </data>
+  <data name="DevExpress.XtraCharts.XYMarkerSlideAnimationDirection.FromLeft" xml:space="preserve">
+    <value>Từ trái</value>
+  </data>
+  <data name="DevExpress.XtraCharts.XYMarkerSlideAnimationDirection.FromRightBottomCorner" xml:space="preserve">
+    <value>Từ góc dưới bên phải</value>
+  </data>
+  <data name="DevExpress.XtraCharts.TaskLinkOptions.InFront" xml:space="preserve">
+    <value>Ở phía trước</value>
+  </data>
+  <data name="DevExpress.XtraCharts.TimeSpanFormat.TotalDays" xml:space="preserve">
+    <value>Tất cả ngày</value>
+  </data>
+  <data name="DevExpress.XtraCharts.PolygonGradientFillOptions.GradientMode" xml:space="preserve">
+    <value>Chế độ gradient</value>
+  </data>
+  <data name="DevExpress.XtraCharts.FillMode.Gradient" xml:space="preserve">
+    <value>Gradient</value>
+  </data>
+  <data name="DevExpress.XtraCharts.FillMode3D.Gradient" xml:space="preserve">
+    <value>Gradient</value>
+  </data>
+  <data name="DevExpress.XtraCharts.Native.Chart.AutoLayout" xml:space="preserve">
+    <value>Tự động bố trí</value>
+  </data>
+  <data name="DevExpress.XtraCharts.BarSeriesLabel.Indent" xml:space="preserve">
+    <value>Thụt lề</value>
+  </data>
+  <data name="DevExpress.XtraCharts.DockableTitle.Indent" xml:space="preserve">
+    <value>Thụt lề</value>
+  </data>
+  <data name="DevExpress.XtraCharts.RangeBarSeriesLabel.Indent" xml:space="preserve">
+    <value>Thụt lề</value>
+  </data>
+  <data name="DevExpress.XtraCharts.ConstantLine.ShowBehind" xml:space="preserve">
+    <value>Hiển thị phía sau</value>
+  </data>
+  <data name="DevExpress.XtraCharts.AnimationDirection.FromLeft" xml:space="preserve">
+    <value>Từ trái</value>
+  </data>
 </root>

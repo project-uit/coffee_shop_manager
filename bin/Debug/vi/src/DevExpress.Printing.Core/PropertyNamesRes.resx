@@ -162,6 +162,9 @@
   <data name="DevExpress.XtraReports.Parameters.Parameter.AllowNull" xml:space="preserve">
     <value>Allow Null</value>
   </data>
+  <data name="DevExpress.XtraReports.Parameters.Parameter.Tag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
   <data name="DevExpress.XtraReports.Parameters.DynamicListLookUpSettings" xml:space="preserve">
     <value>Dynamic List</value>
   </data>

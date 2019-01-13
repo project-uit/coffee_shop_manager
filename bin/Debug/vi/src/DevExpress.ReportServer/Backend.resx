@@ -491,4 +491,7 @@ This is a test email from the Report and Dashboard Server.</value>
   <data name="DataModel_DuplicateViewName" xml:space="preserve">
     <value>Data model already contains a view with the same name: {0}.</value>
   </data>
+  <data name="Server_InvalidUserActivationExpiration" xml:space="preserve">
+    <value>User activation expiration should be greater than 0.</value>
+  </data>
 </root>

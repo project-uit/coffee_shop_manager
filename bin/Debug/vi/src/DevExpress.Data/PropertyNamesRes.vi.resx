@@ -1353,4 +1353,10 @@
   <data name="DevExpress.XtraTreeList.Data.UnboundColumnType.Object" xml:space="preserve">
     <value>Đối tượng</value>
   </data>
+  <data name="DevExpress.XtraPrinting.ImageAlignment.TopLeft" xml:space="preserve">
+    <value>Trên bên trái</value>
+  </data>
+  <data name="DevExpress.XtraTreeList.Data.UnboundColumnType.Decimal" xml:space="preserve">
+    <value>Thập phân</value>
+  </data>
 </root>

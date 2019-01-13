@@ -5235,4 +5235,13 @@
   <data name="DevExpress.XtraCharts.BubbleSizeUnit.Pixel" xml:space="preserve">
     <value>Pixel</value>
   </data>
+  <data name="DevExpress.XtraCharts.SwiftPlotSeriesView.ShowIsolatedPoints" xml:space="preserve">
+    <value>Show Isolated Points</value>
+  </data> 
+  <data name="DevExpress.XtraCharts.RadarLineSeriesView.ShowIsolatedPoints" xml:space="preserve">
+    <value>Show Isolated Points</value>
+  </data> 
+  <data name="DevExpress.XtraCharts.LineSeriesView.ShowIsolatedPoints" xml:space="preserve">
+    <value>Show Isolated Points</value>
+  </data> 
 </root>

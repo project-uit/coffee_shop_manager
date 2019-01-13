@@ -1030,6 +1030,9 @@
   <data name="RichEditControlStringId.Caption_PageSetupSectionStartLabel" xml:space="preserve">
     <value>Section start:</value>
   </data>
+  <data name="RichEditControlStringId.Caption_PageSetupSectionDirectionLabel" xml:space="preserve">
+    <value>Section direction:</value>
+  </data>
   <data name="RichEditControlStringId.Caption_PageSetupTopMarginLabel" xml:space="preserve">
     <value>Top:</value>
   </data>
@@ -1100,10 +1103,10 @@
     <value>By:</value>
   </data>
   <data name="RichEditControlStringId.Caption_ParagraphIndentationLeftLabel" xml:space="preserve">
-    <value>Left:</value>
+    <value>Before text:</value>
   </data>
   <data name="RichEditControlStringId.Caption_ParagraphIndentationRightLabel" xml:space="preserve">
-    <value>Right:</value>
+    <value>After text:</value>
   </data>
   <data name="RichEditControlStringId.Caption_ParagraphIndentationSpecialLabel" xml:space="preserve">
     <value>Special:</value>
@@ -1243,6 +1246,21 @@
   <data name="RichEditControlStringId.Caption_TablePropertiesFormBottomRadioButton" xml:space="preserve">
     <value>Bottom</value>
   </data>
+  <data name="RichEditControlStringId.Caption_TablePropertiesFormDirectionLabel" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="RichEditControlStringId.Caption_TablePropertiesFormRtl" xml:space="preserve">
+    <value>Right-to-left</value>
+  </data>
+  <data name="RichEditControlStringId.Caption_TablePropertiesFormLtr" xml:space="preserve">
+    <value>Left-to-right</value>
+  </data>
+  <data name="RichEditControlStringId.Caption_TablePropertiesFormTableIndentLabel" xml:space="preserve">
+    <value>Indent from left:</value>
+  </data>
+  <data name="RichEditControlStringId.Caption_TablePropertiesFormTableIndentRightLabel" xml:space="preserve">
+    <value>Indent from right:</value>
+  </data>
   <data name="RichEditControlStringId.Caption_TablePropertiesFormCellTab" xml:space="preserve">
     <value>Cell</value>
   </data>
@@ -1284,9 +1302,6 @@
   </data>
   <data name="RichEditControlStringId.Caption_TablePropertiesFormTableAlignmentLabel" xml:space="preserve">
     <value>Alignment</value>
-  </data>
-  <data name="RichEditControlStringId.Caption_TablePropertiesFormTableIndentLabel" xml:space="preserve">
-    <value>Indent from left:</value>
   </data>
   <data name="RichEditControlStringId.Caption_TablePropertiesFormTableTab" xml:space="preserve">
     <value>Table</value>

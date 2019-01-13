@@ -668,6 +668,9 @@ Converts Value to a DateTime value.</value>
   <data name="DashboardStringId.GridClearSorting" xml:space="preserve">
     <value>Clear Sorting</value>
   </data>
+  <data name="DashboardStringId.GridHyperlinkUriPatternErrorMessage" xml:space="preserve">
+    <value>Invalid placeholder</value>
+  </data>
   <data name="DashboardStringId.GridResetColumnWidths" xml:space="preserve">
     <value>Reset column widths</value>
   </data>

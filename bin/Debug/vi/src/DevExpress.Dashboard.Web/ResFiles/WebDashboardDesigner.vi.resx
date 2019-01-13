@@ -765,4 +765,49 @@
   <data name="DashboardWebStringId.ConditionalFormatting.DateType.MonthAgo4" xml:space="preserve">
     <value>Tháng trước 4</value>
   </data>
+  <data name="DashboardWebStringId.Dialog.DoNotSave" xml:space="preserve">
+    <value>Không lưu</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.WidthType.FitToContent" xml:space="preserve">
+    <value>Phù hợp với nội dung</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.AboveOrEqual" xml:space="preserve">
+    <value>Trên hoặc bằng</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.BelowOrEqual" xml:space="preserve">
+    <value>Dưới hoặc bằng</value>
+  </data>
+  <data name="DashboardWebStringId.DashboardMenuColorScheme" xml:space="preserve">
+    <value>Lược đồ màu</value>
+  </data>
+  <data name="DashboardWebStringId.EditInDesigner" xml:space="preserve">
+    <value>Chỉnh sửa trong thiết kế</value>
+  </data>
+  <data name="DashboardWebStringId.Map.TooltipAttribute" xml:space="preserve">
+    <value>Thuộc tính chú thích</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Area.USA" xml:space="preserve">
+    <value>Hoa Kỳ</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Position.BottomRight" xml:space="preserve">
+    <value>Góc dưới bên phải</value>
+  </data>
+  <data name="DashboardWebStringId.Binding.ConfigureRow" xml:space="preserve">
+    <value>Cấu hình dòng</value>
+  </data>
+  <data name="DashboardWebStringId.Calculations.WindowDefinitionModeSpecific" xml:space="preserve">
+    <value>Cụ thể</value>
+  </data>
+  <data name="DashboardWebStringId.CardLayout.LayoutOptions" xml:space="preserve">
+    <value>Tùy chọn bố trí</value>
+  </data>
+  <data name="DashboardWebStringId.Map.Position.TopLeft" xml:space="preserve">
+    <value>Trên bên trái</value>
+  </data>
+  <data name="DashboardWebStringId.ConditionalFormatting.DateType.LaterThisWeek" xml:space="preserve">
+    <value>Cuối tuần này</value>
+  </data>
+  <data name="DashboardWebStringId.Grid.ColumnWidth" xml:space="preserve">
+    <value>Chiều rộng cột</value>
+  </data>
 </root>

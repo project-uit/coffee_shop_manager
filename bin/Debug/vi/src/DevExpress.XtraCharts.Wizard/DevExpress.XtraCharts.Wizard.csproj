@@ -12,7 +12,8 @@
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>DevExpress.XtraCharts.v18.2.Wizard</AssemblyName>
-    <AssemblyOriginatorKeyFile>..\DevExpress.Key\StrongKey.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -25,9 +26,10 @@
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile />
+    <KeyContainerName>dx-all</KeyContainerName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\DevExpress.Dll\</OutputPath>
@@ -860,6 +862,9 @@
     <EmbeddedResource Include="Design\ChartShortcutKeyCollectionEditorForm.resx">
       <DependentUpon>ChartShortcutKeyCollectionEditorForm.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design\ChartShortcutKeyCollectionEditorForm.vi.resx">
+      <DependentUpon>ChartShortcutKeyCollectionEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Design\DrillDownTemplateControl.resx">
       <DependentUpon>DrillDownTemplateControl.cs</DependentUpon>

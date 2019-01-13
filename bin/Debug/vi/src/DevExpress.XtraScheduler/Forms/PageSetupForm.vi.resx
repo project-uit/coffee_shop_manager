@@ -250,7 +250,7 @@
     <value>1</value>
   </data>
   <data name="btnOk.AccessibleName" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="btnOk.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 4</value>
@@ -262,7 +262,7 @@
     <value>4</value>
   </data>
   <data name="btnOk.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="&gt;&gt;btnOk.Name" xml:space="preserve">
     <value>btnOk</value>

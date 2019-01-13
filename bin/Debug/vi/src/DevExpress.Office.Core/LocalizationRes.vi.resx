@@ -211,4 +211,7 @@
   <data name="OfficeStringId.MenuCmd_Hyperlink" xml:space="preserve">
     <value>Siêu liên kết</value>
   </data>
+  <data name="OfficeStringId.MenuCmd_DecreaseFontSize" xml:space="preserve">
+    <value>Thu nhỏ chữ</value>
+  </data>
 </root>

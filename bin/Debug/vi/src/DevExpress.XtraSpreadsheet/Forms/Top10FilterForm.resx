@@ -177,12 +177,6 @@
   <data name="cbFilterOrder.Location" type="System.Drawing.Point, System.Drawing">
     <value>39, 31</value>
   </data>
-  <data name="cbFilterOrder.Properties.Columns" xml:space="preserve">
-    <value>Text</value>
-  </data>
-  <data name="cbFilterOrder.Properties.Columns1" xml:space="preserve">
-    <value>Text</value>
-  </data>
   <data name="cbFilterOrder.Properties.NullText" xml:space="preserve">
     <value></value>
   </data>
@@ -236,12 +230,6 @@
   </data>
   <data name="cbFilterType.Location" type="System.Drawing.Point, System.Drawing">
     <value>273, 31</value>
-  </data>
-  <data name="cbFilterType.Properties.Columns" xml:space="preserve">
-    <value>Text</value>
-  </data>
-  <data name="cbFilterType.Properties.Columns1" xml:space="preserve">
-    <value>Text</value>
   </data>
   <data name="cbFilterType.Properties.NullText" xml:space="preserve">
     <value></value>

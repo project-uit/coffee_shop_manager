@@ -100,4 +100,7 @@
   <data name="cbFillMode.Properties.Items3" xml:space="preserve">
     <value>Hatch</value>
   </data>
+  <data name="cbFillMode.Properties.Items2" xml:space="preserve">
+    <value>Gradient</value>
+  </data>
 </root>

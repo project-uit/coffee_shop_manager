@@ -138,4 +138,10 @@
   <data name="FilteringLocalizerStringId.MenuResetFilter" xml:space="preserve">
     <value>Đặt lại bộ lọc</value>
   </data>
+  <data name="FilteringLocalizerStringId.FalseName" xml:space="preserve">
+    <value>Sai</value>
+  </data>
+  <data name="FilteringLocalizerStringId.TrueName" xml:space="preserve">
+    <value>Đúng</value>
+  </data>
 </root>

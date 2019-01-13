@@ -594,4 +594,13 @@ hoặc hiển thị các tấm từ bộ sưu tập Diagram.Panes.</value>
   <data name="ChartStringId.Value2PatternDescription" xml:space="preserve">
     <value>Giá trị 2</value>
   </data>
+  <data name="ChartStringId.MsgIncorrectBubbleMaxSize" xml:space="preserve">
+    <value>Kích thước tối đa phải lớn hơn kích thước tối thiểu.</value>
+  </data>
+  <data name="ChartStringId.MsgIncorrectPieSeriesLabelColumnIndent" xml:space="preserve">
+    <value>Thụt đầu dòng cột phải lớn hơn hoặc bằng 0.</value>
+  </data>
+  <data name="ChartStringId.VerbLoadLayout" xml:space="preserve">
+    <value>Tải...</value>
+  </data>
 </root>

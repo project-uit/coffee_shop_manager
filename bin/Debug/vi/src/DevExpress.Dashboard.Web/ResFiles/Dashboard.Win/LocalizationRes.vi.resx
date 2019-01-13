@@ -513,4 +513,31 @@
   <data name="DashboardWinStringId.CommandConvertToBubbleMapCaption" xml:space="preserve">
     <value>Bản đồ bong bóng</value>
   </data>
+  <data name="DashboardWinStringId.CommandDimensionSortModeKey" xml:space="preserve">
+    <value>(Phím)</value>
+  </data>
+  <data name="DashboardWinStringId.CommandConvertToChoroplethMapCaption" xml:space="preserve">
+    <value>Bản đồ Choropleth</value>
+  </data>
+  <data name="DashboardWinStringId.CommandFormatRuleLessThanOrEqualTo" xml:space="preserve">
+    <value>Nhỏ hơn hoặc bằng</value>
+  </data>
+  <data name="DashboardWinStringId.CommandFormatRuleNotEqualTo" xml:space="preserve">
+    <value>Không bằng</value>
+  </data>
+  <data name="DashboardWinStringId.CommandPieLabelPositionCaption" xml:space="preserve">
+    <value>Vị trí nhãn dữ liệu</value>
+  </data>
+  <data name="DashboardWinStringId.CalculatedFieldTypeDecimal" xml:space="preserve">
+    <value>Thập phân</value>
+  </data>
+  <data name="DashboardWinStringId.CardRowDataElementTypeAbsoluteVariationCaption" xml:space="preserve">
+    <value>Biến thể tuyệt đối</value>
+  </data>
+  <data name="DashboardWinStringId.CardRowDataElementTypeCardNameCaption" xml:space="preserve">
+    <value>Tên của thẻ</value>
+  </data>
+  <data name="DashboardWinStringId.CommandChoroplethMapShapeLabelsAttributeCaption" xml:space="preserve">
+    <value>Hình dạng nhãn</value>
+  </data>
 </root>

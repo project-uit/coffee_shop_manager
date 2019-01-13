@@ -351,4 +351,25 @@
   <data name="FilterUIElementLocalizerStringId.CustomUIFilterIsSameDayName" xml:space="preserve">
     <value>Là cùng một ngày</value>
   </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterQuarter3Description" xml:space="preserve">
+    <value>Quý III</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUISecondLabel" xml:space="preserve">
+    <value>Thứ hai</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBeforeName" xml:space="preserve">
+    <value>Trước khi</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterBeginsWithDescription" xml:space="preserve">
+    <value>Bắt đầu với một văn bản cụ thể</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEndsWithDescription" xml:space="preserve">
+    <value>Không kết thúc với một văn bản cụ thể</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotEndWithDescription" xml:space="preserve">
+    <value>Không kết thúc với một văn bản cụ thể</value>
+  </data>
+  <data name="FilterUIElementLocalizerStringId.CustomUIFilterDoesNotBeginWithDescription" xml:space="preserve">
+    <value>Không bắt đầu với một văn bản cụ thể</value>
+  </data>
 </root>

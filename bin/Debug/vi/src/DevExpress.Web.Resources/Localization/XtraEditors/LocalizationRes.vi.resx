@@ -1299,4 +1299,13 @@
   <data name="StringId.FilterCriteriaToStringFunctionIsYearToDate" xml:space="preserve">
     <value>Là giai đoạn năm đến ngày</value>
   </data>
+  <data name="StringId.FilterCriteriaToStringFunctionLocalDateTimeYearBeforeToday" xml:space="preserve">
+    <value>Một năm trước</value>
+  </data>
+  <data name="StringId.ManageRuleCellValueLessThanOrEqualTo" xml:space="preserve">
+    <value>Nhỏ hơn hoặc bằng</value>
+  </data>
+  <data name="StringId.ColorTabWebSafeColors" xml:space="preserve">
+    <value>Web-Safe</value>
+  </data>
 </root>

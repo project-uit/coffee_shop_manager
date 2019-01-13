@@ -211,4 +211,13 @@
   <data name="ASPxEditorsStringId.DateRangeErrorTextDaysPlaceholder" xml:space="preserve">
     <value>Ngày</value>
   </data>
+  <data name="ASPxEditorsStringId.Calendar_FastNavBackToDays" xml:space="preserve">
+    <value>Quay lại ngày</value>
+  </data>
+  <data name="ASPxEditorsStringId.Calendar_FastNavBackToMonths" xml:space="preserve">
+    <value>Quay lại tháng</value>
+  </data>
+  <data name="ASPxEditorsStringId.Calendar_FastNavBackToYears" xml:space="preserve">
+    <value>Quay lại năm</value>
+  </data>
 </root>

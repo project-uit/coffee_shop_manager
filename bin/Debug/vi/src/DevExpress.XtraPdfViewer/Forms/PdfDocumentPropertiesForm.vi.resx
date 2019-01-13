@@ -121,7 +121,7 @@
     <value>Mô tả</value>
   </data>
   <data name="btnOk.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="lblSubject.Text" xml:space="preserve">
     <value>Chủ đề:</value>

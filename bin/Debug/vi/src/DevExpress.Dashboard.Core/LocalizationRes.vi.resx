@@ -441,4 +441,10 @@
   <data name="DashboardStringId.FileName" xml:space="preserve">
     <value>Tên tập tin</value>
   </data>
+  <data name="DashboardStringId.ScaleModeAutoFitToPagesWidth" xml:space="preserve">
+    <value>Tự động phù hợp với chiều rộng trang</value>
+  </data>
+  <data name="DashboardStringId.DisplayValueCaption" xml:space="preserve">
+    <value>Hiển thị giá trị</value>
+  </data>
 </root>

@@ -364,6 +364,7 @@ namespace DevExpress.Internal {
         SRAssemblyMap = "DevExpress.XtraMap" + VSuffix,
         SRAssemblyMapTests = "DevExpress.XtraMap.Tests",
         SRAssemblyMapDesign = "DevExpress.XtraMap" + VSuffixDesign,
+        SRAssemblyMapDesignFull = SRAssemblyMapDesign + FullAssemblyVersionExtension,
         SRAssemblyTreeMapCore = "DevExpress.TreeMap" + VSuffix + ".Core",
         SRAssemblyTreeMap = "DevExpress.XtraTreeMap" + VSuffix,
         SRAssemblyTreeMapDesign = "DevExpress.XtraTreeMap" + VSuffixDesign,

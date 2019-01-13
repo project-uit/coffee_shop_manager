@@ -238,4 +238,13 @@
   <data name="Date" xml:space="preserve">
     <value>DateTime</value>
   </data>
+  <data name="LowercaseLetters" xml:space="preserve">
+    <value>Chữ thường</value>
+  </data>
+  <data name="MonthDay" xml:space="preserve">
+    <value>Tháng ngày</value>
+  </data>
+  <data name="MaskTypeSimple" xml:space="preserve">
+    <value>Đơn giản</value>
+  </data>
 </root>

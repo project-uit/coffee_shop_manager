@@ -528,4 +528,7 @@
   <data name="ASPxReportsStringId.ReportDesigner_Wizard_PageSetup_LeftMargin" xml:space="preserve">
     <value>Trái:</value>
   </data>
+  <data name="ASPxReportsStringId.ReportDesigner_TableActions_DistributeColumnsEvenly" xml:space="preserve">
+    <value>Phân phối các cột đồng đều</value>
+  </data>
 </root>

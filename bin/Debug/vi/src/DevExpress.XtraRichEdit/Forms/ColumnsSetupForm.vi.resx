@@ -532,7 +532,7 @@
     <value>columnsEdit</value>
   </data>
   <data name="btnOk.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="columnsPresetControlThree.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
     <value>Transparent</value>

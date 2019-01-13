@@ -667,4 +667,67 @@
   <data name="ReportDesignerStringId.ReportWizard_CustomizeLabel_Height" xml:space="preserve">
     <value>Chiều cao</value>
   </data>
+  <data name="ReportDesignerStringId.FitHeightToText" xml:space="preserve">
+    <value>Phù hợp với chiều cao văn bản</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_DataSource" xml:space="preserve">
+    <value>Nguồn dữ liệu</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_MeasureUnits" xml:space="preserve">
+    <value>Đơn vị đo lường</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_PageBreak" xml:space="preserve">
+    <value>Ngắt trang</value>
+  </data>
+  <data name="ReportDesignerStringId.Undo_Hint" xml:space="preserve">
+    <value>Hoàn tác thao tác cuối.</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_ActualValue" xml:space="preserve">
+    <value>Giá trị thực tế</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_HtmlDataBinding" xml:space="preserve">
+    <value>Ràng buộc dữ liệu HTML</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_HtmlExpression" xml:space="preserve">
+    <value>Biểu thức HTML</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_Image" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_ImageURL" xml:space="preserve">
+    <value>URL của hình ảnh</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_Maximum" xml:space="preserve">
+    <value>Tối đa</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_Minimum" xml:space="preserve">
+    <value>Tối thiểu</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_Module" xml:space="preserve">
+    <value>Mô-đun</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_MultiColumnLayout" xml:space="preserve">
+    <value>Bố trí nhiều cột</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_PrintOn" xml:space="preserve">
+    <value>In trên</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_RepeatEveryPage" xml:space="preserve">
+    <value>Lặp lại mỗi trang</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_RtfExpression" xml:space="preserve">
+    <value>Biểu thức RTF</value>
+  </data>
+  <data name="ReportDesignerStringId.WatermarkEditor_Behind" xml:space="preserve">
+    <value>Phía sau</value>
+  </data>
+  <data name="ReportDesignerStringId.Properties_Symbology" xml:space="preserve">
+    <value>Tượng trưng</value>
+  </data>
+  <data name="ReportDesignerStringId.ReportWizard_ChooseReportLayout_AlignLeft1" xml:space="preserve">
+    <value>Căn trái 1</value>
+  </data>
+  <data name="ReportDesignerStringId.ReportWizard_ChooseReportLayout_AlignLeft2" xml:space="preserve">
+    <value>Căn trái 2</value>
+  </data>
 </root>

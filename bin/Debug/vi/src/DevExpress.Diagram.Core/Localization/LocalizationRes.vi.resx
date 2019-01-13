@@ -753,4 +753,13 @@
   <data name="DiagramControlStringId.SoftwareIcons_HardDrive_Name" xml:space="preserve">
     <value>Đĩa cứng</value>
   </data>
+  <data name="DiagramControlStringId.DiagramCommand_FitToDrawing" xml:space="preserve">
+    <value>Phù hợp với bản vẽ</value>
+  </data>
+  <data name="DiagramControlStringId.Category_Common" xml:space="preserve">
+    <value>Phổ biến</value>
+  </data>
+  <data name="DiagramControlStringId.Category_SizeAndPosition" xml:space="preserve">
+    <value>Kích thước &amp; vị trí</value>
+  </data>
 </root>

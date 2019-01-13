@@ -132,4 +132,10 @@
   <data name="layoutControl.Text" xml:space="preserve">
     <value>layoutControl1</value>
   </data>
+  <data name="ceThis.Properties.Caption" xml:space="preserve">
+    <value>Này</value>
+  </data>
+  <data name="ceIncludeCurrent.Properties.Caption" xml:space="preserve">
+    <value>Bao gồm hiện tại</value>
+  </data>
 </root>

@@ -512,4 +512,7 @@ Kiểm tra sự tồn tại của một thuộc tính trong một đối tượn
   <data name="EditorStringId.FilterRulesEmptyValueText" xml:space="preserve">
     <value>Nhập một giá trị...</value>
   </data>
+  <data name="EditorStringId.DragDropAddRecords" xml:space="preserve">
+    <value>Thêm hồ sơ</value>
+  </data>
 </root>

@@ -1242,4 +1242,7 @@
   <data name="User_Edit_GroupName" xml:space="preserve">
     <value>Group Name</value>
   </data>
+  <data name="ServerSettings_General_UserActivationExpiration" xml:space="preserve">
+    <value>User Activation Expiration (days)</value>
+  </data>    
 </root>

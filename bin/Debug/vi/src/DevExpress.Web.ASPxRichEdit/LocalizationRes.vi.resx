@@ -555,4 +555,7 @@
   <data name="ASPxRichEditStringId.Spelling_IgnoreAll" xml:space="preserve">
     <value>Bỏ qua tất cả</value>
   </data>
+  <data name="ASPxRichEditStringId.Tabs_Decimal" xml:space="preserve">
+    <value>Thập phân</value>
+  </data>
 </root>

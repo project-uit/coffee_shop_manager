@@ -798,4 +798,22 @@ Một số yếu tố của tài liệu chẳng hạn như tiêu đề và chân
   <data name="XtraRichEditStringId.DefaultStyleName_Date" xml:space="preserve">
     <value>DateTime</value>
   </data>
+  <data name="XtraRichEditStringId.MenuCmd_FitToPage" xml:space="preserve">
+    <value>Phù hợp với trang</value>
+  </data>
+  <data name="XtraRichEditStringId.MenuCmd_SetFloatingObjectTopLeftAlignment" xml:space="preserve">
+    <value>Trên bên trái</value>
+  </data>
+  <data name="XtraRichEditStringId.Msg_InvalidHeaderFooterOffset" xml:space="preserve">
+    <value>Đo lường phải giữa {0} và {1}.</value>
+  </data>
+  <data name="XtraRichEditStringId.Msg_InvalidValueRange" xml:space="preserve">
+    <value>Giá trị phải trong khoảng từ {0} và {1}.</value>
+  </data>
+  <data name="XtraRichEditStringId.FieldMapUniqueId" xml:space="preserve">
+    <value>Định danh duy nhất</value>
+  </data>
+  <data name="XtraRichEditStringId.MenuCmd_InsertTableRowBelow" xml:space="preserve">
+    <value>Chèn dưới đây</value>
+  </data>
 </root>

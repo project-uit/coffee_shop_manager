@@ -121,7 +121,7 @@
     <value>Hủy</value>
   </data>
   <data name="simpleButton1.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="labelControl1.Text" xml:space="preserve">
     <value>Đếm</value>

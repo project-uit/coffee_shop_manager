@@ -257,4 +257,22 @@
   <data name="SnapStringId.ThemeName_Casual" xml:space="preserve">
     <value>Ngẫu nhiên</value>
   </data>
+  <data name="SnapStringId.WizardPageDataSourceName" xml:space="preserve">
+    <value>Nhập tên nguồn dữ liệu</value>
+  </data>
+  <data name="SnapStringId.Msg_RemoveSelectedDataSource" xml:space="preserve">
+    <value>Loại bỏ các nguồn dữ liệu đã chọn?</value>
+  </data>
+  <data name="SnapStringId.NewDataSourceCommand_MenuCaption" xml:space="preserve">
+    <value>Thêm nguồn dữ liệu mới</value>
+  </data>
+  <data name="SnapStringId.SortingForm_SortByColumnCaption" xml:space="preserve">
+    <value>Sắp xếp theo</value>
+  </data>
+  <data name="SnapStringId.CustomSortForm_Text" xml:space="preserve">
+    <value>Sắp xếp</value>
+  </data>
+  <data name="SnapStringId.MailMergeSorting_MenuCaption" xml:space="preserve">
+    <value>Sắp xếp</value>
+  </data>
 </root>

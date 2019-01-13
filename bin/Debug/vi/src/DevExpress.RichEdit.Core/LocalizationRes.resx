@@ -385,6 +385,12 @@
   <data name="XtraRichEditStringId.Caption_PageSetupSectionStartEvenPage" xml:space="preserve">
     <value>Even page</value>
   </data>
+  <data name="XtraRichEditStringId.Caption_PageSetupSectionDirectionLeftToRight" xml:space="preserve">
+    <value>Left-to-right</value>
+  </data>
+  <data name="XtraRichEditStringId.Caption_PageSetupSectionDirectionRightToLeft" xml:space="preserve">
+    <value>Right-to-left</value>
+  </data>
   <data name="XtraRichEditStringId.Caption_PageSetupSectionStartNextPage" xml:space="preserve">
     <value>New page</value>
   </data>
@@ -1296,6 +1302,12 @@
   </data>
   <data name="XtraRichEditStringId.Caption_SectionBreakTypeColumn" xml:space="preserve">
     <value>Column</value>
+  </data>
+  <data name="XtraRichEditStringId.TablePropertiesForm_TableIndentFromRight" xml:space="preserve">
+    <value>&amp;Indent from right:</value>
+  </data>
+  <data name="XtraRichEditStringId.TablePropertiesForm_TableIndentFromLeft" xml:space="preserve">
+    <value>&amp;Indent from left:</value>
   </data>
   <data name="XtraRichEditStringId.KeyName_Alt" xml:space="preserve">
     <value>Alt</value>

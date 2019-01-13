@@ -107,7 +107,7 @@
     <value>Phải</value>
   </data>
   <data name="btnOk.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="toggleParagraphAlignmentCenterItem1.Caption" xml:space="preserve">
     <value>Giữa</value>

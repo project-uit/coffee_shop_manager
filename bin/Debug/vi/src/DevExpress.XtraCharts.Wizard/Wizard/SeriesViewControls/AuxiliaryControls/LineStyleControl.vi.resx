@@ -100,4 +100,7 @@
   <data name="chartLabelControl1.Text" xml:space="preserve">
     <value>Độ dày:</value>
   </data>
+  <data name="cbDashStyle.Properties.Items1" xml:space="preserve">
+    <value>Dấu gạch ngang</value>
+  </data>
 </root>

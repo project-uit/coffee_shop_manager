@@ -768,4 +768,109 @@
   <data name="SpreadsheetControlStringId.Caption_RowHeaderItem" xml:space="preserve">
     <value>Hàng</value>
   </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPageFitTo" xml:space="preserve">
+    <value>Phù hợp với:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NewEditConditionalFormattingRuleFormSelectRuleType" xml:space="preserve">
+    <value>Chọn một loại quy tắc:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_DocumentPropertiesFormModify" xml:space="preserve">
+    <value>Sửa đổi</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_BorderStyleThick" xml:space="preserve">
+    <value>Dày</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_BorderStyleThin" xml:space="preserve">
+    <value>Mỏng</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SheetActivationFormActivate" xml:space="preserve">
+    <value>Kích hoạt:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SheetTabNewWorksheet" xml:space="preserve">
+    <value>Bảng tính mới</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SheetTabScrollToFirst" xml:space="preserve">
+    <value>Di chuyển đến bảng đầu tiên</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SheetTabScrollToLast" xml:space="preserve">
+    <value>Di chuyển đến cuối bảng tính</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SortButton" xml:space="preserve">
+    <value>Sắp xếp</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SortWarningExpandSelection" xml:space="preserve">
+    <value>Mở rộng các lựa chọn</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SpreadsheetViewScrollBarLeftEdgeButton" xml:space="preserve">
+    <value>Cột trái</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ViewZoom100Percent" xml:space="preserve">
+    <value>_100%</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ViewZoom200Percent" xml:space="preserve">
+    <value>20_0%</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ViewZoom25Percent" xml:space="preserve">
+    <value>_25%</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ViewZoom50Percent" xml:space="preserve">
+    <value>_50%</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ViewZoom75Percent" xml:space="preserve">
+    <value>_75%</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableGroupFieldFormTitle" xml:space="preserve">
+    <value>Nhóm</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableLabelFilterFormShowItemsForWhichTheDate" xml:space="preserve">
+    <value>Hiển thị các mục mà ngày</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableLabelFilterFormShowItemsForWhichTheLabel" xml:space="preserve">
+    <value>Hiển thị các mục mà nhãn</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableSortOptionsSortOptions" xml:space="preserve">
+    <value>Tùy chọn sắp xếp</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PivotTableValueFilterFormShowItemsForWhich" xml:space="preserve">
+    <value>Hiển thị các mục mà</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_ProtectChartsheetFormDescription" xml:space="preserve">
+    <value>Bảo vệ bảng tính cho</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FormatCellsFormAlignmentDegrees" xml:space="preserve">
+    <value>Độ</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SpreadsheetViewScrollBarLeftButton" xml:space="preserve">
+    <value>Trang trái</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_SpreadsheetViewScrollBarRightButton" xml:space="preserve">
+    <value>Trang phải</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_PageSetupFormPageAdjustTo" xml:space="preserve">
+    <value>Điều chỉnh:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_InsertPivotTableFormTitle" xml:space="preserve">
+    <value>Tạo PivotTable</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameForDefinedNameRequestFormNewName" xml:space="preserve">
+    <value>Tên mới:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameForDefinedNameRequestFormOldName" xml:space="preserve">
+    <value>Tên cũ:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_NameManagerFormColumnScope" xml:space="preserve">
+    <value>Phạm vi</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableDisplayFieldList" xml:space="preserve">
+    <value>Danh sách trường</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_OptionsPivotTableLayoutAndFormatColumn" xml:space="preserve">
+    <value>cột:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FillEffectsFormatCellsFirstColor" xml:space="preserve">
+    <value>Màu 1:</value>
+  </data>
+  <data name="SpreadsheetControlStringId.Caption_FillEffectsFormatCellsSecondColor" xml:space="preserve">
+    <value>Màu sắc 2:</value>
+  </data>
 </root>

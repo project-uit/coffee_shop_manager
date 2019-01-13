@@ -360,4 +360,10 @@
   <data name="SchedulerStringId.Appointment_AllDay" xml:space="preserve">
     <value>Tất cả các ngày</value>
   </data>
+  <data name="SchedulerStringId.Description_IntervalCount" xml:space="preserve">
+    <value>Thay đổi khoảng thời gian đếm</value>
+  </data>
+  <data name="SchedulerStringId.TimeRulerWindow_TimeZone" xml:space="preserve">
+    <value>Múi giờ:</value>
+  </data>
 </root>

@@ -1441,4 +1441,82 @@ Cũ thành viên dữ liệu cũng như nguồn dữ liệu: {1}
   <data name="DashboardWinStringId.RibbonGroupTabPagesCaption" xml:space="preserve">
     <value>Trang</value>
   </data>
+  <data name="DashboardWinStringId.RankTypeModified" xml:space="preserve">
+    <value>Sửa đổi lần</value>
+  </data>
+  <data name="DashboardWinStringId.RecentBarButtonItemUnpinCommand" xml:space="preserve">
+    <value>Bỏ ghim</value>
+  </data>
+  <data name="DashboardWinStringId.RibbonPageCategoryGroupToolsName" xml:space="preserve">
+    <value>Nhóm công cụ</value>
+  </data>
+  <data name="DashboardWinStringId.IncludeCurrentDayCheckEditCaption" xml:space="preserve">
+    <value>Bao gồm hiện tại</value>
+  </data>
+  <data name="DashboardWinStringId.IncludeCurrentHourCheckEditCaption" xml:space="preserve">
+    <value>Bao gồm hiện tại</value>
+  </data>
+  <data name="DashboardWinStringId.IncludeCurrentMinuteCheckEditCaption" xml:space="preserve">
+    <value>Bao gồm hiện tại</value>
+  </data>
+  <data name="DashboardWinStringId.IncludeCurrentMonthCheckEditCaption" xml:space="preserve">
+    <value>Bao gồm hiện tại</value>
+  </data>
+  <data name="DashboardWinStringId.IncludeCurrentQuarterCheckEditCaption" xml:space="preserve">
+    <value>Bao gồm hiện tại</value>
+  </data>
+  <data name="DashboardWinStringId.IncludeCurrentSecondCheckEditCaption" xml:space="preserve">
+    <value>Bao gồm hiện tại</value>
+  </data>
+  <data name="DashboardWinStringId.NumericFormatFormatTypeScientificCaption" xml:space="preserve">
+    <value>Khoa học</value>
+  </data>
+  <data name="DashboardWinStringId.CommandRangeFilterRankAlongPointsCalculation" xml:space="preserve">
+    <value>Xếp hạng theo điểm</value>
+  </data>
+  <data name="DashboardWinStringId.HistoryItemEditDataSource" xml:space="preserve">
+    <value>Sửa đổi ' {0}' nguồn dữ liệu</value>
+  </data>
+  <data name="DashboardWinStringId.GridColumnFitToContentMenuItemCaption" xml:space="preserve">
+    <value>Phù hợp với nội dung</value>
+  </data>
+  <data name="DashboardWinStringId.GridColumnFitToContentMenuItemDescription" xml:space="preserve">
+    <value>Phù hợp với nội dung.</value>
+  </data>
+  <data name="DashboardWinStringId.HistoryItemDeleteDataSource" xml:space="preserve">
+    <value>Xóa ' {0}' nguồn dữ liệu</value>
+  </data>
+  <data name="DashboardWinStringId.EditorEmptyEnter" xml:space="preserve">
+    <value>&lt; nhập một giá trị &gt;</value>
+  </data>
+  <data name="DashboardWinStringId.ExactDateDateTimeFormatPattern" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="DashboardWinStringId.CommandConvertToBoundImageCaption" xml:space="preserve">
+    <value>Ràng buộc hình ảnh</value>
+  </data>
+  <data name="DashboardWinStringId.CommandConvertToChoroplethMapCaption" xml:space="preserve">
+    <value>Bản đồ Choropleth</value>
+  </data>
+  <data name="DashboardWinStringId.CalculatedFieldTypeDecimal" xml:space="preserve">
+    <value>Thập phân</value>
+  </data>
+  <data name="DashboardWinStringId.CommandMultiSelect" xml:space="preserve">
+    <value>Chọn nhiều</value>
+  </data>
+  <data name="DashboardWinStringId.CommandInsertTreeViewCaption" xml:space="preserve">
+    <value>Xem dạng cây</value>
+  </data>
+  <data name="DashboardWinStringId.CommandInsertChoroplethMapCaption" xml:space="preserve">
+    <value>Bản đồ Choropleth</value>
+  </data>
+  <data name="DashboardWinStringId.CardRowDataElementTypeAbsoluteVariationCaption" xml:space="preserve">
+    <value>Biến thể tuyệt đối</value>
+  </data>
+  <data name="DashboardWinStringId.MenuDimensionSortBy" xml:space="preserve">
+    <value>Sắp xếp theo</value>
+  </data>
+  <data name="DashboardWinStringId.CommandFormatRuleAboveOrEqualAverage" xml:space="preserve">
+    <value>Trên hoặc bằng trung bình</value>
+  </data>
 </root>

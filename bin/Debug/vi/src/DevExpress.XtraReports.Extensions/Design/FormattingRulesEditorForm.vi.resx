@@ -124,7 +124,7 @@
     <value>Các qui tắc có sẵn trong một báo cáo:</value>
   </data>
   <data name="okButton.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="cancelButton.Text" xml:space="preserve">
     <value>Hủy</value>

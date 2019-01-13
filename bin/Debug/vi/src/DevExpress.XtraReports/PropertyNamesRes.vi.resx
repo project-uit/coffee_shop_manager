@@ -1710,4 +1710,22 @@
   <data name="System.Drawing.GraphicsUnit.Inch" xml:space="preserve">
     <value>Inch</value>
   </data>
+  <data name="DevExpress.XtraReports.Wizards.TemplateFieldKind.ProductDescription" xml:space="preserve">
+    <value>Mô tả sản phẩm</value>
+  </data>
+  <data name="DevExpress.XtraReports.Wizards.TemplateFieldKind.VAT" xml:space="preserve">
+    <value>Thuế VAT</value>
+  </data>
+  <data name="DevExpress.XtraReports.UI.XRChart.AutoLayout" xml:space="preserve">
+    <value>Tự động bố trí</value>
+  </data>
+  <data name="System.Drawing.Drawing2D.DashStyle.Dash" xml:space="preserve">
+    <value>Dấu gạch ngang</value>
+  </data>
+  <data name="DevExpress.XtraReports.Wizards.TemplateValueType.DecimalPercentage" xml:space="preserve">
+    <value>Tỷ lệ phần trăm (phần thập phân)</value>
+  </data>
+  <data name="DevExpress.XtraReports.UI.XRTableOfContentsLevel.Indent" xml:space="preserve">
+    <value>Thụt lề</value>
+  </data>
 </root>

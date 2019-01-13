@@ -864,4 +864,19 @@
   <data name="PrintingStringId.ExportDocx" xml:space="preserve">
     <value>Tập tin DOCX</value>
   </data>
+  <data name="PrintingStringId.Scaling_Fit_Start_Label" xml:space="preserve">
+    <value>Phù hợp với</value>
+  </data>
+  <data name="PrintingStringId.PageLayout" xml:space="preserve">
+    <value>Bố trí trang</value>
+  </data>
+  <data name="PrintingStringId.PdfSignatureEditorWindow_Title" xml:space="preserve">
+    <value>Tùy chọn chữ ký</value>
+  </data>
+  <data name="PrintingStringId.WatermarkImageSizeMode" xml:space="preserve">
+    <value>Chế độ kích thước:</value>
+  </data>
+  <data name="PrintingStringId.WatermarkPositionBehind" xml:space="preserve">
+    <value>Phía sau</value>
+  </data>
 </root>

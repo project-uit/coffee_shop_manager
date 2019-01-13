@@ -391,4 +391,7 @@ Xin vui lòng đi đến trang tiếp theo wizard để khai báo các thông s�
   <data name="DataAccessUIStringId.DSTypeObject" xml:space="preserve">
     <value>Đối tượng</value>
   </data>
+  <data name="DataAccessUIStringId.WizardPageChooseObjectBindingMode_RetrieveSchema" xml:space="preserve">
+    <value>Lấy lược đồ nguồn dữ liệu</value>
+  </data>
 </root>

@@ -135,4 +135,7 @@
   <data name="btnEdit.Text" xml:space="preserve">
     <value>Sửa</value>
   </data>
+  <data name="gcPeriod.Caption" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
 </root>

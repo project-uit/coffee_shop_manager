@@ -203,12 +203,6 @@
   <data name="edtTopBottom.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 31</value>
   </data>
-  <data name="edtTopBottom.Properties.Columns" xml:space="preserve">
-    <value>Text</value>
-  </data>
-  <data name="edtTopBottom.Properties.Columns1" xml:space="preserve">
-    <value>Text</value>
-  </data>
   <data name="edtTopBottom.Properties.NullText" xml:space="preserve">
     <value></value>
   </data>

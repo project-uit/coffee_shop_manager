@@ -211,4 +211,7 @@
   <data name="SchedulerControlStringId.Caption_GroupViewNavigator" xml:space="preserve">
     <value>Điều hướng</value>
   </data>
+  <data name="SchedulerControlStringId.Description_IntervalCount" xml:space="preserve">
+    <value>Thay đổi khoảng thời gian đếm</value>
+  </data>
 </root>

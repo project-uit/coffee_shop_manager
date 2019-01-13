@@ -127,7 +127,7 @@
     <value>Đáy</value>
   </data>
   <data name="btnOk.Text" xml:space="preserve">
-    <value>Nhận</value>
+    <value>Ok</value>
   </data>
   <data name="btnNone.AccessibleName" xml:space="preserve">
     <value>Trống</value>

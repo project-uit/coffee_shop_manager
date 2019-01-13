@@ -909,4 +909,85 @@
   <data name="ChartDesignerStringIDs.DefaultPane" xml:space="preserve">
     <value>Mặc định ngăn</value>
   </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_Rotation" xml:space="preserve">
+    <value>Xoay</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_VisibleRangeMaxValue" xml:space="preserve">
+    <value>Tối đa:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.AxisOptions_WholeRangeMaxValue" xml:space="preserve">
+    <value>Tối đa:</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_FunnelRatioAuto" xml:space="preserve">
+    <value>Chiều cao / chiều rộng tự động</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeArea2DOneLabelPositionCaption" xml:space="preserve">
+    <value>Trung tâm</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_RangeBarOneLabelPositionCaption" xml:space="preserve">
+    <value>Trung tâm</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_Bar3DEnabledDescription" xml:space="preserve">
+    <value>Bật dữ liệu nhãn.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_EnabledDescription" xml:space="preserve">
+    <value>Bật dữ liệu nhãn.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Labels_NoneDescription" xml:space="preserve">
+    <value>Tắt dữ liệu nhãn.</value>
+  </data>
+  <data name="ChartDesignerStringIDs.SeriesOptions_Model" xml:space="preserve">
+    <value>Mô hình</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Elements_AddIndicator_TrendIndicatorsGalleryGroup" xml:space="preserve">
+    <value>Xu hướng các chỉ số</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_CircularDiagramOptionsGroup" xml:space="preserve">
+    <value>Tùy chọn biểu đồ</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_Diagram3DOptionsGroup" xml:space="preserve">
+    <value>Tùy chọn biểu đồ</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_SimpleDiagramPropertiesGroup" xml:space="preserve">
+    <value>Tùy chọn biểu đồ</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Default_Main_XYDiagram2DPropertiesGroup" xml:space="preserve">
+    <value>Tùy chọn biểu đồ</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsIndicators_StandardDeviationMultiplier" xml:space="preserve">
+    <value>Hệ số độ lệch chuẩn</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsLegend_ReverseItems" xml:space="preserve">
+    <value>Đảo ngược mục</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsPieTotalLabel_TextPattern" xml:space="preserve">
+    <value>Văn bản mẫu</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsSeries_MaxSize" xml:space="preserve">
+    <value>Kích thước tối đa</value>
+  </data>
+  <data name="ChartDesignerStringIDs.DashStyle_Dash" xml:space="preserve">
+    <value>Dấu gạch ngang</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Stock2DSlideFromTopAnimation" xml:space="preserve">
+    <value>Trượt từ đỉnh</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Line2DSlideFromTopAnimation" xml:space="preserve">
+    <value>Trượt từ đỉnh</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Marker2DAnimationSlideFromTop" xml:space="preserve">
+    <value>Trượt từ đỉnh</value>
+  </data>
+  <data name="ChartDesignerStringIDs.NewTimeInterval" xml:space="preserve">
+    <value>Khoảng thời gian mới</value>
+  </data>
+  <data name="ChartDesignerStringIDs.OptionsStrip_MaxLimit" xml:space="preserve">
+    <value>Giới hạn tối đa</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DModelGradient" xml:space="preserve">
+    <value>Gradient</value>
+  </data>
+  <data name="ChartDesignerStringIDs.Bar2DSlideFromTopAnimation" xml:space="preserve">
+    <value>Trượt từ đỉnh</value>
+  </data>
 </root>

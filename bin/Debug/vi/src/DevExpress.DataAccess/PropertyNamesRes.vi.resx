@@ -216,4 +216,10 @@
   <data name="DevExpress.DataAccess.Sql.ConnectionOptions.DbCommandTimeout" xml:space="preserve">
     <value>Thời gian chờ lệnh</value>
   </data>
+  <data name="DevExpress.DataAccess.Excel.CsvSourceOptions.ValueSeparator" xml:space="preserve">
+    <value>Giá trị phân tách</value>
+  </data>
+  <data name="DevExpress.DataAccess.Excel.ExcelDataSource.CsvSourceOptions" xml:space="preserve">
+    <value>Tùy chọn nguồn CSV</value>
+  </data>
 </root>

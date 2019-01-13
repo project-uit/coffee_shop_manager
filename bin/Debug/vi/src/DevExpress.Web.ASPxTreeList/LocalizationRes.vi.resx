@@ -174,4 +174,7 @@
   <data name="ASPxTreeListStringId.Toolbar_ClearFilter" xml:space="preserve">
     <value>Xoá bộ lọc</value>
   </data>
+  <data name="ASPxTreeListStringId.Toolbar_ShowFilterRow" xml:space="preserve">
+    <value>Bộ lọc hàng</value>
+  </data>
 </root>

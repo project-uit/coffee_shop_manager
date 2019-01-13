@@ -304,7 +304,7 @@
     <value>Đóng</value>
   </data>
   <data name="StringId.XtraMessageBoxOkButtonText" xml:space="preserve">
-    <value>&amp;Nhận</value>
+    <value>&amp;Đồng ý</value>
   </data>
   <data name="StringId.XtraMessageBoxCancelButtonText" xml:space="preserve">
     <value>&amp;Hủy</value>

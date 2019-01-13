@@ -1167,4 +1167,37 @@
   <data name="DevExpress.XtraPrinting.Recipient.Address" xml:space="preserve">
     <value>Địa chỉ</value>
   </data>
+  <data name="DevExpress.XtraPrinting.RecipientFieldType.BCC" xml:space="preserve">
+    <value>BCC</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.RecipientFieldType.CC" xml:space="preserve">
+    <value>CC</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfACompatibility.PdfA1b" xml:space="preserve">
+    <value>PDF/A-1b</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfACompatibility.PdfA2b" xml:space="preserve">
+    <value>PDF/A-2b</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfACompatibility.PdfA3b" xml:space="preserve">
+    <value>PDF/A-3b</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfEncryptionLevel.AES128" xml:space="preserve">
+    <value>128-bit AES</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfEncryptionLevel.AES256" xml:space="preserve">
+    <value>256-bit AES</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.PdfEncryptionLevel.ARC4" xml:space="preserve">
+    <value>128-bit ARC4</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.DataMatrix" xml:space="preserve">
+    <value>Ma trận dữ liệu</value>
+  </data>
+  <data name="DevExpress.XtraPrinting.BarCode.Native.BarCodeSymbology.Matrix2of5" xml:space="preserve">
+    <value>Ma trận 2 của 5</value>
+  </data>
+  <data name="DevExpress.XtraReports.Parameters.Parameter.Tag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
 </root>

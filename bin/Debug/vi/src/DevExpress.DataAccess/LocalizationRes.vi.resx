@@ -247,4 +247,10 @@ Chọn một trong những nhà cung cấp dữ liệu sẵn có và chỉ đị
   <data name="DataAccessStringId.QueryDesignerJoinExpressionElementSeparator" xml:space="preserve">
     <value>,</value>
   </data>
+  <data name="DataAccessStringId.QueryBuilder_AllColumns" xml:space="preserve">
+    <value>* (Tất cả các cột)</value>
+  </data>
+  <data name="DataAccessStringId.ConnectionAborted_ExceptionMessage" xml:space="preserve">
+    <value>Kết nối đã bị hủy bỏ.</value>
+  </data>
 </root>

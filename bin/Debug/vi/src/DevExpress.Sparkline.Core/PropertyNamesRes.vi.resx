@@ -132,4 +132,7 @@
   <data name="DevExpress.Sparkline.SparklineViewBase.Color" xml:space="preserve">
     <value>Màu sắc</value>
   </data>
+  <data name="DevExpress.Sparkline.LineSparklineView.ShowMarkers" xml:space="preserve">
+    <value>Hiển thị đánh dấu</value>
+  </data>
 </root>

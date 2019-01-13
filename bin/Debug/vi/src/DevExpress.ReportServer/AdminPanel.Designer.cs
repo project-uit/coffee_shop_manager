@@ -2653,6 +2653,15 @@ namespace DevExpress.ReportServer.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User Activation Expiration (days).
+        /// </summary>
+        public static string ServerSettings_General_UserActivationExpiration {
+            get {
+                return ResourceManager.GetString("ServerSettings_General_UserActivationExpiration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to General Settings.
         /// </summary>
         public static string ServerSettings_GeneralSettings {

@@ -220,4 +220,7 @@
   <data name="DockingStringId.MenuItemShowControl" xml:space="preserve">
     <value>Hiển thị điều khiển</value>
   </data>
+  <data name="DockingStringId.MenuItemHideItem" xml:space="preserve">
+    <value>Ẩn mục</value>
+  </data>
 </root>

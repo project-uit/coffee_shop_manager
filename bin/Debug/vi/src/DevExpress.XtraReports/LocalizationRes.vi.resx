@@ -2230,4 +2230,28 @@ DataMember: {0}</value>
   <data name="ReportStringId.RibbonXRDesign_TableDeleteRow_Caption" xml:space="preserve">
     <value>Hàng</value>
   </data>
+  <data name="ReportStringId.RibbonXRDesign_PageGroup_Symbology" xml:space="preserve">
+    <value>Tượng trưng</value>
+  </data>
+  <data name="ReportStringId.RibbonXRDesign_BarCodeSymbology_Caption" xml:space="preserve">
+    <value>Tượng trưng</value>
+  </data>
+  <data name="ReportStringId.RibbonXRDesign_BarCodeSymbology_STipContent" xml:space="preserve">
+    <value>Tượng trưng</value>
+  </data>
+  <data name="ReportStringId.RibbonXRDesign_TableDistributeColumnsEvenly_STipTitle" xml:space="preserve">
+    <value>Phân phối các cột đồng đều</value>
+  </data>
+  <data name="ReportStringId.RibbonXRDesign_TableInsertColumnToRight_STipTitle" xml:space="preserve">
+    <value>Chèn cột bên phải</value>
+  </data>
+  <data name="ReportStringId.RibbonXRDesign_TableInsertRowAbove_Caption" xml:space="preserve">
+    <value>Hàng trên</value>
+  </data>
+  <data name="ReportStringId.Cmd_TableDistributeColumnsEvenly" xml:space="preserve">
+    <value>Phân phối các cột đồng đều</value>
+  </data>
+  <data name="ReportStringId.RibbonXRDesign_BarCodeSymbology_STipTitle" xml:space="preserve">
+    <value>Tượng trưng</value>
+  </data>
 </root>

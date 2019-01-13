@@ -139,4 +139,7 @@
   <data name="tbShadow.Text" xml:space="preserve">
     <value>Bóng</value>
   </data>
+  <data name="tbPointOptions.Text" xml:space="preserve">
+    <value>Văn bản mẫu</value>
+  </data>
 </root>

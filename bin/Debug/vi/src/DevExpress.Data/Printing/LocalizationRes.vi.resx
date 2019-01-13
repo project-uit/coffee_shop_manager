@@ -1700,4 +1700,10 @@ Thử lại với một tên ngắn hơn.</value>
   <data name="PreviewStringId.EditingFieldEditors_Date" xml:space="preserve">
     <value>DateTime</value>
   </data>
+  <data name="PreviewStringId.PrintDialog_Duplex_Horizontal" xml:space="preserve">
+    <value>Lật theo cạnh ngắn</value>
+  </data>
+  <data name="PreviewStringId.PrintDialog_Duplex_Vertical" xml:space="preserve">
+    <value>Lật theo cạnh dài</value>
+  </data>
 </root>

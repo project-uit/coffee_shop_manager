@@ -125,16 +125,16 @@
     <value>111, 70</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
-  <data name="radioGroup1.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="radioDirection.Properties.Items" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <data name="radioGroup1.Properties.Items1" xml:space="preserve">
+  <data name="radioDirection.Properties.Items1" xml:space="preserve">
     <value>Right-to-left</value>
   </data>
-  <data name="radioGroup1.Properties.Items2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="radioDirection.Properties.Items2" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value></value>
   </data>
-  <data name="radioGroup1.Properties.Items3" xml:space="preserve">
+  <data name="radioDirection.Properties.Items3" xml:space="preserve">
     <value>Left-to-right</value>
   </data>
   <data name="radioDirection.Size" type="System.Drawing.Size, System.Drawing">
@@ -142,7 +142,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></assembly>
   <data name="radioDirection.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;radioDirection.Name" xml:space="preserve">
     <value>radioDirection</value>

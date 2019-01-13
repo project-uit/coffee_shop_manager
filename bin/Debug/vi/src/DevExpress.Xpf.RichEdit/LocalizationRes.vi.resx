@@ -729,4 +729,13 @@
   <data name="RichEditControlStringId.Caption_TablePropertiesFormRowTab" xml:space="preserve">
     <value>Hàng</value>
   </data>
+  <data name="RichEditControlStringId.Caption_DocumentPropertiesFormLastSavedBy" xml:space="preserve">
+    <value>Lưu lần cuối bởi:</value>
+  </data>
+  <data name="RichEditControlStringId.Caption_TablePropertiesFormDirectionLabel" xml:space="preserve">
+    <value>Hướng</value>
+  </data>
+  <data name="RichEditControlStringId.Caption_ColumnsSetupFormEqualColumnWidthCheckEdit" xml:space="preserve">
+    <value>Chiều rộng cột bằng</value>
+  </data>
 </root>

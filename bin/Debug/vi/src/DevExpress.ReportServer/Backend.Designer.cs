@@ -976,6 +976,15 @@ namespace DevExpress.ReportServer.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User activation expiration should be greater than 0..
+        /// </summary>
+        public static string Server_InvalidUserActivationExpiration {
+            get {
+                return ResourceManager.GetString("Server_InvalidUserActivationExpiration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cannot change server authentication methods. Make sure that there is at least one active account with administrator privileges..
         /// </summary>
         public static string Settings_AuthMode_MissingAdmin {
