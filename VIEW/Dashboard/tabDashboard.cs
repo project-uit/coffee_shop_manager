@@ -54,7 +54,8 @@ namespace COFFEE_SHOP_MANAGER
                 }
                 lbcountInvoice.Text = invoices.Count.ToString();
                 lbcountBeverage.Text = countBeverage.ToString();
-                lbRevenue.Text = double.Parse(revenue.ToString()).ToString("#,###", CultureInfo.GetCultureInfo("vi-VN").NumberFormat) + " vnđ";
+                if (revenue != 0)
+                    lbRevenue.Text = double.Parse(revenue.ToString()).ToString("#,###", CultureInfo.GetCultureInfo("vi-VN").NumberFormat) + " vnđ";
             }
         }
 

@@ -15,7 +15,8 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Store
             InitializeComponent();
         }
 
-        public void InitData(List<tblInvoiceDTO> invoice, String staff, String sum, String discount, String total)
+        public void InitData(List<tblInvoiceDTO> invoice, String staff, String sum, String discount, String total,
+            String name, String address, String phone)
         {
             DataSource = invoice;
             this.date.Value = DateTime.Now;
@@ -23,6 +24,9 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Store
             this.sum.Value = sum;
             this.discount.Value = discount;
             this.total.Value = total;
+            this.name.Value = name;
+            this.address.Value = address;
+            this.phone.Value = phone;
         }
     }
 }

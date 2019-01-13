@@ -236,12 +236,17 @@ namespace COFFEE_SHOP_MANAGER
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
+            cuahang cuahang = StoreInfoDAO.getInfo();
+
             InvoicePrintFrm invoicePrintFrm = new InvoicePrintFrm();
             invoicePrintFrm.invoice = listInvoiceDetail;
             invoicePrintFrm.staff = loggedStaff.hoten;
             invoicePrintFrm.sum = lbSum.Text;
             invoicePrintFrm.discount = lbDiscount.Text;
             invoicePrintFrm.total = lbTotal.Text;
+            invoicePrintFrm.name = cuahang.ten;
+            invoicePrintFrm.address = cuahang.diachi;
+            invoicePrintFrm.phone = cuahang.dienthoai;
             invoicePrintFrm.Print();
             invoicePrintFrm.ShowDialog();
         }
