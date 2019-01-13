@@ -39,7 +39,6 @@
             this.lbRevenue = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chart = new DevExpress.XtraCharts.ChartControl();
-            this.btnRefresh = new MaterialSkin.Controls.MaterialRaisedButton();
             this.bunifuCards1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
@@ -188,28 +187,11 @@
             this.chart.Size = new System.Drawing.Size(1884, 562);
             this.chart.TabIndex = 6;
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.AutoSize = true;
-            this.btnRefresh.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnRefresh.Depth = 0;
-            this.btnRefresh.Icon = null;
-            this.btnRefresh.Location = new System.Drawing.Point(105, 60);
-            this.btnRefresh.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Primary = true;
-            this.btnRefresh.Size = new System.Drawing.Size(140, 36);
-            this.btnRefresh.TabIndex = 7;
-            this.btnRefresh.Text = "Làm mới";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // tabDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.chart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuCards3);
@@ -227,7 +209,6 @@
             this.bunifuCards3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -244,6 +225,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbRevenue;
         private DevExpress.XtraCharts.ChartControl chart;
-        private MaterialSkin.Controls.MaterialRaisedButton btnRefresh;
     }
 }

@@ -31,11 +31,17 @@ namespace COFFEE_SHOP_MANAGER
                 return;
             }
             InitializeComponent();
+            LoadData();
         }
 
-        private void tabStore_Load(object sender, EventArgs e)
+        public void LoadData()
         {
             loadDiscount();
+            loadBeverage();
+        }
+
+        private void loadBeverage()
+        {
             beverages = BeverageDAO.getList();
             grdCtrlThucUong.DataSource = beverages;
 

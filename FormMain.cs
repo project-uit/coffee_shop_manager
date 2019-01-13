@@ -93,6 +93,7 @@ namespace COFFEE_SHOP_MANAGER
             {
                 bunifuTransition1.HideSync(panelTab);
                 bunifuTransition1.ShowSync(panelTab);
+                tabDashboard.LoadData();
                 changeTab(tabDashboard);
                 lbTabName.Text = "TỔNG QUAN";
                 switchTab = SwitchTab.Dashboard;
@@ -107,6 +108,7 @@ namespace COFFEE_SHOP_MANAGER
                 bunifuTransition1.HideSync(panelTab);
                 bunifuTransition1.ShowSync(panelTab);
                 tabStore.loggedStaff = loggedStaff;
+                tabStore.LoadData();
                 changeTab(tabStore);
                 lbTabName.Text = "BÁN HÀNG";
                 switchTab = SwitchTab.Store;

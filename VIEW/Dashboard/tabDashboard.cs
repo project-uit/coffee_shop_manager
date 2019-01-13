@@ -26,11 +26,10 @@ namespace COFFEE_SHOP_MANAGER
 
         private void tabDashboard_Load(object sender, EventArgs e)
         {
-            updateStatistic();
-            createChart();
+            LoadData();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        public void LoadData()
         {
             updateStatistic();
             createChart();
