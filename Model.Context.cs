@@ -38,6 +38,5 @@ namespace COFFEE_SHOP_MANAGER
         public virtual DbSet<nhomthucuong> nhomthucuongs { get; set; }
         public virtual DbSet<thucuong> thucuongs { get; set; }
         public virtual DbSet<thamso> thamsoes { get; set; }
-        public virtual DbSet<cuahang> cuahangs { get; set; }
     }
 }

@@ -46,15 +46,6 @@
           <Property Name="idnhapkho" Type="int" Nullable="false" />
           <Property Name="idkhonguyenlieu" Type="int" Nullable="false" />
         </EntityType>
-        <EntityType Name="cuahang">
-          <Key>
-            <PropertyRef Name="idcuahang" />
-          </Key>
-          <Property Name="idcuahang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ten" Type="nvarchar" MaxLength="100" />
-          <Property Name="diachi" Type="nvarchar" MaxLength="300" />
-          <Property Name="dienthoai" Type="varchar" MaxLength="20" />
-        </EntityType>
         <EntityType Name="giamgia">
           <Key>
             <PropertyRef Name="id_giamgia" />
@@ -138,7 +129,7 @@
           <Property Name="id_nhomthucuong" Type="int" />
           <Property Name="xoa_flag" Type="bit" />
         </EntityType>
-        <Association Name="FK__chitietco__id_th__1FCDBCEB">
+        <Association Name="FK__chitietco__id_th__32E0915F">
           <End Role="thucuong" Type="Self.thucuong" Multiplicity="1" />
           <End Role="chitietcongthuc" Type="Self.chitietcongthuc" Multiplicity="*" />
           <ReferentialConstraint>
@@ -150,7 +141,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__chitietco__idkho__20C1E124">
+        <Association Name="FK__chitietco__idkho__33D4B598">
           <End Role="khonguyenlieu" Type="Self.khonguyenlieu" Multiplicity="1" />
           <End Role="chitietcongthuc" Type="Self.chitietcongthuc" Multiplicity="*" />
           <ReferentialConstraint>
@@ -162,7 +153,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__chitietho__id_ho__300424B4">
+        <Association Name="FK__chitietho__id_ho__4316F928">
           <End Role="hoadon" Type="Self.hoadon" Multiplicity="0..1" />
           <End Role="chitiethoadon" Type="Self.chitiethoadon" Multiplicity="*" />
           <ReferentialConstraint>
@@ -174,7 +165,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__chitietho__id_th__2F10007B">
+        <Association Name="FK__chitietho__id_th__4222D4EF">
           <End Role="thucuong" Type="Self.thucuong" Multiplicity="0..1" />
           <End Role="chitiethoadon" Type="Self.chitiethoadon" Multiplicity="*" />
           <ReferentialConstraint>
@@ -186,7 +177,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__chitietng__idkho__1BFD2C07">
+        <Association Name="FK__chitietng__idkho__2F10007B">
           <End Role="khonguyenlieu" Type="Self.khonguyenlieu" Multiplicity="0..1" />
           <End Role="chitietnguyenlieudadung" Type="Self.chitietnguyenlieudadung" Multiplicity="*" />
           <ReferentialConstraint>
@@ -198,7 +189,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__chitietng__idngu__1CF15040">
+        <Association Name="FK__chitietng__idngu__300424B4">
           <End Role="nguyenlieudadung" Type="Self.nguyenlieudadung" Multiplicity="0..1" />
           <End Role="chitietnguyenlieudadung" Type="Self.chitietnguyenlieudadung" Multiplicity="*" />
           <ReferentialConstraint>
@@ -210,7 +201,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__chitietnh__idkho__29572725">
+        <Association Name="FK__chitietnh__idkho__3C69FB99">
           <End Role="khonguyenlieu" Type="Self.khonguyenlieu" Multiplicity="1" />
           <End Role="chitietnhapkho" Type="Self.chitietnhapkho" Multiplicity="*" />
           <ReferentialConstraint>
@@ -222,7 +213,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__chitietnh__idnha__2A4B4B5E">
+        <Association Name="FK__chitietnh__idnha__3D5E1FD2">
           <End Role="nhapkho" Type="Self.nhapkho" Multiplicity="1" />
           <End Role="chitietnhapkho" Type="Self.chitietnhapkho" Multiplicity="*" />
           <ReferentialConstraint>
@@ -234,7 +225,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__nhapkho__id_nhan__267ABA7A">
+        <Association Name="FK__nhapkho__id_nhan__398D8EEE">
           <End Role="nhanvien" Type="Self.nhanvien" Multiplicity="1" />
           <End Role="nhapkho" Type="Self.nhapkho" Multiplicity="*" />
           <ReferentialConstraint>
@@ -246,7 +237,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__thucuong__id_nho__1367E606">
+        <Association Name="FK__thucuong__id_nho__267ABA7A">
           <End Role="nhomthucuong" Type="Self.nhomthucuong" Multiplicity="0..1" />
           <End Role="thucuong" Type="Self.thucuong" Multiplicity="*" />
           <ReferentialConstraint>
@@ -263,7 +254,6 @@
           <EntitySet Name="chitiethoadon" EntityType="Self.chitiethoadon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="chitietnguyenlieudadung" EntityType="Self.chitietnguyenlieudadung" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="chitietnhapkho" EntityType="Self.chitietnhapkho" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="cuahang" EntityType="Self.cuahang" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="giamgia" EntityType="Self.giamgia" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="hoadon" EntityType="Self.hoadon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="khonguyenlieu" EntityType="Self.khonguyenlieu" Schema="dbo" store:Type="Tables" />
@@ -273,43 +263,43 @@
           <EntitySet Name="nhomthucuong" EntityType="Self.nhomthucuong" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="thamso" EntityType="Self.thamso" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="thucuong" EntityType="Self.thucuong" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__chitietco__id_th__1FCDBCEB" Association="Self.FK__chitietco__id_th__1FCDBCEB">
+          <AssociationSet Name="FK__chitietco__id_th__32E0915F" Association="Self.FK__chitietco__id_th__32E0915F">
             <End Role="thucuong" EntitySet="thucuong" />
             <End Role="chitietcongthuc" EntitySet="chitietcongthuc" />
           </AssociationSet>
-          <AssociationSet Name="FK__chitietco__idkho__20C1E124" Association="Self.FK__chitietco__idkho__20C1E124">
+          <AssociationSet Name="FK__chitietco__idkho__33D4B598" Association="Self.FK__chitietco__idkho__33D4B598">
             <End Role="khonguyenlieu" EntitySet="khonguyenlieu" />
             <End Role="chitietcongthuc" EntitySet="chitietcongthuc" />
           </AssociationSet>
-          <AssociationSet Name="FK__chitietho__id_ho__300424B4" Association="Self.FK__chitietho__id_ho__300424B4">
+          <AssociationSet Name="FK__chitietho__id_ho__4316F928" Association="Self.FK__chitietho__id_ho__4316F928">
             <End Role="hoadon" EntitySet="hoadon" />
             <End Role="chitiethoadon" EntitySet="chitiethoadon" />
           </AssociationSet>
-          <AssociationSet Name="FK__chitietho__id_th__2F10007B" Association="Self.FK__chitietho__id_th__2F10007B">
+          <AssociationSet Name="FK__chitietho__id_th__4222D4EF" Association="Self.FK__chitietho__id_th__4222D4EF">
             <End Role="thucuong" EntitySet="thucuong" />
             <End Role="chitiethoadon" EntitySet="chitiethoadon" />
           </AssociationSet>
-          <AssociationSet Name="FK__chitietng__idkho__1BFD2C07" Association="Self.FK__chitietng__idkho__1BFD2C07">
+          <AssociationSet Name="FK__chitietng__idkho__2F10007B" Association="Self.FK__chitietng__idkho__2F10007B">
             <End Role="khonguyenlieu" EntitySet="khonguyenlieu" />
             <End Role="chitietnguyenlieudadung" EntitySet="chitietnguyenlieudadung" />
           </AssociationSet>
-          <AssociationSet Name="FK__chitietng__idngu__1CF15040" Association="Self.FK__chitietng__idngu__1CF15040">
+          <AssociationSet Name="FK__chitietng__idngu__300424B4" Association="Self.FK__chitietng__idngu__300424B4">
             <End Role="nguyenlieudadung" EntitySet="nguyenlieudadung" />
             <End Role="chitietnguyenlieudadung" EntitySet="chitietnguyenlieudadung" />
           </AssociationSet>
-          <AssociationSet Name="FK__chitietnh__idkho__29572725" Association="Self.FK__chitietnh__idkho__29572725">
+          <AssociationSet Name="FK__chitietnh__idkho__3C69FB99" Association="Self.FK__chitietnh__idkho__3C69FB99">
             <End Role="khonguyenlieu" EntitySet="khonguyenlieu" />
             <End Role="chitietnhapkho" EntitySet="chitietnhapkho" />
           </AssociationSet>
-          <AssociationSet Name="FK__chitietnh__idnha__2A4B4B5E" Association="Self.FK__chitietnh__idnha__2A4B4B5E">
+          <AssociationSet Name="FK__chitietnh__idnha__3D5E1FD2" Association="Self.FK__chitietnh__idnha__3D5E1FD2">
             <End Role="nhapkho" EntitySet="nhapkho" />
             <End Role="chitietnhapkho" EntitySet="chitietnhapkho" />
           </AssociationSet>
-          <AssociationSet Name="FK__nhapkho__id_nhan__267ABA7A" Association="Self.FK__nhapkho__id_nhan__267ABA7A">
+          <AssociationSet Name="FK__nhapkho__id_nhan__398D8EEE" Association="Self.FK__nhapkho__id_nhan__398D8EEE">
             <End Role="nhanvien" EntitySet="nhanvien" />
             <End Role="nhapkho" EntitySet="nhapkho" />
           </AssociationSet>
-          <AssociationSet Name="FK__thucuong__id_nho__1367E606" Association="Self.FK__thucuong__id_nho__1367E606">
+          <AssociationSet Name="FK__thucuong__id_nho__267ABA7A" Association="Self.FK__thucuong__id_nho__267ABA7A">
             <End Role="nhomthucuong" EntitySet="nhomthucuong" />
             <End Role="thucuong" EntitySet="thucuong" />
           </AssociationSet>
@@ -628,7 +618,6 @@
             <End Role="thucuong" EntitySet="thucuongs" />
           </AssociationSet>
           <EntitySet Name="thamsoes" EntityType="quanlycafeModel.thamso" />
-          <EntitySet Name="cuahangs" EntityType="quanlycafeModel.cuahang" />
         </EntityContainer>
         <EntityType Name="thamso">
           <Key>
@@ -637,15 +626,6 @@
           <Property Name="id" Type="Int32" Nullable="false" />
           <Property Name="dinhluongtoida" Type="Double" />
           <Property Name="dinhluongtoithieu" Type="Double" />
-        </EntityType>
-        <EntityType Name="cuahang">
-          <Key>
-            <PropertyRef Name="idcuahang" />
-          </Key>
-          <Property Name="idcuahang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="diachi" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
-          <Property Name="dienthoai" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -787,16 +767,6 @@
                 <ScalarProperty Name="dinhluongtoithieu" ColumnName="dinhluongtoithieu" />
                 <ScalarProperty Name="dinhluongtoida" ColumnName="dinhluongtoida" />
                 <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="cuahangs">
-            <EntityTypeMapping TypeName="quanlycafeModel.cuahang">
-              <MappingFragment StoreEntitySet="cuahang">
-                <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
-                <ScalarProperty Name="diachi" ColumnName="diachi" />
-                <ScalarProperty Name="ten" ColumnName="ten" />
-                <ScalarProperty Name="idcuahang" ColumnName="idcuahang" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

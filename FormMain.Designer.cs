@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.pnlDrawer = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -98,7 +98,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.MediumPurple;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.LightSkyBlue;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(233, 460);
@@ -128,7 +128,7 @@
             this.btnExit.IconZoom = 50D;
             this.btnExit.IsTab = true;
             this.btnExit.Location = new System.Drawing.Point(2, 573);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(6);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnExit.OnHovercolor = System.Drawing.Color.Transparent;
@@ -155,7 +155,6 @@
             this.bunifuImageButton1.TabIndex = 7;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // btnLogout
             // 
@@ -181,7 +180,7 @@
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.IsTab = true;
             this.btnLogout.Location = new System.Drawing.Point(2, 518);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(6);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
@@ -235,7 +234,7 @@
             this.btnStaff.IconZoom = 50D;
             this.btnStaff.IsTab = true;
             this.btnStaff.Location = new System.Drawing.Point(2, 462);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(6);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Normalcolor = System.Drawing.Color.Transparent;
             this.btnStaff.OnHovercolor = System.Drawing.Color.Transparent;
@@ -286,7 +285,7 @@
             this.btnStatistics.IconZoom = 50D;
             this.btnStatistics.IsTab = true;
             this.btnStatistics.Location = new System.Drawing.Point(2, 410);
-            this.btnStatistics.Margin = new System.Windows.Forms.Padding(6);
+            this.btnStatistics.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.Normalcolor = System.Drawing.Color.Transparent;
             this.btnStatistics.OnHovercolor = System.Drawing.Color.Transparent;
@@ -323,7 +322,7 @@
             this.btnDashboard.IconZoom = 50D;
             this.btnDashboard.IsTab = true;
             this.btnDashboard.Location = new System.Drawing.Point(2, 194);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.OnHovercolor = System.Drawing.Color.Transparent;
@@ -360,7 +359,7 @@
             this.btnImport.IconZoom = 50D;
             this.btnImport.IsTab = true;
             this.btnImport.Location = new System.Drawing.Point(2, 352);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(6);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnImport.Name = "btnImport";
             this.btnImport.Normalcolor = System.Drawing.Color.Transparent;
             this.btnImport.OnHovercolor = System.Drawing.Color.Transparent;
@@ -397,7 +396,7 @@
             this.btnStore.IconZoom = 50D;
             this.btnStore.IsTab = true;
             this.btnStore.Location = new System.Drawing.Point(2, 248);
-            this.btnStore.Margin = new System.Windows.Forms.Padding(6);
+            this.btnStore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnStore.Name = "btnStore";
             this.btnStore.Normalcolor = System.Drawing.Color.Transparent;
             this.btnStore.OnHovercolor = System.Drawing.Color.Transparent;
@@ -434,7 +433,7 @@
             this.btnBeverage.IconZoom = 50D;
             this.btnBeverage.IsTab = true;
             this.btnBeverage.Location = new System.Drawing.Point(2, 303);
-            this.btnBeverage.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBeverage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnBeverage.Name = "btnBeverage";
             this.btnBeverage.Normalcolor = System.Drawing.Color.Transparent;
             this.btnBeverage.OnHovercolor = System.Drawing.Color.Transparent;
@@ -452,22 +451,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation4;
             this.bunifuTransition1.MaxAnimationTime = 1000;
             // 
             // pnlHeader
@@ -496,7 +495,7 @@
             this.bunifuGradientPanel2.GradientTopLeft = System.Drawing.Color.SkyBlue;
             this.bunifuGradientPanel2.GradientTopRight = System.Drawing.Color.LightSteelBlue;
             this.bunifuGradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
             this.bunifuGradientPanel2.Size = new System.Drawing.Size(545, 58);
