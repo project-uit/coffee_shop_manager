@@ -24,7 +24,6 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
 
 
         private List<khonguyenlieu> list = new List<khonguyenlieu>();
-        private khonguyenlieu khonguyenlieu;
         
         public NhapKhoFrm()
         {

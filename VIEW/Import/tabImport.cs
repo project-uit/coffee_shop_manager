@@ -29,10 +29,7 @@ namespace COFFEE_SHOP_MANAGER
         public static List<string> tennldd = new List<string>();
         private List<khonguyenlieu> list = new List<khonguyenlieu>();
         private khonguyenlieu khonguyenlieu;
-        private chitietnhapkho chitietnhapkho;
         public nhanvien loggedstaff = new nhanvien();
-        
-
 
         public tabImport()
         {
@@ -63,8 +60,6 @@ namespace COFFEE_SHOP_MANAGER
         {
             loadtable();
         }
-
-
 
         private void loadtable()
         {

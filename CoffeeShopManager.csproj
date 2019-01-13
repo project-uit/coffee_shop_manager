@@ -111,6 +111,9 @@
     <Compile Include="chitietnhapkho.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="cuahang.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="DAO\BeverageDAO.cs" />
     <Compile Include="DAO\ChiTietNguyenLieuDaDungDAO.cs" />
     <Compile Include="DAO\ChiTietNhapKhoDAO.cs" />
@@ -119,6 +122,7 @@
     <Compile Include="DAO\GroupBeverageDAO.cs" />
     <Compile Include="DAO\NguyenLieuDaDungDAO.cs" />
     <Compile Include="DAO\NhapKhoDAO.cs" />
+    <Compile Include="DAO\StoreInfoDAO.cs" />
     <Compile Include="DAO\ThemNguyenLieuDAO.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="DAO\StatisticResourcesDAO.cs" />
