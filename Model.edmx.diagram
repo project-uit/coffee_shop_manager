@@ -28,6 +28,7 @@
         <AssociationConnector Association="quanlycafeModel.FK__nhapkho__id_nhan__398D8EEE" ManuallyRouted="false" />
         <AssociationConnector Association="quanlycafeModel.FK__thucuong__id_nho__267ABA7A" ManuallyRouted="false" />
         <EntityTypeShape EntityType="quanlycafeModel.thamso" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="quanlycafeModel.cuahang" Width="1.5" PointX="10.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

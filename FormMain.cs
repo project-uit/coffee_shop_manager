@@ -1,4 +1,5 @@
 ﻿using COFFEE_SHOP_MANAGER.DAO;
+using COFFEE_SHOP_MANAGER.VIEW.Setting;
 using MaterialSkin;
 using System;
 using System.Threading;
@@ -9,6 +10,7 @@ namespace COFFEE_SHOP_MANAGER
     public partial class FormMain : Form
     {
         public nhanvien loggedStaff = new nhanvien();
+        private cuahang cuahang = StoreInfoDAO.getInfo();
         private SwitchTab switchTab;
         public FormMain()
         {
@@ -41,9 +43,11 @@ namespace COFFEE_SHOP_MANAGER
         {
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
-
+                
             changeTab(tabDashboard);
-            switchTab = SwitchTab.Dashboard;           
+            switchTab = SwitchTab.Dashboard;
+
+            lbNameStore.Text = cuahang.ten;
         }
 
         private void btnToggleDrawer_Click(object sender, EventArgs e)
@@ -177,6 +181,12 @@ namespace COFFEE_SHOP_MANAGER
         private void btnMiniMize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            SettingFrm settingFrm = new SettingFrm();
+            settingFrm.ShowDialog();
         }
     }
 }
