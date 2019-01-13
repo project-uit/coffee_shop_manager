@@ -123,6 +123,6 @@ diachi nvarchar(300),
 dienthoai varchar(20)
 )
 
-insert into cuahang(ten, diachi, dienthoai) values ('2Land Coffee','123 Nguyễn Huệ, Quận 1, tp HCM','18001090')
-commit;
+insert into cuahang(ten, diachi, dienthoai) values (N'2Land Coffee',N'123 Nguyễn Huệ, Quận 1, tp HCM',N'18001090')
+
 

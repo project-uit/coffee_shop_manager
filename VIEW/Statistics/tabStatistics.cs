@@ -37,7 +37,7 @@ namespace COFFEE_SHOP_MANAGER
             ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Text = "Tháng";
             ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Visible = true;
 
-            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Text = "Doanh thu";
+            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
             ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Visible = true;
         }
 

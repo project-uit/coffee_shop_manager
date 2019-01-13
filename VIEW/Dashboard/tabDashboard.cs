@@ -27,6 +27,12 @@ namespace COFFEE_SHOP_MANAGER
         private void tabDashboard_Load(object sender, EventArgs e)
         {
             LoadData();
+
+            ((XYDiagram)chart.Diagram).AxisX.Title.Text = "Nhóm thức uống";
+            ((XYDiagram)chart.Diagram).AxisX.Title.Visible = true;
+
+            ((XYDiagram)chart.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
+            ((XYDiagram)chart.Diagram).AxisY.Title.Visible = true;
         }
 
         public void LoadData()
@@ -54,7 +60,7 @@ namespace COFFEE_SHOP_MANAGER
                 lbcountInvoice.Text = invoices.Count.ToString();
                 lbcountBeverage.Text = countBeverage.ToString();
                 if (revenue != 0)
-                    lbRevenue.Text = double.Parse(revenue.ToString()).ToString("#,###", CultureInfo.GetCultureInfo("vi-VN").NumberFormat) + " vnđ";
+                    lbRevenue.Text = double.Parse(revenue.ToString()).ToString("#,###", CultureInfo.GetCultureInfo("vi-VN").NumberFormat) + " đ";
             }
         }
 
@@ -78,16 +84,16 @@ namespace COFFEE_SHOP_MANAGER
             }
         }
 
-        private Decimal getRevenueByGroupBeverage(List<chitiethoadon> listCTHD, string groupBeverage)
+        private decimal? getRevenueByGroupBeverage(List<chitiethoadon> listCTHD, string groupBeverage)
         {
-            int total = 0;
+            decimal? total = 0;
             if (listCTHD.Count != 0)
             {
                 foreach (chitiethoadon item in listCTHD)
                 {
                     if (item.thucuong.nhomthucuong.tennhomthucuong == groupBeverage)
                     {
-                        total += (int)item.thanhtien;
+                        total += item.thanhtien;
                     }
                 }
             }
