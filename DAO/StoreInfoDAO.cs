@@ -26,7 +26,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
             return cuahang;
         }
 
-        public Boolean edit(cuahang cuahang)
+        public static Boolean edit(cuahang cuahang)
         {
             try
             {

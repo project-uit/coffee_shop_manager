@@ -1,4 +1,5 @@
 ﻿using COFFEE_SHOP_MANAGER.DAO;
+using COFFEE_SHOP_MANAGER.VIEW.Setting;
 using MaterialSkin;
 using System;
 using System.Threading;
@@ -177,6 +178,12 @@ namespace COFFEE_SHOP_MANAGER
         private void btnMiniMize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            SettingFrm settingFrm = new SettingFrm();
+            settingFrm.ShowDialog();
         }
     }
 }
