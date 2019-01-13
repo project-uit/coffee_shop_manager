@@ -23,7 +23,8 @@ namespace COFFEE_SHOP_MANAGER
         private List<thucuong> beverages = new List<thucuong>();
         private List<hoadon> invoices = new List<hoadon>();
         private List<tblInvoiceDTO> listInvoiceDetail = new List<tblInvoiceDTO>();
-        private float tongtien = 0;
+        private double tongtien = 0;
+        private double discountValue = 0;
         public tabStore()
         {
             if (Program.IsInDesignMode())
@@ -62,17 +63,35 @@ namespace COFFEE_SHOP_MANAGER
 
         private void loadDiscount()
         {
-            int last = DiscountDAO.getList().Count();
-            if (last == 0) return;
-            giamgia discount = new giamgia();
-            discount = DiscountDAO.getList()[last - 1];
             DateTime today = DateTime.Today;
-            string dateEndformated = string.Format("{0:dd-MM-yyyy}", discount.ngayketthuc);
-            string todayformated = string.Format("{0:dd-MM-yyyy}", today);
-            int result = DateTime.Compare(DateTime.Parse(dateEndformated), DateTime.Parse(todayformated));
-            if (result > 0)
+
+            List<giamgia> discounts = new List<giamgia>();
+            discounts = DiscountDAO.getList();
+            if (discounts.Count == 0)
             {
-                lbDiscount.Text = discount.hesogiamgia.ToString() + "%";
+                discountValue = 0;
+                lbDiscount.Text = "0%";
+                return;
+            }
+
+            foreach (giamgia discount in discounts)
+            {
+                string dateStartStr = string.Format("{0:dd-MM-yyyy}", discount.ngaybatdau);
+                string dateEndStr = string.Format("{0:dd-MM-yyyy}", discount.ngayketthuc);
+                string dateTodayStr = string.Format("{0:dd-MM-yyyy}", today);
+                int start = DateTime.Compare(DateTime.Parse(dateTodayStr), DateTime.Parse(dateStartStr));
+                int end = DateTime.Compare(DateTime.Parse(dateTodayStr), DateTime.Parse(dateEndStr));
+                if (start >= 0 && end <= 0 )
+                {
+                    discountValue = discount.hesogiamgia.Value;
+                    lbDiscount.Text = discount.hesogiamgia.ToString() + "%";
+                    return;
+                }
+                else
+                {
+                    discountValue = 0;
+                    lbDiscount.Text = discount.hesogiamgia.ToString() + "%";
+                }
             }
         }
 
@@ -158,11 +177,10 @@ namespace COFFEE_SHOP_MANAGER
             {
                 sum += float.Parse(item.giaban.Value.ToString("0,##")) * item.soluong;
             }
-            float discount = float.Parse(lbDiscount.Text.Replace("%", ""));
             lbSum.Text = double.Parse(sum.ToString()).ToString("#,###", cul.NumberFormat) + "vnđ";
-            lbTotal.Text = double.Parse((sum * (100 - discount) / 100).ToString()).ToString("#,###", cul.NumberFormat) + "vnđ";
+            lbTotal.Text = double.Parse((sum * (100 - discountValue) / 100).ToString()).ToString("#,###", cul.NumberFormat) + "vnđ";
 
-            tongtien = sum * (100 - discount) / 100;
+            tongtien = sum * (100 - discountValue) / 100;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

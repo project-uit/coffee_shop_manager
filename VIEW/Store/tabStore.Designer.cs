@@ -148,11 +148,11 @@
             this.gcInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gcInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gcInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.gcInvoice.Enabled = false;
             this.gcInvoice.Location = new System.Drawing.Point(54, 537);
             this.gcInvoice.MainView = this.gridView1;
-            this.gcInvoice.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gcInvoice.Margin = new System.Windows.Forms.Padding(6);
             this.gcInvoice.Name = "gcInvoice";
             this.gcInvoice.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnDelete,
@@ -345,11 +345,11 @@
             this.grdCtrlThucUong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrlThucUong.DataSource = typeof(COFFEE_SHOP_MANAGER.thucuong);
-            this.grdCtrlThucUong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grdCtrlThucUong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.grdCtrlThucUong.Enabled = false;
             this.grdCtrlThucUong.Location = new System.Drawing.Point(54, 163);
             this.grdCtrlThucUong.MainView = this.grdViThucUong;
-            this.grdCtrlThucUong.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grdCtrlThucUong.Margin = new System.Windows.Forms.Padding(6);
             this.grdCtrlThucUong.Name = "grdCtrlThucUong";
             this.grdCtrlThucUong.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnAddThucUong});
@@ -473,8 +473,8 @@
             this.btnSave.Depth = 0;
             this.btnSave.Enabled = false;
             this.btnSave.Icon = null;
-            this.btnSave.Location = new System.Drawing.Point(1813, 1068);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(1517, 1068);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
             this.btnSave.Primary = true;
@@ -488,7 +488,7 @@
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Location = new System.Drawing.Point(1592, 50);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(322, 33);
             this.txtSearch.TabIndex = 11;
@@ -515,7 +515,7 @@
             this.btnCreate.Depth = 0;
             this.btnCreate.Icon = null;
             this.btnCreate.Location = new System.Drawing.Point(54, 46);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreate.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Primary = true;
@@ -579,7 +579,7 @@
             this.lbDiscount.Name = "lbDiscount";
             this.lbDiscount.Size = new System.Drawing.Size(154, 37);
             this.lbDiscount.TabIndex = 17;
-            this.lbDiscount.Text = "0";
+            this.lbDiscount.Text = "0%";
             // 
             // materialLabel6
             // 
@@ -615,7 +615,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.xtraTabControl1.Location = new System.Drawing.Point(4, 4);
-            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabControl1.Size = new System.Drawing.Size(1982, 1204);
@@ -640,7 +640,7 @@
             this.xtraTabPage1.Controls.Add(this.materialLabel3);
             this.xtraTabPage1.Controls.Add(this.materialLabel2);
             this.xtraTabPage1.Controls.Add(this.btnSave);
-            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(1978, 1155);
             this.xtraTabPage1.Text = "Lập hóa đơn";
@@ -651,7 +651,7 @@
             this.btnPrint.Enabled = false;
             this.btnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.ImageOptions.Image")));
             this.btnPrint.Location = new System.Drawing.Point(1746, 1035);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(172, 69);
             this.btnPrint.TabIndex = 20;
@@ -665,7 +665,7 @@
             this.xtraTabPage2.Controls.Add(this.txtDate);
             this.xtraTabPage2.Controls.Add(this.materialLabel5);
             this.xtraTabPage2.Controls.Add(this.gcSearchInvoice);
-            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(1978, 1155);
             this.xtraTabPage2.Text = "Tìm kiếm hóa đơn";
@@ -686,7 +686,7 @@
             // txtSearchInvoice
             // 
             this.txtSearchInvoice.Location = new System.Drawing.Point(256, 58);
-            this.txtSearchInvoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearchInvoice.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearchInvoice.Name = "txtSearchInvoice";
             this.txtSearchInvoice.Size = new System.Drawing.Size(302, 33);
             this.txtSearchInvoice.TabIndex = 17;
@@ -696,7 +696,7 @@
             // 
             this.txtDate.EditValue = null;
             this.txtDate.Location = new System.Drawing.Point(758, 60);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(4);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -724,10 +724,10 @@
             this.gcSearchInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gcSearchInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcSearchInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gcSearchInvoice.Location = new System.Drawing.Point(62, 146);
             this.gcSearchInvoice.MainView = this.gridView2;
-            this.gcSearchInvoice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcSearchInvoice.Margin = new System.Windows.Forms.Padding(4);
             this.gcSearchInvoice.Name = "gcSearchInvoice";
             this.gcSearchInvoice.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnView});
@@ -821,7 +821,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.xtraTabControl1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "tabStore";
             this.Size = new System.Drawing.Size(2028, 1208);
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
