@@ -56,6 +56,8 @@
             this.coldonvi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colhaohut = new DevExpress.XtraGrid.Columns.GridColumn();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
@@ -79,25 +81,24 @@
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(4, 81);
-            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTabControl1.Location = new System.Drawing.Point(3, 52);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1990, 1040);
+            this.materialTabControl1.Size = new System.Drawing.Size(1327, 666);
             this.materialTabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.materialLabel1);
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.btnPrintRevenue);
             this.tabPage1.Controls.Add(this.chartRevenue);
             this.tabPage1.Controls.Add(this.cmbYear);
-            this.tabPage1.Location = new System.Drawing.Point(8, 39);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1974, 993);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Size = new System.Drawing.Size(1319, 637);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Doanh thu";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -108,20 +109,19 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1570, 29);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(1047, 19);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 30);
+            this.label4.Size = new System.Drawing.Size(47, 20);
             this.label4.TabIndex = 11;
             this.label4.Text = "Năm";
             // 
             // btnPrintRevenue
             // 
             this.btnPrintRevenue.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintRevenue.ImageOptions.Image")));
-            this.btnPrintRevenue.Location = new System.Drawing.Point(116, 52);
-            this.btnPrintRevenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrintRevenue.Location = new System.Drawing.Point(77, 33);
             this.btnPrintRevenue.Name = "btnPrintRevenue";
-            this.btnPrintRevenue.Size = new System.Drawing.Size(164, 62);
+            this.btnPrintRevenue.Size = new System.Drawing.Size(109, 40);
             this.btnPrintRevenue.TabIndex = 7;
             this.btnPrintRevenue.Text = "In ";
             this.btnPrintRevenue.Click += new System.EventHandler(this.btnPrintRevenue_Click);
@@ -132,37 +132,35 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chartRevenue.Legend.Name = "Default Legend";
-            this.chartRevenue.Location = new System.Drawing.Point(116, 167);
-            this.chartRevenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartRevenue.Location = new System.Drawing.Point(77, 107);
             this.chartRevenue.Name = "chartRevenue";
             this.chartRevenue.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartRevenue.Size = new System.Drawing.Size(1736, 742);
+            this.chartRevenue.Size = new System.Drawing.Size(1157, 524);
             this.chartRevenue.TabIndex = 5;
             // 
             // cmbYear
             // 
             this.cmbYear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbYear.FormattingEnabled = true;
-            this.cmbYear.Location = new System.Drawing.Point(1576, 63);
-            this.cmbYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbYear.Location = new System.Drawing.Point(1051, 40);
             this.cmbYear.Name = "cmbYear";
-            this.cmbYear.Size = new System.Drawing.Size(272, 33);
+            this.cmbYear.Size = new System.Drawing.Size(183, 24);
             this.cmbYear.TabIndex = 4;
             this.cmbYear.SelectedIndexChanged += new System.EventHandler(this.cmbYear_SelectedIndexChanged);
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.materialLabel2);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.btnPrintBeverageRevenue);
             this.tabPage2.Controls.Add(this.chartBeverage);
             this.tabPage2.Controls.Add(this.cmbMonthTabBeverage);
             this.tabPage2.Controls.Add(this.cmbYearTabBeverage);
-            this.tabPage2.Location = new System.Drawing.Point(8, 39);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1974, 993);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Size = new System.Drawing.Size(1319, 637);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nhóm thức uống";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -173,10 +171,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1570, 35);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Location = new System.Drawing.Point(1047, 22);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 30);
+            this.label5.Size = new System.Drawing.Size(47, 20);
             this.label5.TabIndex = 11;
             this.label5.Text = "Năm";
             // 
@@ -186,20 +184,19 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1402, 35);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(935, 22);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 30);
+            this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 10;
             this.label3.Text = "Tháng";
             // 
             // btnPrintBeverageRevenue
             // 
             this.btnPrintBeverageRevenue.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrintBeverageRevenue.ImageOptions.Image")));
-            this.btnPrintBeverageRevenue.Location = new System.Drawing.Point(116, 52);
-            this.btnPrintBeverageRevenue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrintBeverageRevenue.Location = new System.Drawing.Point(77, 33);
             this.btnPrintBeverageRevenue.Name = "btnPrintBeverageRevenue";
-            this.btnPrintBeverageRevenue.Size = new System.Drawing.Size(164, 62);
+            this.btnPrintBeverageRevenue.Size = new System.Drawing.Size(109, 40);
             this.btnPrintBeverageRevenue.TabIndex = 9;
             this.btnPrintBeverageRevenue.Text = "In ";
             this.btnPrintBeverageRevenue.Click += new System.EventHandler(this.btnPrintBeverageRevenue_Click);
@@ -210,11 +207,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chartBeverage.Legend.Name = "Default Legend";
-            this.chartBeverage.Location = new System.Drawing.Point(116, 167);
-            this.chartBeverage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartBeverage.Location = new System.Drawing.Point(77, 107);
             this.chartBeverage.Name = "chartBeverage";
             this.chartBeverage.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chartBeverage.Size = new System.Drawing.Size(1736, 742);
+            this.chartBeverage.Size = new System.Drawing.Size(1157, 475);
             this.chartBeverage.TabIndex = 8;
             // 
             // cmbMonthTabBeverage
@@ -234,10 +230,9 @@
             "10",
             "11",
             "12"});
-            this.cmbMonthTabBeverage.Location = new System.Drawing.Point(1408, 69);
-            this.cmbMonthTabBeverage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbMonthTabBeverage.Location = new System.Drawing.Point(939, 44);
             this.cmbMonthTabBeverage.Name = "cmbMonthTabBeverage";
-            this.cmbMonthTabBeverage.Size = new System.Drawing.Size(136, 33);
+            this.cmbMonthTabBeverage.Size = new System.Drawing.Size(92, 24);
             this.cmbMonthTabBeverage.TabIndex = 7;
             this.cmbMonthTabBeverage.SelectedIndexChanged += new System.EventHandler(this.cmbMonthTabBeverage_SelectedIndexChanged);
             // 
@@ -245,10 +240,9 @@
             // 
             this.cmbYearTabBeverage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbYearTabBeverage.FormattingEnabled = true;
-            this.cmbYearTabBeverage.Location = new System.Drawing.Point(1576, 69);
-            this.cmbYearTabBeverage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbYearTabBeverage.Location = new System.Drawing.Point(1051, 44);
             this.cmbYearTabBeverage.Name = "cmbYearTabBeverage";
-            this.cmbYearTabBeverage.Size = new System.Drawing.Size(272, 33);
+            this.cmbYearTabBeverage.Size = new System.Drawing.Size(183, 24);
             this.cmbYearTabBeverage.TabIndex = 6;
             this.cmbYearTabBeverage.SelectedIndexChanged += new System.EventHandler(this.cmbYearTabBeverage_SelectedIndexChanged);
             // 
@@ -260,11 +254,10 @@
             this.tabPage3.Controls.Add(this.dateThongKe);
             this.tabPage3.Controls.Add(this.btnExportFile);
             this.tabPage3.Controls.Add(this.grdCtrThongKeNguyenLieu);
-            this.tabPage3.Location = new System.Drawing.Point(8, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(1974, 993);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Size = new System.Drawing.Size(1319, 637);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Thống kê kho nguyên liệu";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -274,10 +267,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(352, 38);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(235, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 30);
+            this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Theo tuần";
             // 
@@ -286,18 +279,17 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(31, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 30);
+            this.label1.Size = new System.Drawing.Size(102, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Theo tháng";
             // 
             // dateWeek
             // 
             this.dateWeek.EditValue = new System.DateTime(2018, 12, 5, 0, 0, 0, 0);
-            this.dateWeek.Location = new System.Drawing.Point(358, 73);
-            this.dateWeek.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateWeek.Location = new System.Drawing.Point(239, 47);
             this.dateWeek.Name = "dateWeek";
             this.dateWeek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -309,7 +301,7 @@
             this.dateWeek.Properties.EditFormat.FormatString = "dd/MM/yyyy";
             this.dateWeek.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dateWeek.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dateWeek.Size = new System.Drawing.Size(248, 40);
+            this.dateWeek.Size = new System.Drawing.Size(165, 22);
             this.dateWeek.TabIndex = 5;
             this.dateWeek.ToolTip = "Ngày bắt đầu";
             this.dateWeek.EditValueChanged += new System.EventHandler(this.dateWeek_EditValueChanged);
@@ -317,8 +309,7 @@
             // dateThongKe
             // 
             this.dateThongKe.EditValue = new System.DateTime(2018, 12, 5, 0, 0, 0, 0);
-            this.dateThongKe.Location = new System.Drawing.Point(52, 73);
-            this.dateThongKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateThongKe.Location = new System.Drawing.Point(35, 47);
             this.dateThongKe.Name = "dateThongKe";
             this.dateThongKe.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -328,7 +319,7 @@
             this.dateThongKe.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.dateThongKe.Properties.EditFormat.FormatString = "MM/yyyy";
             this.dateThongKe.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dateThongKe.Size = new System.Drawing.Size(236, 40);
+            this.dateThongKe.Size = new System.Drawing.Size(157, 22);
             this.dateThongKe.TabIndex = 4;
             this.dateThongKe.EditValueChanged += new System.EventHandler(this.dateThongKe_EditValueChanged);
             // 
@@ -339,12 +330,11 @@
             this.btnExportFile.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExportFile.Depth = 0;
             this.btnExportFile.Icon = null;
-            this.btnExportFile.Location = new System.Drawing.Point(1904, 42);
-            this.btnExportFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExportFile.Location = new System.Drawing.Point(1210, 17);
             this.btnExportFile.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnExportFile.Name = "btnExportFile";
             this.btnExportFile.Primary = true;
-            this.btnExportFile.Size = new System.Drawing.Size(156, 36);
+            this.btnExportFile.Size = new System.Drawing.Size(103, 36);
             this.btnExportFile.TabIndex = 3;
             this.btnExportFile.Text = "Xuất file";
             this.btnExportFile.UseVisualStyleBackColor = true;
@@ -355,12 +345,10 @@
             this.grdCtrThongKeNguyenLieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grdCtrThongKeNguyenLieu.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grdCtrThongKeNguyenLieu.Location = new System.Drawing.Point(50, 154);
+            this.grdCtrThongKeNguyenLieu.Location = new System.Drawing.Point(33, 99);
             this.grdCtrThongKeNguyenLieu.MainView = this.grdViThongKeNguyenLieu;
-            this.grdCtrThongKeNguyenLieu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdCtrThongKeNguyenLieu.Name = "grdCtrThongKeNguyenLieu";
-            this.grdCtrThongKeNguyenLieu.Size = new System.Drawing.Size(1870, 787);
+            this.grdCtrThongKeNguyenLieu.Size = new System.Drawing.Size(1247, 504);
             this.grdCtrThongKeNguyenLieu.TabIndex = 2;
             this.grdCtrThongKeNguyenLieu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdViThongKeNguyenLieu});
@@ -373,8 +361,8 @@
             this.coldinhluongthucte,
             this.coldonvi,
             this.colhaohut});
-            this.grdViThongKeNguyenLieu.DetailHeight = 546;
-            this.grdViThongKeNguyenLieu.FixedLineWidth = 4;
+            this.grdViThongKeNguyenLieu.DetailHeight = 349;
+            this.grdViThongKeNguyenLieu.FixedLineWidth = 3;
             this.grdViThongKeNguyenLieu.GridControl = this.grdCtrThongKeNguyenLieu;
             this.grdViThongKeNguyenLieu.Name = "grdViThongKeNguyenLieu";
             this.grdViThongKeNguyenLieu.OptionsBehavior.AlignGroupSummaryInGroupRow = DevExpress.Utils.DefaultBoolean.False;
@@ -387,51 +375,51 @@
             // 
             this.coltennguyenlieu.Caption = "Tên nguyên liệu";
             this.coltennguyenlieu.FieldName = "tennguyenlieu";
-            this.coltennguyenlieu.MinWidth = 38;
+            this.coltennguyenlieu.MinWidth = 25;
             this.coltennguyenlieu.Name = "coltennguyenlieu";
             this.coltennguyenlieu.Visible = true;
             this.coltennguyenlieu.VisibleIndex = 0;
-            this.coltennguyenlieu.Width = 140;
+            this.coltennguyenlieu.Width = 93;
             // 
             // coldinhluonglythuyet
             // 
             this.coldinhluonglythuyet.Caption = "Định lượng lý thuyết";
             this.coldinhluonglythuyet.FieldName = "dinhluonglythuyet";
-            this.coldinhluonglythuyet.MinWidth = 38;
+            this.coldinhluonglythuyet.MinWidth = 25;
             this.coldinhluonglythuyet.Name = "coldinhluonglythuyet";
             this.coldinhluonglythuyet.Visible = true;
             this.coldinhluonglythuyet.VisibleIndex = 1;
-            this.coldinhluonglythuyet.Width = 140;
+            this.coldinhluonglythuyet.Width = 93;
             // 
             // coldinhluongthucte
             // 
             this.coldinhluongthucte.Caption = "Định lượng thực tế";
             this.coldinhluongthucte.FieldName = "dinhluongthucte";
-            this.coldinhluongthucte.MinWidth = 38;
+            this.coldinhluongthucte.MinWidth = 25;
             this.coldinhluongthucte.Name = "coldinhluongthucte";
             this.coldinhluongthucte.Visible = true;
             this.coldinhluongthucte.VisibleIndex = 2;
-            this.coldinhluongthucte.Width = 140;
+            this.coldinhluongthucte.Width = 93;
             // 
             // coldonvi
             // 
             this.coldonvi.Caption = "Đơn vị";
             this.coldonvi.FieldName = "donvi";
-            this.coldonvi.MinWidth = 38;
+            this.coldonvi.MinWidth = 25;
             this.coldonvi.Name = "coldonvi";
             this.coldonvi.Visible = true;
             this.coldonvi.VisibleIndex = 3;
-            this.coldonvi.Width = 140;
+            this.coldonvi.Width = 93;
             // 
             // colhaohut
             // 
             this.colhaohut.Caption = "Hao hụt";
             this.colhaohut.FieldName = "haohut";
-            this.colhaohut.MinWidth = 38;
+            this.colhaohut.MinWidth = 25;
             this.colhaohut.Name = "colhaohut";
             this.colhaohut.Visible = true;
             this.colhaohut.VisibleIndex = 4;
-            this.colhaohut.Width = 140;
+            this.colhaohut.Width = 93;
             // 
             // materialTabSelector1
             // 
@@ -439,24 +427,49 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(4, 0);
-            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.materialTabSelector1.Location = new System.Drawing.Point(3, 0);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(1994, 73);
+            this.materialTabSelector1.Size = new System.Drawing.Size(1329, 47);
             this.materialTabSelector1.TabIndex = 0;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(480, 60);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(390, 24);
+            this.materialLabel1.TabIndex = 12;
+            this.materialLabel1.Text = "Biểu đồ thống kê tổng doanh thu trong 1 năm";
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(366, 49);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(500, 24);
+            this.materialLabel2.TabIndex = 13;
+            this.materialLabel2.Text = "Biểu đồ thống kê doanh thu nhóm thức uống trong 1 tháng";
+            // 
             // tabStatistics
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "tabStatistics";
-            this.Size = new System.Drawing.Size(1996, 1125);
+            this.Size = new System.Drawing.Size(1331, 720);
             this.Load += new System.EventHandler(this.tabStatistics_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -506,5 +519,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
     }
 }

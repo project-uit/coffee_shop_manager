@@ -34,6 +34,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
             {
                 using (quanlycafeEntities dbContext = new quanlycafeEntities())
                 {
+                    nhanvien.xoa_flag = false;
                     dbContext.nhanviens.Add(nhanvien);
                     dbContext.SaveChanges();
                 }

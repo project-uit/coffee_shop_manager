@@ -32,6 +32,13 @@ namespace COFFEE_SHOP_MANAGER
             cmbYearTabBeverage.DataSource = years;
             cmbMonthTabBeverage.SelectedIndex = 0;
             // cmbYearTabBeverage.SelectedIndex = years.Count() - 1;
+            ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.AutoGrid = false;
+            ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.GridSpacing = 1;
+            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Text = "Tháng";
+            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Visible = true;
+
+            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Text = "Doanh thu";
+            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Visible = true;
         }
 
         private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
@@ -42,13 +49,15 @@ namespace COFFEE_SHOP_MANAGER
             chartRevenue.Series.Clear();
             Series series = new Series("Doanh thu", ViewType.Bar);
             chartRevenue.Series.Add(series);
-            for (int i=0; i< 12; i ++)
+
+            for (int i=0; i < 12; i ++)
             {
                 String month = (i + 1).ToString();
                 chartRevenue.Series["Doanh thu"].Points.Add(
                     new SeriesPoint(month, getRevenueByMonth(invoices, month))
                 );
             }
+          
         }
 
         private void cmbYearTabBeverage_SelectedIndexChanged(object sender, EventArgs e)

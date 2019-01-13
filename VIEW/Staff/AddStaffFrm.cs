@@ -50,7 +50,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
                 ngaysinh = DateTime.Parse(txtNgaySinh.EditValue.ToString()),
                 cmnd = txtCMND.Text,
                 diachi = txtDiaChi.Text,
-                luong = Int32.Parse(txtLuong.Text),
+                luong = decimal.Parse(txtLuong.Text),
                 tentaikhoan = txtTenTaiKhoan.Text,
                 matkhau = txtMatKhauComfirm.Text,
                 quyen = quyen
@@ -160,7 +160,13 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
 
         private void txtLuong_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+
+            // If you want, you can allow decimal (float) numbers
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
             {
                 e.Handled = true;
             }

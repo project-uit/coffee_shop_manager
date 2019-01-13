@@ -67,7 +67,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
                 ngaysinh = DateTime.Parse(txtNgaySinh.EditValue.ToString()),
                 cmnd = txtCMND.Text,
                 diachi = txtDiaChi.Text,
-                luong = Int32.Parse(txtLuong.Text.ToString()),
+                luong = decimal.Parse(txtLuong.Text.ToString()),
                 tentaikhoan = txtTenTaiKhoan.Text,
                 matkhau = txtMatKhau.Text,
                 quyen = quyen
@@ -77,11 +77,11 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             Boolean addStaff = staffDAO.editStaff(staff);
             if (addStaff)
             {
-                XtraMessageBox.Show(this, "Cập nhập nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                XtraMessageBox.Show(this, "Cập nhật nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                XtraMessageBox.Show(this, "Cập nhập nhân viên thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                XtraMessageBox.Show(this, "Cập nhật nhân viên thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -177,7 +177,13 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
 
         private void txtLuong_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != ','))
+            {
+                e.Handled = true;
+            }
+
+            // If you want, you can allow decimal (float) numbers
+            if ((e.KeyChar == ',') && ((sender as TextBox).Text.IndexOf(',') > -1))
             {
                 e.Handled = true;
             }

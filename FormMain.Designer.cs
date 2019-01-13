@@ -130,7 +130,7 @@
             this.btnSetting.IconZoom = 50D;
             this.btnSetting.IsTab = true;
             this.btnSetting.Location = new System.Drawing.Point(0, 531);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(6);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Normalcolor = System.Drawing.Color.Transparent;
             this.btnSetting.OnHovercolor = System.Drawing.Color.Transparent;
@@ -168,7 +168,7 @@
             this.btnExit.IconZoom = 50D;
             this.btnExit.IsTab = true;
             this.btnExit.Location = new System.Drawing.Point(2, 667);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.Transparent;
             this.btnExit.OnHovercolor = System.Drawing.Color.Transparent;
@@ -195,6 +195,7 @@
             this.bunifuImageButton1.TabIndex = 7;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnLogout
             // 
@@ -220,7 +221,7 @@
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.IsTab = true;
             this.btnLogout.Location = new System.Drawing.Point(0, 600);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHovercolor = System.Drawing.Color.Transparent;
@@ -274,7 +275,7 @@
             this.btnStaff.IconZoom = 50D;
             this.btnStaff.IsTab = true;
             this.btnStaff.Location = new System.Drawing.Point(2, 462);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(6);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Normalcolor = System.Drawing.Color.Transparent;
             this.btnStaff.OnHovercolor = System.Drawing.Color.Transparent;
@@ -297,7 +298,7 @@
             this.lbNameStore.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbNameStore.Location = new System.Drawing.Point(28, 135);
             this.lbNameStore.Name = "lbNameStore";
-            this.lbNameStore.Size = new System.Drawing.Size(180, 45);
+            this.lbNameStore.Size = new System.Drawing.Size(111, 28);
             this.lbNameStore.TabIndex = 1;
             this.lbNameStore.Text = "Cafe Brand";
             // 
@@ -325,7 +326,7 @@
             this.btnStatistics.IconZoom = 50D;
             this.btnStatistics.IsTab = true;
             this.btnStatistics.Location = new System.Drawing.Point(2, 410);
-            this.btnStatistics.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnStatistics.Margin = new System.Windows.Forms.Padding(6);
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.Normalcolor = System.Drawing.Color.Transparent;
             this.btnStatistics.OnHovercolor = System.Drawing.Color.Transparent;
@@ -362,7 +363,7 @@
             this.btnDashboard.IconZoom = 50D;
             this.btnDashboard.IsTab = true;
             this.btnDashboard.Location = new System.Drawing.Point(2, 194);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(6);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Normalcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.OnHovercolor = System.Drawing.Color.Transparent;
@@ -399,7 +400,7 @@
             this.btnImport.IconZoom = 50D;
             this.btnImport.IsTab = true;
             this.btnImport.Location = new System.Drawing.Point(2, 352);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(6);
             this.btnImport.Name = "btnImport";
             this.btnImport.Normalcolor = System.Drawing.Color.Transparent;
             this.btnImport.OnHovercolor = System.Drawing.Color.Transparent;
@@ -436,7 +437,7 @@
             this.btnStore.IconZoom = 50D;
             this.btnStore.IsTab = true;
             this.btnStore.Location = new System.Drawing.Point(2, 248);
-            this.btnStore.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnStore.Margin = new System.Windows.Forms.Padding(6);
             this.btnStore.Name = "btnStore";
             this.btnStore.Normalcolor = System.Drawing.Color.Transparent;
             this.btnStore.OnHovercolor = System.Drawing.Color.Transparent;
@@ -473,7 +474,7 @@
             this.btnBeverage.IconZoom = 50D;
             this.btnBeverage.IsTab = true;
             this.btnBeverage.Location = new System.Drawing.Point(2, 303);
-            this.btnBeverage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnBeverage.Margin = new System.Windows.Forms.Padding(6);
             this.btnBeverage.Name = "btnBeverage";
             this.btnBeverage.Normalcolor = System.Drawing.Color.Transparent;
             this.btnBeverage.OnHovercolor = System.Drawing.Color.Transparent;
@@ -584,7 +585,7 @@
             this.lbTabName.ForeColor = System.Drawing.Color.White;
             this.lbTabName.Location = new System.Drawing.Point(14, 22);
             this.lbTabName.Name = "lbTabName";
-            this.lbTabName.Size = new System.Drawing.Size(196, 41);
+            this.lbTabName.Size = new System.Drawing.Size(124, 25);
             this.lbTabName.TabIndex = 0;
             this.lbTabName.Text = "TỔNG QUAN";
             // 

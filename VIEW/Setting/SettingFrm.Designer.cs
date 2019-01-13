@@ -44,8 +44,8 @@
             // 
             this.txtName.Depth = 0;
             this.txtName.Hint = "";
-            this.txtName.Location = new System.Drawing.Point(226, 181);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtName.Location = new System.Drawing.Point(151, 116);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.MaxLength = 32767;
             this.txtName.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtName.Name = "txtName";
@@ -53,7 +53,7 @@
             this.txtName.SelectedText = "";
             this.txtName.SelectionLength = 0;
             this.txtName.SelectionStart = 0;
-            this.txtName.Size = new System.Drawing.Size(512, 41);
+            this.txtName.Size = new System.Drawing.Size(341, 28);
             this.txtName.TabIndex = 63;
             this.txtName.TabStop = false;
             this.txtName.UseSystemPasswordChar = false;
@@ -62,20 +62,18 @@
             // 
             this.lbErrorName.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorName.Appearance.Options.UseForeColor = true;
-            this.lbErrorName.Location = new System.Drawing.Point(226, 235);
-            this.lbErrorName.Margin = new System.Windows.Forms.Padding(4);
+            this.lbErrorName.Location = new System.Drawing.Point(151, 150);
             this.lbErrorName.Name = "lbErrorName";
-            this.lbErrorName.Size = new System.Drawing.Size(105, 25);
+            this.lbErrorName.Size = new System.Drawing.Size(65, 16);
             this.lbErrorName.TabIndex = 62;
             this.lbErrorName.Text = "error name";
             this.lbErrorName.Visible = false;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(78, 188);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl1.Location = new System.Drawing.Point(52, 120);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(35, 25);
+            this.labelControl1.Size = new System.Drawing.Size(22, 16);
             this.labelControl1.TabIndex = 61;
             this.labelControl1.Text = "Tên";
             // 
@@ -83,8 +81,8 @@
             // 
             this.txtAddress.Depth = 0;
             this.txtAddress.Hint = "";
-            this.txtAddress.Location = new System.Drawing.Point(226, 269);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtAddress.Location = new System.Drawing.Point(151, 172);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.MaxLength = 32767;
             this.txtAddress.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtAddress.Name = "txtAddress";
@@ -92,7 +90,7 @@
             this.txtAddress.SelectedText = "";
             this.txtAddress.SelectionLength = 0;
             this.txtAddress.SelectionStart = 0;
-            this.txtAddress.Size = new System.Drawing.Size(512, 41);
+            this.txtAddress.Size = new System.Drawing.Size(341, 28);
             this.txtAddress.TabIndex = 66;
             this.txtAddress.TabStop = false;
             this.txtAddress.UseSystemPasswordChar = false;
@@ -101,20 +99,18 @@
             // 
             this.lbErrorAddress.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorAddress.Appearance.Options.UseForeColor = true;
-            this.lbErrorAddress.Location = new System.Drawing.Point(226, 323);
-            this.lbErrorAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.lbErrorAddress.Location = new System.Drawing.Point(151, 207);
             this.lbErrorAddress.Name = "lbErrorAddress";
-            this.lbErrorAddress.Size = new System.Drawing.Size(125, 25);
+            this.lbErrorAddress.Size = new System.Drawing.Size(78, 16);
             this.lbErrorAddress.TabIndex = 65;
             this.lbErrorAddress.Text = "error address";
             this.lbErrorAddress.Visible = false;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(78, 277);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl3.Location = new System.Drawing.Point(52, 177);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(65, 25);
+            this.labelControl3.Size = new System.Drawing.Size(40, 17);
             this.labelControl3.TabIndex = 64;
             this.labelControl3.Text = "Địa chỉ";
             // 
@@ -122,8 +118,8 @@
             // 
             this.txtPhone.Depth = 0;
             this.txtPhone.Hint = "";
-            this.txtPhone.Location = new System.Drawing.Point(226, 358);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtPhone.Location = new System.Drawing.Point(151, 229);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtPhone.Name = "txtPhone";
@@ -131,7 +127,7 @@
             this.txtPhone.SelectedText = "";
             this.txtPhone.SelectionLength = 0;
             this.txtPhone.SelectionStart = 0;
-            this.txtPhone.Size = new System.Drawing.Size(512, 41);
+            this.txtPhone.Size = new System.Drawing.Size(341, 28);
             this.txtPhone.TabIndex = 69;
             this.txtPhone.TabStop = false;
             this.txtPhone.UseSystemPasswordChar = false;
@@ -140,20 +136,18 @@
             // 
             this.lbErrorPhone.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorPhone.Appearance.Options.UseForeColor = true;
-            this.lbErrorPhone.Location = new System.Drawing.Point(226, 412);
-            this.lbErrorPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.lbErrorPhone.Location = new System.Drawing.Point(151, 264);
             this.lbErrorPhone.Name = "lbErrorPhone";
-            this.lbErrorPhone.Size = new System.Drawing.Size(111, 25);
+            this.lbErrorPhone.Size = new System.Drawing.Size(68, 16);
             this.lbErrorPhone.TabIndex = 68;
             this.lbErrorPhone.Text = "error phone";
             this.lbErrorPhone.Visible = false;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(78, 365);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl5.Location = new System.Drawing.Point(52, 234);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(123, 25);
+            this.labelControl5.Size = new System.Drawing.Size(79, 17);
             this.labelControl5.TabIndex = 67;
             this.labelControl5.Text = "Số điện thoại";
             // 
@@ -163,12 +157,11 @@
             this.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSave.Depth = 0;
             this.btnSave.Icon = null;
-            this.btnSave.Location = new System.Drawing.Point(644, 460);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(429, 294);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
             this.btnSave.Primary = true;
-            this.btnSave.Size = new System.Drawing.Size(78, 36);
+            this.btnSave.Size = new System.Drawing.Size(55, 36);
             this.btnSave.TabIndex = 70;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -176,9 +169,9 @@
             // 
             // SettingFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 577);
+            this.ClientSize = new System.Drawing.Size(547, 369);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.lbErrorPhone);
@@ -189,7 +182,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbErrorName);
             this.Controls.Add(this.labelControl1);
-            this.Margin = new System.Windows.Forms.Padding(6);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SettingFrm";

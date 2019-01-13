@@ -250,6 +250,12 @@
     <Compile Include="VIEW\Import\tabImport.Designer.cs">
       <DependentUpon>tabImport.cs</DependentUpon>
     </Compile>
+    <Compile Include="VIEW\Setting\SettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VIEW\Setting\SettingFrm.Designer.cs">
+      <DependentUpon>SettingFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="VIEW\Staff\AddStaffFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,6 +372,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Dashboard\tabDashboard.resx">
       <DependentUpon>tabDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VIEW\Setting\SettingFrm.resx">
+      <DependentUpon>SettingFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VIEW\Staff\AddStaffFrm.resx">
       <DependentUpon>AddStaffFrm.cs</DependentUpon>
