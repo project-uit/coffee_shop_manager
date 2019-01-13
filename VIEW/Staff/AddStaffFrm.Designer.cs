@@ -449,9 +449,11 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddStaffFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddStaffFrm";
+            this.Text = "Thêm nhân viên";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.AddStaffFrm_Load);
             this.groupBox2.ResumeLayout(false);

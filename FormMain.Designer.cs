@@ -33,6 +33,7 @@
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             this.pnlDrawer = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnSetting = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -72,7 +73,7 @@
             this.pnlDrawer.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlDrawer.Location = new System.Drawing.Point(0, 0);
             this.pnlDrawer.Name = "pnlDrawer";
-            this.pnlDrawer.Size = new System.Drawing.Size(233, 460);
+            this.pnlDrawer.Size = new System.Drawing.Size(233, 740);
             this.pnlDrawer.TabIndex = 0;
             this.pnlDrawer.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDrawer_Paint);
             // 
@@ -80,6 +81,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.btnSetting);
             this.bunifuGradientPanel1.Controls.Add(this.btnExit);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuImageButton1);
             this.bunifuGradientPanel1.Controls.Add(this.btnLogout);
@@ -101,8 +103,46 @@
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(233, 460);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(233, 740);
             this.bunifuGradientPanel1.TabIndex = 10;
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSetting.BackColor = System.Drawing.Color.Transparent;
+            this.btnSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSetting.BorderRadius = 0;
+            this.btnSetting.ButtonText = "Cài đặt";
+            this.btnSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnSetting, BunifuAnimatorNS.DecorationType.None);
+            this.btnSetting.DisabledColor = System.Drawing.Color.Gray;
+            this.btnSetting.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSetting.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnSetting.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSetting.Iconimage")));
+            this.btnSetting.Iconimage_right = null;
+            this.btnSetting.Iconimage_right_Selected = null;
+            this.btnSetting.Iconimage_Selected = null;
+            this.btnSetting.IconMarginLeft = 0;
+            this.btnSetting.IconMarginRight = 0;
+            this.btnSetting.IconRightVisible = true;
+            this.btnSetting.IconRightZoom = 0D;
+            this.btnSetting.IconVisible = true;
+            this.btnSetting.IconZoom = 50D;
+            this.btnSetting.IsTab = true;
+            this.btnSetting.Location = new System.Drawing.Point(0, 531);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnSetting.OnHovercolor = System.Drawing.Color.Transparent;
+            this.btnSetting.OnHoverTextColor = System.Drawing.Color.Black;
+            this.btnSetting.selected = false;
+            this.btnSetting.Size = new System.Drawing.Size(233, 57);
+            this.btnSetting.TabIndex = 10;
+            this.btnSetting.Text = "Cài đặt";
+            this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSetting.Textcolor = System.Drawing.Color.White;
+            this.btnSetting.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnExit
             // 
@@ -127,7 +167,7 @@
             this.btnExit.IconVisible = true;
             this.btnExit.IconZoom = 50D;
             this.btnExit.IsTab = true;
-            this.btnExit.Location = new System.Drawing.Point(2, 573);
+            this.btnExit.Location = new System.Drawing.Point(2, 667);
             this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.Transparent;
@@ -155,7 +195,6 @@
             this.bunifuImageButton1.TabIndex = 7;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // btnLogout
             // 
@@ -180,7 +219,7 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.IsTab = true;
-            this.btnLogout.Location = new System.Drawing.Point(2, 518);
+            this.btnLogout.Location = new System.Drawing.Point(0, 600);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;
@@ -256,7 +295,7 @@
             this.bunifuTransition1.SetDecoration(this.lbNameStore, BunifuAnimatorNS.DecorationType.None);
             this.lbNameStore.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbNameStore.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbNameStore.Location = new System.Drawing.Point(66, 135);
+            this.lbNameStore.Location = new System.Drawing.Point(28, 135);
             this.lbNameStore.Name = "lbNameStore";
             this.lbNameStore.Size = new System.Drawing.Size(180, 45);
             this.lbNameStore.TabIndex = 1;
@@ -479,7 +518,7 @@
             this.pnlHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(18)))));
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(545, 58);
+            this.pnlHeader.Size = new System.Drawing.Size(573, 58);
             this.pnlHeader.TabIndex = 0;
             // 
             // bunifuGradientPanel2
@@ -499,7 +538,7 @@
             this.bunifuGradientPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel2.Name = "bunifuGradientPanel2";
             this.bunifuGradientPanel2.Quality = 10;
-            this.bunifuGradientPanel2.Size = new System.Drawing.Size(545, 58);
+            this.bunifuGradientPanel2.Size = new System.Drawing.Size(573, 58);
             this.bunifuGradientPanel2.TabIndex = 2;
             // 
             // btnMiniMize
@@ -510,7 +549,7 @@
             this.bunifuTransition1.SetDecoration(this.btnMiniMize, BunifuAnimatorNS.DecorationType.None);
             this.btnMiniMize.Image = ((System.Drawing.Image)(resources.GetObject("btnMiniMize.Image")));
             this.btnMiniMize.ImageActive = null;
-            this.btnMiniMize.Location = new System.Drawing.Point(453, 13);
+            this.btnMiniMize.Location = new System.Drawing.Point(481, 13);
             this.btnMiniMize.Name = "btnMiniMize";
             this.btnMiniMize.Size = new System.Drawing.Size(26, 30);
             this.btnMiniMize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -527,7 +566,7 @@
             this.bunifuTransition1.SetDecoration(this.btnClose, BunifuAnimatorNS.DecorationType.None);
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(493, 13);
+            this.btnClose.Location = new System.Drawing.Point(521, 13);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(36, 30);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -557,7 +596,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(233, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(545, 460);
+            this.panel2.Size = new System.Drawing.Size(573, 740);
             this.panel2.TabIndex = 1;
             // 
             // panelTab
@@ -567,7 +606,7 @@
             this.panelTab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTab.Location = new System.Drawing.Point(0, 58);
             this.panelTab.Name = "panelTab";
-            this.panelTab.Size = new System.Drawing.Size(545, 402);
+            this.panelTab.Size = new System.Drawing.Size(573, 682);
             this.panelTab.TabIndex = 1;
             // 
             // imageList1
@@ -581,7 +620,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.ClientSize = new System.Drawing.Size(778, 460);
+            this.ClientSize = new System.Drawing.Size(806, 740);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlDrawer);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -630,6 +669,7 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel2;
         private Bunifu.Framework.UI.BunifuImageButton btnMiniMize;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
+        public Bunifu.Framework.UI.BunifuFlatButton btnSetting;
     }
 }
 

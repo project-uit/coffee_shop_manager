@@ -42,9 +42,18 @@ namespace COFFEE_SHOP_MANAGER
         {
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
-
+            lbNameStore.Text = StoreInfoDAO.getInfo().ten;
+            setAccess();
             changeTab(tabDashboard);
             switchTab = SwitchTab.Dashboard;           
+        }
+
+        public void setAccess()
+        {
+            btnBeverage.Enabled = loggedStaff.quyen == 1 ? true : false;
+            btnStaff.Enabled = loggedStaff.quyen == 1 ? true : false;
+            btnStatistics.Enabled = loggedStaff.quyen == 1 ? true : false;
+            btnSetting.Enabled = loggedStaff.quyen == 1 ? true : false;
         }
 
         private void btnToggleDrawer_Click(object sender, EventArgs e)
@@ -182,9 +191,15 @@ namespace COFFEE_SHOP_MANAGER
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        private void updateStoreInfo(object sender, FormClosingEventArgs e)
+        {
+            lbNameStore.Text = StoreInfoDAO.getInfo().ten;
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
         {
             SettingFrm settingFrm = new SettingFrm();
+            settingFrm.FormClosing += updateStoreInfo;
             settingFrm.ShowDialog();
         }
     }

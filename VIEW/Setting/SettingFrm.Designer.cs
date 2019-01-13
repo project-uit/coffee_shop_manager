@@ -63,7 +63,7 @@
             this.lbErrorName.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorName.Appearance.Options.UseForeColor = true;
             this.lbErrorName.Location = new System.Drawing.Point(226, 235);
-            this.lbErrorName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbErrorName.Margin = new System.Windows.Forms.Padding(4);
             this.lbErrorName.Name = "lbErrorName";
             this.lbErrorName.Size = new System.Drawing.Size(105, 25);
             this.lbErrorName.TabIndex = 62;
@@ -73,7 +73,7 @@
             // labelControl1
             // 
             this.labelControl1.Location = new System.Drawing.Point(78, 188);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(35, 25);
             this.labelControl1.TabIndex = 61;
@@ -102,7 +102,7 @@
             this.lbErrorAddress.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorAddress.Appearance.Options.UseForeColor = true;
             this.lbErrorAddress.Location = new System.Drawing.Point(226, 323);
-            this.lbErrorAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbErrorAddress.Margin = new System.Windows.Forms.Padding(4);
             this.lbErrorAddress.Name = "lbErrorAddress";
             this.lbErrorAddress.Size = new System.Drawing.Size(125, 25);
             this.lbErrorAddress.TabIndex = 65;
@@ -112,7 +112,7 @@
             // labelControl3
             // 
             this.labelControl3.Location = new System.Drawing.Point(78, 277);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(65, 25);
             this.labelControl3.TabIndex = 64;
@@ -141,7 +141,7 @@
             this.lbErrorPhone.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorPhone.Appearance.Options.UseForeColor = true;
             this.lbErrorPhone.Location = new System.Drawing.Point(226, 412);
-            this.lbErrorPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbErrorPhone.Margin = new System.Windows.Forms.Padding(4);
             this.lbErrorPhone.Name = "lbErrorPhone";
             this.lbErrorPhone.Size = new System.Drawing.Size(111, 25);
             this.lbErrorPhone.TabIndex = 68;
@@ -151,7 +151,7 @@
             // labelControl5
             // 
             this.labelControl5.Location = new System.Drawing.Point(78, 365);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(123, 25);
             this.labelControl5.TabIndex = 67;
@@ -164,7 +164,7 @@
             this.btnSave.Depth = 0;
             this.btnSave.Icon = null;
             this.btnSave.Location = new System.Drawing.Point(644, 460);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
             this.btnSave.Primary = true;
@@ -189,7 +189,9 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbErrorName);
             this.Controls.Add(this.labelControl1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SettingFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cài đặt";

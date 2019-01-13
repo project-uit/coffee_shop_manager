@@ -109,7 +109,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(530, 102);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Số lượng đơn vị \r\nthức uống đã bán";
+            this.label5.Text = "Số lượng ly đã bán";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbcountBeverage

@@ -43,13 +43,12 @@ namespace COFFEE_SHOP_MANAGER
                 FormMain formMain = new FormMain();
                 formMain.loggedStaff = loggedStaff;
                 nv = loggedStaff;
+                formMain.setAccess();
                 formMain.Show();
                 this.Hide();
             }
             else
             {
-                //txtUsername.ForeColor = Color.FromName("RED");
-                //txtPassword.ForeColor = Color.FromName("RED");
                 lbError.Visible = true;
             }
 
