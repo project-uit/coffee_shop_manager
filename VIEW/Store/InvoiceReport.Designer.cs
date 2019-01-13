@@ -63,12 +63,6 @@
             this.sum = new DevExpress.XtraReports.Parameters.Parameter();
             this.discount = new DevExpress.XtraReports.Parameters.Parameter();
             this.total = new DevExpress.XtraReports.Parameters.Parameter();
-            this.name = new DevExpress.XtraReports.Parameters.Parameter();
-            this.address = new DevExpress.XtraReports.Parameters.Parameter();
-            this.phone = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel12 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -398,9 +392,6 @@
             // ReportFooter
             // 
             this.ReportFooter.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrLabel13,
-            this.xrLabel12,
-            this.xrLabel14,
             this.xrLabel11,
             this.xrLabel10,
             this.xrLabel9,
@@ -523,60 +514,6 @@
             this.total.Type = typeof(int);
             this.total.ValueInfo = "0";
             // 
-            // name
-            // 
-            this.name.Description = "Parameter1";
-            this.name.Name = "name";
-            // 
-            // address
-            // 
-            this.address.Description = "Parameter1";
-            this.address.Name = "address";
-            // 
-            // phone
-            // 
-            this.phone.Description = "Parameter1";
-            this.phone.Name = "phone";
-            // 
-            // xrLabel12
-            // 
-            this.xrLabel12.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Parameters].[phone]")});
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(16.75482F, 71.54163F);
-            this.xrLabel12.Multiline = true;
-            this.xrLabel12.Name = "xrLabel12";
-            this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel12.SizeF = new System.Drawing.SizeF(182.2917F, 23F);
-            this.xrLabel12.StylePriority.UseBorders = false;
-            this.xrLabel12.Text = "xrLabel12";
-            // 
-            // xrLabel13
-            // 
-            this.xrLabel13.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel13.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Parameters].[name]")});
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(16.75482F, 48.54161F);
-            this.xrLabel13.Multiline = true;
-            this.xrLabel13.Name = "xrLabel13";
-            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel13.SizeF = new System.Drawing.SizeF(182.2917F, 23F);
-            this.xrLabel13.StylePriority.UseBorders = false;
-            this.xrLabel13.Text = "xrLabel13";
-            // 
-            // xrLabel14
-            // 
-            this.xrLabel14.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel14.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Parameters].[address]")});
-            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(16.75482F, 94.54164F);
-            this.xrLabel14.Multiline = true;
-            this.xrLabel14.Name = "xrLabel14";
-            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel14.SizeF = new System.Drawing.SizeF(182.2917F, 23F);
-            this.xrLabel14.StylePriority.UseBorders = false;
-            this.xrLabel14.Text = "xrLabel14";
-            // 
             // InvoiceReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -596,10 +533,7 @@
             this.staff,
             this.sum,
             this.discount,
-            this.total,
-            this.name,
-            this.address,
-            this.phone});
+            this.total});
             this.Version = "18.1";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
@@ -644,11 +578,5 @@
         private DevExpress.XtraReports.Parameters.Parameter sum;
         private DevExpress.XtraReports.Parameters.Parameter discount;
         private DevExpress.XtraReports.Parameters.Parameter total;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel14;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel13;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel12;
-        private DevExpress.XtraReports.Parameters.Parameter name;
-        private DevExpress.XtraReports.Parameters.Parameter address;
-        private DevExpress.XtraReports.Parameters.Parameter phone;
     }
 }

@@ -16,7 +16,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Store
     public partial class InvoicePrintFrm : DevExpress.XtraEditors.XtraForm
     {
         public List<tblInvoiceDTO> invoice;
-        public String staff, sum, discount, total, name, address, phone;
+        public String staff, sum, discount, total;
 
         public InvoicePrintFrm()
         {
@@ -28,7 +28,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Store
             InvoiceReport invoiceReport = new InvoiceReport();
             foreach (Parameter p in invoiceReport.Parameters)
                 p.Visible = false;
-            invoiceReport.InitData(invoice, staff, sum, discount, total, name, address, phone);
+            invoiceReport.InitData(invoice, staff, sum, discount, total);
             documentViewer1.DocumentSource = invoiceReport;
             invoiceReport.CreateDocument();
         }
