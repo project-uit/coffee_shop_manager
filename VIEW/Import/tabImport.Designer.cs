@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions10 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabImport));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject37 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject38 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject39 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject40 = new DevExpress.Utils.SerializableAppearanceObject();
             this.btnThemNguyenLieu = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnNhapKho = new MaterialSkin.Controls.MaterialRaisedButton();
             this.grdCtrlThemNguyenLieu = new DevExpress.XtraGrid.GridControl();
@@ -47,6 +47,10 @@
             this.btnThemNguyenLieuDaDung = new MaterialSkin.Controls.MaterialRaisedButton();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.txtTimKiem = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.cmbCheckKho = new System.Windows.Forms.ComboBox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.coldinh_luong_toi_da = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coldinh_luong_toi_thieu = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrlThemNguyenLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
@@ -113,12 +117,14 @@
             // 
             // gridView1
             // 
-            this.gridView1.AppearancePrint.EvenRow.Font = new System.Drawing.Font("Tahoma", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView1.AppearancePrint.EvenRow.Font = new System.Drawing.Font("Tahoma", 7.875F);
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.coltennguyenlieu,
             this.coldinhluong,
             this.coltendonvi_dinh_luong,
-            this.edit});
+            this.edit,
+            this.coldinh_luong_toi_da,
+            this.coldinh_luong_toi_thieu});
             this.gridView1.DetailHeight = 234;
             this.gridView1.FixedLineWidth = 1;
             this.gridView1.GridControl = this.grdCtrlThemNguyenLieu;
@@ -134,9 +140,9 @@
             // 
             // coltennguyenlieu
             // 
-            this.coltennguyenlieu.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coltennguyenlieu.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
             this.coltennguyenlieu.AppearanceCell.Options.UseFont = true;
-            this.coltennguyenlieu.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coltennguyenlieu.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.coltennguyenlieu.AppearanceHeader.Options.UseFont = true;
             this.coltennguyenlieu.Caption = "Tên Nguyên Liệu";
             this.coltennguyenlieu.FieldName = "tennguyenlieu";
@@ -144,13 +150,13 @@
             this.coltennguyenlieu.Name = "coltennguyenlieu";
             this.coltennguyenlieu.Visible = true;
             this.coltennguyenlieu.VisibleIndex = 1;
-            this.coltennguyenlieu.Width = 572;
+            this.coltennguyenlieu.Width = 358;
             // 
             // coldinhluong
             // 
-            this.coldinhluong.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinhluong.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
             this.coldinhluong.AppearanceCell.Options.UseFont = true;
-            this.coldinhluong.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinhluong.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.coldinhluong.AppearanceHeader.Options.UseFont = true;
             this.coldinhluong.Caption = "Định Lượng";
             this.coldinhluong.DisplayFormat.FormatString = "{0:n}";
@@ -160,13 +166,13 @@
             this.coldinhluong.Name = "coldinhluong";
             this.coldinhluong.Visible = true;
             this.coldinhluong.VisibleIndex = 2;
-            this.coldinhluong.Width = 399;
+            this.coldinhluong.Width = 267;
             // 
             // coltendonvi_dinh_luong
             // 
-            this.coltendonvi_dinh_luong.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coltendonvi_dinh_luong.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 12F);
             this.coltendonvi_dinh_luong.AppearanceCell.Options.UseFont = true;
-            this.coltendonvi_dinh_luong.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coltendonvi_dinh_luong.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.coltendonvi_dinh_luong.AppearanceHeader.Options.UseFont = true;
             this.coltendonvi_dinh_luong.Caption = "Tên Đơn Vị Định Lượng";
             this.coltendonvi_dinh_luong.FieldName = "tendonvi_dinh_luong";
@@ -174,7 +180,7 @@
             this.coltendonvi_dinh_luong.Name = "coltendonvi_dinh_luong";
             this.coltendonvi_dinh_luong.Visible = true;
             this.coltendonvi_dinh_luong.VisibleIndex = 3;
-            this.coltendonvi_dinh_luong.Width = 371;
+            this.coltendonvi_dinh_luong.Width = 306;
             // 
             // edit
             // 
@@ -182,15 +188,15 @@
             this.edit.MinWidth = 25;
             this.edit.Name = "edit";
             this.edit.Visible = true;
-            this.edit.VisibleIndex = 4;
-            this.edit.Width = 46;
+            this.edit.VisibleIndex = 6;
+            this.edit.Width = 58;
             // 
             // btnEdit
             // 
             this.btnEdit.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions10.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions10.Image")));
             this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions10, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject37, serializableAppearanceObject38, serializableAppearanceObject39, serializableAppearanceObject40, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -217,7 +223,7 @@
             // 
             this.txtTimKiem.Depth = 0;
             this.txtTimKiem.Hint = "Tìm kiếm tên nguyên liệu";
-            this.txtTimKiem.Location = new System.Drawing.Point(15, 16);
+            this.txtTimKiem.Location = new System.Drawing.Point(3, 16);
             this.txtTimKiem.MaxLength = 32767;
             this.txtTimKiem.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTimKiem.Name = "txtTimKiem";
@@ -231,11 +237,70 @@
             this.txtTimKiem.UseSystemPasswordChar = false;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
+            // cmbCheckKho
+            // 
+            this.cmbCheckKho.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCheckKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCheckKho.FormattingEnabled = true;
+            this.cmbCheckKho.Items.AddRange(new object[] {
+            "Tất cả",
+            "Tồn kho",
+            "Vượt định mức",
+            "Sắp hết hàng"});
+            this.cmbCheckKho.Location = new System.Drawing.Point(649, 22);
+            this.cmbCheckKho.Name = "cmbCheckKho";
+            this.cmbCheckKho.Size = new System.Drawing.Size(221, 28);
+            this.cmbCheckKho.TabIndex = 14;
+            this.cmbCheckKho.SelectedIndexChanged += new System.EventHandler(this.cmbCheckKho_SelectedIndexChanged);
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(565, 20);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(78, 24);
+            this.materialLabel1.TabIndex = 15;
+            this.materialLabel1.Text = "Tồn kho";
+            // 
+            // coldinh_luong_toi_da
+            // 
+            this.coldinh_luong_toi_da.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinh_luong_toi_da.AppearanceCell.Options.UseFont = true;
+            this.coldinh_luong_toi_da.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinh_luong_toi_da.AppearanceHeader.Options.UseFont = true;
+            this.coldinh_luong_toi_da.Caption = "Định lượng tối đa";
+            this.coldinh_luong_toi_da.FieldName = "dinh_luong_toi_da";
+            this.coldinh_luong_toi_da.MinWidth = 25;
+            this.coldinh_luong_toi_da.Name = "coldinh_luong_toi_da";
+            this.coldinh_luong_toi_da.Visible = true;
+            this.coldinh_luong_toi_da.VisibleIndex = 4;
+            this.coldinh_luong_toi_da.Width = 274;
+            // 
+            // coldinh_luong_toi_thieu
+            // 
+            this.coldinh_luong_toi_thieu.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinh_luong_toi_thieu.AppearanceCell.Options.UseFont = true;
+            this.coldinh_luong_toi_thieu.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinh_luong_toi_thieu.AppearanceHeader.Options.UseFont = true;
+            this.coldinh_luong_toi_thieu.Caption = "Định lượng tối thiểu";
+            this.coldinh_luong_toi_thieu.FieldName = "dinh_luong_toi_thieu";
+            this.coldinh_luong_toi_thieu.MinWidth = 25;
+            this.coldinh_luong_toi_thieu.Name = "coldinh_luong_toi_thieu";
+            this.coldinh_luong_toi_thieu.Visible = true;
+            this.coldinh_luong_toi_thieu.VisibleIndex = 5;
+            this.coldinh_luong_toi_thieu.Width = 244;
+            // 
             // tabImport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.materialLabel1);
+            this.Controls.Add(this.cmbCheckKho);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnThemNguyenLieuDaDung);
             this.Controls.Add(this.grdCtrlThemNguyenLieu);
@@ -269,5 +334,9 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnThemNguyenLieuDaDung;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtTimKiem;
+        private System.Windows.Forms.ComboBox cmbCheckKho;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private DevExpress.XtraGrid.Columns.GridColumn coldinh_luong_toi_da;
+        private DevExpress.XtraGrid.Columns.GridColumn coldinh_luong_toi_thieu;
     }
 }

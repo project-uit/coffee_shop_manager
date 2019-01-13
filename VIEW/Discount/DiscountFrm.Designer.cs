@@ -50,7 +50,6 @@
             this.lbErrorGiamGia = new System.Windows.Forms.Label();
             this.lbErrorDate = new System.Windows.Forms.Label();
             this.lbErrorNgayKetThuc = new System.Windows.Forms.Label();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.btnLuu = new MaterialSkin.Controls.MaterialFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties)).BeginInit();
@@ -282,22 +281,6 @@
             this.lbErrorNgayKetThuc.Text = "label4";
             this.lbErrorNgayKetThuc.Visible = false;
             // 
-            // materialFlatButton1
-            // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(-19, -19);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(222, 36);
-            this.materialFlatButton1.TabIndex = 13;
-            this.materialFlatButton1.Text = "materialFlatButton1";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
-            // 
             // btnLuu
             // 
             this.btnLuu.AutoSize = true;
@@ -321,7 +304,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(927, 497);
             this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.lbErrorNgayKetThuc);
             this.Controls.Add(this.lbErrorDate);
             this.Controls.Add(this.lbErrorGiamGia);
@@ -368,7 +350,6 @@
         private System.Windows.Forms.Label lbErrorGiamGia;
         private System.Windows.Forms.Label lbErrorDate;
         private System.Windows.Forms.Label lbErrorNgayKetThuc;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
         private MaterialSkin.Controls.MaterialFlatButton btnLuu;
     }
 }

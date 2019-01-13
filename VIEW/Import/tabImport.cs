@@ -47,8 +47,8 @@ namespace COFFEE_SHOP_MANAGER
 
         private void tabImport_Load(object sender, EventArgs e)
         {
-            loadtable();
-
+            //loadtable();
+            cmbCheckKho.SelectedIndex = 0;
         }
 
         private void ThemNguyenLieuFrm_FormClosing(object sender, FormClosingEventArgs e)
@@ -65,9 +65,6 @@ namespace COFFEE_SHOP_MANAGER
         {
             list = ThemNguyenLieuDAO.getList();
             grdCtrlThemNguyenLieu.DataSource = list;
-           
-
-
             // khonguyenlieu.dinhluong += chitietnhapkho.dinhluong;
             // ThemNguyenLieuDAO.update(khonguyenlieu);
 
@@ -160,5 +157,32 @@ namespace COFFEE_SHOP_MANAGER
 
         }
 
+        private void cmbCheckKho_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+            int index = cmbCheckKho.SelectedIndex;
+            list = ThemNguyenLieuDAO.getList();
+            switch (index)
+            {
+                case 0:
+                    loadtable();
+                    break;
+                case 1:
+                    list = list.Where(x => x.dinhluong >= x.dinh_luong_toi_thieu && x.dinhluong <= x.dinh_luong_toi_da).ToList();
+                    grdCtrlThemNguyenLieu.DataSource = list;
+                    break;
+                case 2:
+                    list = list.Where(x => x.dinhluong > x.dinh_luong_toi_da).ToList();
+                    grdCtrlThemNguyenLieu.DataSource = list;
+                    break;
+                case 3:
+                    list = list.Where(x => x.dinhluong <= x.dinh_luong_toi_thieu).ToList();
+                    grdCtrlThemNguyenLieu.DataSource = list;
+                    break;
+                default:
+                    break;
+
+            }
+        }
     }
 }

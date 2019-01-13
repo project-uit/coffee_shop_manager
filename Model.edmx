@@ -81,6 +81,8 @@
           <Property Name="tendonvi_dinh_luong" Type="char" MaxLength="8" />
           <Property Name="dinhluong" Type="float" />
           <Property Name="xoa_flag" Type="bit" />
+          <Property Name="dinh_luong_toi_da" Type="float" />
+          <Property Name="dinh_luong_toi_thieu" Type="float" />
         </EntityType>
         <EntityType Name="nguyenlieudadung">
           <Key>
@@ -397,6 +399,8 @@
           <NavigationProperty Name="chitietcongthucs" Relationship="Self.FK__chitietco__idkho__33D4B598" FromRole="khonguyenlieu" ToRole="chitietcongthuc" />
           <NavigationProperty Name="chitietnguyenlieudadungs" Relationship="Self.FK__chitietng__idkho__2F10007B" FromRole="khonguyenlieu" ToRole="chitietnguyenlieudadung" />
           <NavigationProperty Name="chitietnhapkhoes" Relationship="Self.FK__chitietnh__idkho__3C69FB99" FromRole="khonguyenlieu" ToRole="chitietnhapkho" />
+          <Property Name="dinh_luong_toi_da" Type="Double" />
+          <Property Name="dinh_luong_toi_thieu" Type="Double" />
         </EntityType>
         <EntityType Name="nguyenlieudadung">
           <Key>
@@ -720,6 +724,8 @@
           <EntitySetMapping Name="khonguyenlieux">
             <EntityTypeMapping TypeName="quanlycafeModel.khonguyenlieu">
               <MappingFragment StoreEntitySet="khonguyenlieu">
+                <ScalarProperty Name="dinh_luong_toi_thieu" ColumnName="dinh_luong_toi_thieu" />
+                <ScalarProperty Name="dinh_luong_toi_da" ColumnName="dinh_luong_toi_da" />
                 <ScalarProperty Name="idkhonguyenlieu" ColumnName="idkhonguyenlieu" />
                 <ScalarProperty Name="tennguyenlieu" ColumnName="tennguyenlieu" />
                 <ScalarProperty Name="tendonvi_dinh_luong" ColumnName="tendonvi_dinh_luong" />

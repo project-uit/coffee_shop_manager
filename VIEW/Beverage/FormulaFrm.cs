@@ -85,6 +85,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                 if (FormulaDAO.insert(chitietcongthuc))
                 {
                     XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtDinhLuong.Clear();
                     loadtable();
                 }
                 else

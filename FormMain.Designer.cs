@@ -129,7 +129,7 @@
             this.btnSetting.IconVisible = true;
             this.btnSetting.IconZoom = 50D;
             this.btnSetting.IsTab = true;
-            this.btnSetting.Location = new System.Drawing.Point(0, 531);
+            this.btnSetting.Location = new System.Drawing.Point(0, 514);
             this.btnSetting.Margin = new System.Windows.Forms.Padding(6);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Normalcolor = System.Drawing.Color.Transparent;
@@ -167,7 +167,7 @@
             this.btnExit.IconVisible = true;
             this.btnExit.IconZoom = 50D;
             this.btnExit.IsTab = true;
-            this.btnExit.Location = new System.Drawing.Point(2, 667);
+            this.btnExit.Location = new System.Drawing.Point(0, 614);
             this.btnExit.Margin = new System.Windows.Forms.Padding(6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.Transparent;
@@ -220,7 +220,7 @@
             this.btnLogout.IconVisible = true;
             this.btnLogout.IconZoom = 50D;
             this.btnLogout.IsTab = true;
-            this.btnLogout.Location = new System.Drawing.Point(0, 600);
+            this.btnLogout.Location = new System.Drawing.Point(0, 563);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Normalcolor = System.Drawing.Color.Transparent;

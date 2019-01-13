@@ -62,6 +62,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
                 if (GroupBeverageDAO.insert(nhomthucuong))
                 {
                     loadTable();
+                    txtTenThucUong.Clear();
                     XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else

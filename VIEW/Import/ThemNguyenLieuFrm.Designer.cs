@@ -41,6 +41,12 @@
             this.btnHuy = new MaterialSkin.Controls.MaterialFlatButton();
             this.txtDinhLuong = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtTenNguyenLieu = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtDinhLuongMin = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtDinhLuongMax = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.SuspendLayout();
             // 
             // materialLabel1
@@ -50,7 +56,7 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(519, 100);
+            this.materialLabel1.Location = new System.Drawing.Point(462, 96);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(197, 24);
@@ -88,16 +94,17 @@
             // cbTenDonViDinhLuong
             // 
             this.cbTenDonViDinhLuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbTenDonViDinhLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTenDonViDinhLuong.FormattingEnabled = true;
-            this.cbTenDonViDinhLuong.ItemHeight = 16;
+            this.cbTenDonViDinhLuong.ItemHeight = 20;
             this.cbTenDonViDinhLuong.Items.AddRange(new object[] {
             "gam",
             "mililit",
             "lit",
             "kilogam"});
-            this.cbTenDonViDinhLuong.Location = new System.Drawing.Point(524, 136);
+            this.cbTenDonViDinhLuong.Location = new System.Drawing.Point(467, 132);
             this.cbTenDonViDinhLuong.Name = "cbTenDonViDinhLuong";
-            this.cbTenDonViDinhLuong.Size = new System.Drawing.Size(223, 24);
+            this.cbTenDonViDinhLuong.Size = new System.Drawing.Size(223, 28);
             this.cbTenDonViDinhLuong.TabIndex = 6;
             this.cbTenDonViDinhLuong.SelectedIndexChanged += new System.EventHandler(this.cbTenDonViDinhLuong_SelectedIndexChanged);
             this.cbTenDonViDinhLuong.Click += new System.EventHandler(this.cbTenDonViDinhLuong_Click);
@@ -109,7 +116,7 @@
             this.btnLuu.Depth = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Icon = null;
-            this.btnLuu.Location = new System.Drawing.Point(323, 308);
+            this.btnLuu.Location = new System.Drawing.Point(136, 324);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";
@@ -173,7 +180,7 @@
             this.labelTenDonViDinhLuong.AutoSize = true;
             this.labelTenDonViDinhLuong.BackColor = System.Drawing.Color.White;
             this.labelTenDonViDinhLuong.ForeColor = System.Drawing.Color.Red;
-            this.labelTenDonViDinhLuong.Location = new System.Drawing.Point(520, 159);
+            this.labelTenDonViDinhLuong.Location = new System.Drawing.Point(463, 166);
             this.labelTenDonViDinhLuong.Name = "labelTenDonViDinhLuong";
             this.labelTenDonViDinhLuong.Size = new System.Drawing.Size(217, 17);
             this.labelTenDonViDinhLuong.TabIndex = 13;
@@ -186,7 +193,7 @@
             this.btnHuy.Depth = 0;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHuy.Icon = null;
-            this.btnHuy.Location = new System.Drawing.Point(412, 308);
+            this.btnHuy.Location = new System.Drawing.Point(225, 324);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnHuy.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuy.Name = "btnHuy";
@@ -209,7 +216,7 @@
             this.txtDinhLuong.SelectedText = "";
             this.txtDinhLuong.SelectionLength = 0;
             this.txtDinhLuong.SelectionStart = 0;
-            this.txtDinhLuong.Size = new System.Drawing.Size(341, 28);
+            this.txtDinhLuong.Size = new System.Drawing.Size(250, 28);
             this.txtDinhLuong.TabIndex = 15;
             this.txtDinhLuong.TabStop = false;
             this.txtDinhLuong.UseSystemPasswordChar = false;
@@ -234,11 +241,107 @@
             this.txtTenNguyenLieu.UseSystemPasswordChar = false;
             this.txtTenNguyenLieu.Click += new System.EventHandler(this.txtTenNguyenLieu_Click);
             // 
+            // txtDinhLuongMin
+            // 
+            this.txtDinhLuongMin.Depth = 0;
+            this.txtDinhLuongMin.Hint = "";
+            this.txtDinhLuongMin.Location = new System.Drawing.Point(466, 229);
+            this.txtDinhLuongMin.MaxLength = 32767;
+            this.txtDinhLuongMin.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtDinhLuongMin.Name = "txtDinhLuongMin";
+            this.txtDinhLuongMin.PasswordChar = '\0';
+            this.txtDinhLuongMin.SelectedText = "";
+            this.txtDinhLuongMin.SelectionLength = 0;
+            this.txtDinhLuongMin.SelectionStart = 0;
+            this.txtDinhLuongMin.Size = new System.Drawing.Size(187, 28);
+            this.txtDinhLuongMin.TabIndex = 17;
+            this.txtDinhLuongMin.TabStop = false;
+            this.txtDinhLuongMin.UseSystemPasswordChar = false;
+            this.txtDinhLuongMin.Click += new System.EventHandler(this.txtDinhLuongMin_Click);
+            this.txtDinhLuongMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDinhLuongMin_KeyPress);
+            // 
+            // txtDinhLuongMax
+            // 
+            this.txtDinhLuongMax.Depth = 0;
+            this.txtDinhLuongMax.Hint = "";
+            this.txtDinhLuongMax.Location = new System.Drawing.Point(466, 324);
+            this.txtDinhLuongMax.MaxLength = 32767;
+            this.txtDinhLuongMax.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtDinhLuongMax.Name = "txtDinhLuongMax";
+            this.txtDinhLuongMax.PasswordChar = '\0';
+            this.txtDinhLuongMax.SelectedText = "";
+            this.txtDinhLuongMax.SelectionLength = 0;
+            this.txtDinhLuongMax.SelectionStart = 0;
+            this.txtDinhLuongMax.Size = new System.Drawing.Size(187, 28);
+            this.txtDinhLuongMax.TabIndex = 18;
+            this.txtDinhLuongMax.TabStop = false;
+            this.txtDinhLuongMax.UseSystemPasswordChar = false;
+            this.txtDinhLuongMax.Click += new System.EventHandler(this.txtDinhLuongMax_Click);
+            this.txtDinhLuongMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDinhLuongMax_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(463, 260);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(270, 17);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "*Định lượng tối thiểu không được để trống";
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(463, 358);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(255, 17);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "*Định lượng tối đa không được để trống";
+            this.label2.Visible = false;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.BackColor = System.Drawing.Color.White;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel4.Location = new System.Drawing.Point(463, 200);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(165, 24);
+            this.materialLabel4.TabIndex = 21;
+            this.materialLabel4.Text = "Định mức tối thiểu";
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.BackColor = System.Drawing.Color.White;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel5.Location = new System.Drawing.Point(463, 297);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(145, 24);
+            this.materialLabel5.TabIndex = 22;
+            this.materialLabel5.Text = "Định mức tối đa";
+            // 
             // ThemNguyenLieuFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 369);
+            this.ClientSize = new System.Drawing.Size(735, 398);
+            this.Controls.Add(this.materialLabel5);
+            this.Controls.Add(this.materialLabel4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtDinhLuongMax);
+            this.Controls.Add(this.txtDinhLuongMin);
             this.Controls.Add(this.txtTenNguyenLieu);
             this.Controls.Add(this.txtDinhLuong);
             this.Controls.Add(this.btnHuy);
@@ -275,5 +378,11 @@
         private MaterialSkin.Controls.MaterialFlatButton btnHuy;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtDinhLuong;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtTenNguyenLieu;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtDinhLuongMin;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtDinhLuongMax;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
     }
 }

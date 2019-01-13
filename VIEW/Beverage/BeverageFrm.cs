@@ -96,7 +96,10 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Beverage
             thucuong.id_nhomthucuong = Int32.Parse(cbbNhomThucUong.SelectedValue.ToString());
             if (BeverageDAO.insert(thucuong))
             {
+
                 XtraMessageBox.Show("Lưu thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtGiaBan.Clear();
+                txtTenThucUong.Clear();
             }
             else
             {

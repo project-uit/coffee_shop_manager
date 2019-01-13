@@ -27,6 +27,8 @@ namespace COFFEE_SHOP_MANAGER
         public string tendonvi_dinh_luong { get; set; }
         public Nullable<double> dinhluong { get; set; }
         public Nullable<bool> xoa_flag { get; set; }
+        public Nullable<double> dinh_luong_toi_da { get; set; }
+        public Nullable<double> dinh_luong_toi_thieu { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<chitietcongthuc> chitietcongthucs { get; set; }

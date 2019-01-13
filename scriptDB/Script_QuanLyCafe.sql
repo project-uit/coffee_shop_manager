@@ -24,15 +24,23 @@ ngaybatdau date,
 ngayketthuc date
 );
 
-///////////////////////////////////////////////////////////////
-
 create table khonguyenlieu(
 	idkhonguyenlieu int IDENTITY(1,1) PRIMARY KEY,
 	tennguyenlieu nvarchar(50),
 	tendonvi_dinh_luong char(8),
 	dinhluong float, 
-        xoa_flag bit
+	dinh_luong_toi_da float,
+	dinh_luong_toi_thieu float,
+    xoa_flag bit
 );
+
+/* script dành cho ai đã có table khonguyenlieu va chi them 2 cot nay*/
+
+/* alter table khonguyenlieu
+add dinh_luong_toi_da float;
+
+alter table khonguyenlieu
+add dinh_luong_toi_thieu float; */
 
 create table nguyenlieudadung(
 	idnguyenlieudadung int IDENTITY(1,1) PRIMARY KEY,

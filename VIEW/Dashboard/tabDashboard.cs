@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using COFFEE_SHOP_MANAGER.DAO;
 using System.Globalization;
 using DevExpress.XtraCharts;
+using DevExpress.Utils;
 
 namespace COFFEE_SHOP_MANAGER
 {
@@ -29,10 +30,10 @@ namespace COFFEE_SHOP_MANAGER
             LoadData();
 
             ((XYDiagram)chart.Diagram).AxisX.Title.Text = "Nhóm thức uống";
-            ((XYDiagram)chart.Diagram).AxisX.Title.Visible = true;
+            ((XYDiagram)chart.Diagram).AxisX.Title.Visibility = DefaultBoolean.True;
 
             ((XYDiagram)chart.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
-            ((XYDiagram)chart.Diagram).AxisY.Title.Visible = true;
+            ((XYDiagram)chart.Diagram).AxisY.Title.Visibility = DefaultBoolean.True;
         }
 
         public void LoadData()

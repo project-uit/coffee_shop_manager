@@ -13,6 +13,7 @@ using COFFEE_SHOP_MANAGER.DTO;
 using COFFEE_SHOP_MANAGER.VIEW.Statistics;
 using Series = DevExpress.XtraCharts.Series;
 using System.IO;
+using DevExpress.Utils;
 
 namespace COFFEE_SHOP_MANAGER
 {
@@ -35,10 +36,10 @@ namespace COFFEE_SHOP_MANAGER
             ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.AutoGrid = false;
             ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.GridSpacing = 1;
             ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Text = "Tháng";
-            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Visible = true;
+            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Visibility = DefaultBoolean.True;
 
             ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
-            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Visible = true;
+            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Visibility = DefaultBoolean.True;
         }
 
         private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
