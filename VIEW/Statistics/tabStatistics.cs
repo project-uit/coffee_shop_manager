@@ -14,6 +14,7 @@ using COFFEE_SHOP_MANAGER.VIEW.Statistics;
 using Series = DevExpress.XtraCharts.Series;
 using System.IO;
 using DevExpress.Utils;
+using DevExpress.XtraEditors;
 
 namespace COFFEE_SHOP_MANAGER
 {
@@ -73,8 +74,13 @@ namespace COFFEE_SHOP_MANAGER
 
         private void createChartPie()
         {
-            String year = cmbYearTabBeverage.SelectedItem.ToString();
-            String month = "1";
+            String year = DateTime.Now.Year.ToString();
+            if (cmbYearTabBeverage.SelectedItem != null)
+            {
+                year = cmbYearTabBeverage.SelectedItem.ToString();
+            }
+
+            String month = DateTime.Now.Month.ToString();
             if (cmbMonthTabBeverage.SelectedItem != null)
             {
                 month = cmbMonthTabBeverage.SelectedItem.ToString();
@@ -126,7 +132,14 @@ namespace COFFEE_SHOP_MANAGER
         private void btnPrintRevenue_Click(object sender, EventArgs e)
         {
             List<hoadon> invoices = new List<hoadon>();
-            String year = cmbYear.SelectedItem.ToString();
+            String year = "";
+            if (cmbYear.SelectedItem !=null)
+                year = cmbYear.SelectedItem.ToString();
+            else
+            {
+                XtraMessageBox.Show(this, "Không có dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             invoices = StatictisDAO.getInvoicesByYear(year);
 
             List<RevenueReportDTO> revenues = new List<RevenueReportDTO>();
@@ -145,8 +158,16 @@ namespace COFFEE_SHOP_MANAGER
 
         private void btnPrintBeverageRevenue_Click(object sender, EventArgs e)
         {
-            String year = cmbYearTabBeverage.SelectedItem.ToString();
-            String month = "1";
+            String year = "";
+            if (cmbYearTabBeverage.SelectedItem != null)
+                year = cmbYearTabBeverage.SelectedItem.ToString();
+            else
+            {
+                XtraMessageBox.Show(this, "Không có dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            String month = "";
             if (cmbMonthTabBeverage.SelectedItem != null)
             {
                 month = cmbMonthTabBeverage.SelectedItem.ToString();

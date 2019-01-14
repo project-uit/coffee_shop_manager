@@ -256,9 +256,9 @@
             this.bunifuTransition1.SetDecoration(this.lbNameStore, BunifuAnimatorNS.DecorationType.None);
             this.lbNameStore.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbNameStore.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbNameStore.Location = new System.Drawing.Point(28, 135);
+            this.lbNameStore.Location = new System.Drawing.Point(69, 146);
             this.lbNameStore.Name = "lbNameStore";
-            this.lbNameStore.Size = new System.Drawing.Size(111, 28);
+            this.lbNameStore.Size = new System.Drawing.Size(90, 21);
             this.lbNameStore.TabIndex = 1;
             this.lbNameStore.Text = "Cafe Brand";
             // 
@@ -545,7 +545,7 @@
             this.lbTabName.ForeColor = System.Drawing.Color.White;
             this.lbTabName.Location = new System.Drawing.Point(14, 22);
             this.lbTabName.Name = "lbTabName";
-            this.lbTabName.Size = new System.Drawing.Size(124, 25);
+            this.lbTabName.Size = new System.Drawing.Size(98, 20);
             this.lbTabName.TabIndex = 0;
             this.lbTabName.Text = "TỔNG QUAN";
             // 

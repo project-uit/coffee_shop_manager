@@ -58,6 +58,8 @@ namespace COFFEE_SHOP_MANAGER
 
         private void btnToggleDrawer_Click(object sender, EventArgs e)
         {
+            lbNameStore.Visible = !lbNameStore.Visible;
+
             DrawerOpen = !DrawerOpen;
             pnlDrawer.Visible = false;
 

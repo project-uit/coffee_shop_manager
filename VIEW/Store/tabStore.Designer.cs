@@ -148,16 +148,14 @@
             this.gcInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gcInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.gcInvoice.Enabled = false;
-            this.gcInvoice.Location = new System.Drawing.Point(54, 537);
+            this.gcInvoice.Location = new System.Drawing.Point(27, 279);
             this.gcInvoice.MainView = this.gridView1;
-            this.gcInvoice.Margin = new System.Windows.Forms.Padding(6);
             this.gcInvoice.Name = "gcInvoice";
             this.gcInvoice.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnDelete,
             this.txtsoluong});
-            this.gcInvoice.Size = new System.Drawing.Size(1864, 269);
+            this.gcInvoice.Size = new System.Drawing.Size(932, 140);
             this.gcInvoice.TabIndex = 6;
             this.gcInvoice.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -171,8 +169,6 @@
             this.gridColumn8,
             this.gridColumn9,
             this.gridColumn10});
-            this.gridView1.DetailHeight = 673;
-            this.gridView1.FixedLineWidth = 4;
             this.gridView1.GridControl = this.gcInvoice;
             this.gridView1.LevelIndent = 0;
             this.gridView1.Name = "gridView1";
@@ -193,12 +189,11 @@
             this.gridColumn5.AppearanceHeader.Options.UseFont = true;
             this.gridColumn5.Caption = "Tên thức uống";
             this.gridColumn5.FieldName = "tenthucuong";
-            this.gridColumn5.MinWidth = 40;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.OptionsColumn.AllowEdit = false;
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 0;
-            this.gridColumn5.Width = 258;
+            this.gridColumn5.Width = 129;
             // 
             // gridColumn6
             // 
@@ -208,12 +203,11 @@
             this.gridColumn6.AppearanceHeader.Options.UseFont = true;
             this.gridColumn6.Caption = "Nhóm thức uống";
             this.gridColumn6.FieldName = "nhomthucuong";
-            this.gridColumn6.MinWidth = 40;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.OptionsColumn.AllowEdit = false;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 1;
-            this.gridColumn6.Width = 574;
+            this.gridColumn6.Width = 287;
             // 
             // gridColumn7
             // 
@@ -225,12 +219,11 @@
             this.gridColumn7.DisplayFormat.FormatString = "{0:C3}";
             this.gridColumn7.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.gridColumn7.FieldName = "giaban";
-            this.gridColumn7.MinWidth = 40;
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.OptionsColumn.AllowEdit = false;
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 2;
-            this.gridColumn7.Width = 258;
+            this.gridColumn7.Width = 129;
             // 
             // gridColumn8
             // 
@@ -241,11 +234,10 @@
             this.gridColumn8.Caption = "Số lượng";
             this.gridColumn8.ColumnEdit = this.txtsoluong;
             this.gridColumn8.FieldName = "soluong";
-            this.gridColumn8.MinWidth = 40;
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 3;
-            this.gridColumn8.Width = 258;
+            this.gridColumn8.Width = 129;
             // 
             // txtsoluong
             // 
@@ -267,21 +259,19 @@
             this.gridColumn9.DisplayFormat.FormatString = "{0:C3}";
             this.gridColumn9.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.gridColumn9.FieldName = "thanhtien";
-            this.gridColumn9.MinWidth = 40;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.OptionsColumn.AllowEdit = false;
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 4;
-            this.gridColumn9.Width = 258;
+            this.gridColumn9.Width = 129;
             // 
             // gridColumn10
             // 
             this.gridColumn10.ColumnEdit = this.btnDelete;
-            this.gridColumn10.MinWidth = 40;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 5;
-            this.gridColumn10.Width = 100;
+            this.gridColumn10.Width = 50;
             // 
             // btnDelete
             // 
@@ -300,11 +290,11 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(46, 467);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel1.Location = new System.Drawing.Point(23, 243);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(328, 37);
+            this.materialLabel1.Size = new System.Drawing.Size(164, 19);
             this.materialLabel1.TabIndex = 0;
             this.materialLabel1.Text = "Thức uống đã thêm";
             // 
@@ -345,15 +335,13 @@
             this.grdCtrlThucUong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrlThucUong.DataSource = typeof(COFFEE_SHOP_MANAGER.thucuong);
-            this.grdCtrlThucUong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.grdCtrlThucUong.Enabled = false;
-            this.grdCtrlThucUong.Location = new System.Drawing.Point(54, 163);
+            this.grdCtrlThucUong.Location = new System.Drawing.Point(27, 85);
             this.grdCtrlThucUong.MainView = this.grdViThucUong;
-            this.grdCtrlThucUong.Margin = new System.Windows.Forms.Padding(6);
             this.grdCtrlThucUong.Name = "grdCtrlThucUong";
             this.grdCtrlThucUong.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnAddThucUong});
-            this.grdCtrlThucUong.Size = new System.Drawing.Size(1864, 271);
+            this.grdCtrlThucUong.Size = new System.Drawing.Size(932, 141);
             this.grdCtrlThucUong.TabIndex = 8;
             this.grdCtrlThucUong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdViThucUong});
@@ -366,8 +354,6 @@
             this.colgiaban,
             this.colnhomthucuong,
             this.col_btnAdd});
-            this.grdViThucUong.DetailHeight = 673;
-            this.grdViThucUong.FixedLineWidth = 4;
             this.grdViThucUong.GridControl = this.grdCtrlThucUong;
             this.grdViThucUong.LevelIndent = 0;
             this.grdViThucUong.Name = "grdViThucUong";
@@ -388,11 +374,9 @@
             this.colid_thucuong.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colid_thucuong.AppearanceHeader.Options.UseFont = true;
             this.colid_thucuong.FieldName = "id_thucuong";
-            this.colid_thucuong.MinWidth = 40;
             this.colid_thucuong.Name = "colid_thucuong";
             this.colid_thucuong.OptionsColumn.AllowEdit = false;
             this.colid_thucuong.OptionsColumn.ReadOnly = true;
-            this.colid_thucuong.Width = 150;
             // 
             // coltenthucuong
             // 
@@ -402,13 +386,12 @@
             this.coltenthucuong.AppearanceHeader.Options.UseFont = true;
             this.coltenthucuong.Caption = "Tên thức uống";
             this.coltenthucuong.FieldName = "tenthucuong";
-            this.coltenthucuong.MinWidth = 40;
             this.coltenthucuong.Name = "coltenthucuong";
             this.coltenthucuong.OptionsColumn.AllowEdit = false;
             this.coltenthucuong.OptionsColumn.ReadOnly = true;
             this.coltenthucuong.Visible = true;
             this.coltenthucuong.VisibleIndex = 0;
-            this.coltenthucuong.Width = 376;
+            this.coltenthucuong.Width = 188;
             // 
             // colgiaban
             // 
@@ -420,13 +403,12 @@
             this.colgiaban.DisplayFormat.FormatString = "{0:C3}";
             this.colgiaban.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.colgiaban.FieldName = "giaban";
-            this.colgiaban.MinWidth = 40;
             this.colgiaban.Name = "colgiaban";
             this.colgiaban.OptionsColumn.AllowEdit = false;
             this.colgiaban.OptionsColumn.ReadOnly = true;
             this.colgiaban.Visible = true;
             this.colgiaban.VisibleIndex = 2;
-            this.colgiaban.Width = 360;
+            this.colgiaban.Width = 180;
             // 
             // colnhomthucuong
             // 
@@ -436,22 +418,21 @@
             this.colnhomthucuong.AppearanceHeader.Options.UseFont = true;
             this.colnhomthucuong.Caption = "Nhóm thức uống";
             this.colnhomthucuong.FieldName = "nhomthucuong.tennhomthucuong";
-            this.colnhomthucuong.MinWidth = 40;
             this.colnhomthucuong.Name = "colnhomthucuong";
             this.colnhomthucuong.OptionsColumn.AllowEdit = false;
             this.colnhomthucuong.OptionsColumn.ReadOnly = true;
             this.colnhomthucuong.Visible = true;
             this.colnhomthucuong.VisibleIndex = 1;
-            this.colnhomthucuong.Width = 1012;
+            this.colnhomthucuong.Width = 506;
             // 
             // col_btnAdd
             // 
             this.col_btnAdd.ColumnEdit = this.btnAddThucUong;
-            this.col_btnAdd.MinWidth = 36;
+            this.col_btnAdd.MinWidth = 18;
             this.col_btnAdd.Name = "col_btnAdd";
             this.col_btnAdd.Visible = true;
             this.col_btnAdd.VisibleIndex = 3;
-            this.col_btnAdd.Width = 100;
+            this.col_btnAdd.Width = 50;
             // 
             // btnAddThucUong
             // 
@@ -473,12 +454,12 @@
             this.btnSave.Depth = 0;
             this.btnSave.Enabled = false;
             this.btnSave.Icon = null;
-            this.btnSave.Location = new System.Drawing.Point(1517, 1068);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(759, 538);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
             this.btnSave.Primary = true;
-            this.btnSave.Size = new System.Drawing.Size(203, 36);
+            this.btnSave.Size = new System.Drawing.Size(110, 36);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Lập hóa đơn";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -487,10 +468,10 @@
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Location = new System.Drawing.Point(1592, 50);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Location = new System.Drawing.Point(796, 26);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(322, 33);
+            this.txtSearch.Size = new System.Drawing.Size(163, 21);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_OnTextChange);
             // 
@@ -500,11 +481,11 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(1358, 54);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(679, 28);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(226, 37);
+            this.materialLabel2.Size = new System.Drawing.Size(113, 19);
             this.materialLabel2.TabIndex = 12;
             this.materialLabel2.Text = "Tìm thức uống";
             // 
@@ -514,12 +495,12 @@
             this.btnCreate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnCreate.Depth = 0;
             this.btnCreate.Icon = null;
-            this.btnCreate.Location = new System.Drawing.Point(54, 46);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreate.Location = new System.Drawing.Point(27, 24);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCreate.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Primary = true;
-            this.btnCreate.Size = new System.Drawing.Size(137, 36);
+            this.btnCreate.Size = new System.Drawing.Size(77, 36);
             this.btnCreate.TabIndex = 13;
             this.btnCreate.Text = "Tạo mới";
             this.btnCreate.UseVisualStyleBackColor = true;
@@ -531,11 +512,11 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(1510, 960);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel3.Location = new System.Drawing.Point(755, 499);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(174, 37);
+            this.materialLabel3.Size = new System.Drawing.Size(87, 19);
             this.materialLabel3.TabIndex = 14;
             this.materialLabel3.Text = "Thành tiền";
             // 
@@ -545,11 +526,11 @@
             this.lbTotal.Depth = 0;
             this.lbTotal.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbTotal.Location = new System.Drawing.Point(1690, 960);
-            this.lbTotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTotal.Location = new System.Drawing.Point(845, 499);
+            this.lbTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTotal.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbTotal.Name = "lbTotal";
-            this.lbTotal.Size = new System.Drawing.Size(154, 37);
+            this.lbTotal.Size = new System.Drawing.Size(77, 19);
             this.lbTotal.TabIndex = 15;
             this.lbTotal.Text = "0";
             // 
@@ -559,11 +540,11 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(1510, 902);
-            this.materialLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel4.Location = new System.Drawing.Point(755, 469);
+            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(136, 37);
+            this.materialLabel4.Size = new System.Drawing.Size(68, 19);
             this.materialLabel4.TabIndex = 16;
             this.materialLabel4.Text = "Giảm giá";
             // 
@@ -573,11 +554,11 @@
             this.lbDiscount.Depth = 0;
             this.lbDiscount.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbDiscount.Location = new System.Drawing.Point(1690, 902);
-            this.lbDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDiscount.Location = new System.Drawing.Point(845, 469);
+            this.lbDiscount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDiscount.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbDiscount.Name = "lbDiscount";
-            this.lbDiscount.Size = new System.Drawing.Size(154, 37);
+            this.lbDiscount.Size = new System.Drawing.Size(77, 19);
             this.lbDiscount.TabIndex = 17;
             this.lbDiscount.Text = "0%";
             // 
@@ -587,11 +568,11 @@
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(1512, 846);
-            this.materialLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel6.Location = new System.Drawing.Point(756, 440);
+            this.materialLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(92, 37);
+            this.materialLabel6.Size = new System.Drawing.Size(46, 19);
             this.materialLabel6.TabIndex = 18;
             this.materialLabel6.Text = "Tổng";
             // 
@@ -601,11 +582,11 @@
             this.lbSum.Depth = 0;
             this.lbSum.Font = new System.Drawing.Font("Roboto", 11F);
             this.lbSum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbSum.Location = new System.Drawing.Point(1690, 846);
-            this.lbSum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSum.Location = new System.Drawing.Point(845, 440);
+            this.lbSum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbSum.MouseState = MaterialSkin.MouseState.HOVER;
             this.lbSum.Name = "lbSum";
-            this.lbSum.Size = new System.Drawing.Size(154, 37);
+            this.lbSum.Size = new System.Drawing.Size(77, 19);
             this.lbSum.TabIndex = 19;
             this.lbSum.Text = "0";
             // 
@@ -614,11 +595,11 @@
             this.xtraTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.xtraTabControl1.Location = new System.Drawing.Point(4, 4);
-            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.xtraTabControl1.Location = new System.Drawing.Point(2, 2);
+            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1982, 1204);
+            this.xtraTabControl1.Size = new System.Drawing.Size(991, 626);
             this.xtraTabControl1.TabIndex = 21;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -640,9 +621,9 @@
             this.xtraTabPage1.Controls.Add(this.materialLabel3);
             this.xtraTabPage1.Controls.Add(this.materialLabel2);
             this.xtraTabPage1.Controls.Add(this.btnSave);
-            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1978, 1155);
+            this.xtraTabPage1.Size = new System.Drawing.Size(989, 601);
             this.xtraTabPage1.Text = "Lập hóa đơn";
             // 
             // btnPrint
@@ -650,10 +631,10 @@
             this.btnPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPrint.Enabled = false;
             this.btnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.ImageOptions.Image")));
-            this.btnPrint.Location = new System.Drawing.Point(1746, 1035);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrint.Location = new System.Drawing.Point(873, 538);
+            this.btnPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(172, 69);
+            this.btnPrint.Size = new System.Drawing.Size(86, 36);
             this.btnPrint.TabIndex = 20;
             this.btnPrint.Text = "In ";
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
@@ -665,9 +646,9 @@
             this.xtraTabPage2.Controls.Add(this.txtDate);
             this.xtraTabPage2.Controls.Add(this.materialLabel5);
             this.xtraTabPage2.Controls.Add(this.gcSearchInvoice);
-            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1978, 1155);
+            this.xtraTabPage2.Size = new System.Drawing.Size(989, 601);
             this.xtraTabPage2.Text = "Tìm kiếm hóa đơn";
             // 
             // materialLabel7
@@ -675,34 +656,34 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(54, 58);
-            this.materialLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel7.Location = new System.Drawing.Point(27, 30);
+            this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(194, 37);
+            this.materialLabel7.Size = new System.Drawing.Size(97, 19);
             this.materialLabel7.TabIndex = 18;
             this.materialLabel7.Text = "Mã hóa đơn";
             // 
             // txtSearchInvoice
             // 
-            this.txtSearchInvoice.Location = new System.Drawing.Point(256, 58);
-            this.txtSearchInvoice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchInvoice.Location = new System.Drawing.Point(128, 30);
+            this.txtSearchInvoice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearchInvoice.Name = "txtSearchInvoice";
-            this.txtSearchInvoice.Size = new System.Drawing.Size(302, 33);
+            this.txtSearchInvoice.Size = new System.Drawing.Size(153, 21);
             this.txtSearchInvoice.TabIndex = 17;
             this.txtSearchInvoice.TextChanged += new System.EventHandler(this.searchInvoice);
             // 
             // txtDate
             // 
             this.txtDate.EditValue = null;
-            this.txtDate.Location = new System.Drawing.Point(758, 60);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDate.Location = new System.Drawing.Point(379, 31);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Size = new System.Drawing.Size(294, 40);
+            this.txtDate.Size = new System.Drawing.Size(147, 20);
             this.txtDate.TabIndex = 16;
             this.txtDate.EditValueChanged += new System.EventHandler(this.searchInvoice);
             // 
@@ -711,11 +692,11 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(610, 58);
-            this.materialLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.materialLabel5.Location = new System.Drawing.Point(305, 30);
+            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(140, 37);
+            this.materialLabel5.Size = new System.Drawing.Size(70, 19);
             this.materialLabel5.TabIndex = 14;
             this.materialLabel5.Text = "Ngày lập";
             // 
@@ -724,14 +705,14 @@
             this.gcSearchInvoice.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gcSearchInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gcSearchInvoice.Location = new System.Drawing.Point(62, 146);
+            this.gcSearchInvoice.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gcSearchInvoice.Location = new System.Drawing.Point(31, 76);
             this.gcSearchInvoice.MainView = this.gridView2;
-            this.gcSearchInvoice.Margin = new System.Windows.Forms.Padding(4);
+            this.gcSearchInvoice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gcSearchInvoice.Name = "gcSearchInvoice";
             this.gcSearchInvoice.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnView});
-            this.gcSearchInvoice.Size = new System.Drawing.Size(1850, 935);
+            this.gcSearchInvoice.Size = new System.Drawing.Size(925, 486);
             this.gcSearchInvoice.TabIndex = 0;
             this.gcSearchInvoice.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -743,6 +724,8 @@
             this.total,
             this.date,
             this.view});
+            this.gridView2.DetailHeight = 182;
+            this.gridView2.FixedLineWidth = 1;
             this.gridView2.GridControl = this.gcSearchInvoice;
             this.gridView2.LevelIndent = 0;
             this.gridView2.Name = "gridView2";
@@ -758,12 +741,11 @@
             this.id.AppearanceHeader.Options.UseFont = true;
             this.id.Caption = "Mã hóa đơn";
             this.id.FieldName = "id_hoadon";
-            this.id.MinWidth = 40;
             this.id.Name = "id";
             this.id.OptionsColumn.AllowEdit = false;
             this.id.Visible = true;
             this.id.VisibleIndex = 0;
-            this.id.Width = 464;
+            this.id.Width = 232;
             // 
             // total
             // 
@@ -773,12 +755,11 @@
             this.total.AppearanceHeader.Options.UseFont = true;
             this.total.Caption = "Tổng tiền";
             this.total.FieldName = "tongtien";
-            this.total.MinWidth = 40;
             this.total.Name = "total";
             this.total.OptionsColumn.AllowEdit = false;
             this.total.Visible = true;
             this.total.VisibleIndex = 1;
-            this.total.Width = 464;
+            this.total.Width = 232;
             // 
             // date
             // 
@@ -788,21 +769,19 @@
             this.date.AppearanceHeader.Options.UseFont = true;
             this.date.Caption = "Ngày lập";
             this.date.FieldName = "ngaylap";
-            this.date.MinWidth = 40;
             this.date.Name = "date";
             this.date.OptionsColumn.AllowEdit = false;
             this.date.Visible = true;
             this.date.VisibleIndex = 2;
-            this.date.Width = 842;
+            this.date.Width = 421;
             // 
             // view
             // 
             this.view.ColumnEdit = this.btnView;
-            this.view.MinWidth = 40;
             this.view.Name = "view";
             this.view.Visible = true;
             this.view.VisibleIndex = 3;
-            this.view.Width = 100;
+            this.view.Width = 50;
             // 
             // btnView
             // 
@@ -816,14 +795,13 @@
             // 
             // tabStore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.xtraTabControl1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "tabStore";
-            this.Size = new System.Drawing.Size(2028, 1208);
+            this.Size = new System.Drawing.Size(1014, 628);
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcInvoice)).EndInit();
