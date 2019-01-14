@@ -81,6 +81,7 @@ namespace COFFEE_SHOP_MANAGER
             GridView gridview = grdCtrlThucUong.FocusedView as GridView;
             thucuong = gridview.GetRow(gridview.FocusedRowHandle) as thucuong;
             BeverageFrm form = new BeverageFrm(thucuong);
+            form.Text = "Sửa thức uống";
             form.FormClosing += BeverageFrm_Closing;
             form.ShowDialog();
         }

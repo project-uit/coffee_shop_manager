@@ -110,11 +110,8 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
                         txtDinhLuongMax.Clear();
                         txtDinhLuongMin.Clear();
                         cbTenDonViDinhLuong.SelectedIndex = -1;
+                        khonguyenlieu = null;
                         XtraMessageBox.Show(this, "Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-
                     }
                 }
               

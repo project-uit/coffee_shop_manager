@@ -31,11 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabStatistics));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnPrintRevenue = new DevExpress.XtraEditors.SimpleButton();
             this.chartRevenue = new DevExpress.XtraCharts.ChartControl();
             this.cmbYear = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnPrintBeverageRevenue = new DevExpress.XtraEditors.SimpleButton();
@@ -56,8 +58,6 @@
             this.coldonvi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colhaohut = new DevExpress.XtraGrid.Columns.GridColumn();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
@@ -97,11 +97,24 @@
             this.tabPage1.Controls.Add(this.cmbYear);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1319, 637);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Doanh thu";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(480, 60);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(390, 24);
+            this.materialLabel1.TabIndex = 12;
+            this.materialLabel1.Text = "Biểu đồ thống kê tổng doanh thu trong 1 năm";
             // 
             // label4
             // 
@@ -159,11 +172,24 @@
             this.tabPage2.Controls.Add(this.cmbYearTabBeverage);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1319, 637);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nhóm thức uống";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(366, 49);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(500, 24);
+            this.materialLabel2.TabIndex = 13;
+            this.materialLabel2.Text = "Biểu đồ thống kê doanh thu nhóm thức uống trong 1 tháng";
             // 
             // label5
             // 
@@ -256,7 +282,7 @@
             this.tabPage3.Controls.Add(this.grdCtrThongKeNguyenLieu);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1319, 637);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Thống kê kho nguyên liệu";
@@ -369,10 +395,16 @@
             this.grdViThongKeNguyenLieu.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
             this.grdViThongKeNguyenLieu.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
             this.grdViThongKeNguyenLieu.OptionsBehavior.ReadOnly = true;
+            this.grdViThongKeNguyenLieu.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
+            this.grdViThongKeNguyenLieu.OptionsView.RowAutoHeight = true;
             this.grdViThongKeNguyenLieu.OptionsView.ShowGroupPanel = false;
             // 
             // coltennguyenlieu
             // 
+            this.coltennguyenlieu.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coltennguyenlieu.AppearanceCell.Options.UseFont = true;
+            this.coltennguyenlieu.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coltennguyenlieu.AppearanceHeader.Options.UseFont = true;
             this.coltennguyenlieu.Caption = "Tên nguyên liệu";
             this.coltennguyenlieu.FieldName = "tennguyenlieu";
             this.coltennguyenlieu.MinWidth = 25;
@@ -383,6 +415,10 @@
             // 
             // coldinhluonglythuyet
             // 
+            this.coldinhluonglythuyet.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinhluonglythuyet.AppearanceCell.Options.UseFont = true;
+            this.coldinhluonglythuyet.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinhluonglythuyet.AppearanceHeader.Options.UseFont = true;
             this.coldinhluonglythuyet.Caption = "Định lượng lý thuyết";
             this.coldinhluonglythuyet.FieldName = "dinhluonglythuyet";
             this.coldinhluonglythuyet.MinWidth = 25;
@@ -393,6 +429,10 @@
             // 
             // coldinhluongthucte
             // 
+            this.coldinhluongthucte.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinhluongthucte.AppearanceCell.Options.UseFont = true;
+            this.coldinhluongthucte.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldinhluongthucte.AppearanceHeader.Options.UseFont = true;
             this.coldinhluongthucte.Caption = "Định lượng thực tế";
             this.coldinhluongthucte.FieldName = "dinhluongthucte";
             this.coldinhluongthucte.MinWidth = 25;
@@ -403,6 +443,10 @@
             // 
             // coldonvi
             // 
+            this.coldonvi.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldonvi.AppearanceCell.Options.UseFont = true;
+            this.coldonvi.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.coldonvi.AppearanceHeader.Options.UseFont = true;
             this.coldonvi.Caption = "Đơn vị";
             this.coldonvi.FieldName = "donvi";
             this.coldonvi.MinWidth = 25;
@@ -413,6 +457,10 @@
             // 
             // colhaohut
             // 
+            this.colhaohut.AppearanceCell.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colhaohut.AppearanceCell.Options.UseFont = true;
+            this.colhaohut.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colhaohut.AppearanceHeader.Options.UseFont = true;
             this.colhaohut.Caption = "Hao hụt";
             this.colhaohut.FieldName = "haohut";
             this.colhaohut.MinWidth = 25;
@@ -434,32 +482,6 @@
             this.materialTabSelector1.TabIndex = 0;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(480, 60);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(390, 24);
-            this.materialLabel1.TabIndex = 12;
-            this.materialLabel1.Text = "Biểu đồ thống kê tổng doanh thu trong 1 năm";
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(366, 49);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(500, 24);
-            this.materialLabel2.TabIndex = 13;
-            this.materialLabel2.Text = "Biểu đồ thống kê doanh thu nhóm thức uống trong 1 tháng";
-            // 
             // tabStatistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -467,7 +489,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tabStatistics";
             this.Size = new System.Drawing.Size(1331, 720);
             this.Load += new System.EventHandler(this.tabStatistics_Load);

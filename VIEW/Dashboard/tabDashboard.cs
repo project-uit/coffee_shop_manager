@@ -29,11 +29,7 @@ namespace COFFEE_SHOP_MANAGER
         {
             LoadData();
 
-            ((XYDiagram)chart.Diagram).AxisX.Title.Text = "Nhóm thức uống";
-            ((XYDiagram)chart.Diagram).AxisX.Title.Visibility = DefaultBoolean.True;
 
-            ((XYDiagram)chart.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
-            ((XYDiagram)chart.Diagram).AxisY.Title.Visibility = DefaultBoolean.True;
         }
 
         public void LoadData()
@@ -83,6 +79,11 @@ namespace COFFEE_SHOP_MANAGER
                     new SeriesPoint(group.tennhomthucuong, getRevenueByGroupBeverage(listCTHD, group.tennhomthucuong))
                 );
             }
+            ((XYDiagram)chart.Diagram).AxisX.Title.Text = "Nhóm thức uống";
+            ((XYDiagram)chart.Diagram).AxisX.Title.Visibility = DefaultBoolean.True;
+
+            ((XYDiagram)chart.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
+            ((XYDiagram)chart.Diagram).AxisY.Title.Visibility = DefaultBoolean.True;
         }
 
         private decimal? getRevenueByGroupBeverage(List<chitiethoadon> listCTHD, string groupBeverage)

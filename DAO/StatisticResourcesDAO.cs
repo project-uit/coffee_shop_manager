@@ -20,14 +20,14 @@ namespace COFFEE_SHOP_MANAGER.DAO
             List<ThongKeNguyenLieu> list = new List<ThongKeNguyenLieu>();
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
-                db.khonguyenlieux.SqlQuery("select  knl.tennguyenlieu, sum(ctct.dinhluong*cthd.soluong) as dinhluong, knl.idkhonguyenlieu,knl.tendonvi_dinh_luong, knl.xoa_flag " +
+                db.khonguyenlieux.SqlQuery("select  knl.tennguyenlieu, sum(ctct.dinhluong*cthd.soluong) as dinhluong, knl.idkhonguyenlieu,knl.tendonvi_dinh_luong, knl.xoa_flag, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu " +
                 "from hoadon hd, chitiethoadon cthd, thucuong th, chitietcongthuc ctct, khonguyenlieu knl " +
                 "where hd.id_hoadon = cthd.id_hoadon " +
                 "and cthd.id_thucuong = th.id_thucuong " +
                 "and ctct.id_thucuong = th.id_thucuong " +
                 "and knl.idkhonguyenlieu = ctct.idkhonguyenlieu " +
                 "and MONTH(hd.ngaylap) = @month and YEAR(hd.ngaylap) = @year "+
-                "group by knl.tennguyenlieu, knl.idkhonguyenlieu, knl.xoa_flag, knl.tendonvi_dinh_luong",
+                "group by knl.tennguyenlieu, knl.idkhonguyenlieu, knl.xoa_flag, knl.tendonvi_dinh_luong, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu",
                  new SqlParameter("month", month),
                  new SqlParameter("year", year)).ToList().ForEach(i=>
                  {
@@ -41,12 +41,12 @@ namespace COFFEE_SHOP_MANAGER.DAO
             }
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
-                db.khonguyenlieux.SqlQuery("select knl.tennguyenlieu, sum(ctnldd.dinhluong) as dinhluong,   knl.idkhonguyenlieu, knl.tendonvi_dinh_luong, knl.xoa_flag " +
+                db.khonguyenlieux.SqlQuery("select knl.tennguyenlieu, sum(ctnldd.dinhluong) as dinhluong, knl.idkhonguyenlieu, knl.tendonvi_dinh_luong, knl.xoa_flag, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu " +
                 "from nguyenlieudadung nldd, chitietnguyenlieudadung ctnldd, khonguyenlieu knl " +
                 "where nldd.idnguyenlieudadung = ctnldd.idnguyenlieudadung " +
                 "and knl.idkhonguyenlieu = ctnldd.idkhonguyenlieu " +
                 "and MONTH(nldd.ngaynhap) = @month and YEAR(nldd.ngaynhap) = @year " +
-                "group by knl.tennguyenlieu,  knl.idkhonguyenlieu, knl.tendonvi_dinh_luong,knl.xoa_flag",
+                "group by knl.tennguyenlieu,  knl.idkhonguyenlieu, knl.tendonvi_dinh_luong,knl.xoa_flag, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu",
                 new SqlParameter("month", month),
                 new SqlParameter("year", year)).ToList().ForEach(i=>
                 {
@@ -81,14 +81,14 @@ namespace COFFEE_SHOP_MANAGER.DAO
             List<ThongKeNguyenLieu> list = new List<ThongKeNguyenLieu>();
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
-                db.khonguyenlieux.SqlQuery("select  knl.tennguyenlieu, sum(ctct.dinhluong*cthd.soluong) as dinhluong, knl.idkhonguyenlieu,knl.tendonvi_dinh_luong, knl.xoa_flag " +
+                db.khonguyenlieux.SqlQuery("select  knl.tennguyenlieu, sum(ctct.dinhluong*cthd.soluong) as dinhluong, knl.idkhonguyenlieu,knl.tendonvi_dinh_luong, knl.xoa_flag, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu " +
                 "from hoadon hd, chitiethoadon cthd, thucuong th, chitietcongthuc ctct, khonguyenlieu knl " +
                 "where hd.id_hoadon = cthd.id_hoadon " +
                 "and cthd.id_thucuong = th.id_thucuong " +
                 "and ctct.id_thucuong = th.id_thucuong " +
                 "and knl.idkhonguyenlieu = ctct.idkhonguyenlieu " +
                 "and datepart(week, hd.ngaylap) = @week and YEAR(hd.ngaylap) = @year " +
-                "group by knl.tennguyenlieu, knl.idkhonguyenlieu, knl.xoa_flag, knl.tendonvi_dinh_luong",
+                "group by knl.tennguyenlieu, knl.idkhonguyenlieu, knl.xoa_flag, knl.tendonvi_dinh_luong, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu",
                  new SqlParameter("week", week),
                  new SqlParameter("year", year)).ToList().ForEach(i =>
                  {
@@ -102,12 +102,12 @@ namespace COFFEE_SHOP_MANAGER.DAO
             }
             using (quanlycafeEntities db = new quanlycafeEntities())
             {
-                db.khonguyenlieux.SqlQuery("select knl.tennguyenlieu, sum(ctnldd.dinhluong) as dinhluong,   knl.idkhonguyenlieu, knl.tendonvi_dinh_luong, knl.xoa_flag " +
+                db.khonguyenlieux.SqlQuery("select knl.tennguyenlieu, sum(ctnldd.dinhluong) as dinhluong,   knl.idkhonguyenlieu, knl.tendonvi_dinh_luong, knl.xoa_flag, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu " +
                 "from nguyenlieudadung nldd, chitietnguyenlieudadung ctnldd, khonguyenlieu knl " +
                 "where nldd.idnguyenlieudadung = ctnldd.idnguyenlieudadung " +
                 "and knl.idkhonguyenlieu = ctnldd.idkhonguyenlieu " +
                 "and datepart(week, nldd.ngaynhap) = @week and YEAR(nldd.ngaynhap) = @year " +
-                "group by knl.tennguyenlieu,  knl.idkhonguyenlieu, knl.tendonvi_dinh_luong,knl.xoa_flag",
+                "group by knl.tennguyenlieu,  knl.idkhonguyenlieu, knl.tendonvi_dinh_luong,knl.xoa_flag, knl.dinh_luong_toi_da, knl.dinh_luong_toi_thieu",
                 new SqlParameter("week", week),
                 new SqlParameter("year", year)).ToList().ForEach(i =>
                 {

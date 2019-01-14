@@ -33,13 +33,7 @@ namespace COFFEE_SHOP_MANAGER
             cmbYearTabBeverage.DataSource = years;
             cmbMonthTabBeverage.SelectedIndex = 0;
             // cmbYearTabBeverage.SelectedIndex = years.Count() - 1;
-            ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.AutoGrid = false;
-            ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.GridSpacing = 1;
-            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Text = "Tháng";
-            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Visibility = DefaultBoolean.True;
 
-            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
-            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Visibility = DefaultBoolean.True;
         }
 
         private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,7 +52,13 @@ namespace COFFEE_SHOP_MANAGER
                     new SeriesPoint(month, getRevenueByMonth(invoices, month))
                 );
             }
-          
+            ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.AutoGrid = false;
+            ((XYDiagram)chartRevenue.Diagram).AxisX.NumericScaleOptions.GridSpacing = 1;
+            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Text = "Tháng";
+            ((XYDiagram)chartRevenue.Diagram).AxisX.Title.Visibility = DefaultBoolean.True;
+
+            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Text = "Doanh thu (VND)";
+            ((XYDiagram)chartRevenue.Diagram).AxisY.Title.Visibility = DefaultBoolean.True;
         }
 
         private void cmbYearTabBeverage_SelectedIndexChanged(object sender, EventArgs e)
