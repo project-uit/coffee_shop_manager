@@ -1,5 +1,4 @@
 ﻿using COFFEE_SHOP_MANAGER.DAO;
-using COFFEE_SHOP_MANAGER.VIEW.Setting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,12 +59,6 @@ namespace COFFEE_SHOP_MANAGER
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void btnSetting_Click(object sender, EventArgs e)
-        {
-            SettingFrm settingFrm = new SettingFrm();
-            settingFrm.ShowDialog();
         }
     }
 }

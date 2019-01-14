@@ -30,7 +30,6 @@
         {
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.dateEdit = new DevExpress.XtraEditors.DateEdit();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
@@ -52,8 +51,7 @@
             this.txtDinhLuongDonVi = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.txtTenNhanVien = new MaterialSkin.Controls.MaterialLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties)).BeginInit();
+            this.dateEdit = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // materialLabel2
@@ -63,11 +61,11 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(56, 156);
+            this.materialLabel2.Location = new System.Drawing.Point(42, 144);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(110, 24);
+            this.materialLabel2.Size = new System.Drawing.Size(87, 19);
             this.materialLabel2.TabIndex = 5;
             this.materialLabel2.Text = "Ngày nhập: ";
             // 
@@ -78,26 +76,13 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(56, 96);
+            this.materialLabel1.Location = new System.Drawing.Point(42, 95);
             this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(98, 24);
+            this.materialLabel1.Size = new System.Drawing.Size(79, 19);
             this.materialLabel1.TabIndex = 6;
             this.materialLabel1.Text = "Nhân viên:";
-            // 
-            // dateEdit
-            // 
-            this.dateEdit.EditValue = null;
-            this.dateEdit.Location = new System.Drawing.Point(259, 152);
-            this.dateEdit.Margin = new System.Windows.Forms.Padding(2);
-            this.dateEdit.Name = "dateEdit";
-            this.dateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit.Size = new System.Drawing.Size(127, 22);
-            this.dateEdit.TabIndex = 7;
             // 
             // materialLabel3
             // 
@@ -106,11 +91,11 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(56, 221);
+            this.materialLabel3.Location = new System.Drawing.Point(42, 193);
             this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(146, 24);
+            this.materialLabel3.Size = new System.Drawing.Size(117, 19);
             this.materialLabel3.TabIndex = 8;
             this.materialLabel3.Text = "Tên nguyên liệu:";
             // 
@@ -121,11 +106,11 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(56, 357);
+            this.materialLabel4.Location = new System.Drawing.Point(42, 303);
             this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
-            this.materialLabel4.Size = new System.Drawing.Size(182, 24);
+            this.materialLabel4.Size = new System.Drawing.Size(146, 19);
             this.materialLabel4.TabIndex = 9;
             this.materialLabel4.Text = "Tên đơn vị số lượng:";
             // 
@@ -136,11 +121,11 @@
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(56, 431);
+            this.materialLabel5.Location = new System.Drawing.Point(42, 363);
             this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(150, 24);
+            this.materialLabel5.Size = new System.Drawing.Size(120, 19);
             this.materialLabel5.TabIndex = 10;
             this.materialLabel5.Text = "Số lượng/ đơn vị";
             // 
@@ -151,11 +136,11 @@
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel6.Location = new System.Drawing.Point(56, 572);
+            this.materialLabel6.Location = new System.Drawing.Point(42, 478);
             this.materialLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
-            this.materialLabel6.Size = new System.Drawing.Size(80, 24);
+            this.materialLabel6.Size = new System.Drawing.Size(64, 19);
             this.materialLabel6.TabIndex = 11;
             this.materialLabel6.Text = "Đơn giá:";
             // 
@@ -163,7 +148,8 @@
             // 
             this.txtDinhLuong.Depth = 0;
             this.txtDinhLuong.Hint = "Nhập số lượng/ đơn vị";
-            this.txtDinhLuong.Location = new System.Drawing.Point(259, 429);
+            this.txtDinhLuong.Location = new System.Drawing.Point(194, 362);
+            this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuong.MaxLength = 32767;
             this.txtDinhLuong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDinhLuong.Name = "txtDinhLuong";
@@ -171,7 +157,7 @@
             this.txtDinhLuong.SelectedText = "";
             this.txtDinhLuong.SelectionLength = 0;
             this.txtDinhLuong.SelectionStart = 0;
-            this.txtDinhLuong.Size = new System.Drawing.Size(342, 28);
+            this.txtDinhLuong.Size = new System.Drawing.Size(256, 23);
             this.txtDinhLuong.TabIndex = 13;
             this.txtDinhLuong.TabStop = false;
             this.txtDinhLuong.UseSystemPasswordChar = false;
@@ -182,7 +168,8 @@
             // 
             this.txtDonGia.Depth = 0;
             this.txtDonGia.Hint = "Nhập đơn giá";
-            this.txtDonGia.Location = new System.Drawing.Point(259, 572);
+            this.txtDonGia.Location = new System.Drawing.Point(194, 478);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(2);
             this.txtDonGia.MaxLength = 32767;
             this.txtDonGia.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDonGia.Name = "txtDonGia";
@@ -190,7 +177,7 @@
             this.txtDonGia.SelectedText = "";
             this.txtDonGia.SelectionLength = 0;
             this.txtDonGia.SelectionStart = 0;
-            this.txtDonGia.Size = new System.Drawing.Size(342, 28);
+            this.txtDonGia.Size = new System.Drawing.Size(256, 23);
             this.txtDonGia.TabIndex = 14;
             this.txtDonGia.TabStop = false;
             this.txtDonGia.UseSystemPasswordChar = false;
@@ -201,10 +188,11 @@
             // 
             this.cbTenNguyenLieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenNguyenLieu.FormattingEnabled = true;
-            this.cbTenNguyenLieu.ItemHeight = 16;
-            this.cbTenNguyenLieu.Location = new System.Drawing.Point(259, 221);
+            this.cbTenNguyenLieu.ItemHeight = 13;
+            this.cbTenNguyenLieu.Location = new System.Drawing.Point(194, 193);
+            this.cbTenNguyenLieu.Margin = new System.Windows.Forms.Padding(2);
             this.cbTenNguyenLieu.Name = "cbTenNguyenLieu";
-            this.cbTenNguyenLieu.Size = new System.Drawing.Size(343, 24);
+            this.cbTenNguyenLieu.Size = new System.Drawing.Size(258, 21);
             this.cbTenNguyenLieu.TabIndex = 15;
             this.cbTenNguyenLieu.SelectedIndexChanged += new System.EventHandler(this.cbTenNguyenLieu_SelectedIndexChanged);
             this.cbTenNguyenLieu.Click += new System.EventHandler(this.cbTenNguyenLieu_Click);
@@ -213,13 +201,14 @@
             // 
             this.cbTenDonViSoLuong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenDonViSoLuong.FormattingEnabled = true;
-            this.cbTenDonViSoLuong.ItemHeight = 16;
+            this.cbTenDonViSoLuong.ItemHeight = 13;
             this.cbTenDonViSoLuong.Items.AddRange(new object[] {
             "thùng",
             "hộp"});
-            this.cbTenDonViSoLuong.Location = new System.Drawing.Point(259, 357);
+            this.cbTenDonViSoLuong.Location = new System.Drawing.Point(194, 303);
+            this.cbTenDonViSoLuong.Margin = new System.Windows.Forms.Padding(2);
             this.cbTenDonViSoLuong.Name = "cbTenDonViSoLuong";
-            this.cbTenDonViSoLuong.Size = new System.Drawing.Size(343, 24);
+            this.cbTenDonViSoLuong.Size = new System.Drawing.Size(258, 21);
             this.cbTenDonViSoLuong.TabIndex = 16;
             this.cbTenDonViSoLuong.SelectedIndexChanged += new System.EventHandler(this.cbTenDonViSoLuong_SelectedIndexChanged);
             // 
@@ -230,12 +219,12 @@
             this.btnHuy.Depth = 0;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHuy.Icon = null;
-            this.btnHuy.Location = new System.Drawing.Point(366, 645);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnHuy.Location = new System.Drawing.Point(402, 541);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnHuy.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Primary = false;
-            this.btnHuy.Size = new System.Drawing.Size(56, 36);
+            this.btnHuy.Size = new System.Drawing.Size(48, 36);
             this.btnHuy.TabIndex = 18;
             this.btnHuy.Text = "Huỷ";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -248,12 +237,12 @@
             this.btnLuu.Depth = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLuu.Icon = null;
-            this.btnLuu.Location = new System.Drawing.Point(259, 645);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnLuu.Location = new System.Drawing.Point(194, 541);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Primary = false;
-            this.btnLuu.Size = new System.Drawing.Size(55, 36);
+            this.btnLuu.Size = new System.Drawing.Size(47, 36);
             this.btnLuu.TabIndex = 17;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -266,11 +255,11 @@
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(56, 291);
+            this.materialLabel7.Location = new System.Drawing.Point(42, 249);
             this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(91, 24);
+            this.materialLabel7.Size = new System.Drawing.Size(73, 19);
             this.materialLabel7.TabIndex = 19;
             this.materialLabel7.Text = "Số lượng:";
             // 
@@ -278,7 +267,8 @@
             // 
             this.txtSoLuong.Depth = 0;
             this.txtSoLuong.Hint = "Nhập số lượng";
-            this.txtSoLuong.Location = new System.Drawing.Point(259, 288);
+            this.txtSoLuong.Location = new System.Drawing.Point(194, 247);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoLuong.MaxLength = 32767;
             this.txtSoLuong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtSoLuong.Name = "txtSoLuong";
@@ -286,7 +276,7 @@
             this.txtSoLuong.SelectedText = "";
             this.txtSoLuong.SelectionLength = 0;
             this.txtSoLuong.SelectionStart = 0;
-            this.txtSoLuong.Size = new System.Drawing.Size(342, 28);
+            this.txtSoLuong.Size = new System.Drawing.Size(256, 23);
             this.txtSoLuong.TabIndex = 20;
             this.txtSoLuong.TabStop = false;
             this.txtSoLuong.UseSystemPasswordChar = false;
@@ -298,10 +288,10 @@
             this.labelTenNguyenLieu.AutoSize = true;
             this.labelTenNguyenLieu.BackColor = System.Drawing.Color.White;
             this.labelTenNguyenLieu.ForeColor = System.Drawing.Color.Red;
-            this.labelTenNguyenLieu.Location = new System.Drawing.Point(255, 244);
+            this.labelTenNguyenLieu.Location = new System.Drawing.Point(191, 216);
             this.labelTenNguyenLieu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenNguyenLieu.Name = "labelTenNguyenLieu";
-            this.labelTenNguyenLieu.Size = new System.Drawing.Size(250, 17);
+            this.labelTenNguyenLieu.Size = new System.Drawing.Size(191, 13);
             this.labelTenNguyenLieu.TabIndex = 21;
             this.labelTenNguyenLieu.Text = "*Tên nguyên liệu không được để trống";
             // 
@@ -310,10 +300,10 @@
             this.labelsoLuong.AutoSize = true;
             this.labelsoLuong.BackColor = System.Drawing.Color.White;
             this.labelsoLuong.ForeColor = System.Drawing.Color.Red;
-            this.labelsoLuong.Location = new System.Drawing.Point(255, 315);
+            this.labelsoLuong.Location = new System.Drawing.Point(191, 272);
             this.labelsoLuong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelsoLuong.Name = "labelsoLuong";
-            this.labelsoLuong.Size = new System.Drawing.Size(204, 17);
+            this.labelsoLuong.Size = new System.Drawing.Size(157, 13);
             this.labelsoLuong.TabIndex = 22;
             this.labelsoLuong.Text = "*Số lượng không được để trống";
             // 
@@ -322,10 +312,10 @@
             this.labelTenDVSoLuong.AutoSize = true;
             this.labelTenDVSoLuong.BackColor = System.Drawing.Color.White;
             this.labelTenDVSoLuong.ForeColor = System.Drawing.Color.Red;
-            this.labelTenDVSoLuong.Location = new System.Drawing.Point(255, 381);
+            this.labelTenDVSoLuong.Location = new System.Drawing.Point(191, 326);
             this.labelTenDVSoLuong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTenDVSoLuong.Name = "labelTenDVSoLuong";
-            this.labelTenDVSoLuong.Size = new System.Drawing.Size(273, 17);
+            this.labelTenDVSoLuong.Size = new System.Drawing.Size(210, 13);
             this.labelTenDVSoLuong.TabIndex = 23;
             this.labelTenDVSoLuong.Text = "*Tên đơn vị số lượng không được để trống";
             // 
@@ -334,10 +324,10 @@
             this.labelDonGia.AutoSize = true;
             this.labelDonGia.BackColor = System.Drawing.Color.White;
             this.labelDonGia.ForeColor = System.Drawing.Color.Red;
-            this.labelDonGia.Location = new System.Drawing.Point(255, 598);
+            this.labelDonGia.Location = new System.Drawing.Point(191, 503);
             this.labelDonGia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDonGia.Name = "labelDonGia";
-            this.labelDonGia.Size = new System.Drawing.Size(197, 17);
+            this.labelDonGia.Size = new System.Drawing.Size(152, 13);
             this.labelDonGia.TabIndex = 24;
             this.labelDonGia.Text = "*Đơn giá không được để trống";
             // 
@@ -346,10 +336,10 @@
             this.labelDinhLuong.AutoSize = true;
             this.labelDinhLuong.BackColor = System.Drawing.Color.White;
             this.labelDinhLuong.ForeColor = System.Drawing.Color.Red;
-            this.labelDinhLuong.Location = new System.Drawing.Point(255, 455);
+            this.labelDinhLuong.Location = new System.Drawing.Point(191, 387);
             this.labelDinhLuong.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDinhLuong.Name = "labelDinhLuong";
-            this.labelDinhLuong.Size = new System.Drawing.Size(250, 17);
+            this.labelDinhLuong.Size = new System.Drawing.Size(195, 13);
             this.labelDinhLuong.TabIndex = 25;
             this.labelDinhLuong.Text = "*Số lượng/ đơn vị không được để trống";
             // 
@@ -358,10 +348,10 @@
             this.labelDinhLuongDonVi.AutoSize = true;
             this.labelDinhLuongDonVi.BackColor = System.Drawing.Color.White;
             this.labelDinhLuongDonVi.ForeColor = System.Drawing.Color.Red;
-            this.labelDinhLuongDonVi.Location = new System.Drawing.Point(255, 525);
+            this.labelDinhLuongDonVi.Location = new System.Drawing.Point(191, 443);
             this.labelDinhLuongDonVi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDinhLuongDonVi.Name = "labelDinhLuongDonVi";
-            this.labelDinhLuongDonVi.Size = new System.Drawing.Size(262, 17);
+            this.labelDinhLuongDonVi.Size = new System.Drawing.Size(204, 13);
             this.labelDinhLuongDonVi.TabIndex = 28;
             this.labelDinhLuongDonVi.Text = "*Định lượng/ đơn vị không được để trống";
             // 
@@ -369,7 +359,8 @@
             // 
             this.txtDinhLuongDonVi.Depth = 0;
             this.txtDinhLuongDonVi.Hint = "Nhập định lượng/ đơn vị";
-            this.txtDinhLuongDonVi.Location = new System.Drawing.Point(259, 499);
+            this.txtDinhLuongDonVi.Location = new System.Drawing.Point(194, 418);
+            this.txtDinhLuongDonVi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuongDonVi.MaxLength = 32767;
             this.txtDinhLuongDonVi.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDinhLuongDonVi.Name = "txtDinhLuongDonVi";
@@ -377,7 +368,7 @@
             this.txtDinhLuongDonVi.SelectedText = "";
             this.txtDinhLuongDonVi.SelectionLength = 0;
             this.txtDinhLuongDonVi.SelectionStart = 0;
-            this.txtDinhLuongDonVi.Size = new System.Drawing.Size(342, 28);
+            this.txtDinhLuongDonVi.Size = new System.Drawing.Size(256, 23);
             this.txtDinhLuongDonVi.TabIndex = 27;
             this.txtDinhLuongDonVi.TabStop = false;
             this.txtDinhLuongDonVi.UseSystemPasswordChar = false;
@@ -391,11 +382,11 @@
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel8.Location = new System.Drawing.Point(56, 501);
+            this.materialLabel8.Location = new System.Drawing.Point(42, 420);
             this.materialLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(166, 24);
+            this.materialLabel8.Size = new System.Drawing.Size(132, 19);
             this.materialLabel8.TabIndex = 26;
             this.materialLabel8.Text = "Định lượng/ đơn vị";
             // 
@@ -406,18 +397,28 @@
             this.txtTenNhanVien.Depth = 0;
             this.txtTenNhanVien.Font = new System.Drawing.Font("Roboto", 11F);
             this.txtTenNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtTenNhanVien.Location = new System.Drawing.Point(254, 96);
+            this.txtTenNhanVien.Location = new System.Drawing.Point(190, 95);
             this.txtTenNhanVien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtTenNhanVien.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenNhanVien.Name = "txtTenNhanVien";
-            this.txtTenNhanVien.Size = new System.Drawing.Size(0, 24);
+            this.txtTenNhanVien.Size = new System.Drawing.Size(0, 19);
             this.txtTenNhanVien.TabIndex = 29;
+            // 
+            // dateEdit
+            // 
+            this.dateEdit.CustomFormat = "dd/MM/yyyy";
+            this.dateEdit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateEdit.Location = new System.Drawing.Point(194, 142);
+            this.dateEdit.Name = "dateEdit";
+            this.dateEdit.Size = new System.Drawing.Size(258, 20);
+            this.dateEdit.TabIndex = 30;
             // 
             // NhapKhoFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 705);
+            this.ClientSize = new System.Drawing.Size(501, 611);
+            this.Controls.Add(this.dateEdit);
             this.Controls.Add(this.txtTenNhanVien);
             this.Controls.Add(this.labelDinhLuongDonVi);
             this.Controls.Add(this.txtDinhLuongDonVi);
@@ -439,7 +440,6 @@
             this.Controls.Add(this.materialLabel5);
             this.Controls.Add(this.materialLabel4);
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.dateEdit);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialLabel2);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -448,8 +448,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập Kho";
             this.Load += new System.EventHandler(this.NhapKhoFrm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,7 +456,6 @@
         #endregion
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private DevExpress.XtraEditors.DateEdit dateEdit;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel4;
         private MaterialSkin.Controls.MaterialLabel materialLabel5;
@@ -480,5 +477,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtDinhLuongDonVi;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel txtTenNhanVien;
+        private System.Windows.Forms.DateTimePicker dateEdit;
     }
 }

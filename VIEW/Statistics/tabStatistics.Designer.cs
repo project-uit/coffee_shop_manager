@@ -334,7 +334,7 @@
             this.btnExportFile.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExportFile.Depth = 0;
             this.btnExportFile.Icon = null;
-            this.btnExportFile.Location = new System.Drawing.Point(886, 14);
+            this.btnExportFile.Location = new System.Drawing.Point(874, 22);
             this.btnExportFile.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportFile.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnExportFile.Name = "btnExportFile";

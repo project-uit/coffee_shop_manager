@@ -50,13 +50,13 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
                 lbErrorGiamGia.Visible = true;
             }
             bool flag = true;
-            if(dateNgayBatDau.EditValue == null)
+            if(dateNgayBatDau.Value == null)
             {
                 lbErrorDate.Text = "*Ngày bắt đầu không được trống";
                 flag = false;
                 lbErrorDate.Visible = true;
             }
-            if (dateNgayKetThuc.EditValue == null)
+            if (dateNgayKetThuc.Value == null)
             {
                 lbErrorNgayKetThuc.Text = "*Ngày kết thúc không được trống";
                 flag = false;
@@ -65,8 +65,8 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
             if (flag)
             {
                 giamgia giamgia = new giamgia();
-                giamgia.ngaybatdau = Convert.ToDateTime(dateNgayBatDau.EditValue);
-                giamgia.ngayketthuc = Convert.ToDateTime(dateNgayKetThuc.EditValue);
+                giamgia.ngaybatdau = Convert.ToDateTime(dateNgayBatDau.Value);
+                giamgia.ngayketthuc = Convert.ToDateTime(dateNgayKetThuc.Value);
                 switch (DiscountDAO.isValid(giamgia))
                 {
                     case 2:
@@ -91,8 +91,8 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Discount
             {              
                 giamgia giamgia = new giamgia();                
                 giamgia.hesogiamgia = Math.Round(float.Parse(txtGiamGia.Text), 2, MidpointRounding.AwayFromZero);
-                giamgia.ngaybatdau = Convert.ToDateTime(dateNgayBatDau.EditValue);
-                giamgia.ngayketthuc = Convert.ToDateTime(dateNgayKetThuc.EditValue);
+                giamgia.ngaybatdau = Convert.ToDateTime(dateNgayBatDau.Value);
+                giamgia.ngayketthuc = Convert.ToDateTime(dateNgayKetThuc.Value);
                 if (DiscountDAO.isAccepted(giamgia))
                 {
                     if (DiscountDAO.insert(giamgia))

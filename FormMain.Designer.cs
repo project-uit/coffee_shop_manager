@@ -251,16 +251,16 @@
             // 
             // lbNameStore
             // 
-            this.lbNameStore.AutoSize = true;
             this.lbNameStore.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.lbNameStore, BunifuAnimatorNS.DecorationType.None);
             this.lbNameStore.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lbNameStore.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbNameStore.Location = new System.Drawing.Point(69, 146);
+            this.lbNameStore.Location = new System.Drawing.Point(3, 146);
             this.lbNameStore.Name = "lbNameStore";
-            this.lbNameStore.Size = new System.Drawing.Size(90, 21);
+            this.lbNameStore.Size = new System.Drawing.Size(227, 21);
             this.lbNameStore.TabIndex = 1;
             this.lbNameStore.Text = "Cafe Brand";
+            this.lbNameStore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnStatistics
             // 
@@ -595,7 +595,6 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.pnlDrawer.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSetting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnToggleDrawer)).EndInit();
             this.pnlHeader.ResumeLayout(false);

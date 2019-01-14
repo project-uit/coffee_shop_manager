@@ -28,7 +28,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
         public NhapKhoFrm()
         {
             InitializeComponent();
-            dateEdit.EditValue = DateTime.Now;
+            dateEdit.Value = DateTime.Now;
             labelTenNguyenLieu.Visible = false;
             labelsoLuong.Visible = false;
             labelTenDVSoLuong.Visible = false;
@@ -61,7 +61,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
             if (flag == 1)
             {
                 nhapkho = new nhapkho();
-                nhapkho.ngaynhap = Convert.ToDateTime(dateEdit.EditValue);
+                nhapkho.ngaynhap = Convert.ToDateTime(dateEdit.Value);
                 nhapkho.id_nhanvien = FormLogin.nv.id_nhanvien;
                 NhapKhoDAO.insert(nhapkho);
                 flag = 0;

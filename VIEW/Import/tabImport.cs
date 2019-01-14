@@ -152,11 +152,6 @@ namespace COFFEE_SHOP_MANAGER
             
       }
 
-        private void grdCtrlThemNguyenLieu_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cmbCheckKho_SelectedIndexChanged(object sender, EventArgs e)
         {
            

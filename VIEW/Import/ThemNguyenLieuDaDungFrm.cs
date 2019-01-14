@@ -22,7 +22,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
         public ThemNguyenLieuDaDungFrm()
         {
             InitializeComponent();
-            dateEdit.EditValue = DateTime.Now;
+            dateEdit.Value = DateTime.Now;
             labelTenNguyenLieu.Visible = false;
             labelDinhLuong.Visible = false;
 
@@ -40,7 +40,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Import
             if (flag == 1)
             {
                 nguyenlieudadung = new nguyenlieudadung();
-                nguyenlieudadung.ngaynhap = Convert.ToDateTime(dateEdit.EditValue);
+                nguyenlieudadung.ngaynhap = Convert.ToDateTime(dateEdit.Value);
                 NguyenLieuDaDungDAO.insert(nguyenlieudadung);
                 flag = 0;
             }

@@ -1,5 +1,4 @@
 ﻿using COFFEE_SHOP_MANAGER.DAO;
-using COFFEE_SHOP_MANAGER.VIEW.Setting;
 using COFFEE_SHOP_MANAGER.VIEW.SettingStore;
 using MaterialSkin;
 using System;

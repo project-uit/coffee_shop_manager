@@ -47,10 +47,10 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.bunifuImageButton1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(149, 32);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(149, 53);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(155, 132);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -79,7 +79,7 @@
             this.btnLogin.IconVisible = true;
             this.btnLogin.IconZoom = 90D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(74, 356);
+            this.btnLogin.Location = new System.Drawing.Point(74, 377);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(6);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.SystemColors.HotTrack;
@@ -115,7 +115,7 @@
             this.btnExit.IconVisible = true;
             this.btnExit.IconZoom = 40D;
             this.btnExit.IsTab = false;
-            this.btnExit.Location = new System.Drawing.Point(289, 356);
+            this.btnExit.Location = new System.Drawing.Point(289, 377);
             this.btnExit.Margin = new System.Windows.Forms.Padding(6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.Crimson;
@@ -136,7 +136,7 @@
             this.lbError.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbError.Appearance.Options.UseFont = true;
             this.lbError.Appearance.Options.UseForeColor = true;
-            this.lbError.Location = new System.Drawing.Point(74, 313);
+            this.lbError.Location = new System.Drawing.Point(74, 334);
             this.lbError.Margin = new System.Windows.Forms.Padding(2);
             this.lbError.Name = "lbError";
             this.lbError.Size = new System.Drawing.Size(326, 19);
@@ -148,7 +148,7 @@
             // 
             this.txtUsername.Depth = 0;
             this.txtUsername.Hint = "Tên tài khoản";
-            this.txtUsername.Location = new System.Drawing.Point(74, 203);
+            this.txtUsername.Location = new System.Drawing.Point(74, 224);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.MaxLength = 32767;
             this.txtUsername.MouseState = MaterialSkin.MouseState.HOVER;
@@ -166,7 +166,7 @@
             // 
             this.txtPassword.Depth = 0;
             this.txtPassword.Hint = "Mật khẩu";
-            this.txtPassword.Location = new System.Drawing.Point(74, 262);
+            this.txtPassword.Location = new System.Drawing.Point(74, 283);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MouseState = MaterialSkin.MouseState.HOVER;
@@ -185,7 +185,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(465, 437);
+            this.ClientSize = new System.Drawing.Size(465, 493);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lbError);

@@ -47,11 +47,11 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             nhanvien staff = new nhanvien
             {
                 hoten = txtHoTen.Text,
-                ngaysinh = DateTime.Parse(txtNgaySinh.EditValue.ToString()),
+                ngaysinh = DateTime.Parse(txtNgaySinh.Value.ToString()),
                 cmnd = txtCMND.Text,
                 diachi = txtDiaChi.Text,
-                luong = decimal.Parse(txtLuong.Text),
-                tentaikhoan = txtTenTaiKhoan.Text,
+                luong = decimal.Parse(txtLuong.Text.Trim()),
+                tentaikhoan = txtTenTaiKhoan.Text.Trim(),
                 matkhau = txtMatKhauComfirm.Text,
                 quyen = quyen
             };
@@ -120,6 +120,16 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             else
             {
                 errorLuong.Text = "";
+            }
+
+            try
+            {
+                decimal.Parse(txtLuong.Text.ToString().Trim());
+            }
+            catch
+            {
+                errorLuong.Text = "Lương không hợp lệ";
+                countError++;
             }
 
             if (txtTenTaiKhoan.Text.Trim() == "")

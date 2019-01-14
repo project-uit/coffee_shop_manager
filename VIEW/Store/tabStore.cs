@@ -164,6 +164,9 @@ namespace COFFEE_SHOP_MANAGER
             for (int i = 0; i < list.Count(); i++)
             {
                 list[i].thanhtien = list[i].giaban * list[i].soluong;
+
+                if (list[i].soluong == 0)
+                    list.Remove(list[i]);
             }
             gcInvoice.DataSource = list;
             updateTotal();

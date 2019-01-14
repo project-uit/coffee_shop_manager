@@ -202,10 +202,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrlThucUong.DataSource = typeof(COFFEE_SHOP_MANAGER.thucuong);
-            this.grdCtrlThucUong.Location = new System.Drawing.Point(3, 68);
+            this.grdCtrlThucUong.Location = new System.Drawing.Point(26, 89);
             this.grdCtrlThucUong.MainView = this.grdViThucUong;
             this.grdCtrlThucUong.Name = "grdCtrlThucUong";
-            this.grdCtrlThucUong.Size = new System.Drawing.Size(1169, 393);
+            this.grdCtrlThucUong.Size = new System.Drawing.Size(1122, 345);
             this.grdCtrlThucUong.TabIndex = 2;
             this.grdCtrlThucUong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdViThucUong});
@@ -217,7 +217,7 @@
             this.btnThemThucUong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThemThucUong.Depth = 0;
             this.btnThemThucUong.Icon = null;
-            this.btnThemThucUong.Location = new System.Drawing.Point(1032, 9);
+            this.btnThemThucUong.Location = new System.Drawing.Point(1008, 26);
             this.btnThemThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThemThucUong.Name = "btnThemThucUong";
             this.btnThemThucUong.Primary = true;
@@ -234,7 +234,7 @@
             this.btnNhomThucUong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnNhomThucUong.Depth = 0;
             this.btnNhomThucUong.Icon = null;
-            this.btnNhomThucUong.Location = new System.Drawing.Point(677, 9);
+            this.btnNhomThucUong.Location = new System.Drawing.Point(653, 26);
             this.btnNhomThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnNhomThucUong.Name = "btnNhomThucUong";
             this.btnNhomThucUong.Primary = true;
@@ -251,8 +251,8 @@
             this.btnGiamGia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnGiamGia.Depth = 0;
             this.btnGiamGia.Icon = null;
-            this.btnGiamGia.Location = new System.Drawing.Point(835, 9);
-            this.btnGiamGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGiamGia.Location = new System.Drawing.Point(811, 26);
+            this.btnGiamGia.Margin = new System.Windows.Forms.Padding(2);
             this.btnGiamGia.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGiamGia.Name = "btnGiamGia";
             this.btnGiamGia.Primary = true;
@@ -269,8 +269,8 @@
             this.btnExportExcel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExportExcel.Depth = 0;
             this.btnExportExcel.Icon = null;
-            this.btnExportExcel.Location = new System.Drawing.Point(931, 9);
-            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExportExcel.Location = new System.Drawing.Point(907, 26);
+            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(2);
             this.btnExportExcel.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.Primary = true;
@@ -284,8 +284,8 @@
             // 
             this.txtTenThucUong.Depth = 0;
             this.txtTenThucUong.Hint = "Tìm kiếm tên thức uống";
-            this.txtTenThucUong.Location = new System.Drawing.Point(13, 9);
-            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenThucUong.Location = new System.Drawing.Point(26, 39);
+            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenThucUong.MaxLength = 32767;
             this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenThucUong.Name = "txtTenThucUong";

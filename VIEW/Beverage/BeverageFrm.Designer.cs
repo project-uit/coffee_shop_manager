@@ -46,7 +46,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 90);
+            this.label1.Location = new System.Drawing.Point(68, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 16);
             this.label1.TabIndex = 1;
@@ -57,7 +57,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(105, 168);
+            this.label2.Location = new System.Drawing.Point(68, 168);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 16);
             this.label2.TabIndex = 2;
@@ -67,10 +67,10 @@
             // 
             this.cbbNhomThucUong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbNhomThucUong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbNhomThucUong.Location = new System.Drawing.Point(108, 186);
+            this.cbbNhomThucUong.Location = new System.Drawing.Point(71, 186);
             this.cbbNhomThucUong.Margin = new System.Windows.Forms.Padding(2);
             this.cbbNhomThucUong.Name = "cbbNhomThucUong";
-            this.cbbNhomThucUong.Size = new System.Drawing.Size(161, 25);
+            this.cbbNhomThucUong.Size = new System.Drawing.Size(239, 25);
             this.cbbNhomThucUong.TabIndex = 3;
             // 
             // label3
@@ -78,7 +78,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(105, 238);
+            this.label3.Location = new System.Drawing.Point(68, 239);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 4;
@@ -89,7 +89,7 @@
             this.lbErrorTenThucUong.AutoSize = true;
             this.lbErrorTenThucUong.BackColor = System.Drawing.Color.Transparent;
             this.lbErrorTenThucUong.ForeColor = System.Drawing.Color.Red;
-            this.lbErrorTenThucUong.Location = new System.Drawing.Point(105, 134);
+            this.lbErrorTenThucUong.Location = new System.Drawing.Point(68, 134);
             this.lbErrorTenThucUong.Name = "lbErrorTenThucUong";
             this.lbErrorTenThucUong.Size = new System.Drawing.Size(35, 13);
             this.lbErrorTenThucUong.TabIndex = 9;
@@ -101,7 +101,7 @@
             this.lbErrorGiaBan.AutoSize = true;
             this.lbErrorGiaBan.BackColor = System.Drawing.Color.Transparent;
             this.lbErrorGiaBan.ForeColor = System.Drawing.Color.Red;
-            this.lbErrorGiaBan.Location = new System.Drawing.Point(105, 282);
+            this.lbErrorGiaBan.Location = new System.Drawing.Point(68, 282);
             this.lbErrorGiaBan.Name = "lbErrorGiaBan";
             this.lbErrorGiaBan.Size = new System.Drawing.Size(35, 13);
             this.lbErrorGiaBan.TabIndex = 11;
@@ -114,7 +114,7 @@
             this.btnLuu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLuu.Depth = 0;
             this.btnLuu.Icon = null;
-            this.btnLuu.Location = new System.Drawing.Point(119, 320);
+            this.btnLuu.Location = new System.Drawing.Point(71, 320);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";
@@ -131,7 +131,7 @@
             this.btnHuy.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnHuy.Depth = 0;
             this.btnHuy.Icon = null;
-            this.btnHuy.Location = new System.Drawing.Point(199, 320);
+            this.btnHuy.Location = new System.Drawing.Point(262, 320);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnHuy.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuy.Name = "btnHuy";
@@ -146,7 +146,7 @@
             // 
             this.txtTenThucUong.Depth = 0;
             this.txtTenThucUong.Hint = "";
-            this.txtTenThucUong.Location = new System.Drawing.Point(108, 109);
+            this.txtTenThucUong.Location = new System.Drawing.Point(71, 109);
             this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenThucUong.MaxLength = 32767;
             this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
@@ -155,7 +155,7 @@
             this.txtTenThucUong.SelectedText = "";
             this.txtTenThucUong.SelectionLength = 0;
             this.txtTenThucUong.SelectionStart = 0;
-            this.txtTenThucUong.Size = new System.Drawing.Size(160, 23);
+            this.txtTenThucUong.Size = new System.Drawing.Size(239, 23);
             this.txtTenThucUong.TabIndex = 16;
             this.txtTenThucUong.TabStop = false;
             this.txtTenThucUong.UseSystemPasswordChar = false;
@@ -165,7 +165,7 @@
             // 
             this.txtGiaBan.Depth = 0;
             this.txtGiaBan.Hint = "";
-            this.txtGiaBan.Location = new System.Drawing.Point(107, 257);
+            this.txtGiaBan.Location = new System.Drawing.Point(71, 257);
             this.txtGiaBan.Margin = new System.Windows.Forms.Padding(2);
             this.txtGiaBan.MaxLength = 32767;
             this.txtGiaBan.MouseState = MaterialSkin.MouseState.HOVER;
@@ -174,7 +174,7 @@
             this.txtGiaBan.SelectedText = "";
             this.txtGiaBan.SelectionLength = 0;
             this.txtGiaBan.SelectionStart = 0;
-            this.txtGiaBan.Size = new System.Drawing.Size(161, 23);
+            this.txtGiaBan.Size = new System.Drawing.Size(239, 23);
             this.txtGiaBan.TabIndex = 17;
             this.txtGiaBan.TabStop = false;
             this.txtGiaBan.UseSystemPasswordChar = false;
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 413);
+            this.ClientSize = new System.Drawing.Size(375, 413);
             this.Controls.Add(this.txtGiaBan);
             this.Controls.Add(this.txtTenThucUong);
             this.Controls.Add(this.btnHuy);
@@ -198,6 +198,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BeverageFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm thức uống";

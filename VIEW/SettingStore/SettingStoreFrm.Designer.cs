@@ -31,13 +31,13 @@
             this.btnSave = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtPhone = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lbErrorPhone = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.txtAddress = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lbErrorAddress = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtName = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lbErrorName = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSave
@@ -46,7 +46,7 @@
             this.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnSave.Depth = 0;
             this.btnSave.Icon = null;
-            this.btnSave.Location = new System.Drawing.Point(318, 239);
+            this.btnSave.Location = new System.Drawing.Point(246, 305);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSave.Name = "btnSave";
@@ -61,7 +61,7 @@
             // 
             this.txtPhone.Depth = 0;
             this.txtPhone.Hint = "";
-            this.txtPhone.Location = new System.Drawing.Point(109, 186);
+            this.txtPhone.Location = new System.Drawing.Point(37, 250);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPhone.MaxLength = 32767;
             this.txtPhone.MouseState = MaterialSkin.MouseState.HOVER;
@@ -79,7 +79,7 @@
             // 
             this.lbErrorPhone.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorPhone.Appearance.Options.UseForeColor = true;
-            this.lbErrorPhone.Location = new System.Drawing.Point(109, 214);
+            this.lbErrorPhone.Location = new System.Drawing.Point(37, 278);
             this.lbErrorPhone.Margin = new System.Windows.Forms.Padding(2);
             this.lbErrorPhone.Name = "lbErrorPhone";
             this.lbErrorPhone.Size = new System.Drawing.Size(57, 13);
@@ -87,20 +87,11 @@
             this.lbErrorPhone.Text = "error phone";
             this.lbErrorPhone.Visible = false;
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(35, 190);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(62, 13);
-            this.labelControl5.TabIndex = 77;
-            this.labelControl5.Text = "Số điện thoại";
-            // 
             // txtAddress
             // 
             this.txtAddress.Depth = 0;
             this.txtAddress.Hint = "";
-            this.txtAddress.Location = new System.Drawing.Point(109, 140);
+            this.txtAddress.Location = new System.Drawing.Point(37, 178);
             this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtAddress.MaxLength = 32767;
             this.txtAddress.MouseState = MaterialSkin.MouseState.HOVER;
@@ -118,7 +109,7 @@
             // 
             this.lbErrorAddress.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorAddress.Appearance.Options.UseForeColor = true;
-            this.lbErrorAddress.Location = new System.Drawing.Point(109, 168);
+            this.lbErrorAddress.Location = new System.Drawing.Point(37, 206);
             this.lbErrorAddress.Margin = new System.Windows.Forms.Padding(2);
             this.lbErrorAddress.Name = "lbErrorAddress";
             this.lbErrorAddress.Size = new System.Drawing.Size(65, 13);
@@ -126,20 +117,11 @@
             this.lbErrorAddress.Text = "error address";
             this.lbErrorAddress.Visible = false;
             // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(35, 144);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(32, 13);
-            this.labelControl3.TabIndex = 74;
-            this.labelControl3.Text = "Địa chỉ";
-            // 
             // txtName
             // 
             this.txtName.Depth = 0;
             this.txtName.Hint = "";
-            this.txtName.Location = new System.Drawing.Point(109, 94);
+            this.txtName.Location = new System.Drawing.Point(37, 105);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtName.MaxLength = 32767;
             this.txtName.MouseState = MaterialSkin.MouseState.HOVER;
@@ -157,7 +139,7 @@
             // 
             this.lbErrorName.Appearance.ForeColor = System.Drawing.Color.Red;
             this.lbErrorName.Appearance.Options.UseForeColor = true;
-            this.lbErrorName.Location = new System.Drawing.Point(109, 122);
+            this.lbErrorName.Location = new System.Drawing.Point(37, 133);
             this.lbErrorName.Margin = new System.Windows.Forms.Padding(2);
             this.lbErrorName.Name = "lbErrorName";
             this.lbErrorName.Size = new System.Drawing.Size(53, 13);
@@ -165,30 +147,54 @@
             this.lbErrorName.Text = "error name";
             this.lbErrorName.Visible = false;
             // 
-            // labelControl1
+            // label5
             // 
-            this.labelControl1.Location = new System.Drawing.Point(35, 98);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(18, 13);
-            this.labelControl1.TabIndex = 71;
-            this.labelControl1.Text = "Tên";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(34, 86);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 16);
+            this.label5.TabIndex = 81;
+            this.label5.Text = "Tên";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(34, 159);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 16);
+            this.label1.TabIndex = 82;
+            this.label1.Text = "Địa chỉ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 231);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 16);
+            this.label2.TabIndex = 83;
+            this.label2.Text = "Số điện thoại";
             // 
             // SettingStoreFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 307);
+            this.ClientSize = new System.Drawing.Size(323, 368);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.lbErrorPhone);
-            this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.lbErrorAddress);
-            this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbErrorName);
-            this.Controls.Add(this.labelControl1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SettingStoreFrm";
@@ -206,12 +212,12 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnSave;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtPhone;
         private DevExpress.XtraEditors.LabelControl lbErrorPhone;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAddress;
         private DevExpress.XtraEditors.LabelControl lbErrorAddress;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtName;
         private DevExpress.XtraEditors.LabelControl lbErrorName;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

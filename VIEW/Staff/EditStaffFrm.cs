@@ -23,7 +23,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
         private void EditStaffFrm_Load(object sender, EventArgs e)
         {
             txtHoTen.Text = editstaff.hoten;
-            txtNgaySinh.EditValue = editstaff.ngaysinh;
+            txtNgaySinh.Value = Convert.ToDateTime(editstaff.ngaysinh);
             txtCMND.Text = editstaff.cmnd;
             txtDiaChi.Text = editstaff.diachi;
             txtLuong.Text = editstaff.luong.ToString("0.##");
@@ -64,11 +64,11 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             {
                 id_nhanvien = editstaff.id_nhanvien,
                 hoten = txtHoTen.Text,
-                ngaysinh = DateTime.Parse(txtNgaySinh.EditValue.ToString()),
+                ngaysinh = DateTime.Parse(txtNgaySinh.Value.ToString()),
                 cmnd = txtCMND.Text,
                 diachi = txtDiaChi.Text,
-                luong = decimal.Parse(txtLuong.Text.ToString()),
-                tentaikhoan = txtTenTaiKhoan.Text,
+                luong = decimal.Parse(txtLuong.Text.Trim()),
+                tentaikhoan = txtTenTaiKhoan.Text.Trim(),
                 matkhau = txtMatKhau.Text,
                 quyen = quyen
             };
@@ -137,6 +137,16 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             else
             {
                 errorLuong.Text = "";
+            }
+
+            try
+            {
+                decimal.Parse(txtLuong.Text.ToString().Trim());
+            }
+            catch
+            {
+                errorLuong.Text = "Lương không hợp lệ";
+                countError++;
             }
 
             if (txtTenTaiKhoan.Text.Trim() == "")
