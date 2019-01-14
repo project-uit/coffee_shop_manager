@@ -23,7 +23,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
         private void EditStaffFrm_Load(object sender, EventArgs e)
         {
             txtHoTen.Text = editstaff.hoten;
-            txtNgaySinh.Value = Convert.ToDateTime(editstaff.ngaysinh);
+            txtNgaySinh.EditValue = Convert.ToDateTime(editstaff.ngaysinh);
             txtCMND.Text = editstaff.cmnd;
             txtDiaChi.Text = editstaff.diachi;
             txtLuong.Text = editstaff.luong.ToString("0.##");
@@ -64,7 +64,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             {
                 id_nhanvien = editstaff.id_nhanvien,
                 hoten = txtHoTen.Text,
-                ngaysinh = DateTime.Parse(txtNgaySinh.Value.ToString()),
+                ngaysinh = Convert.ToDateTime(txtNgaySinh.EditValue),
                 cmnd = txtCMND.Text,
                 diachi = txtDiaChi.Text,
                 luong = decimal.Parse(txtLuong.Text.Trim()),
@@ -74,7 +74,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             };
 
 
-            Boolean addStaff = staffDAO.editStaff(staff);
+            Boolean addStaff = StaffDAO.editStaff(staff);
             if (addStaff)
             {
                 XtraMessageBox.Show(this, "Cập nhật nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

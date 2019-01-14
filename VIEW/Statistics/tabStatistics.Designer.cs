@@ -45,7 +45,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateWeek = new DevExpress.XtraEditors.DateEdit();
             this.dateThongKe = new DevExpress.XtraEditors.DateEdit();
             this.btnExportFile = new MaterialSkin.Controls.MaterialRaisedButton();
             this.grdCtrThongKeNguyenLieu = new DevExpress.XtraGrid.GridControl();
@@ -56,18 +55,19 @@
             this.coldonvi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colhaohut = new DevExpress.XtraGrid.Columns.GridColumn();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.dateWeek = new DevExpress.XtraEditors.DateEdit();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartBeverage)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrThongKeNguyenLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViThongKeNguyenLieu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -251,9 +251,9 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dateWeek);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.dateWeek);
             this.tabPage3.Controls.Add(this.dateThongKe);
             this.tabPage3.Controls.Add(this.btnExportFile);
             this.tabPage3.Controls.Add(this.grdCtrThongKeNguyenLieu);
@@ -288,30 +288,9 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Theo tháng";
             // 
-            // dateWeek
-            // 
-            this.dateWeek.EditValue = new System.DateTime(2018, 12, 5, 0, 0, 0, 0);
-            this.dateWeek.Location = new System.Drawing.Point(179, 38);
-            this.dateWeek.Margin = new System.Windows.Forms.Padding(2);
-            this.dateWeek.Name = "dateWeek";
-            this.dateWeek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateWeek.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateWeek.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Fluent;
-            this.dateWeek.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
-            this.dateWeek.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dateWeek.Properties.EditFormat.FormatString = "dd/MM/yyyy";
-            this.dateWeek.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dateWeek.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dateWeek.Size = new System.Drawing.Size(124, 20);
-            this.dateWeek.TabIndex = 5;
-            this.dateWeek.ToolTip = "Ngày bắt đầu";
-            this.dateWeek.EditValueChanged += new System.EventHandler(this.dateWeek_EditValueChanged);
-            // 
             // dateThongKe
             // 
-            this.dateThongKe.EditValue = new System.DateTime(2018, 12, 5, 0, 0, 0, 0);
+            this.dateThongKe.EditValue = new System.DateTime(2019, 1, 14, 0, 0, 0, 0);
             this.dateThongKe.Location = new System.Drawing.Point(26, 38);
             this.dateThongKe.Margin = new System.Windows.Forms.Padding(2);
             this.dateThongKe.Name = "dateThongKe";
@@ -463,6 +442,24 @@
             this.materialTabSelector1.TabIndex = 0;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
+            // dateWeek
+            // 
+            this.dateWeek.EditValue = new System.DateTime(2019, 1, 14, 0, 0, 0, 0);
+            this.dateWeek.Location = new System.Drawing.Point(179, 38);
+            this.dateWeek.Margin = new System.Windows.Forms.Padding(2);
+            this.dateWeek.Name = "dateWeek";
+            this.dateWeek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateWeek.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateWeek.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dateWeek.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateWeek.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.dateWeek.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateWeek.Size = new System.Drawing.Size(118, 20);
+            this.dateWeek.TabIndex = 8;
+            this.dateWeek.EditValueChanged += new System.EventHandler(this.dateWeek_EditValueChanged);
+            // 
             // tabStatistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,12 +479,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartBeverage)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrThongKeNguyenLieu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViThongKeNguyenLieu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -514,12 +511,12 @@
         private DevExpress.XtraGrid.Columns.GridColumn coldinhluongthucte;
         private DevExpress.XtraGrid.Columns.GridColumn coldonvi;
         private DevExpress.XtraGrid.Columns.GridColumn colhaohut;
-        private DevExpress.XtraEditors.DateEdit dateWeek;
         private DevExpress.XtraEditors.DateEdit dateThongKe;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private DevExpress.XtraEditors.DateEdit dateWeek;
     }
 }

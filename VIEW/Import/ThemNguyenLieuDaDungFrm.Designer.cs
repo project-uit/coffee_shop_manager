@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemNguyenLieuDaDungFrm));
             this.cbTenNguyenLieu = new System.Windows.Forms.ComboBox();
             this.labelTenNguyenLieu = new System.Windows.Forms.Label();
             this.labelDinhLuong = new System.Windows.Forms.Label();
@@ -37,7 +38,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateEdit = new System.Windows.Forms.DateTimePicker();
+            this.dateEdit = new DevExpress.XtraEditors.DateEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // cbTenNguyenLieu
@@ -46,7 +49,7 @@
             this.cbTenNguyenLieu.FormattingEnabled = true;
             this.cbTenNguyenLieu.ItemHeight = 13;
             this.cbTenNguyenLieu.Location = new System.Drawing.Point(57, 171);
-            this.cbTenNguyenLieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTenNguyenLieu.Margin = new System.Windows.Forms.Padding(2);
             this.cbTenNguyenLieu.Name = "cbTenNguyenLieu";
             this.cbTenNguyenLieu.Size = new System.Drawing.Size(233, 21);
             this.cbTenNguyenLieu.TabIndex = 17;
@@ -118,7 +121,7 @@
             this.txtDinhLuong.Depth = 0;
             this.txtDinhLuong.Hint = "Nhập định lượng";
             this.txtDinhLuong.Location = new System.Drawing.Point(56, 239);
-            this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuong.MaxLength = 32767;
             this.txtDinhLuong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDinhLuong.Name = "txtDinhLuong";
@@ -168,12 +171,20 @@
             // 
             // dateEdit
             // 
-            this.dateEdit.CustomFormat = "dd/MM/yyyy";
-            this.dateEdit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateEdit.Location = new System.Drawing.Point(56, 117);
+            this.dateEdit.EditValue = new System.DateTime(2019, 1, 14, 20, 53, 24, 0);
+            this.dateEdit.Location = new System.Drawing.Point(57, 116);
+            this.dateEdit.Margin = new System.Windows.Forms.Padding(2);
             this.dateEdit.Name = "dateEdit";
-            this.dateEdit.Size = new System.Drawing.Size(234, 20);
-            this.dateEdit.TabIndex = 33;
+            this.dateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dateEdit.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateEdit.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.dateEdit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateEdit.Size = new System.Drawing.Size(233, 20);
+            this.dateEdit.TabIndex = 34;
             // 
             // ThemNguyenLieuDaDungFrm
             // 
@@ -190,12 +201,15 @@
             this.Controls.Add(this.labelDinhLuong);
             this.Controls.Add(this.labelTenNguyenLieu);
             this.Controls.Add(this.cbTenNguyenLieu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "ThemNguyenLieuDaDungFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Nguyên Liệu Đã Dùng";
             this.Load += new System.EventHandler(this.ThemNguyenLieuDaDungFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,6 +225,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateEdit;
+        private DevExpress.XtraEditors.DateEdit dateEdit;
     }
 }

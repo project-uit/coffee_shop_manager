@@ -36,7 +36,19 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             if (!validateForm())
                 return;
 
-            StaffDAO staffDAO = new StaffDAO();
+            List<nhanvien> nhanviens = new List<nhanvien>();
+            nhanviens = StaffDAO.getStaffs();
+            if (nhanviens.Count != 0)
+            {
+                foreach (nhanvien nv in nhanviens)
+                {
+                    if (txtTenTaiKhoan.Text.Trim().Equals(nv.tentaikhoan))
+                    {
+                        XtraMessageBox.Show(this, "Tên tài khoản này đã tồn tại, vui lòng chọn tên tài khoản khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+            }
 
             int quyen = 0;
             if (rdbQuanLy.Checked)
@@ -47,7 +59,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             nhanvien staff = new nhanvien
             {
                 hoten = txtHoTen.Text,
-                ngaysinh = DateTime.Parse(txtNgaySinh.Value.ToString()),
+                ngaysinh = Convert.ToDateTime(txtNgaySinh.EditValue),
                 cmnd = txtCMND.Text,
                 diachi = txtDiaChi.Text,
                 luong = decimal.Parse(txtLuong.Text.Trim()),
@@ -57,7 +69,7 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Staff
             };
 
 
-            Boolean addStaff = staffDAO.addStaff(staff);
+            Boolean addStaff = StaffDAO.addStaff(staff);
             if(addStaff)
             {
                 XtraMessageBox.Show(this, "Thêm nhân viên mới thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

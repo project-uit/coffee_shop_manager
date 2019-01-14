@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormulaFrm));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.txtDinhLuong = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.cbbNguyenLieu = new System.Windows.Forms.ComboBox();
             this.grdCtrCongThuc = new DevExpress.XtraGrid.GridControl();
@@ -57,7 +57,7 @@
             this.txtDinhLuong.Depth = 0;
             this.txtDinhLuong.Hint = "Nhập định lượng";
             this.txtDinhLuong.Location = new System.Drawing.Point(24, 92);
-            this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuong.MaxLength = 32767;
             this.txtDinhLuong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDinhLuong.Name = "txtDinhLuong";
@@ -77,7 +77,7 @@
             this.cbbNguyenLieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbNguyenLieu.FormattingEnabled = true;
             this.cbbNguyenLieu.Location = new System.Drawing.Point(233, 94);
-            this.cbbNguyenLieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbNguyenLieu.Margin = new System.Windows.Forms.Padding(2);
             this.cbbNguyenLieu.Name = "cbbNguyenLieu";
             this.cbbNguyenLieu.Size = new System.Drawing.Size(168, 21);
             this.cbbNguyenLieu.TabIndex = 1;
@@ -85,10 +85,10 @@
             // grdCtrCongThuc
             // 
             this.grdCtrCongThuc.DataSource = typeof(COFFEE_SHOP_MANAGER.chitietcongthuc);
-            this.grdCtrCongThuc.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grdCtrCongThuc.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2);
             this.grdCtrCongThuc.Location = new System.Drawing.Point(24, 157);
             this.grdCtrCongThuc.MainView = this.grdViCongThuc;
-            this.grdCtrCongThuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grdCtrCongThuc.Margin = new System.Windows.Forms.Padding(2);
             this.grdCtrCongThuc.Name = "grdCtrCongThuc";
             this.grdCtrCongThuc.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.btnXoa});
@@ -155,9 +155,9 @@
             // btnXoa
             // 
             this.btnXoa.AutoHeight = false;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.btnXoa.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -227,7 +227,8 @@
             this.Controls.Add(this.grdCtrCongThuc);
             this.Controls.Add(this.cbbNguyenLieu);
             this.Controls.Add(this.txtDinhLuong);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormulaFrm";

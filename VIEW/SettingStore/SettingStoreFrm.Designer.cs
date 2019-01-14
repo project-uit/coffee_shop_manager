@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingStoreFrm));
             this.btnSave = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtPhone = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lbErrorPhone = new DevExpress.XtraEditors.LabelControl();
@@ -195,6 +196,7 @@
             this.Controls.Add(this.lbErrorAddress);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbErrorName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SettingStoreFrm";

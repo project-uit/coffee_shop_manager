@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemNguyenLieuFrm));
             this.cbTenDonViDinhLuong = new System.Windows.Forms.ComboBox();
             this.btnLuu = new MaterialSkin.Controls.MaterialFlatButton();
             this.txtLoiTenNguyenLieu = new MaterialSkin.Controls.MaterialLabel();
@@ -61,7 +62,7 @@
             "lit",
             "kilogam"});
             this.cbTenDonViDinhLuong.Location = new System.Drawing.Point(276, 106);
-            this.cbTenDonViDinhLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbTenDonViDinhLuong.Margin = new System.Windows.Forms.Padding(2);
             this.cbTenDonViDinhLuong.Name = "cbTenDonViDinhLuong";
             this.cbTenDonViDinhLuong.Size = new System.Drawing.Size(168, 25);
             this.cbTenDonViDinhLuong.TabIndex = 6;
@@ -173,7 +174,7 @@
             this.txtDinhLuong.Depth = 0;
             this.txtDinhLuong.Hint = "";
             this.txtDinhLuong.Location = new System.Drawing.Point(30, 185);
-            this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuong.MaxLength = 32767;
             this.txtDinhLuong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDinhLuong.Name = "txtDinhLuong";
@@ -193,7 +194,7 @@
             this.txtTenNguyenLieu.Depth = 0;
             this.txtTenNguyenLieu.Hint = "";
             this.txtTenNguyenLieu.Location = new System.Drawing.Point(30, 106);
-            this.txtTenNguyenLieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenNguyenLieu.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenNguyenLieu.MaxLength = 32767;
             this.txtTenNguyenLieu.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenNguyenLieu.Name = "txtTenNguyenLieu";
@@ -212,7 +213,7 @@
             this.txtDinhLuongMin.Depth = 0;
             this.txtDinhLuongMin.Hint = "";
             this.txtDinhLuongMin.Location = new System.Drawing.Point(276, 185);
-            this.txtDinhLuongMin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDinhLuongMin.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuongMin.MaxLength = 32767;
             this.txtDinhLuongMin.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDinhLuongMin.Name = "txtDinhLuongMin";
@@ -232,7 +233,7 @@
             this.txtDinhLuongMax.Depth = 0;
             this.txtDinhLuongMax.Hint = "";
             this.txtDinhLuongMax.Location = new System.Drawing.Point(276, 262);
-            this.txtDinhLuongMax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDinhLuongMax.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuongMax.MaxLength = 32767;
             this.txtDinhLuongMax.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtDinhLuongMax.Name = "txtDinhLuongMax";
@@ -352,7 +353,8 @@
             this.Controls.Add(this.txtLoiTenNguyenLieu);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.cbTenDonViDinhLuong);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "ThemNguyenLieuFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

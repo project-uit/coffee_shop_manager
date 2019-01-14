@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNgaySinh = new System.Windows.Forms.DateTimePicker();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStaffFrm));
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,19 +58,13 @@
             this.errorDiaChi = new DevExpress.XtraEditors.LabelControl();
             this.errorHoTen = new DevExpress.XtraEditors.LabelControl();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNgaySinh = new DevExpress.XtraEditors.DateEdit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtNgaySinh
-            // 
-            this.txtNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.txtNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtNgaySinh.Location = new System.Drawing.Point(213, 52);
-            this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(147, 21);
-            this.txtNgaySinh.TabIndex = 87;
             // 
             // label7
             // 
@@ -174,7 +168,7 @@
             this.txtHoTen.SelectionLength = 0;
             this.txtHoTen.SelectionStart = 0;
             this.txtHoTen.Size = new System.Drawing.Size(166, 23);
-            this.txtHoTen.TabIndex = 60;
+            this.txtHoTen.TabIndex = 0;
             this.txtHoTen.TabStop = false;
             this.txtHoTen.UseSystemPasswordChar = false;
             // 
@@ -192,7 +186,7 @@
             this.txtCMND.SelectionLength = 0;
             this.txtCMND.SelectionStart = 0;
             this.txtCMND.Size = new System.Drawing.Size(166, 23);
-            this.txtCMND.TabIndex = 59;
+            this.txtCMND.TabIndex = 3;
             this.txtCMND.TabStop = false;
             this.txtCMND.UseSystemPasswordChar = false;
             // 
@@ -210,7 +204,7 @@
             this.txtLuong.SelectionLength = 0;
             this.txtLuong.SelectionStart = 0;
             this.txtLuong.Size = new System.Drawing.Size(166, 23);
-            this.txtLuong.TabIndex = 58;
+            this.txtLuong.TabIndex = 2;
             this.txtLuong.TabStop = false;
             this.txtLuong.UseSystemPasswordChar = false;
             // 
@@ -226,7 +220,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Primary = true;
             this.btnSave.Size = new System.Drawing.Size(47, 36);
-            this.btnSave.TabIndex = 51;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -268,7 +262,7 @@
             this.txtMatKhauComfirm.SelectionLength = 0;
             this.txtMatKhauComfirm.SelectionStart = 0;
             this.txtMatKhauComfirm.Size = new System.Drawing.Size(166, 23);
-            this.txtMatKhauComfirm.TabIndex = 63;
+            this.txtMatKhauComfirm.TabIndex = 6;
             this.txtMatKhauComfirm.TabStop = false;
             this.txtMatKhauComfirm.UseSystemPasswordChar = false;
             // 
@@ -286,7 +280,7 @@
             this.txtMatKhau.SelectionLength = 0;
             this.txtMatKhau.SelectionStart = 0;
             this.txtMatKhau.Size = new System.Drawing.Size(166, 23);
-            this.txtMatKhau.TabIndex = 62;
+            this.txtMatKhau.TabIndex = 5;
             this.txtMatKhau.TabStop = false;
             this.txtMatKhau.UseSystemPasswordChar = false;
             // 
@@ -304,7 +298,7 @@
             this.txtTenTaiKhoan.SelectionLength = 0;
             this.txtTenTaiKhoan.SelectionStart = 0;
             this.txtTenTaiKhoan.Size = new System.Drawing.Size(166, 23);
-            this.txtTenTaiKhoan.TabIndex = 61;
+            this.txtTenTaiKhoan.TabIndex = 4;
             this.txtTenTaiKhoan.TabStop = false;
             this.txtTenTaiKhoan.UseSystemPasswordChar = false;
             // 
@@ -350,7 +344,7 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(111, 73);
-            this.groupBox3.TabIndex = 53;
+            this.groupBox3.TabIndex = 8;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Quyền";
             // 
@@ -403,7 +397,7 @@
             this.txtDiaChi.SelectionLength = 0;
             this.txtDiaChi.SelectionStart = 0;
             this.txtDiaChi.Size = new System.Drawing.Size(166, 23);
-            this.txtDiaChi.TabIndex = 43;
+            this.txtDiaChi.TabIndex = 1;
             this.txtDiaChi.TabStop = false;
             this.txtDiaChi.UseSystemPasswordChar = false;
             // 
@@ -479,6 +473,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhân viên";
             // 
+            // txtNgaySinh
+            // 
+            this.txtNgaySinh.EditValue = new System.DateTime(2019, 1, 14, 20, 53, 24, 0);
+            this.txtNgaySinh.Location = new System.Drawing.Point(213, 54);
+            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNgaySinh.Name = "txtNgaySinh";
+            this.txtNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtNgaySinh.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.txtNgaySinh.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtNgaySinh.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.txtNgaySinh.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtNgaySinh.Size = new System.Drawing.Size(164, 20);
+            this.txtNgaySinh.TabIndex = 88;
+            // 
             // AddStaffFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,6 +498,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -501,14 +513,14 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgaySinh.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DateTimePicker txtNgaySinh;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
@@ -538,5 +550,6 @@
         private DevExpress.XtraEditors.LabelControl errorDiaChi;
         private DevExpress.XtraEditors.LabelControl errorHoTen;
         private System.Windows.Forms.GroupBox groupBox1;
+        private DevExpress.XtraEditors.DateEdit txtNgaySinh;
     }
 }

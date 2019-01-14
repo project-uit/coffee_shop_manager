@@ -204,6 +204,7 @@
             this.Controls.Add(this.txtTenThucUong);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.grdCtrNhomThucUong);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GroupBeverage";

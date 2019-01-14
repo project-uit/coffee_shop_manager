@@ -83,7 +83,6 @@
             this.btnAddThucUong = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.btnSave = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.btnCreate = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.lbTotal = new MaterialSkin.Controls.MaterialLabel();
@@ -93,12 +92,13 @@
             this.lbSum = new MaterialSkin.Controls.MaterialLabel();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnPrint = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
-            this.txtSearchInvoice = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtDate = new DevExpress.XtraEditors.DateEdit();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.txtSearchInvoice = new System.Windows.Forms.TextBox();
             this.gcSearchInvoice = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.id = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -438,7 +438,6 @@
             // 
             this.btnAddThucUong.AutoHeight = false;
             editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
-            serializableAppearanceObject13.Image = ((System.Drawing.Image)(resources.GetObject("serializableAppearanceObject13.Image")));
             serializableAppearanceObject13.Options.UseImage = true;
             this.btnAddThucUong.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "Xóa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
@@ -468,26 +467,12 @@
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.Location = new System.Drawing.Point(796, 26);
+            this.txtSearch.Location = new System.Drawing.Point(796, 39);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(163, 21);
             this.txtSearch.TabIndex = 11;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_OnTextChange);
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(679, 28);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(113, 19);
-            this.materialLabel2.TabIndex = 12;
-            this.materialLabel2.Text = "Tìm thức uống";
             // 
             // btnCreate
             // 
@@ -607,6 +592,7 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.label2);
             this.xtraTabPage1.Controls.Add(this.btnPrint);
             this.xtraTabPage1.Controls.Add(this.btnCreate);
             this.xtraTabPage1.Controls.Add(this.lbSum);
@@ -619,12 +605,22 @@
             this.xtraTabPage1.Controls.Add(this.lbTotal);
             this.xtraTabPage1.Controls.Add(this.txtSearch);
             this.xtraTabPage1.Controls.Add(this.materialLabel3);
-            this.xtraTabPage1.Controls.Add(this.materialLabel2);
             this.xtraTabPage1.Controls.Add(this.btnSave);
             this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(989, 601);
             this.xtraTabPage1.Text = "Lập hóa đơn";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(793, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 16);
+            this.label2.TabIndex = 92;
+            this.label2.Text = "Tìm thức uống";
             // 
             // btnPrint
             // 
@@ -641,64 +637,64 @@
             // 
             // xtraTabPage2
             // 
-            this.xtraTabPage2.Controls.Add(this.materialLabel7);
-            this.xtraTabPage2.Controls.Add(this.txtSearchInvoice);
+            this.xtraTabPage2.Controls.Add(this.label1);
+            this.xtraTabPage2.Controls.Add(this.label3);
             this.xtraTabPage2.Controls.Add(this.txtDate);
-            this.xtraTabPage2.Controls.Add(this.materialLabel5);
+            this.xtraTabPage2.Controls.Add(this.txtSearchInvoice);
             this.xtraTabPage2.Controls.Add(this.gcSearchInvoice);
             this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(989, 601);
             this.xtraTabPage2.Text = "Tìm kiếm hóa đơn";
             // 
-            // materialLabel7
+            // label1
             // 
-            this.materialLabel7.Depth = 0;
-            this.materialLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(27, 30);
-            this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel7.Name = "materialLabel7";
-            this.materialLabel7.Size = new System.Drawing.Size(97, 19);
-            this.materialLabel7.TabIndex = 18;
-            this.materialLabel7.Text = "Mã hóa đơn";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(288, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 16);
+            this.label1.TabIndex = 92;
+            this.label1.Text = "Ngày lập";
             // 
-            // txtSearchInvoice
+            // label3
             // 
-            this.txtSearchInvoice.Location = new System.Drawing.Point(128, 30);
-            this.txtSearchInvoice.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSearchInvoice.Name = "txtSearchInvoice";
-            this.txtSearchInvoice.Size = new System.Drawing.Size(153, 21);
-            this.txtSearchInvoice.TabIndex = 17;
-            this.txtSearchInvoice.TextChanged += new System.EventHandler(this.searchInvoice);
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 16);
+            this.label3.TabIndex = 91;
+            this.label3.Text = "Mã hóa đơn";
             // 
             // txtDate
             // 
-            this.txtDate.EditValue = null;
-            this.txtDate.Location = new System.Drawing.Point(379, 31);
+            this.txtDate.EditValue = new System.DateTime(2019, 1, 14, 21, 11, 53, 0);
+            this.txtDate.Location = new System.Drawing.Point(291, 34);
             this.txtDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Size = new System.Drawing.Size(147, 20);
-            this.txtDate.TabIndex = 16;
+            this.txtDate.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.txtDate.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtDate.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.txtDate.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.txtDate.Size = new System.Drawing.Size(164, 20);
+            this.txtDate.TabIndex = 90;
             this.txtDate.EditValueChanged += new System.EventHandler(this.searchInvoice);
             // 
-            // materialLabel5
+            // txtSearchInvoice
             // 
-            this.materialLabel5.Depth = 0;
-            this.materialLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(305, 30);
-            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel5.Name = "materialLabel5";
-            this.materialLabel5.Size = new System.Drawing.Size(70, 19);
-            this.materialLabel5.TabIndex = 14;
-            this.materialLabel5.Text = "Ngày lập";
+            this.txtSearchInvoice.Location = new System.Drawing.Point(31, 33);
+            this.txtSearchInvoice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtSearchInvoice.Name = "txtSearchInvoice";
+            this.txtSearchInvoice.Size = new System.Drawing.Size(153, 21);
+            this.txtSearchInvoice.TabIndex = 17;
+            this.txtSearchInvoice.TextChanged += new System.EventHandler(this.searchInvoice);
             // 
             // gcSearchInvoice
             // 
@@ -731,6 +727,7 @@
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.gridView2.OptionsView.RowAutoHeight = true;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.PreviewIndent = 0;
             // 
             // id
@@ -802,6 +799,7 @@
             this.DoubleBuffered = true;
             this.Name = "tabStore";
             this.Size = new System.Drawing.Size(1014, 628);
+            this.Load += new System.EventHandler(this.tabStore_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcInvoice)).EndInit();
@@ -856,7 +854,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit txtsoluong;
         private MaterialSkin.Controls.MaterialRaisedButton btnSave;
         private System.Windows.Forms.TextBox txtSearch;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialRaisedButton btnCreate;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel lbTotal;
@@ -874,10 +871,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn date;
         private DevExpress.XtraGrid.Columns.GridColumn view;
         private DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit btnView;
-        private MaterialSkin.Controls.MaterialLabel materialLabel5;
-        private DevExpress.XtraEditors.DateEdit txtDate;
         private System.Windows.Forms.TextBox txtSearchInvoice;
         private DevExpress.XtraEditors.SimpleButton btnPrint;
-        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private DevExpress.XtraEditors.DateEdit txtDate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

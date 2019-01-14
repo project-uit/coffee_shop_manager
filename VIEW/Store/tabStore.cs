@@ -32,6 +32,11 @@ namespace COFFEE_SHOP_MANAGER
                 return;
             }
             InitializeComponent();
+        }
+
+        private void tabStore_Load(object sender, EventArgs e)
+        {
+            txtDate.EditValue = null;
             LoadData();
         }
 

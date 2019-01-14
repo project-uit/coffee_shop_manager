@@ -49,11 +49,15 @@
             this.lbErrorDate = new System.Windows.Forms.Label();
             this.lbErrorNgayKetThuc = new System.Windows.Forms.Label();
             this.btnLuu = new MaterialSkin.Controls.MaterialFlatButton();
-            this.dateNgayBatDau = new System.Windows.Forms.DateTimePicker();
-            this.dateNgayKetThuc = new System.Windows.Forms.DateTimePicker();
+            this.dateNgayBatDau = new DevExpress.XtraEditors.DateEdit();
+            this.dateNgayKetThuc = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrGiamGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViGiamGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayKetThuc.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayKetThuc.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // txtGiamGia
@@ -249,23 +253,39 @@
             // 
             // dateNgayBatDau
             // 
-            this.dateNgayBatDau.CustomFormat = "dd/MM/yyyy";
-            this.dateNgayBatDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayBatDau.Location = new System.Drawing.Point(269, 109);
+            this.dateNgayBatDau.EditValue = new System.DateTime(2019, 1, 14, 20, 53, 24, 0);
+            this.dateNgayBatDau.Location = new System.Drawing.Point(269, 108);
+            this.dateNgayBatDau.Margin = new System.Windows.Forms.Padding(2);
             this.dateNgayBatDau.Name = "dateNgayBatDau";
-            this.dateNgayBatDau.Size = new System.Drawing.Size(127, 20);
-            this.dateNgayBatDau.TabIndex = 15;
-            this.dateNgayBatDau.ValueChanged += new System.EventHandler(this.dateNgayBatDau_EditValueChanged);
+            this.dateNgayBatDau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgayBatDau.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgayBatDau.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dateNgayBatDau.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateNgayBatDau.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.dateNgayBatDau.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateNgayBatDau.Size = new System.Drawing.Size(118, 20);
+            this.dateNgayBatDau.TabIndex = 17;
+            this.dateNgayBatDau.EditValueChanged += new System.EventHandler(this.dateNgayBatDau_EditValueChanged);
             // 
             // dateNgayKetThuc
             // 
-            this.dateNgayKetThuc.CustomFormat = "dd/MM/yyyy";
-            this.dateNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayKetThuc.Location = new System.Drawing.Point(480, 109);
+            this.dateNgayKetThuc.EditValue = new System.DateTime(2019, 1, 14, 20, 53, 24, 0);
+            this.dateNgayKetThuc.Location = new System.Drawing.Point(480, 108);
+            this.dateNgayKetThuc.Margin = new System.Windows.Forms.Padding(2);
             this.dateNgayKetThuc.Name = "dateNgayKetThuc";
-            this.dateNgayKetThuc.Size = new System.Drawing.Size(127, 20);
-            this.dateNgayKetThuc.TabIndex = 16;
-            this.dateNgayKetThuc.ValueChanged += new System.EventHandler(this.dateNgayKetThuc_EditValueChanged);
+            this.dateNgayKetThuc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgayKetThuc.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgayKetThuc.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dateNgayKetThuc.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateNgayKetThuc.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.dateNgayKetThuc.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateNgayKetThuc.Size = new System.Drawing.Size(118, 20);
+            this.dateNgayKetThuc.TabIndex = 18;
+            this.dateNgayKetThuc.EditValueChanged += new System.EventHandler(this.dateNgayKetThuc_EditValueChanged);
             // 
             // DiscountFrm
             // 
@@ -283,6 +303,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.grdCtrGiamGia);
             this.Controls.Add(this.txtGiamGia);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -293,6 +314,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrGiamGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViGiamGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayBatDau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayKetThuc.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayKetThuc.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,7 +340,7 @@
         private System.Windows.Forms.Label lbErrorDate;
         private System.Windows.Forms.Label lbErrorNgayKetThuc;
         private MaterialSkin.Controls.MaterialFlatButton btnLuu;
-        private System.Windows.Forms.DateTimePicker dateNgayBatDau;
-        private System.Windows.Forms.DateTimePicker dateNgayKetThuc;
+        private DevExpress.XtraEditors.DateEdit dateNgayBatDau;
+        private DevExpress.XtraEditors.DateEdit dateNgayKetThuc;
     }
 }

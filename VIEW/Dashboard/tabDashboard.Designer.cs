@@ -166,7 +166,7 @@
             this.lbRevenue.Location = new System.Drawing.Point(2, 83);
             this.lbRevenue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbRevenue.Name = "lbRevenue";
-            this.lbRevenue.Size = new System.Drawing.Size(265, 37);
+            this.lbRevenue.Size = new System.Drawing.Size(264, 37);
             this.lbRevenue.TabIndex = 6;
             this.lbRevenue.Text = "0";
             this.lbRevenue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

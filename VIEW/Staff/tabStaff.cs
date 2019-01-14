@@ -26,7 +26,7 @@ namespace COFFEE_SHOP_MANAGER
             }
 
             InitializeComponent();
-            gcUsers.DataSource = staffDAO.getStaffs();
+            gcUsers.DataSource = StaffDAO.getStaffs();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace COFFEE_SHOP_MANAGER
 
         private void DoAfterAddOrEditStaff(object sender, FormClosingEventArgs e)
         {
-            gcUsers.DataSource = staffDAO.getStaffs();
+            gcUsers.DataSource = StaffDAO.getStaffs();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -58,9 +58,9 @@ namespace COFFEE_SHOP_MANAGER
             {
                 GridView gridview = gcUsers.FocusedView as GridView;
                 nhanvien staff = gridview.GetRow(gridview.FocusedRowHandle) as nhanvien;
-                if (staffDAO.deleteStaff(staff))
+                if (StaffDAO.deleteStaff(staff))
                 {
-                    gcUsers.DataSource = staffDAO.getStaffs();
+                    gcUsers.DataSource = StaffDAO.getStaffs();
                     XtraMessageBox.Show(this, "Đã xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }

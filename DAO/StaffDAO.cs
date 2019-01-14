@@ -8,7 +8,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
 {
     class StaffDAO
     {
-        public List<nhanvien> getStaffs()
+        public static List<nhanvien> getStaffs()
         {
             List<nhanvien> staffs = new List<nhanvien>();
             try
@@ -28,7 +28,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
             return staffs;
         }
 
-        public Boolean addStaff(nhanvien nhanvien)
+        public static Boolean addStaff(nhanvien nhanvien)
         {
             try
             {
@@ -47,7 +47,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
             return true;
         }
 
-        public Boolean editStaff(nhanvien nhanvien)
+        public static Boolean editStaff(nhanvien nhanvien)
         {
             try
             {
@@ -74,7 +74,7 @@ namespace COFFEE_SHOP_MANAGER.DAO
             return true;
         }
 
-        public Boolean deleteStaff(nhanvien nhanvien)
+        public static Boolean deleteStaff(nhanvien nhanvien)
         {
             try
             {

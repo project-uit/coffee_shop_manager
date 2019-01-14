@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NhapKhoFrm));
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
@@ -51,7 +52,9 @@
             this.txtDinhLuongDonVi = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.txtTenNhanVien = new MaterialSkin.Controls.MaterialLabel();
-            this.dateEdit = new System.Windows.Forms.DateTimePicker();
+            this.dateEdit = new DevExpress.XtraEditors.DateEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // materialLabel2
@@ -406,12 +409,20 @@
             // 
             // dateEdit
             // 
-            this.dateEdit.CustomFormat = "dd/MM/yyyy";
-            this.dateEdit.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateEdit.Location = new System.Drawing.Point(194, 142);
+            this.dateEdit.EditValue = new System.DateTime(2019, 1, 14, 20, 53, 24, 0);
+            this.dateEdit.Location = new System.Drawing.Point(194, 141);
+            this.dateEdit.Margin = new System.Windows.Forms.Padding(2);
             this.dateEdit.Name = "dateEdit";
-            this.dateEdit.Size = new System.Drawing.Size(258, 20);
-            this.dateEdit.TabIndex = 30;
+            this.dateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dateEdit.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateEdit.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.dateEdit.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateEdit.Size = new System.Drawing.Size(118, 20);
+            this.dateEdit.TabIndex = 31;
             // 
             // NhapKhoFrm
             // 
@@ -442,12 +453,15 @@
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialLabel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "NhapKhoFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhập Kho";
             this.Load += new System.EventHandler(this.NhapKhoFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,6 +491,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtDinhLuongDonVi;
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel txtTenNhanVien;
-        private System.Windows.Forms.DateTimePicker dateEdit;
+        private DevExpress.XtraEditors.DateEdit dateEdit;
     }
 }
