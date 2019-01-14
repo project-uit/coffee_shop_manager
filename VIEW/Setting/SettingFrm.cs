@@ -24,6 +24,13 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Setting
             InitializeComponent();
         }
 
+        private void SettingFrm_Load(object sender, EventArgs e)
+        {
+            var location = System.Reflection.Assembly.GetEntryAssembly().Location;
+            var directory = Path.GetDirectoryName(location) + "\\backup";
+            txtPathFileBackup.Text = directory.Replace(@"\", @"\\");
+        }
+
         private Boolean validateFieldsRestore()
         {
             int countError = 0;
@@ -118,7 +125,9 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Setting
                 return;
 
             severName = ".\\" + txtSeverName.Text;
-            
+
+            DatabaseUtils.RestoreDatabase(severName, databaseName, txtPathFileRestore.Text.ToString());
+
             try
             {
                 DatabaseUtils.createDB(severName, "quanlycafe");
@@ -140,7 +149,8 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Setting
 
             try
             {
-                DatabaseUtils.BackupDatabase(severName, databaseName, txtPathFileBackup.Text);
+                String time = DateTime.Now.ToString("yyyy_MM_ddTHHmmss");
+                DatabaseUtils.BackupDatabase(severName, databaseName, txtPathFileBackup.Text + "\\quanlycafe_" + time + ".bak");
                 XtraMessageBox.Show(this, "Backup thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SmoException ex)
@@ -148,5 +158,6 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Setting
                 XtraMessageBox.Show(this, ex.InnerException.Message , "Backup thất bại!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

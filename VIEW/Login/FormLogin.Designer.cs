@@ -37,9 +37,7 @@
             this.lbError = new DevExpress.XtraEditors.LabelControl();
             this.txtUsername = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtPassword = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.btnSetting = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSetting)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -182,27 +180,12 @@
             this.txtPassword.TabStop = false;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // btnSetting
-            // 
-            this.btnSetting.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
-            this.btnSetting.ImageActive = null;
-            this.btnSetting.Location = new System.Drawing.Point(413, 12);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(40, 40);
-            this.btnSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSetting.TabIndex = 18;
-            this.btnSetting.TabStop = false;
-            this.btnSetting.Zoom = 10;
-            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(465, 437);
-            this.Controls.Add(this.btnSetting);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.lbError);
@@ -216,7 +199,6 @@
             this.Text = "FormLogin";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSetting)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,6 +212,5 @@
         private DevExpress.XtraEditors.LabelControl lbError;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtPassword;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtUsername;
-        private Bunifu.Framework.UI.BunifuImageButton btnSetting;
     }
 }
