@@ -39,7 +39,6 @@
             this.lbRevenue = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chart = new DevExpress.XtraCharts.ChartControl();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.bunifuCards1.SuspendLayout();
             this.bunifuCards2.SuspendLayout();
             this.bunifuCards3.SuspendLayout();
@@ -191,33 +190,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.chart.Legend.Name = "Default Legend";
-            this.chart.Location = new System.Drawing.Point(58, 321);
-            this.chart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart.Location = new System.Drawing.Point(58, 293);
+            this.chart.Margin = new System.Windows.Forms.Padding(2);
             this.chart.Name = "chart";
             this.chart.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chart.Size = new System.Drawing.Size(942, 259);
+            this.chart.Size = new System.Drawing.Size(942, 287);
             this.chart.TabIndex = 6;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(427, 277);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(305, 19);
-            this.materialLabel1.TabIndex = 7;
-            this.materialLabel1.Text = "Biểu đồ thống kê doanh thu nhóm thức uống";
             // 
             // tabDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.chart);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuCards3);
@@ -234,7 +218,6 @@
             this.bunifuCards3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -251,6 +234,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbRevenue;
         private DevExpress.XtraCharts.ChartControl chart;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }

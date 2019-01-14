@@ -69,6 +69,11 @@ namespace COFFEE_SHOP_MANAGER
             if (listCTHD.Count == 0)
                 return;
 
+            ChartTitle chartTitle = new ChartTitle();
+            chartTitle.Text = "BIỂU ĐỒ THỐNG KÊ DOANH THU THEO NHÓM THỨC UỐNG TRONG NGÀY";
+            chart.Titles.Clear();
+            chart.Titles.Add(chartTitle);
+
             chart.Series.Clear();
             Series series = new Series("Doanh thu", ViewType.Bar);
             chart.Series.Add(series);

@@ -90,7 +90,7 @@ namespace COFFEE_SHOP_MANAGER
                 else
                 {
                     discountValue = 0;
-                    lbDiscount.Text = discount.hesogiamgia.ToString() + "%";
+                    lbDiscount.Text = "0%";
                 }
             }
         }

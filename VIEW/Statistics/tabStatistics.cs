@@ -29,12 +29,9 @@ namespace COFFEE_SHOP_MANAGER
         {
             List<String> years = StatictisDAO.getListYearAvaiable();
             cmbYear.DataSource = years;
-            // cmbYear_SelectedIndexChanged(sender, e);
 
             cmbYearTabBeverage.DataSource = years;
             cmbMonthTabBeverage.SelectedIndex = 0;
-            // cmbYearTabBeverage.SelectedIndex = years.Count() - 1;
-
         }
 
         private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
@@ -45,6 +42,11 @@ namespace COFFEE_SHOP_MANAGER
             chartRevenue.Series.Clear();
             Series series = new Series("Doanh thu", ViewType.Bar);
             chartRevenue.Series.Add(series);
+
+            ChartTitle chartTitle = new ChartTitle();
+            chartTitle.Text = "BIỂU ĐỒ THỐNG KÊ DOANH THU TRONG NĂM";
+            chartRevenue.Titles.Clear();
+            chartRevenue.Titles.Add(chartTitle);
 
             for (int i=0; i < 12; i ++)
             {
@@ -97,6 +99,12 @@ namespace COFFEE_SHOP_MANAGER
 
             // Detect overlapping of series labels.
             label.ResolveOverlappingMode = ResolveOverlappingMode.Default;
+
+            ChartTitle chartTitle = new ChartTitle();
+            chartTitle.Text = "BIỂU ĐỒ THÔNG KÊ DOANH THU NHÓM THỨC UỐNG TRONG THÁNG";
+            chartBeverage.Titles.Clear();
+            chartBeverage.Titles.Add(chartTitle);
+
             foreach (nhomthucuong group in GroupBeverageDAO.getList())
             {
                 chartBeverage.Series["beverage"].Points.Add(
