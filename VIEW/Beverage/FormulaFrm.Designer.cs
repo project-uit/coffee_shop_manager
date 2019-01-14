@@ -56,7 +56,7 @@
             // 
             this.txtDinhLuong.Depth = 0;
             this.txtDinhLuong.Hint = "Nhập định lượng";
-            this.txtDinhLuong.Location = new System.Drawing.Point(24, 92);
+            this.txtDinhLuong.Location = new System.Drawing.Point(24, 99);
             this.txtDinhLuong.Margin = new System.Windows.Forms.Padding(2);
             this.txtDinhLuong.MaxLength = 32767;
             this.txtDinhLuong.MouseState = MaterialSkin.MouseState.HOVER;
@@ -76,7 +76,7 @@
             // 
             this.cbbNguyenLieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbNguyenLieu.FormattingEnabled = true;
-            this.cbbNguyenLieu.Location = new System.Drawing.Point(233, 94);
+            this.cbbNguyenLieu.Location = new System.Drawing.Point(233, 101);
             this.cbbNguyenLieu.Margin = new System.Windows.Forms.Padding(2);
             this.cbbNguyenLieu.Name = "cbbNguyenLieu";
             this.cbbNguyenLieu.Size = new System.Drawing.Size(168, 21);
@@ -119,6 +119,7 @@
             this.colkhonguyenlieu.FieldName = "khonguyenlieu.tennguyenlieu";
             this.colkhonguyenlieu.MinWidth = 19;
             this.colkhonguyenlieu.Name = "colkhonguyenlieu";
+            this.colkhonguyenlieu.OptionsColumn.AllowEdit = false;
             this.colkhonguyenlieu.Visible = true;
             this.colkhonguyenlieu.VisibleIndex = 0;
             this.colkhonguyenlieu.Width = 124;
@@ -129,6 +130,7 @@
             this.coldinhluong.FieldName = "dinhluong";
             this.coldinhluong.MinWidth = 19;
             this.coldinhluong.Name = "coldinhluong";
+            this.coldinhluong.OptionsColumn.AllowEdit = false;
             this.coldinhluong.Visible = true;
             this.coldinhluong.VisibleIndex = 1;
             this.coldinhluong.Width = 124;
@@ -139,6 +141,7 @@
             this.colkhonguyenlieu1.FieldName = "khonguyenlieu.tendonvi_dinh_luong";
             this.colkhonguyenlieu1.MinWidth = 19;
             this.colkhonguyenlieu1.Name = "colkhonguyenlieu1";
+            this.colkhonguyenlieu1.OptionsColumn.AllowEdit = false;
             this.colkhonguyenlieu1.Visible = true;
             this.colkhonguyenlieu1.VisibleIndex = 2;
             this.colkhonguyenlieu1.Width = 220;
@@ -167,7 +170,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(230, 76);
+            this.label1.Location = new System.Drawing.Point(230, 83);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 16);
@@ -179,7 +182,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 74);
+            this.label2.Location = new System.Drawing.Point(21, 81);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 16);
@@ -191,7 +194,7 @@
             this.lbErrorDinhLuong.AutoSize = true;
             this.lbErrorDinhLuong.BackColor = System.Drawing.Color.Transparent;
             this.lbErrorDinhLuong.ForeColor = System.Drawing.Color.Red;
-            this.lbErrorDinhLuong.Location = new System.Drawing.Point(21, 117);
+            this.lbErrorDinhLuong.Location = new System.Drawing.Point(21, 124);
             this.lbErrorDinhLuong.Name = "lbErrorDinhLuong";
             this.lbErrorDinhLuong.Size = new System.Drawing.Size(35, 13);
             this.lbErrorDinhLuong.TabIndex = 13;
@@ -204,7 +207,7 @@
             this.btnLuu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLuu.Depth = 0;
             this.btnLuu.Icon = null;
-            this.btnLuu.Location = new System.Drawing.Point(462, 85);
+            this.btnLuu.Location = new System.Drawing.Point(462, 92);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";

@@ -137,6 +137,7 @@
             this.coltenthucuong.FieldName = "tenthucuong";
             this.coltenthucuong.MinWidth = 187;
             this.coltenthucuong.Name = "coltenthucuong";
+            this.coltenthucuong.OptionsColumn.AllowEdit = false;
             this.coltenthucuong.Visible = true;
             this.coltenthucuong.VisibleIndex = 0;
             this.coltenthucuong.Width = 478;
@@ -152,6 +153,7 @@
             this.colgiaban.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.colgiaban.FieldName = "giaban";
             this.colgiaban.Name = "colgiaban";
+            this.colgiaban.OptionsColumn.AllowEdit = false;
             this.colgiaban.Visible = true;
             this.colgiaban.VisibleIndex = 2;
             this.colgiaban.Width = 241;
@@ -165,6 +167,7 @@
             this.colnhomthucuong.Caption = "Nhóm thức uống";
             this.colnhomthucuong.FieldName = "nhomthucuong.tennhomthucuong";
             this.colnhomthucuong.Name = "colnhomthucuong";
+            this.colnhomthucuong.OptionsColumn.AllowEdit = false;
             this.colnhomthucuong.Visible = true;
             this.colnhomthucuong.VisibleIndex = 1;
             this.colnhomthucuong.Width = 313;

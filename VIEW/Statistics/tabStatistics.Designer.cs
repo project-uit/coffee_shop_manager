@@ -43,6 +43,7 @@
             this.cmbMonthTabBeverage = new System.Windows.Forms.ComboBox();
             this.cmbYearTabBeverage = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dateWeek = new DevExpress.XtraEditors.DateEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dateThongKe = new DevExpress.XtraEditors.DateEdit();
@@ -55,19 +56,18 @@
             this.coldonvi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colhaohut = new DevExpress.XtraGrid.Columns.GridColumn();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.dateWeek = new DevExpress.XtraEditors.DateEdit();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartRevenue)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartBeverage)).BeginInit();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrThongKeNguyenLieu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViThongKeNguyenLieu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -266,6 +266,24 @@
             this.tabPage3.Text = "Thống kê kho nguyên liệu";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // dateWeek
+            // 
+            this.dateWeek.EditValue = new System.DateTime(2019, 1, 14, 0, 0, 0, 0);
+            this.dateWeek.Location = new System.Drawing.Point(179, 38);
+            this.dateWeek.Margin = new System.Windows.Forms.Padding(2);
+            this.dateWeek.Name = "dateWeek";
+            this.dateWeek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateWeek.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateWeek.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
+            this.dateWeek.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateWeek.Properties.EditFormat.FormatString = "dd/MM/yyyy";
+            this.dateWeek.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.dateWeek.Size = new System.Drawing.Size(118, 20);
+            this.dateWeek.TabIndex = 8;
+            this.dateWeek.EditValueChanged += new System.EventHandler(this.dateWeek_EditValueChanged);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -368,6 +386,7 @@
             this.coltennguyenlieu.FieldName = "tennguyenlieu";
             this.coltennguyenlieu.MinWidth = 19;
             this.coltennguyenlieu.Name = "coltennguyenlieu";
+            this.coltennguyenlieu.OptionsColumn.AllowEdit = false;
             this.coltennguyenlieu.Visible = true;
             this.coltennguyenlieu.VisibleIndex = 0;
             this.coltennguyenlieu.Width = 70;
@@ -382,6 +401,7 @@
             this.coldinhluonglythuyet.FieldName = "dinhluonglythuyet";
             this.coldinhluonglythuyet.MinWidth = 19;
             this.coldinhluonglythuyet.Name = "coldinhluonglythuyet";
+            this.coldinhluonglythuyet.OptionsColumn.AllowEdit = false;
             this.coldinhluonglythuyet.Visible = true;
             this.coldinhluonglythuyet.VisibleIndex = 1;
             this.coldinhluonglythuyet.Width = 70;
@@ -396,6 +416,7 @@
             this.coldinhluongthucte.FieldName = "dinhluongthucte";
             this.coldinhluongthucte.MinWidth = 19;
             this.coldinhluongthucte.Name = "coldinhluongthucte";
+            this.coldinhluongthucte.OptionsColumn.AllowEdit = false;
             this.coldinhluongthucte.Visible = true;
             this.coldinhluongthucte.VisibleIndex = 2;
             this.coldinhluongthucte.Width = 70;
@@ -410,6 +431,7 @@
             this.coldonvi.FieldName = "donvi";
             this.coldonvi.MinWidth = 19;
             this.coldonvi.Name = "coldonvi";
+            this.coldonvi.OptionsColumn.AllowEdit = false;
             this.coldonvi.Visible = true;
             this.coldonvi.VisibleIndex = 3;
             this.coldonvi.Width = 70;
@@ -424,6 +446,7 @@
             this.colhaohut.FieldName = "haohut";
             this.colhaohut.MinWidth = 19;
             this.colhaohut.Name = "colhaohut";
+            this.colhaohut.OptionsColumn.AllowEdit = false;
             this.colhaohut.Visible = true;
             this.colhaohut.VisibleIndex = 4;
             this.colhaohut.Width = 70;
@@ -441,24 +464,6 @@
             this.materialTabSelector1.Size = new System.Drawing.Size(997, 38);
             this.materialTabSelector1.TabIndex = 0;
             this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // dateWeek
-            // 
-            this.dateWeek.EditValue = new System.DateTime(2019, 1, 14, 0, 0, 0, 0);
-            this.dateWeek.Location = new System.Drawing.Point(179, 38);
-            this.dateWeek.Margin = new System.Windows.Forms.Padding(2);
-            this.dateWeek.Name = "dateWeek";
-            this.dateWeek.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateWeek.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateWeek.Properties.DisplayFormat.FormatString = "dd/MM/yyyy";
-            this.dateWeek.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dateWeek.Properties.EditFormat.FormatString = "dd/MM/yyyy";
-            this.dateWeek.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.dateWeek.Size = new System.Drawing.Size(118, 20);
-            this.dateWeek.TabIndex = 8;
-            this.dateWeek.EditValueChanged += new System.EventHandler(this.dateWeek_EditValueChanged);
             // 
             // tabStatistics
             // 
@@ -479,12 +484,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartBeverage)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateThongKe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdCtrThongKeNguyenLieu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdViThongKeNguyenLieu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateWeek.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

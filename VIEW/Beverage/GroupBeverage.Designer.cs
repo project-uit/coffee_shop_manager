@@ -96,6 +96,7 @@
             this.colid_nhomthucuong.Caption = "ID";
             this.colid_nhomthucuong.FieldName = "id_nhomthucuong";
             this.colid_nhomthucuong.Name = "colid_nhomthucuong";
+            this.colid_nhomthucuong.OptionsColumn.AllowEdit = false;
             this.colid_nhomthucuong.Visible = true;
             this.colid_nhomthucuong.VisibleIndex = 0;
             this.colid_nhomthucuong.Width = 116;
@@ -105,6 +106,7 @@
             this.coltennhomthucuong.Caption = "Tên nhóm thức uống";
             this.coltennhomthucuong.FieldName = "tennhomthucuong";
             this.coltennhomthucuong.Name = "coltennhomthucuong";
+            this.coltennhomthucuong.OptionsColumn.AllowEdit = false;
             this.coltennhomthucuong.Visible = true;
             this.coltennhomthucuong.VisibleIndex = 1;
             this.coltennhomthucuong.Width = 287;

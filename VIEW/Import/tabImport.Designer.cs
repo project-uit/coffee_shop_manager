@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions5 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabImport));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject17 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject18 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject19 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject20 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
             this.btnThemNguyenLieu = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnNhapKho = new MaterialSkin.Controls.MaterialRaisedButton();
             this.grdCtrlThemNguyenLieu = new DevExpress.XtraGrid.GridControl();
@@ -147,6 +147,7 @@
             this.coltennguyenlieu.FieldName = "tennguyenlieu";
             this.coltennguyenlieu.MinWidth = 19;
             this.coltennguyenlieu.Name = "coltennguyenlieu";
+            this.coltennguyenlieu.OptionsColumn.AllowEdit = false;
             this.coltennguyenlieu.Visible = true;
             this.coltennguyenlieu.VisibleIndex = 1;
             this.coltennguyenlieu.Width = 268;
@@ -163,6 +164,7 @@
             this.coldinhluong.FieldName = "dinhluong";
             this.coldinhluong.MinWidth = 19;
             this.coldinhluong.Name = "coldinhluong";
+            this.coldinhluong.OptionsColumn.AllowEdit = false;
             this.coldinhluong.Visible = true;
             this.coldinhluong.VisibleIndex = 2;
             this.coldinhluong.Width = 200;
@@ -177,6 +179,7 @@
             this.coltendonvi_dinh_luong.FieldName = "tendonvi_dinh_luong";
             this.coltendonvi_dinh_luong.MinWidth = 19;
             this.coltendonvi_dinh_luong.Name = "coltendonvi_dinh_luong";
+            this.coltendonvi_dinh_luong.OptionsColumn.AllowEdit = false;
             this.coltendonvi_dinh_luong.Visible = true;
             this.coltendonvi_dinh_luong.VisibleIndex = 3;
             this.coltendonvi_dinh_luong.Width = 229;
@@ -193,9 +196,9 @@
             // btnEdit
             // 
             this.btnEdit.AutoHeight = false;
-            editorButtonImageOptions5.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions5.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.btnEdit.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions5, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject17, serializableAppearanceObject18, serializableAppearanceObject19, serializableAppearanceObject20, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "Sửa", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -210,6 +213,7 @@
             this.coldinh_luong_toi_da.FieldName = "dinh_luong_toi_da";
             this.coldinh_luong_toi_da.MinWidth = 19;
             this.coldinh_luong_toi_da.Name = "coldinh_luong_toi_da";
+            this.coldinh_luong_toi_da.OptionsColumn.AllowEdit = false;
             this.coldinh_luong_toi_da.Visible = true;
             this.coldinh_luong_toi_da.VisibleIndex = 4;
             this.coldinh_luong_toi_da.Width = 205;
@@ -224,6 +228,7 @@
             this.coldinh_luong_toi_thieu.FieldName = "dinh_luong_toi_thieu";
             this.coldinh_luong_toi_thieu.MinWidth = 19;
             this.coldinh_luong_toi_thieu.Name = "coldinh_luong_toi_thieu";
+            this.coldinh_luong_toi_thieu.OptionsColumn.AllowEdit = false;
             this.coldinh_luong_toi_thieu.Visible = true;
             this.coldinh_luong_toi_thieu.VisibleIndex = 5;
             this.coldinh_luong_toi_thieu.Width = 183;
@@ -251,7 +256,7 @@
             this.txtTimKiem.Depth = 0;
             this.txtTimKiem.Hint = "Tìm kiếm tên nguyên liệu";
             this.txtTimKiem.Location = new System.Drawing.Point(29, 34);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimKiem.MaxLength = 32767;
             this.txtTimKiem.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTimKiem.Name = "txtTimKiem";
@@ -276,7 +281,7 @@
             "Vượt định mức",
             "Sắp hết hàng"});
             this.cmbCheckKho.Location = new System.Drawing.Point(431, 34);
-            this.cmbCheckKho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCheckKho.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCheckKho.Name = "cmbCheckKho";
             this.cmbCheckKho.Size = new System.Drawing.Size(167, 25);
             this.cmbCheckKho.TabIndex = 14;

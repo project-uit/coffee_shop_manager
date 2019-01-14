@@ -120,6 +120,7 @@
             this.colhesogiamgia.FieldName = "hesogiamgia";
             this.colhesogiamgia.MinWidth = 19;
             this.colhesogiamgia.Name = "colhesogiamgia";
+            this.colhesogiamgia.OptionsColumn.AllowEdit = false;
             this.colhesogiamgia.Visible = true;
             this.colhesogiamgia.VisibleIndex = 0;
             this.colhesogiamgia.Width = 70;
@@ -130,6 +131,7 @@
             this.colngaybatdau.FieldName = "ngaybatdau";
             this.colngaybatdau.MinWidth = 19;
             this.colngaybatdau.Name = "colngaybatdau";
+            this.colngaybatdau.OptionsColumn.AllowEdit = false;
             this.colngaybatdau.Visible = true;
             this.colngaybatdau.VisibleIndex = 1;
             this.colngaybatdau.Width = 70;
@@ -140,6 +142,7 @@
             this.colngayketthuc.FieldName = "ngayketthuc";
             this.colngayketthuc.MinWidth = 19;
             this.colngayketthuc.Name = "colngayketthuc";
+            this.colngayketthuc.OptionsColumn.AllowEdit = false;
             this.colngayketthuc.Visible = true;
             this.colngayketthuc.VisibleIndex = 2;
             this.colngayketthuc.Width = 70;
