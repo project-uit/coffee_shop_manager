@@ -110,7 +110,6 @@
             this.col_btnXoa,
             this.col_btnSua,
             this.col_btnCongThuc});
-            this.grdViThucUong.DetailHeight = 431;
             this.grdViThucUong.GridControl = this.grdCtrlThucUong;
             this.grdViThucUong.Name = "grdViThucUong";
             this.grdViThucUong.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
@@ -125,9 +124,7 @@
             // colid_thucuong
             // 
             this.colid_thucuong.FieldName = "id_thucuong";
-            this.colid_thucuong.MinWidth = 27;
             this.colid_thucuong.Name = "colid_thucuong";
-            this.colid_thucuong.Width = 100;
             // 
             // coltenthucuong
             // 
@@ -138,11 +135,11 @@
             this.coltenthucuong.AppearanceHeader.Options.UseFont = true;
             this.coltenthucuong.Caption = "Tên thức uống";
             this.coltenthucuong.FieldName = "tenthucuong";
-            this.coltenthucuong.MinWidth = 249;
+            this.coltenthucuong.MinWidth = 187;
             this.coltenthucuong.Name = "coltenthucuong";
             this.coltenthucuong.Visible = true;
             this.coltenthucuong.VisibleIndex = 0;
-            this.coltenthucuong.Width = 637;
+            this.coltenthucuong.Width = 478;
             // 
             // colgiaban
             // 
@@ -154,11 +151,10 @@
             this.colgiaban.DisplayFormat.FormatString = "{0:C3}";
             this.colgiaban.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom;
             this.colgiaban.FieldName = "giaban";
-            this.colgiaban.MinWidth = 27;
             this.colgiaban.Name = "colgiaban";
             this.colgiaban.Visible = true;
             this.colgiaban.VisibleIndex = 2;
-            this.colgiaban.Width = 321;
+            this.colgiaban.Width = 241;
             // 
             // colnhomthucuong
             // 
@@ -168,38 +164,37 @@
             this.colnhomthucuong.AppearanceHeader.Options.UseFont = true;
             this.colnhomthucuong.Caption = "Nhóm thức uống";
             this.colnhomthucuong.FieldName = "nhomthucuong.tennhomthucuong";
-            this.colnhomthucuong.MinWidth = 27;
             this.colnhomthucuong.Name = "colnhomthucuong";
             this.colnhomthucuong.Visible = true;
             this.colnhomthucuong.VisibleIndex = 1;
-            this.colnhomthucuong.Width = 417;
+            this.colnhomthucuong.Width = 313;
             // 
             // col_btnXoa
             // 
             this.col_btnXoa.ColumnEdit = this.btnXoa;
-            this.col_btnXoa.MinWidth = 25;
+            this.col_btnXoa.MinWidth = 19;
             this.col_btnXoa.Name = "col_btnXoa";
             this.col_btnXoa.Visible = true;
             this.col_btnXoa.VisibleIndex = 3;
-            this.col_btnXoa.Width = 57;
+            this.col_btnXoa.Width = 43;
             // 
             // col_btnSua
             // 
             this.col_btnSua.ColumnEdit = this.btnSua;
-            this.col_btnSua.MinWidth = 25;
+            this.col_btnSua.MinWidth = 19;
             this.col_btnSua.Name = "col_btnSua";
             this.col_btnSua.Visible = true;
             this.col_btnSua.VisibleIndex = 4;
-            this.col_btnSua.Width = 53;
+            this.col_btnSua.Width = 40;
             // 
             // col_btnCongThuc
             // 
             this.col_btnCongThuc.ColumnEdit = this.btnCongThuc;
-            this.col_btnCongThuc.MinWidth = 25;
+            this.col_btnCongThuc.MinWidth = 19;
             this.col_btnCongThuc.Name = "col_btnCongThuc";
             this.col_btnCongThuc.Visible = true;
             this.col_btnCongThuc.VisibleIndex = 5;
-            this.col_btnCongThuc.Width = 49;
+            this.col_btnCongThuc.Width = 37;
             // 
             // grdCtrlThucUong
             // 
@@ -207,12 +202,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grdCtrlThucUong.DataSource = typeof(COFFEE_SHOP_MANAGER.thucuong);
-            this.grdCtrlThucUong.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.grdCtrlThucUong.Location = new System.Drawing.Point(4, 84);
+            this.grdCtrlThucUong.Location = new System.Drawing.Point(3, 68);
             this.grdCtrlThucUong.MainView = this.grdViThucUong;
-            this.grdCtrlThucUong.Margin = new System.Windows.Forms.Padding(4);
             this.grdCtrlThucUong.Name = "grdCtrlThucUong";
-            this.grdCtrlThucUong.Size = new System.Drawing.Size(1559, 484);
+            this.grdCtrlThucUong.Size = new System.Drawing.Size(1169, 393);
             this.grdCtrlThucUong.TabIndex = 2;
             this.grdCtrlThucUong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdViThucUong});
@@ -224,12 +217,11 @@
             this.btnThemThucUong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnThemThucUong.Depth = 0;
             this.btnThemThucUong.Icon = null;
-            this.btnThemThucUong.Location = new System.Drawing.Point(1392, 11);
-            this.btnThemThucUong.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemThucUong.Location = new System.Drawing.Point(1032, 9);
             this.btnThemThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnThemThucUong.Name = "btnThemThucUong";
             this.btnThemThucUong.Primary = true;
-            this.btnThemThucUong.Size = new System.Drawing.Size(171, 36);
+            this.btnThemThucUong.Size = new System.Drawing.Size(140, 36);
             this.btnThemThucUong.TabIndex = 5;
             this.btnThemThucUong.Text = "Thêm thức uống";
             this.btnThemThucUong.UseVisualStyleBackColor = true;
@@ -242,12 +234,11 @@
             this.btnNhomThucUong.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnNhomThucUong.Depth = 0;
             this.btnNhomThucUong.Icon = null;
-            this.btnNhomThucUong.Location = new System.Drawing.Point(997, 11);
-            this.btnNhomThucUong.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNhomThucUong.Location = new System.Drawing.Point(677, 9);
             this.btnNhomThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnNhomThucUong.Name = "btnNhomThucUong";
             this.btnNhomThucUong.Primary = true;
-            this.btnNhomThucUong.Size = new System.Drawing.Size(175, 36);
+            this.btnNhomThucUong.Size = new System.Drawing.Size(143, 36);
             this.btnNhomThucUong.TabIndex = 6;
             this.btnNhomThucUong.Text = "Nhóm thức uống";
             this.btnNhomThucUong.UseVisualStyleBackColor = true;
@@ -260,12 +251,12 @@
             this.btnGiamGia.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnGiamGia.Depth = 0;
             this.btnGiamGia.Icon = null;
-            this.btnGiamGia.Location = new System.Drawing.Point(1179, 11);
-            this.btnGiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGiamGia.Location = new System.Drawing.Point(835, 9);
+            this.btnGiamGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGiamGia.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGiamGia.Name = "btnGiamGia";
             this.btnGiamGia.Primary = true;
-            this.btnGiamGia.Size = new System.Drawing.Size(97, 36);
+            this.btnGiamGia.Size = new System.Drawing.Size(81, 36);
             this.btnGiamGia.TabIndex = 8;
             this.btnGiamGia.Text = "Giảm giá";
             this.btnGiamGia.UseVisualStyleBackColor = true;
@@ -278,12 +269,12 @@
             this.btnExportExcel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExportExcel.Depth = 0;
             this.btnExportExcel.Icon = null;
-            this.btnExportExcel.Location = new System.Drawing.Point(1282, 11);
-            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExportExcel.Location = new System.Drawing.Point(931, 9);
+            this.btnExportExcel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExportExcel.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnExportExcel.Name = "btnExportExcel";
             this.btnExportExcel.Primary = true;
-            this.btnExportExcel.Size = new System.Drawing.Size(103, 36);
+            this.btnExportExcel.Size = new System.Drawing.Size(86, 36);
             this.btnExportExcel.TabIndex = 9;
             this.btnExportExcel.Text = "Xuất file ";
             this.btnExportExcel.UseVisualStyleBackColor = true;
@@ -293,7 +284,8 @@
             // 
             this.txtTenThucUong.Depth = 0;
             this.txtTenThucUong.Hint = "Tìm kiếm tên thức uống";
-            this.txtTenThucUong.Location = new System.Drawing.Point(17, 11);
+            this.txtTenThucUong.Location = new System.Drawing.Point(13, 9);
+            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenThucUong.MaxLength = 32767;
             this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenThucUong.Name = "txtTenThucUong";
@@ -301,7 +293,7 @@
             this.txtTenThucUong.SelectedText = "";
             this.txtTenThucUong.SelectionLength = 0;
             this.txtTenThucUong.SelectionStart = 0;
-            this.txtTenThucUong.Size = new System.Drawing.Size(404, 28);
+            this.txtTenThucUong.Size = new System.Drawing.Size(303, 23);
             this.txtTenThucUong.TabIndex = 10;
             this.txtTenThucUong.TabStop = false;
             this.txtTenThucUong.UseSystemPasswordChar = false;
@@ -309,7 +301,7 @@
             // 
             // tabBeverage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.txtTenThucUong);
@@ -319,9 +311,8 @@
             this.Controls.Add(this.btnThemThucUong);
             this.Controls.Add(this.grdCtrlThucUong);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tabBeverage";
-            this.Size = new System.Drawing.Size(1567, 567);
+            this.Size = new System.Drawing.Size(1175, 461);
             ((System.ComponentModel.ISupportInitialize)(this.btnXoa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCongThuc)).EndInit();

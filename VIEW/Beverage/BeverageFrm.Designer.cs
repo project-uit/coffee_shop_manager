@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BeverageFrm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbbNhomThucUong = new System.Windows.Forms.ComboBox();
@@ -45,10 +46,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(131, 87);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(105, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 20);
+            this.label1.Size = new System.Drawing.Size(105, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tên thức uống";
             // 
@@ -57,10 +57,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(131, 183);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(105, 168);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 20);
+            this.label2.Size = new System.Drawing.Size(118, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nhóm thức uống";
             // 
@@ -68,10 +67,10 @@
             // 
             this.cbbNhomThucUong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbNhomThucUong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbNhomThucUong.Location = new System.Drawing.Point(135, 206);
-            this.cbbNhomThucUong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbNhomThucUong.Location = new System.Drawing.Point(108, 186);
+            this.cbbNhomThucUong.Margin = new System.Windows.Forms.Padding(2);
             this.cbbNhomThucUong.Name = "cbbNhomThucUong";
-            this.cbbNhomThucUong.Size = new System.Drawing.Size(213, 28);
+            this.cbbNhomThucUong.Size = new System.Drawing.Size(161, 25);
             this.cbbNhomThucUong.TabIndex = 3;
             // 
             // label3
@@ -79,10 +78,9 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(131, 270);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(105, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 20);
+            this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 4;
             this.label3.Text = "Giá bán";
             // 
@@ -91,10 +89,9 @@
             this.lbErrorTenThucUong.AutoSize = true;
             this.lbErrorTenThucUong.BackColor = System.Drawing.Color.Transparent;
             this.lbErrorTenThucUong.ForeColor = System.Drawing.Color.Red;
-            this.lbErrorTenThucUong.Location = new System.Drawing.Point(131, 142);
-            this.lbErrorTenThucUong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbErrorTenThucUong.Location = new System.Drawing.Point(105, 134);
             this.lbErrorTenThucUong.Name = "lbErrorTenThucUong";
-            this.lbErrorTenThucUong.Size = new System.Drawing.Size(46, 17);
+            this.lbErrorTenThucUong.Size = new System.Drawing.Size(35, 13);
             this.lbErrorTenThucUong.TabIndex = 9;
             this.lbErrorTenThucUong.Text = "label4";
             this.lbErrorTenThucUong.Visible = false;
@@ -104,10 +101,9 @@
             this.lbErrorGiaBan.AutoSize = true;
             this.lbErrorGiaBan.BackColor = System.Drawing.Color.Transparent;
             this.lbErrorGiaBan.ForeColor = System.Drawing.Color.Red;
-            this.lbErrorGiaBan.Location = new System.Drawing.Point(131, 324);
-            this.lbErrorGiaBan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbErrorGiaBan.Location = new System.Drawing.Point(105, 282);
             this.lbErrorGiaBan.Name = "lbErrorGiaBan";
-            this.lbErrorGiaBan.Size = new System.Drawing.Size(46, 17);
+            this.lbErrorGiaBan.Size = new System.Drawing.Size(35, 13);
             this.lbErrorGiaBan.TabIndex = 11;
             this.lbErrorGiaBan.Text = "label6";
             this.lbErrorGiaBan.Visible = false;
@@ -118,12 +114,12 @@
             this.btnLuu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnLuu.Depth = 0;
             this.btnLuu.Icon = null;
-            this.btnLuu.Location = new System.Drawing.Point(150, 370);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnLuu.Location = new System.Drawing.Point(119, 320);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnLuu.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Primary = false;
-            this.btnLuu.Size = new System.Drawing.Size(55, 36);
+            this.btnLuu.Size = new System.Drawing.Size(47, 36);
             this.btnLuu.TabIndex = 12;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -135,12 +131,12 @@
             this.btnHuy.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnHuy.Depth = 0;
             this.btnHuy.Icon = null;
-            this.btnHuy.Location = new System.Drawing.Point(256, 370);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnHuy.Location = new System.Drawing.Point(199, 320);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnHuy.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Primary = false;
-            this.btnHuy.Size = new System.Drawing.Size(56, 36);
+            this.btnHuy.Size = new System.Drawing.Size(48, 36);
             this.btnHuy.TabIndex = 13;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -150,7 +146,8 @@
             // 
             this.txtTenThucUong.Depth = 0;
             this.txtTenThucUong.Hint = "";
-            this.txtTenThucUong.Location = new System.Drawing.Point(135, 111);
+            this.txtTenThucUong.Location = new System.Drawing.Point(108, 109);
+            this.txtTenThucUong.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenThucUong.MaxLength = 32767;
             this.txtTenThucUong.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTenThucUong.Name = "txtTenThucUong";
@@ -158,7 +155,7 @@
             this.txtTenThucUong.SelectedText = "";
             this.txtTenThucUong.SelectionLength = 0;
             this.txtTenThucUong.SelectionStart = 0;
-            this.txtTenThucUong.Size = new System.Drawing.Size(214, 28);
+            this.txtTenThucUong.Size = new System.Drawing.Size(160, 23);
             this.txtTenThucUong.TabIndex = 16;
             this.txtTenThucUong.TabStop = false;
             this.txtTenThucUong.UseSystemPasswordChar = false;
@@ -168,7 +165,8 @@
             // 
             this.txtGiaBan.Depth = 0;
             this.txtGiaBan.Hint = "";
-            this.txtGiaBan.Location = new System.Drawing.Point(134, 293);
+            this.txtGiaBan.Location = new System.Drawing.Point(107, 257);
+            this.txtGiaBan.Margin = new System.Windows.Forms.Padding(2);
             this.txtGiaBan.MaxLength = 32767;
             this.txtGiaBan.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtGiaBan.Name = "txtGiaBan";
@@ -176,7 +174,7 @@
             this.txtGiaBan.SelectedText = "";
             this.txtGiaBan.SelectionLength = 0;
             this.txtGiaBan.SelectionStart = 0;
-            this.txtGiaBan.Size = new System.Drawing.Size(215, 28);
+            this.txtGiaBan.Size = new System.Drawing.Size(161, 23);
             this.txtGiaBan.TabIndex = 17;
             this.txtGiaBan.TabStop = false;
             this.txtGiaBan.UseSystemPasswordChar = false;
@@ -185,9 +183,9 @@
             // 
             // BeverageFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 511);
+            this.ClientSize = new System.Drawing.Size(370, 413);
             this.Controls.Add(this.txtGiaBan);
             this.Controls.Add(this.txtTenThucUong);
             this.Controls.Add(this.btnHuy);
@@ -198,7 +196,7 @@
             this.Controls.Add(this.cbbNhomThucUong);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "BeverageFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

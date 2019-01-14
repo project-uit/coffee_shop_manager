@@ -1,10 +1,12 @@
 ﻿using COFFEE_SHOP_MANAGER.DAO;
 using DevExpress.XtraEditors;
+using Microsoft.SqlServer.Management.Smo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,75 +16,137 @@ namespace COFFEE_SHOP_MANAGER.VIEW.Setting
 {
     public partial class SettingFrm : MaterialSkin.Controls.MaterialForm
     {
+        String severName = ".\\SQLEXPRESS";
+        String databaseName = "quanlycafe";
+    
         public SettingFrm()
         {
             InitializeComponent();
         }
 
-        private void SettingFrm_Load(object sender, EventArgs e)
-        {
-            cuahang cuahang = StoreInfoDAO.getInfo();
-            txtName.Text = cuahang.ten;
-            txtAddress.Text = cuahang.diachi;
-            txtPhone.Text = cuahang.dienthoai;
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (!validateFields())
-                return;
-
-            cuahang cuahang = new cuahang { idcuahang = 1,  ten = txtName.Text, diachi = txtAddress.Text, dienthoai = txtPhone.Text };
-            if (StoreInfoDAO.edit(cuahang))
-            {
-                XtraMessageBox.Show(this, "Cập nhập thông tin cửa hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                XtraMessageBox.Show(this, "Cập nhập thông tin cửa hàng thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private Boolean validateFields()
+        private Boolean validateFieldsRestore()
         {
             int countError = 0;
-            if (txtName.Text.Trim() == "")
+            if (txtSeverName.Text.Trim() == "")
             {
                 lbErrorName.Visible = true;
-                lbErrorName.Text = "Tên không được trống";
+                lbErrorName.Text = "Tên Server không được trống";
                 countError++;
             }
             else
             {
-                lbErrorAddress.Visible = false;
+                lbErrorPathRestore.Visible = false;
             }
 
-            if (txtAddress.Text.Trim() == "")
+            if (txtPathFileRestore.Text.Trim() == "")
             {
-                lbErrorAddress.Visible = true;
-                lbErrorAddress.Text = "Địa chỉ không được trống";
+                lbErrorPathRestore.Visible = true;
+                lbErrorPathRestore.Text = "Chưa chọn đường dẫn file restore";
                 countError++;
             }
             else
             {
-                lbErrorAddress.Visible = false;
+                lbErrorPathRestore.Visible = false;
             }
 
-            if (txtPhone.Text.Trim() == "")
+
+            if (countError != 0)
+                return false;
+
+            return true;
+        }
+
+        private Boolean validateFieldsBackup()
+        {
+            int countError = 0;
+            if (txtSeverName.Text.Trim() == "")
             {
-                lbErrorPhone.Visible = true;
-                lbErrorPhone.Text = "Số điện thoại không được trống";
+                lbErrorName.Visible = true;
+                lbErrorName.Text = "Tên Server không được trống";
                 countError++;
             }
             else
             {
-                lbErrorPhone.Visible = false;
+                lbErrorPathRestore.Visible = false;
+            }
+
+            if (txtPathFileBackup.Text.Trim() == "")
+            {
+                lbErrorPathBackup.Visible = true;
+                lbErrorPathBackup.Text = "Chưa chọn đường dẫn file restore";
+                countError++;
+            }
+            else
+            {
+                lbErrorPathBackup.Visible = false;
             }
 
             if (countError != 0)
                 return false;
 
             return true;
+        }
+
+        private void txtPathFileRestore_Click(object sender, EventArgs e)
+        {
+            var FD = new OpenFileDialog();
+            FD.Filter = "All files (*.*)|*.*|All files (*.*)|*.*";
+            if (FD.ShowDialog() == DialogResult.OK)
+            {
+                string fileToOpen = FD.FileName;
+                txtPathFileRestore.Text = fileToOpen.Replace(@"\", @"\\");
+                lbErrorPathRestore.Visible = false;
+            }
+        }
+
+        private void txtPathFileBackup_Click(object sender, EventArgs e)
+        {
+            using (var FD = new FolderBrowserDialog())
+            {
+                DialogResult result = FD.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(FD.SelectedPath))
+                {
+                    txtPathFileBackup.Text = FD.SelectedPath.Replace(@"\", @"\\");
+                }
+            }
+        }
+
+        private void btnRestore_Click(object sender, EventArgs e)
+        {
+            if (!validateFieldsRestore())
+                return;
+
+            severName = ".\\" + txtSeverName.Text;
+            
+            try
+            {
+                DatabaseUtils.createDB(severName, "quanlycafe");
+                DatabaseUtils.RestoreDatabase(severName, databaseName, txtPathFileRestore.Text.ToString());
+                XtraMessageBox.Show(this, "Restore thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch
+            {
+                XtraMessageBox.Show(this, "Restore thất bại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBackup_Click(object sender, EventArgs e)
+        {
+            if (!validateFieldsBackup())
+                return;
+
+            severName = ".\\" + txtSeverName.Text;
+
+            try
+            {
+                DatabaseUtils.BackupDatabase(severName, databaseName, txtPathFileBackup.Text);
+                XtraMessageBox.Show(this, "Backup thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (SmoException ex)
+            {
+                XtraMessageBox.Show(this, ex.InnerException.Message , "Backup thất bại!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

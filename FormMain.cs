@@ -1,5 +1,6 @@
 ﻿using COFFEE_SHOP_MANAGER.DAO;
 using COFFEE_SHOP_MANAGER.VIEW.Setting;
+using COFFEE_SHOP_MANAGER.VIEW.SettingStore;
 using MaterialSkin;
 using System;
 using System.Threading;
@@ -200,9 +201,9 @@ namespace COFFEE_SHOP_MANAGER
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-            SettingFrm settingFrm = new SettingFrm();
-            settingFrm.FormClosing += updateStoreInfo;
-            settingFrm.ShowDialog();
+            SettingStoreFrm settingStoreFrm = new SettingStoreFrm();
+            settingStoreFrm.FormClosing += updateStoreInfo;
+            settingStoreFrm.ShowDialog();
         }
     }
 }

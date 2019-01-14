@@ -1,8 +1,10 @@
 ﻿using COFFEE_SHOP_MANAGER.DAO;
+using COFFEE_SHOP_MANAGER.VIEW.Setting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,10 +35,10 @@ namespace COFFEE_SHOP_MANAGER
             txtPassword.KeyDown += new KeyEventHandler(tb_KeyDown);
         }
         public static nhanvien nv = new nhanvien();
-        
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+
             if (loginDao.checkLogin(txtUsername.Text, txtPassword.Text) == true)
             {
                 nhanvien loggedStaff = loginDao.getStaffFromUsername(txtUsername.Text);
@@ -52,12 +54,18 @@ namespace COFFEE_SHOP_MANAGER
                 lbError.Visible = true;
             }
 
-            
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            SettingFrm settingFrm = new SettingFrm();
+            settingFrm.ShowDialog();
         }
     }
 }
